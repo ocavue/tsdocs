@@ -10,7 +10,7 @@ import { getCommentSummary } from './comment-summary'
 import { getConstructor } from './constructor'
 import { getFunction } from './function'
 import { getMethod } from './method'
-import { getType } from './type'
+import { formatSomeType, getType } from './type'
 
 export function getDeclaration(
   ctx: MarkdownThemeContext,
@@ -38,6 +38,7 @@ export function getDeclaration(
       m.html('<dd>'),
       ...getCommentSummary(ctx, model.comment),
       ...getDeclarationType(model, true),
+      ...getCommentBlockTags(ctx, model.comment, { headingLevel: undefined }),
       m.html('</dd>'),
     ]
   }
@@ -62,6 +63,21 @@ export function getDeclaration(
       m.html('<dd>'),
       ...getComment(ctx, model.comment, { headingLevel: undefined }),
       ...getConstructor(ctx, model),
+      m.html('</dd>'),
+    ]
+  }
+
+  if (model.kind === ReflectionKind.EnumMember) {
+    const type = model.type
+    const typeText = type ? formatSomeType(type) : ''
+    const nameWithType = typeText ? model.name + ' = ' + typeText : model.name
+
+    return [
+      m.html('<dt>'),
+      m.paragraph([m.inlineCode(nameWithType)]),
+      m.html('</dt>'),
+      m.html('<dd>'),
+      ...getComment(ctx, model.comment),
       m.html('</dd>'),
     ]
   }
@@ -112,6 +128,20 @@ export function getDeclaration(
   }
 
   if (model.kind === ReflectionKind.Class) {
+    return [
+      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+
+      ...getComment(ctx, model.comment, {
+        headingLevel: m.getNextHeadingLevel(options.headingLevel),
+      }),
+
+      ...getDeclarationChildren(ctx, model, {
+        headingLevel: m.getNextHeadingLevel(options.headingLevel),
+      }),
+    ]
+  }
+
+  if (model.kind === ReflectionKind.Enum) {
     return [
       m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
 
