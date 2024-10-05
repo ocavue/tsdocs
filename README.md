@@ -1,1 +1,1 @@
-- [typedoc-plugin-md](./packages/typedoc-plugin-md)
+A monorepo for [typedoc-plugin-md](https://www.npmjs.com/package/typedoc-plugin-md)
