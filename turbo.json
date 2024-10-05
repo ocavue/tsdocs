@@ -1,0 +1,24 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["tsconfig.json"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "build:tsc", "build:tsup"],
+      "outputs": ["dist/"],
+      "outputLogs": "new-only"
+    },
+    "docs": {
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    },
+    "build:tsc": {
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    },
+    "build:tsup": {
+      "dependsOn": ["^build", "build:tsc"],
+      "outputs": ["dist/"],
+      "outputLogs": "new-only"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "typedoc-plugin-md",
+  "type": "module",
+  "version": "0.0.0",
+  "private": false,
+  "author": {
+    "name": "ocavue",
+    "email": "ocavue@gmail.com"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:tsup": "tsup",
+    "build:tsc": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^2.2.1",
+    "change-case": "^5.4.4",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.5"
+  },
+  "peerDependencies": {
+    "typedoc": "^0.26.7"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "18",
+    "tsup": "^8.3.0",
+    "typedoc": "^0.26.7"
+  }
+}

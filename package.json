@@ -1,0 +1,27 @@
+{
+  "name": "tsdocs-monorepo",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.10.0",
+  "scripts": {
+    "build": "turbo build",
+    "typecheck": "tsc --build tsconfig.json",
+    "lint": "eslint .",
+    "fix": "manypkg fix && eslint . --fix && prettier --write .",
+    "docs": "turbo docs --concurrency 1",
+    "change": "changeset",
+    "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
+    "ci:publish": "pnpm run build:package && pnpm publish --access public -r --no-git-checks --tag latest"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.8",
+    "@manypkg/cli": "^0.21.4",
+    "@ocavue/eslint-config": "^2.8.1",
+    "eslint": "^9.10.0",
+    "pkg-pr-new": "^0.0.29",
+    "prettier": "^3.3.3",
+    "turbo": "^2.1.2",
+    "typescript": "^5.6.2"
+  }
+}
