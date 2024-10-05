@@ -1,6 +1,6 @@
 import { pascalCase } from 'change-case'
 import type * as mdast from 'mdast'
-import type { Comment, CommentTag } from 'typedoc'
+import type { Comment } from 'typedoc'
 
 import type { MarkdownThemeContext } from '../theme/markdown-theme-context'
 import { extractValue } from '../utils/markdown'
