@@ -25,9 +25,8 @@ function getProjectChildren(
   const children = project.children || []
 
   return [
-    m.heading(2, [m.text('API')]),
     ...children.flatMap((child) =>
-      getDeclaration(ctx, child, { headingLevel: 3 }),
+      getDeclaration(ctx, child, { headingLevel: 2 }),
     ),
   ]
 }

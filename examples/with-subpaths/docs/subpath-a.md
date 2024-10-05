@@ -1,8 +1,6 @@
 # subpath-a
 
-## API
-
-### fnA <a id="fn-a" href="#fn-a">#</a>
+## fnA <a id="fn-a" href="#fn-a">#</a>
 
 ```ts
 function fnA(options?: InterfaceC): void
