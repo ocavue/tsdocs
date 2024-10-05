@@ -4,7 +4,7 @@
 
 ### InterfaceC <a id="interface-c" href="#interface-c">#</a>
 
-[fnB](../../subpath-b/README.md#fn-b) returns this interface.
+[fnB](../subpath-b.md#fn-b) returns this interface.
 
 <dl>
 
