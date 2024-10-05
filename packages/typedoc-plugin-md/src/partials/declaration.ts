@@ -38,6 +38,7 @@ export function getDeclaration(
       m.html('<dd>'),
       ...getCommentSummary(ctx, model.comment),
       ...getDeclarationType(model, true),
+      m.html('</dd>'),
     ]
   }
 
