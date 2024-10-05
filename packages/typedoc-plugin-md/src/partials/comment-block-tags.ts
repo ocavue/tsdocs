@@ -23,7 +23,7 @@ export function getCommentBlockTags(
 
   const result: mdast.RootContent[] = []
 
-  const blockTags = mergeExampleBlockTags(comment.blockTags)
+  const blockTags = comment.blockTags
 
   for (const blockTag of blockTags) {
     if (headingLevel) {
@@ -54,26 +54,6 @@ export function getCommentBlockTags(
           ...getCommentDisplayParts(ctx, blockTag.content),
         )
       }
-    }
-  }
-
-  return result
-}
-
-function mergeExampleBlockTags(blockTags: CommentTag[]): CommentTag[] {
-  let exampleBlockTag: CommentTag | undefined
-  const result: CommentTag[] = []
-
-  for (const blockTag of blockTags) {
-    if (blockTag.tag === '@example') {
-      if (!exampleBlockTag) {
-        exampleBlockTag = blockTag
-        result.push(exampleBlockTag)
-      } else {
-        exampleBlockTag.content.push(...blockTag.content)
-      }
-    } else {
-      result.push(blockTag)
     }
   }
 

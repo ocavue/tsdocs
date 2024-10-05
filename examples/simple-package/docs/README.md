@@ -150,15 +150,19 @@ A simple method with an example tag.
 
 **Example**
 
-```````ts
+```ts
 const a = 1
 const b = 2
 const c = a + b
-``````ts
+```
+
+**Example**
+
+```ts
 const a = 2
 const b = 3
 const c = a + b
-```````
+```
 
 </dd>
 
