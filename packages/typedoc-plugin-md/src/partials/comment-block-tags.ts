@@ -3,6 +3,7 @@ import type * as mdast from 'mdast'
 import type { Comment, CommentTag } from 'typedoc'
 
 import type { MarkdownThemeContext } from '../theme/markdown-theme-context'
+import { extractValue } from '../utils/markdown'
 import * as m from '../utils/mdast'
 
 import { getCommentDisplayParts } from './comment-display-parts'
@@ -33,14 +34,26 @@ export function getCommentBlockTags(
         ...getCommentDisplayParts(ctx, blockTag.content),
       )
     } else {
-      result.push(
-        ...mergeMergeParagraphs([
+      if (blockTag.tag === '@default') {
+        result.push(
+          m.paragraph([
+            m.strong([m.text(pascalCase(blockTag.tag.replace(/^@/, '')))]),
+            m.text(': '),
+            m.inlineCode(
+              getCommentDisplayParts(ctx, blockTag.content)
+                .map(extractValue)
+                .join(''),
+            ),
+          ]),
+        )
+      } else {
+        result.push(
           m.paragraph([
             m.strong([m.text(pascalCase(blockTag.tag.replace(/^@/, '')))]),
           ]),
           ...getCommentDisplayParts(ctx, blockTag.content),
-        ]),
-      )
+        )
+      }
     }
   }
 
@@ -65,15 +78,4 @@ function mergeExampleBlockTags(blockTags: CommentTag[]): CommentTag[] {
   }
 
   return result
-}
-
-function mergeMergeParagraphs(content: mdast.RootContent[]) {
-  if (content.length === 2) {
-    const a = content[0]
-    const b = content[1]
-    if (a.type === 'paragraph' && b.type === 'paragraph') {
-      return [m.paragraph([...a.children, m.text(': '), ...b.children])]
-    }
-  }
-  return content
 }

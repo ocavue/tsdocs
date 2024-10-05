@@ -132,11 +132,7 @@ A simple property with a default tag.
 
 **Type**: `number`
 
-**Default**
-
-```ts
-1
-```
+**Default**: `1`
 
 </dd>
 

@@ -1,4 +1,11 @@
-import type { PhrasingContent, Root, RootContent } from 'mdast'
+import type {
+  PhrasingContent,
+  Root,
+  RootContent,
+  Node,
+  Parent,
+  Literal,
+} from 'mdast'
 import remarkParse from 'remark-parse'
 import remarkStringify from 'remark-stringify'
 import { unified } from 'unified'
@@ -26,4 +33,22 @@ export function parse(markdown: string): Root {
 export function parseRootContent(markdown: string): RootContent[] {
   const root = parse(markdown)
   return root.children
+}
+
+export function extractValue(node: Node): string {
+  if (isLiteral(node)) {
+    return node.value
+  }
+  if (isParent(node)) {
+    return node.children.map(extractValue).join('')
+  }
+  return ''
+}
+
+export function isParent(node: Node): node is Parent {
+  return 'children' in node
+}
+
+export function isLiteral(node: Node): node is Literal {
+  return 'value' in node
 }
