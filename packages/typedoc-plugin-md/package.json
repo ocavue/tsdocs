@@ -1,7 +1,7 @@
 {
   "name": "typedoc-plugin-md",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": false,
   "description": "A typedoc plugin for generating markdown documentation",
   "author": {
