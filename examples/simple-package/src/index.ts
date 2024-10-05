@@ -30,6 +30,51 @@ export interface Writer<T> {
   write(value: T): void
 }
 
+export interface SimpleInterface {
+  /**
+   * A simple property.
+   */
+  property: string
+
+  /**
+   * A simple method.
+   */
+  method(): void
+
+  /**
+   * A simple method with a type parameter.
+   */
+  method2<T>(value: T): void
+
+  /**
+   * A simple property with a default tag.
+   *
+   * @default 1
+   */
+  withDefault?: number
+
+  /**
+   * A simple method with an example tag.
+   *
+   * @example
+   *
+   * ```ts
+   * const a = 1
+   * const b = 2
+   * const c = a + b
+   * ```
+   *
+   * @example
+   *
+   * ```ts
+   * const a = 2
+   * const b = 3
+   * const c = a + b
+   * ```
+   */
+  withExample?: number
+}
+
 /**
  * A simple class.
  */

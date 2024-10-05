@@ -8,4 +8,4 @@
 function fnA(options?: InterfaceC): void
 ```
 
-[InterfaceC](deep/subpath-c.md#interface-c) An optional object.
+[InterfaceC](../deep/subpath-c/README.md#interface-c) An optional object.
