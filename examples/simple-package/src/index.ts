@@ -49,7 +49,7 @@ export interface SimpleInterface {
   /**
    * A simple property with a default tag.
    *
-   * @default 1
+   * @default 123
    */
   withDefault?: number
 
