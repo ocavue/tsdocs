@@ -3,11 +3,31 @@
   "type": "module",
   "version": "0.0.0",
   "private": false,
+  "description": "A typedoc plugin for generating markdown documentation",
   "author": {
     "name": "ocavue",
     "email": "ocavue@gmail.com"
   },
   "license": "MIT",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/tsdocs/tree/master/packages/typedoc-plugin-md#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/tsdocs.git",
+    "directory": "packages/typedoc-plugin-md"
+  },
+  "bugs": "https://github.com/ocavue/tsdocs/issues",
+  "keywords": [
+    "api",
+    "documentation",
+    "markdown",
+    "jsdoc",
+    "tsdoc",
+    "tsdocs",
+    "typedoc",
+    "typescript",
+    "typedoc-plugin"
+  ],
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.js",
