@@ -102,6 +102,100 @@ const read: () => string
 
 </dl>
 
+### SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
+
+<dl>
+
+<dt>
+
+`property`
+
+</dt>
+
+<dd>
+
+A simple property.
+
+**Type**: `string`
+
+</dd>
+
+<dt>
+
+`withDefault`
+
+</dt>
+
+<dd>
+
+A simple property with a default tag.
+
+**Type**: `number`
+
+**Default**
+
+```ts
+1
+```
+
+</dd>
+
+<dt>
+
+`withExample`
+
+</dt>
+
+<dd>
+
+A simple method with an example tag.
+
+**Type**: `number`
+
+**Example**
+
+```````ts
+const a = 1
+const b = 2
+const c = a + b
+``````ts
+const a = 2
+const b = 3
+const c = a + b
+```````
+
+</dd>
+
+<dt>
+
+`method`
+
+</dt>
+
+<dd>
+
+```ts
+const method: () => void
+```
+
+</dd>
+
+<dt>
+
+`method2`
+
+</dt>
+
+<dd>
+
+```ts
+const method2: <T>(value: T) => void
+```
+
+</dd>
+
+</dl>
+
 ### Writer <a id="writer" href="#writer">#</a>
 
 An interface with a generic type parameter.
