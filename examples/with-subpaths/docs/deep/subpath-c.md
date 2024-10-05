@@ -1,8 +1,6 @@
 # deep/subpath-c
 
-## API
-
-### InterfaceC <a id="interface-c" href="#interface-c">#</a>
+## InterfaceC <a id="interface-c" href="#interface-c">#</a>
 
 [fnB](../subpath-b.md#fn-b) returns this interface.
 
