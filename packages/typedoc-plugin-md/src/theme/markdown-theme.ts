@@ -1,3 +1,5 @@
+import path from 'node:path'
+
 import slugify from '@sindresorhus/slugify'
 import {
   ContainerReflection,
@@ -105,7 +107,10 @@ export class MarkdownTheme extends Theme {
       containerUrl: string,
     ): void => {
       if (reflection.kind === ReflectionKind.Module) {
-        containerUrl = getFileNameWithExtension(reflection.name, fileExtension)
+        containerUrl = getFileNameWithExtension(
+          path.join(reflection.name, options.getValue('entryFileName')),
+          fileExtension,
+        )
 
         mappings.push({
           url: containerUrl,
