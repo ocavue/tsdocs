@@ -4,7 +4,31 @@
 
 ### SimpleEnum <a id="simple-enum" href="#simple-enum">#</a>
 
-<!-- Declaration kind 8 is not implemented (name: SimpleEnum) -->
+A simple enum.
+
+<dl>
+
+<dt>
+
+`Value1 = 0`
+
+</dt>
+
+<dd>
+
+</dd>
+
+<dt>
+
+`Value2 = 1`
+
+</dt>
+
+<dd>
+
+</dd>
+
+</dl>
 
 ### SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
 

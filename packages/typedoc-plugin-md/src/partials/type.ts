@@ -27,7 +27,7 @@ export function getType(
   return [m.paragraph([m.strong([m.text('Type')])]), m.code(typeString)]
 }
 
-function formatSomeType(type: SomeType): string {
+export function formatSomeType(type: SomeType): string {
   if (type.type === 'reflection') {
     const signatures = type.declaration.signatures
     if (signatures?.length) {
