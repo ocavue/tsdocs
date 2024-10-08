@@ -1,9 +1,9 @@
 # example-packages-pkg2
 
-## index <a id="index" href="#index">#</a>
+## index {#index}
 
 <!-- Declaration kind 2 is not implemented (name: index) -->
 
-## subdir <a id="subdir" href="#subdir">#</a>
+## subdir {#subdir}
 
 <!-- Declaration kind 2 is not implemented (name: subdir) -->

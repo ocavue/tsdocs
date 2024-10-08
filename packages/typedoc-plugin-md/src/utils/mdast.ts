@@ -32,11 +32,20 @@ export function heading(
   }
 }
 
-export function anchor(options: { anchor?: string }): ast.PhrasingContent[] {
-  const id = (options.anchor || '').replace(/^#/, '')
+export function anchor(
+  anchor?: string,
+  options?: {
+    markdownHeadingId?: boolean
+  },
+): ast.PhrasingContent[] {
+  const id = (anchor || '').replace(/^#/, '')
 
   if (!id) {
     return []
+  }
+
+  if (options?.markdownHeadingId) {
+    return [text(' '), html(`{#${id}}`)]
   }
 
   return [text(' '), html(`<a id="${id}" href="#${id}">#</a>`)]

@@ -59,15 +59,17 @@ export const fileExtension: DeclarationOption = {
 }
 
 /**
- * By default references to symbol anchor links are lowercased.
+ * By default anchor links are generated as an `<a>` HTML element.
  *
- * This option can be used for engines that require the preservation of anchor link casing.
+ * This option can be used for generating anchor links in markdown heading id
+ * syntax like {#custom-id}. This syntax is not supported by CommonMark and
+ * GitHub Flavored Markdown, but is supported by Docusaurus and VitePress.
  *
  * @default false
  */
-export const preserveAnchorCasing: DeclarationOption = {
-  name: 'preserveAnchorCasing',
-  help: 'Preserve anchor casing when generating link to symbols.',
+export const markdownHeadingId: DeclarationOption = {
+  name: 'markdownHeadingId',
+  help: 'Use custom markdown heading id syntax like {#custom-id}.',
   type: ParameterType.Boolean,
   defaultValue: false,
 }
