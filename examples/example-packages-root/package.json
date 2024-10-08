@@ -1,0 +1,14 @@
+{
+  "name": "example-packages-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docs": "typedoc"
+  },
+  "devDependencies": {
+    "example-packages-pkg1": "workspace:*",
+    "example-packages-pkg2": "workspace:*",
+    "typedoc": "^0.26.8",
+    "typedoc-plugin-md": "workspace:*"
+  }
+}

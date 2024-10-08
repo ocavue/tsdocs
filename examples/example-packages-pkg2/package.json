@@ -1,0 +1,8 @@
+{
+  "name": "example-packages-pkg2",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "example-packages-pkg1": "workspace:*"
+  }
+}
