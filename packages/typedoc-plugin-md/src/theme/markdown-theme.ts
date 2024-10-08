@@ -1,7 +1,10 @@
+import * as path from 'node:path'
+
 import slugify from '@sindresorhus/slugify'
 import {
   ContainerReflection,
   DeclarationReflection,
+  EntryPointStrategy,
   type PageEvent,
   type ProjectReflection,
   type Reflection,
@@ -127,22 +130,51 @@ export class MarkdownTheme extends Theme {
       }
     }
 
-    const traverseProject = (
-      project: ProjectReflection,
+    const traversePackage = (
+      model: DeclarationReflection,
       containerUrl: string,
     ) => {
-      project.url = containerUrl
-      project.children?.forEach((child) => {
-        traverseDeclaration(child, containerUrl)
+      const packageUrl = path.join(
+        path.dirname(containerUrl),
+        model.name,
+        entryFileName,
+      )
+      const children = model.children || []
+      model.url = packageUrl
+      children.forEach((child) => {
+        traverseDeclaration(child, packageUrl)
       })
       mappings.push({
-        url: containerUrl,
+        url: packageUrl,
+        model: model,
+        template: this.projectTemplate,
+      })
+    }
+
+    const traverseProject = (project: ProjectReflection) => {
+      const projectUrl = entryFileName
+      const children = project.children || []
+
+      // Whether if the project has multiple packages as children
+      const isPackagesRoot =
+        project.variant === 'project' &&
+        children.length > 1 &&
+        children.every((child) => child.kind === ReflectionKind.Module) &&
+        options.getValue('entryPointStrategy') === EntryPointStrategy.Packages
+
+      if (isPackagesRoot) {
+        children.forEach((child) => traversePackage(child, projectUrl))
+      } else {
+        children.forEach((child) => traverseDeclaration(child, projectUrl))
+      }
+      mappings.push({
+        url: projectUrl,
         model: project,
         template: this.projectTemplate,
       })
     }
 
-    traverseProject(project, entryFileName)
+    traverseProject(project)
 
     return mappings
   }
