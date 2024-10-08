@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.3.0
+
+### Minor Changes
+
+- 3ed4f2b: Add support for custom markdown heading id syntax like `{#custom-id}` by using `markdownHeadingId` option.
+
 ## 0.2.1
 
 ### Patch Changes
