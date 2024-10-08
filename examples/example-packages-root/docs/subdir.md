@@ -1,6 +1,6 @@
 # subdir
 
-## fn3 <a id="fn3" href="#fn3">#</a>
+## fn3 {#fn3}
 
 ```ts
 function fn3(): string

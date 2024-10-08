@@ -2,7 +2,7 @@
 
 Comment for pkg1
 
-## fn1 <a id="fn1" href="#fn1">#</a>
+## fn1 {#fn1}
 
 ```ts
 function fn1(): string

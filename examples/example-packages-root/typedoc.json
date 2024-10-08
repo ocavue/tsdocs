@@ -4,5 +4,6 @@
   "name": "Example Packages Root",
   "plugin": ["typedoc-plugin-md"],
   "entryPointStrategy": "packages",
-  "githubPages": false
+  "githubPages": false,
+  "markdownHeadingId": true,
 }

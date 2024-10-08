@@ -18,7 +18,7 @@ export interface PluginOptions {
   fileExtension: string
 
   /**
-   * Preserve anchor casing when generating link to symbols.
+   * Use custom markdown heading id syntax like {#custom-id}.
    */
-  preserveAnchorCasing: boolean
+  markdownHeadingId: boolean
 }

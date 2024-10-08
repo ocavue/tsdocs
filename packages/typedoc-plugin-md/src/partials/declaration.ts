@@ -17,6 +17,8 @@ export function getDeclaration(
   model: DeclarationReflection,
   options: { headingLevel: m.HeadingLevel },
 ): mdast.RootContent[] {
+  const markdownHeadingId = ctx.options.getValue('markdownHeadingId')
+
   if (model.kind === ReflectionKind.Property) {
     return [
       m.html('<dt>'),
@@ -84,7 +86,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.Function) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
       ...getComment(ctx, model.comment),
       ...getFunction(ctx, model),
     ]
@@ -92,7 +97,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.TypeAlias) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
       }),
@@ -105,7 +113,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.Variable) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
       }),
@@ -115,7 +126,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.Interface) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
 
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
@@ -129,7 +143,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.Class) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
 
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
@@ -143,7 +160,10 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.Enum) {
     return [
-      m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+      m.heading(options.headingLevel, [
+        m.text(model.name),
+        ...m.anchor(model.anchor, { markdownHeadingId }),
+      ]),
 
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
@@ -156,7 +176,10 @@ export function getDeclaration(
   }
 
   return [
-    m.heading(options.headingLevel, [m.text(model.name), ...m.anchor(model)]),
+    m.heading(options.headingLevel, [
+      m.text(model.name),
+      ...m.anchor(model.anchor, { markdownHeadingId }),
+    ]),
     m.comment(
       `Declaration kind ${model.kind} is not implemented (name: ${model.name})`,
     ),

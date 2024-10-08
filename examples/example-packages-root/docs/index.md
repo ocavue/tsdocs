@@ -1,6 +1,6 @@
 # index
 
-## fn2 <a id="fn2" href="#fn2">#</a>
+## fn2 {#fn2}
 
 ```ts
 function fn2(): string
