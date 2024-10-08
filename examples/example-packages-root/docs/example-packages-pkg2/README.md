@@ -1,11 +1,9 @@
 # example-packages-pkg2
 
-## fn2 <a id="fn2" href="#fn2">#</a>
+## index <a id="index" href="#index">#</a>
 
-```ts
-function fn2(): string
-```
+<!-- Declaration kind 2 is not implemented (name: index) -->
 
-Comment for fn2
+## subdir <a id="subdir" href="#subdir">#</a>
 
-Link to another package:[fn1](../example-packages-pkg1/README.md#fn1)
+<!-- Declaration kind 2 is not implemented (name: subdir) -->
