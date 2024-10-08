@@ -33,6 +33,29 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2
 
+  examples/example-packages-pkg1: {}
+
+  examples/example-packages-pkg2:
+    dependencies:
+      example-packages-pkg1:
+        specifier: workspace:*
+        version: link:../example-packages-pkg1
+
+  examples/example-packages-root:
+    devDependencies:
+      example-packages-pkg1:
+        specifier: workspace:*
+        version: link:../example-packages-pkg1
+      example-packages-pkg2:
+        specifier: workspace:*
+        version: link:../example-packages-pkg2
+      typedoc:
+        specifier: ^0.26.8
+        version: 0.26.8(typescript@5.6.2)
+      typedoc-plugin-md:
+        specifier: workspace:*
+        version: link:../../packages/typedoc-plugin-md
+
   examples/simple-package:
     devDependencies:
       typedoc:
