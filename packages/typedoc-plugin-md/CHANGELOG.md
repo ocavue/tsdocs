@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.2.1
+
+### Patch Changes
+
+- cc42220: Preserve entry file name for packages when using `--entryPointStrategy packages`.
+
 ## 0.2.0
 
 ### Minor Changes
