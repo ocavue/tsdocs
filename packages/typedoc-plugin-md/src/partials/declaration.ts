@@ -219,7 +219,10 @@ function getDeclarationType(
     !type.declaration.children?.length
 
   const typeString = isSignature
-    ? renderMemberSignature(type.declaration.signatures![0], {hideName: true, arrowStyle: true})
+    ? renderMemberSignature(type.declaration.signatures![0], {
+        hideName: true,
+        arrowStyle: true,
+      })
     : renderType(type)
 
   const isSingleLine = !typeString.includes('\n')
