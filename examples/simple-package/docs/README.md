@@ -28,6 +28,76 @@ A simple enum.
 
 </dl>
 
+## SimpleClass <a id="simple-class" href="#simple-class">#</a>
+
+<dl>
+
+<dt>
+
+`constructor`
+
+</dt>
+
+<dd>
+
+```
+new SimpleClass(): SimpleClass
+```
+
+</dd>
+
+<dt>
+
+`simpleProperty`
+
+</dt>
+
+<dd>
+
+Comment for simpleProperty
+
+**Type**: `string`
+
+</dd>
+
+<dt>
+
+`get complexGetter(): { a: number; b?: string; c: number | (() => number); d: { fn: () => number } }`
+
+</dt>
+
+<dd>
+
+Comment for complexGetter
+
+</dd>
+
+<dt>
+
+`get simpleGetter(): string`
+
+</dt>
+
+<dd>
+
+Comment for simpleGetter
+
+</dd>
+
+<dt>
+
+`set simpleSetter(value: string)`
+
+</dt>
+
+<dd>
+
+Comment for simpleSetter
+
+</dd>
+
+</dl>
+
 ## SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
 
 A simple class.
@@ -42,8 +112,8 @@ A simple class.
 
 <dd>
 
-```ts
-new SimpleReader()
+```
+new SimpleReader(): SimpleReader
 ```
 
 </dd>
@@ -80,8 +150,8 @@ This class implements [Writer](README.md#writer).
 
 <dd>
 
-```ts
-new SimpleWriter<T>()
+```
+new SimpleWriter<T>(): SimpleWriter<T>
 ```
 
 </dd>
@@ -127,6 +197,20 @@ const read: () => string
 ## SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
 
 <dl>
+
+<dt>
+
+`fn`
+
+</dt>
+
+<dd>
+
+A function with a complex parameter.
+
+**Type**: `(options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
+
+</dd>
 
 <dt>
 
@@ -310,4 +394,16 @@ See also [Fn1](README.md#fn1)
 
 ```ts
 function fn2(): number
+```
+
+## functionWithFunctionParameter <a id="function-with-function-parameter" href="#function-with-function-parameter">#</a>
+
+```ts
+function functionWithFunctionParameter(fn: (num: number) => boolean): (num: number) => boolean
+```
+
+## functionWithUnionParameters <a id="function-with-union-parameters" href="#function-with-union-parameters">#</a>
+
+```ts
+function functionWithUnionParameters(a: string | number, b: number | ((num: number) => boolean)): string
 ```

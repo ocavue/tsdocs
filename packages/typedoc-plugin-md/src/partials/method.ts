@@ -4,7 +4,7 @@ import type { DeclarationReflection } from 'typedoc'
 import type { MarkdownThemeContext } from '../theme'
 import * as m from '../utils/mdast'
 
-import { formatSignatures } from './type'
+import { renderMemberSignature } from './type'
 
 export function getMethod(
   ctx: MarkdownThemeContext,
@@ -15,10 +15,15 @@ export function getMethod(
   }
   const methodName = model.name
 
-  return [
-    m.code(
-      { lang: 'ts' },
-      `const ${methodName}: ${formatSignatures(model.signatures)}`,
-    ),
-  ]
+  const overrides = model.signatures.map((signature) =>
+    renderMemberSignature(signature, { arrowStyle: true, hideName: true }),
+  )
+
+  const code = `const ${methodName}: ${
+    overrides.length === 1
+      ? overrides[0]
+      : '(' + overrides.map((override) => `(${override})`).join(' | ') + ')'
+  }`
+
+  return [m.code({ lang: 'ts' }, code)]
 }

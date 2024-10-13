@@ -4,7 +4,7 @@ import type { DeclarationReflection } from 'typedoc'
 import type { MarkdownThemeContext } from '../theme'
 import * as m from '../utils/mdast'
 
-import { formatParameters } from './type'
+import { renderMemberSignature } from './type'
 
 export function getConstructor(
   ctx: MarkdownThemeContext,
@@ -13,13 +13,14 @@ export function getConstructor(
   if (!model.signatures?.length) {
     return []
   }
-  const className = model.parent?.name
 
   return [
     m.code(
-      { lang: 'ts' },
+      { lang: '' },
       model.signatures
-        .map((s) => `new ${className}${formatParameters(s)}`)
+        .map((s) =>
+          renderMemberSignature(s, { hideName: false, arrowStyle: false }),
+        )
         .join('\n'),
     ),
   ]

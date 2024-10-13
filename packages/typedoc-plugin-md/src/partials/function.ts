@@ -5,7 +5,7 @@ import type { MarkdownThemeContext } from '../theme'
 import * as m from '../utils/mdast'
 
 import { getComment } from './comment'
-import { formatSignature } from './type'
+import { renderMemberSignature } from './type'
 
 export function getFunction(
   ctx: MarkdownThemeContext,
@@ -21,7 +21,10 @@ export function getFunction(
     result.push(
       m.code(
         { lang: 'ts' },
-        `function ${functionName}${formatSignature(signature, false)}`,
+        `function ${functionName}${renderMemberSignature(signature, {
+          hideName: true,
+          arrowStyle: false,
+        })}`,
       ),
       ...getComment(ctx, signature.comment),
     )
