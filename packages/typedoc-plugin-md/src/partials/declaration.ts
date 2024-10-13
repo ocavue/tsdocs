@@ -33,16 +33,60 @@ export function getDeclaration(
   }
 
   if (model.kind === ReflectionKind.Accessor) {
-    return [
-      m.html('<dt>'),
-      m.paragraph([m.inlineCode(model.name)]),
-      m.html('</dt>'),
-      m.html('<dd>'),
-      ...getCommentSummary(ctx, model.comment),
-      ...getDeclarationType(model, true),
-      ...getCommentBlockTags(ctx, model.comment, { headingLevel: undefined }),
-      m.html('</dd>'),
-    ]
+    const result: mdast.RootContent[] = []
+
+    const { getSignature, setSignature } = model
+
+    if (getSignature) {
+      result.push(
+        m.html('<dt>'),
+        m.paragraph([
+          m.inlineCode(
+            renderMemberSignature(getSignature, {
+              hideName: false,
+              arrowStyle: false,
+            }),
+          ),
+        ]),
+        m.html('</dt>'),
+        m.html('<dd>'),
+        ...getComment(ctx, getSignature.comment),
+        m.html('</dd>'),
+      )
+    }
+
+    if (setSignature) {
+      result.push(
+        m.html('<dt>'),
+        m.paragraph([
+          m.inlineCode(
+            renderMemberSignature(setSignature, {
+              hideName: false,
+              arrowStyle: false,
+            }),
+          ),
+        ]),
+        m.html('</dt>'),
+        m.html('<dd>'),
+        ...getComment(ctx, setSignature.comment),
+        m.html('</dd>'),
+      )
+    }
+
+    if (!getSignature && !setSignature) {
+      result.push(
+        m.html('<dt>'),
+        m.paragraph([m.inlineCode(model.name)]),
+        m.html('</dt>'),
+        m.html('<dd>'),
+        ...getCommentSummary(ctx, model.comment),
+        ...getDeclarationType(model, true),
+        ...getCommentBlockTags(ctx, model.comment, { headingLevel: undefined }),
+        m.html('</dd>'),
+      )
+    }
+
+    return result
   }
 
   if (model.kind === ReflectionKind.Method) {

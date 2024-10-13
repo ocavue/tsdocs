@@ -60,6 +60,8 @@ export function renderMemberSignature(
   },
 ): string {
   const parts: string[] = [
+    props.kind === ReflectionKind.GetSignature ? 'get ' : '',
+    props.kind === ReflectionKind.SetSignature ? 'set ' : '',
     !hideName
       ? props.name
       : props.kind === ReflectionKind.ConstructorSignature
@@ -69,7 +71,7 @@ export function renderMemberSignature(
     '(',
     (props.parameters ?? []).map(renderParameter).join(', '),
     ')',
-    props.type
+    props.type && props.kind !== ReflectionKind.SetSignature
       ? (arrowStyle ? ' => ' : ': ') + renderType(props.type, TypeContext.none)
       : '',
   ]

@@ -161,6 +161,18 @@ export class SimpleClass {
   }
 
   /**
+   * Comment for complexGetter
+   */
+  get complexGetter(): {
+    a: number
+    b?: string
+    c: number | (() => number)
+    d: { fn: () => number }
+  } {
+    throw new Error("Not implemented")
+  }
+
+  /**
    * Comment for simpleSetter
    */
   set simpleSetter(value: string) {

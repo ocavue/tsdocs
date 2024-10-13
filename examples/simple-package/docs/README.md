@@ -62,21 +62,37 @@ Comment for simpleProperty
 
 <dt>
 
-`simpleGetter`
+`get complexGetter(): { a: number; b?: string; c: number | (() => number); d: { fn: () => number } }`
 
 </dt>
 
 <dd>
+
+Comment for complexGetter
 
 </dd>
 
 <dt>
 
-`simpleSetter`
+`get simpleGetter(): string`
 
 </dt>
 
 <dd>
+
+Comment for simpleGetter
+
+</dd>
+
+<dt>
+
+`set simpleSetter(value: string)`
+
+</dt>
+
+<dd>
+
+Comment for simpleSetter
 
 </dd>
 
