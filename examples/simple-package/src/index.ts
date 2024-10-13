@@ -169,7 +169,7 @@ export class SimpleClass {
     c: number | (() => number)
     d: { fn: () => number }
   } {
-    throw new Error("Not implemented")
+    throw new Error('Not implemented')
   }
 
   /**
