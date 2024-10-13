@@ -1,87 +1,363 @@
-import type * as mdast from 'mdast'
-import type { SignatureReflection, SomeType } from 'typedoc'
+/**
+ * Based on https://github.com/TypeStrong/typedoc/blob/eb9c967277ba9b01a10b69424e70d09dec52e879/src/lib/output/themes/default/partials/type.tsx
+ */
 
-import * as m from '../utils/mdast'
+import {
+  type DeclarationReflection,
+  type ParameterReflection,
+  ReflectionKind,
+  type SignatureReflection,
+  type Type,
+  TypeContext,
+  type TypeKindMap,
+  type TypeParameterReflection,
+} from 'typedoc'
 
-export function getType(
-  type: SomeType | undefined,
-  preferSingleLine: boolean,
-): mdast.RootContent[] {
-  if (!type) {
-    return []
-  }
+import { stringify } from '../utils/stringify'
 
-  const typeString = formatSomeType(type)
+function renderTypeParametersSignature(
+  typeParameters: readonly TypeParameterReflection[] | undefined,
+): string {
+  if (!typeParameters || typeParameters.length === 0) return ''
 
-  const isSingleLine = !typeString.includes('\n')
+  return [
+    '<',
+    typeParameters
+      .map(
+        (item) =>
+          (item.flags.isConst ? 'const ' : '') +
+          (item.varianceModifier ? `${item.varianceModifier} ` : '') +
+          item.name +
+          (item.type
+            ? ` extends ${renderType(item.type, TypeContext.none)}`
+            : ''),
+      )
+      .join(', '),
+    '>',
+  ].join('')
+}
 
-  if (isSingleLine && preferSingleLine) {
-    return [
-      m.paragraph([
-        m.strong([m.text('Type')]),
-        m.text(': '),
-        m.inlineCode(typeString),
-      ]),
+function renderParameter(item: ParameterReflection): string {
+  const parts: string[] = [
+    item.flags.isRest ? '...' : '',
+    item.name,
+    item.flags.isOptional || item.defaultValue ? '?' : '',
+    ': ',
+    renderType(item.type),
+  ]
+  return parts.filter(Boolean).join('')
+}
+
+export function renderMemberSignature(
+  props: SignatureReflection,
+  {
+    hideName = false,
+    arrowStyle = false,
+  }: {
+    hideName?: boolean
+    arrowStyle?: boolean
+  } = {},
+): string {
+  const parts: string[] = [
+    !hideName
+      ? props.name
+      : props.kind === ReflectionKind.ConstructorSignature
+        ? (props.flags.isAbstract ? 'abstract ' : '') + 'new '
+        : '',
+    renderTypeParametersSignature(props.typeParameters),
+    '(',
+    (props.parameters ?? []).map(renderParameter).join(', '),
+    ')',
+    props.type
+      ? (arrowStyle ? ' => ' : ': ') + renderType(props.type, TypeContext.none)
+      : '',
+  ]
+
+  return parts.filter(Boolean).join('')
+}
+
+// The type helper accepts an optional needsParens parameter that is checked
+// if an inner type may result in invalid output without them. For example:
+// 1 | 2[] !== (1 | 2)[]
+// () => 1 | 2 !== (() => 1) | 2
+const typeRenderers: {
+  [K in keyof TypeKindMap]: (type: TypeKindMap[K]) => string
+} = {
+  array(type) {
+    return renderType(type.elementType, TypeContext.arrayElement) + '[]'
+  },
+  conditional(type) {
+    const parts: string[] = [
+      renderType(type.checkType, TypeContext.conditionalCheck),
+      'extends',
+      renderType(type.extendsType, TypeContext.conditionalExtends),
+      '?',
+      renderType(type.trueType, TypeContext.conditionalTrue),
+      ':',
+      renderType(type.falseType, TypeContext.conditionalFalse),
     ]
-  }
-  return [m.paragraph([m.strong([m.text('Type')])]), m.code(typeString)]
-}
-
-export function formatSomeType(type: SomeType): string {
-  if (type.type === 'reflection') {
-    const signatures = type.declaration.signatures
-    if (signatures?.length) {
-      return formatSignatures(signatures)
-    }
-  }
-
-  return type.toString()
-}
-
-export function formatParameters(signature: SignatureReflection): string {
-  const typeParametersString = signature.typeParameters
-    ? `<${signature.typeParameters.map((typeParameter) => typeParameter.name).join(', ')}>`
-    : ''
-
-  const paramStrings: string[] = []
-
-  for (const param of signature.parameters || []) {
-    paramStrings.push(
-      (param.flags.isRest ? '...' : '') +
-        param.name +
-        (param.flags.isOptional ? '?: ' : ': ') +
-        (param.type ? formatSomeType(param.type) : 'unknown'),
+    return parts.join(' ')
+  },
+  indexedAccess(type) {
+    const indexType: string = renderType(
+      type.indexType,
+      TypeContext.indexedIndex,
     )
+    const objectType: string = renderType(
+      type.objectType,
+      TypeContext.indexedObject,
+    )
+    return objectType + '[' + indexType + ']'
+  },
+  inferred(type) {
+    return (
+      'infer ' +
+      type.name +
+      (type.constraint
+        ? ' extends ' +
+          renderType(type.constraint, TypeContext.inferredConstraint)
+        : '')
+    )
+  },
+  intersection(type) {
+    return type.types
+      .map((item) => {
+        return renderType(item, TypeContext.intersectionElement)
+      })
+      .join(' & ')
+  },
+  intrinsic(type) {
+    return type.name
+  },
+  literal(type) {
+    return stringify(type.value)
+  },
+  mapped(type) {
+    const parts: string[] = ['{']
+
+    switch (type.readonlyModifier) {
+      case '+':
+        parts.push('readonly')
+        break
+      case '-':
+        parts.push('-readonly')
+        break
+    }
+
+    parts.push(
+      '[',
+      type.parameter,
+      ' in ',
+      renderType(type.parameterType, TypeContext.mappedParameter),
+    )
+
+    if (type.nameType) {
+      parts.push(' as ', renderType(type.nameType, TypeContext.mappedName))
+    }
+
+    parts.push(']')
+
+    switch (type.optionalModifier) {
+      case '+':
+        parts.push('?: ')
+        break
+      case '-':
+        parts.push('-?: ')
+        break
+      default:
+        parts.push(': ')
+    }
+
+    parts.push(renderType(type.templateType, TypeContext.mappedTemplate), '}')
+
+    return parts.join('')
+  },
+  namedTupleMember(type) {
+    return (
+      type.name +
+      (type.isOptional ? '?: ' : ': ') +
+      renderType(type.element, TypeContext.tupleElement)
+    )
+  },
+  optional(type) {
+    return renderType(type.elementType, TypeContext.optionalElement) + '?'
+  },
+  predicate(type) {
+    const parts: string[] = []
+
+    if (type.asserts) {
+      parts.push('asserts ')
+    }
+
+    parts.push(type.name)
+
+    if (type.targetType) {
+      parts.push(
+        ' is ',
+        renderType(type.targetType, TypeContext.predicateTarget),
+      )
+    }
+
+    return parts.join('')
+  },
+  query(type) {
+    return 'typeof ' + renderType(type.queryType, TypeContext.queryTypeTarget)
+  },
+  reference(type) {
+    const reflection = type.reflection
+
+    const name: string = reflection?.name || type.name
+
+    const parts: string[] = [name]
+
+    if (type.typeArguments?.length) {
+      const typeArguments = type.typeArguments
+        .map((item) => renderType(item, TypeContext.referenceTypeArgument))
+        .join(', ')
+      parts.push('<', typeArguments, '>')
+    }
+
+    return parts.join('')
+  },
+  reflection(type): string {
+    const members: string[] = []
+    const children: DeclarationReflection[] = type.declaration.children || []
+
+    for (const item of children) {
+      if (item.getSignature && item.setSignature) {
+        members.push(
+          item.name,
+          +': ' + renderType(item.getSignature.type, TypeContext.none),
+        )
+        continue
+      }
+
+      if (item.getSignature) {
+        members.push(
+          'get ' +
+            item.getSignature.name +
+            '(): ' +
+            renderType(item.getSignature.type, TypeContext.none),
+        )
+        continue
+      }
+
+      if (item.setSignature) {
+        members.push(
+          'set ' +
+            item.setSignature.name +
+            '(' +
+            (item.setSignature.parameters || [])
+              .map((item) => {
+                return (
+                  item.name + ': ' + renderType(item.type, TypeContext.none)
+                )
+              })
+              .join('') +
+            ')',
+        )
+        continue
+      }
+
+      members.push(
+        item.name +
+          (item.flags.isOptional ? '?: ' : ': ') +
+          renderType(item.type, TypeContext.none),
+      )
+    }
+
+    if (type.declaration.indexSignatures) {
+      for (const index of type.declaration.indexSignatures) {
+        members.push(
+          '[' +
+            index.parameters![0].name +
+            ']: ' +
+            renderType(index.type, TypeContext.none),
+        )
+      }
+    }
+
+    if (members.length === 0 && type.declaration.signatures?.length === 1) {
+      return renderMemberSignature(type.declaration.signatures[0], {
+        hideName: true,
+        arrowStyle: true,
+      })
+    }
+
+    for (const item of type.declaration.signatures || []) {
+      members.push(
+        renderMemberSignature(item, {
+          hideName: true,
+        }),
+      )
+    }
+
+    if (members.length > 0) {
+      return '{ ' + members.join('; ') + ' }'
+    }
+
+    return '{}'
+  },
+  rest(type) {
+    return '...' + renderType(type.elementType, TypeContext.restElement)
+  },
+  templateLiteral(type) {
+    return (
+      '`' +
+      (type.head ? type.head : '') +
+      type.tail
+        .map(
+          (item) =>
+            '${' +
+            renderType(item[0], TypeContext.templateLiteralElement) +
+            '}' +
+            (item[1] || ''),
+        )
+        .join('') +
+      '`'
+    )
+  },
+  tuple(type) {
+    return (
+      '[' +
+      type.elements
+        .map((item) => renderType(item, TypeContext.tupleElement))
+        .join(', ') +
+      ']'
+    )
+  },
+  typeOperator(type) {
+    return (
+      type.operator +
+      ' ' +
+      renderType(type.target, TypeContext.typeOperatorTarget)
+    )
+  },
+  union(type) {
+    return type.types
+      .map((item) => renderType(item, TypeContext.unionElement))
+      .join(' | ')
+  },
+  unknown(type) {
+    return type.name
+  },
+}
+
+export function renderType(
+  type: Type | undefined,
+  where: TypeContext = TypeContext.none,
+): string {
+  if (!type) {
+    return 'any'
   }
 
-  return `${typeParametersString}(${paramStrings.join(', ')})`
-}
+  const renderFn = typeRenderers[type.type]
 
-export function formatSignature(
-  signature: SignatureReflection,
-  arrow: boolean,
-): string {
-  const paramString = formatParameters(signature)
+  const rendered = renderFn(type as never)
 
-  const returnString = signature.type?.toString() || 'unknown'
-
-  return `${paramString}${arrow ? ' => ' : ': '}${returnString}`
-}
-
-function formatSignatureOverloads(
-  signatures: SignatureReflection[],
-  arrow: boolean,
-): string {
-  return signatures
-    .map((s) => formatSignature(s, arrow))
-    .map((text) => `(${text})`)
-    .join(' | ')
-}
-
-export function formatSignatures(signatures: SignatureReflection[]): string {
-  if (signatures.length === 1) {
-    return formatSignature(signatures[0], true)
+  if (type.needsParenthesis(where)) {
+    return '(<>' + rendered + '<>)'
   }
 
-  return formatSignatureOverloads(signatures, true)
+  return rendered
 }

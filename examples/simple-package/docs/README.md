@@ -42,8 +42,8 @@ A simple class.
 
 <dd>
 
-```ts
-new SimpleReader()
+```
+new SimpleReader(): SimpleReader
 ```
 
 </dd>
@@ -80,8 +80,8 @@ This class implements [Writer](README.md#writer).
 
 <dd>
 
-```ts
-new SimpleWriter<T>()
+```
+new SimpleWriter<T>(): SimpleWriter<T>
 ```
 
 </dd>
@@ -127,6 +127,20 @@ const read: () => string
 ## SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
 
 <dl>
+
+<dt>
+
+`fn`
+
+</dt>
+
+<dd>
+
+A function with a complex parameter.
+
+**Type**: `(options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
+
+</dd>
 
 <dt>
 

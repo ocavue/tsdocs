@@ -47,6 +47,22 @@ export interface SimpleInterface {
   method2<T>(value: T): void
 
   /**
+   * A function with a complex parameter.
+   */
+  fn: (options: {
+    a: number
+    b: Pick<
+      {
+        b1: string
+        b2: number
+      },
+      'b1'
+    >
+    c: () => Promise<void>
+    d: <T>(...args: T[]) => T extends string ? string : number
+  }) => number
+
+  /**
    * A simple property with a default tag.
    *
    * @default 123

@@ -10,7 +10,7 @@ import { getCommentSummary } from './comment-summary'
 import { getConstructor } from './constructor'
 import { getFunction } from './function'
 import { getMethod } from './method'
-import { formatSomeType, getType } from './type'
+import { renderType } from './type'
 
 export function getDeclaration(
   ctx: MarkdownThemeContext,
@@ -71,7 +71,7 @@ export function getDeclaration(
 
   if (model.kind === ReflectionKind.EnumMember) {
     const type = model.type
-    const typeText = type ? formatSomeType(type) : ''
+    const typeText = type ? renderType(type) : ''
     const nameWithType = typeText ? model.name + ' = ' + typeText : model.name
 
     return [
@@ -210,5 +210,22 @@ function getDeclarationType(
   const type =
     model.getSignature?.type || model.setSignature?.type || model.type
 
-  return getType(type, preferSingleLine)
+  if (!type) {
+    return []
+  }
+
+  const typeString = renderType(type)
+
+  const isSingleLine = !typeString.includes('\n')
+
+  if (isSingleLine && preferSingleLine) {
+    return [
+      m.paragraph([
+        m.strong([m.text('Type')]),
+        m.text(': '),
+        m.inlineCode(typeString),
+      ]),
+    ]
+  }
+  return [m.paragraph([m.strong([m.text('Type')])]), m.code(typeString)]
 }
