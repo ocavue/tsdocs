@@ -1,5 +1,5 @@
 ---
-'typedoc-plugin-md': minor
+'typedoc-plugin-md': patch
 ---
 
 Render nested types.
