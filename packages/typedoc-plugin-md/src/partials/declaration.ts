@@ -10,7 +10,7 @@ import { getCommentSummary } from './comment-summary'
 import { getConstructor } from './constructor'
 import { getFunction } from './function'
 import { getMethod } from './method'
-import { renderType } from './type'
+import { renderMemberSignature, renderType } from './type'
 
 export function getDeclaration(
   ctx: MarkdownThemeContext,
@@ -207,14 +207,20 @@ function getDeclarationType(
   model: DeclarationReflection,
   preferSingleLine: boolean,
 ): mdast.RootContent[] {
-  const type =
-    model.getSignature?.type || model.setSignature?.type || model.type
+  const type = model.type
 
   if (!type) {
     return []
   }
 
-  const typeString = renderType(type)
+  const isSignature =
+    type.type === 'reflection' &&
+    type.declaration.signatures?.length === 1 &&
+    !type.declaration.children?.length
+
+  const typeString = isSignature
+    ? renderMemberSignature(type.declaration.signatures![0], {hideName: true, arrowStyle: true})
+    : renderType(type)
 
   const isSingleLine = !typeString.includes('\n')
 

@@ -131,3 +131,10 @@ export enum SimpleEnum {
 export type SimpleType = string | number
 
 export * from './anchor-conflict'
+
+export function functionWithUnionParameters(
+  a: number | string,
+  b: number | ((num: number) => boolean),
+) {
+  return a + String(b)
+}

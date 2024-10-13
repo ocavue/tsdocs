@@ -278,10 +278,14 @@ const typeRenderers: {
     }
 
     if (members.length === 0 && type.declaration.signatures?.length === 1) {
-      return renderMemberSignature(type.declaration.signatures[0], {
-        hideName: true,
-        arrowStyle: true,
-      })
+      return (
+        '(' +
+        renderMemberSignature(type.declaration.signatures[0], {
+          hideName: true,
+          arrowStyle: true,
+        }) +
+        ')'
+      )
     }
 
     for (const item of type.declaration.signatures || []) {
@@ -356,7 +360,7 @@ export function renderType(
   const rendered = renderFn(type as never)
 
   if (type.needsParenthesis(where)) {
-    return '(<>' + rendered + '<>)'
+    return '(' + rendered + ')'
   }
 
   return rendered
