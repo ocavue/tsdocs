@@ -136,5 +136,9 @@ export function functionWithUnionParameters(
   a: number | string,
   b: number | ((num: number) => boolean),
 ) {
-  return a + String(b)
+  return String(a) + String(b)
+}
+
+export function functionWithFunctionParameter(fn: (num: number) => boolean) {
+  return fn
 }

@@ -138,7 +138,7 @@ const read: () => string
 
 A function with a complex parameter.
 
-**Type**: `(options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: (() => Promise<void>); d: (<T>(...args: T[]) => T extends string ? string : number) }) => number`
+**Type**: `(options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
 
 </dd>
 
@@ -324,6 +324,12 @@ See also [Fn1](README.md#fn1)
 
 ```ts
 function fn2(): number
+```
+
+## functionWithFunctionParameter <a id="function-with-function-parameter" href="#function-with-function-parameter">#</a>
+
+```ts
+function functionWithFunctionParameter(fn: (num: number) => boolean): (num: number) => boolean
 ```
 
 ## functionWithUnionParameters <a id="function-with-union-parameters" href="#function-with-union-parameters">#</a>

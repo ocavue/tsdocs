@@ -6,6 +6,7 @@ import {
   type DeclarationReflection,
   type ParameterReflection,
   ReflectionKind,
+  ReflectionType,
   type SignatureReflection,
   type Type,
   TypeContext,
@@ -51,12 +52,12 @@ function renderParameter(item: ParameterReflection): string {
 export function renderMemberSignature(
   props: SignatureReflection,
   {
-    hideName = false,
-    arrowStyle = false,
+    hideName,
+    arrowStyle,
   }: {
-    hideName?: boolean
-    arrowStyle?: boolean
-  } = {},
+    hideName: boolean
+    arrowStyle: boolean
+  },
 ): string {
   const parts: string[] = [
     !hideName
@@ -278,20 +279,17 @@ const typeRenderers: {
     }
 
     if (members.length === 0 && type.declaration.signatures?.length === 1) {
-      return (
-        '(' +
-        renderMemberSignature(type.declaration.signatures[0], {
-          hideName: true,
-          arrowStyle: true,
-        }) +
-        ')'
-      )
+      return renderMemberSignature(type.declaration.signatures[0], {
+        hideName: true,
+        arrowStyle: true,
+      })
     }
 
     for (const item of type.declaration.signatures || []) {
       members.push(
         renderMemberSignature(item, {
           hideName: true,
+          arrowStyle: false,
         }),
       )
     }
@@ -359,9 +357,19 @@ export function renderType(
 
   const rendered = renderFn(type as never)
 
-  if (type.needsParenthesis(where)) {
+  if (needsParenthesis(type, where)) {
     return '(' + rendered + ')'
   }
 
   return rendered
+}
+
+function needsParenthesis(type: Type, where: TypeContext): boolean {
+  if (type instanceof ReflectionType) {
+    if (where === TypeContext.unionElement) {
+      return true
+    }
+  }
+
+  return type.needsParenthesis(where)
 }
