@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.3.1
+
+### Patch Changes
+
+- 1e3023a: Render nested types.
+
 ## 0.3.0
 
 ### Minor Changes
