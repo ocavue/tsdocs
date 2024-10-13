@@ -6,7 +6,7 @@
     "docs": "typedoc --plugin typedoc-plugin-md --out ./docs ./src/index.ts"
   },
   "devDependencies": {
-    "typedoc": "^0.26.8",
+    "typedoc": "^0.26.9",
     "typedoc-plugin-md": "workspace:*"
   }
 }
