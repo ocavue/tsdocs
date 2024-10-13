@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@9.12.1",
   "scripts": {
     "build": "turbo build",
     "build:package": "turbo build --filter='./packages/*' --concurrency=1",
@@ -18,11 +18,11 @@
   "dependencies": {
     "@changesets/cli": "^2.27.9",
     "@manypkg/cli": "^0.21.4",
-    "@ocavue/eslint-config": "^2.8.1",
+    "@ocavue/eslint-config": "^2.10.1",
     "eslint": "^9.12.0",
     "pkg-pr-new": "^0.0.29",
     "prettier": "^3.3.3",
     "turbo": "^2.1.3",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   }
 }
