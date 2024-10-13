@@ -142,3 +142,28 @@ export function functionWithUnionParameters(
 export function functionWithFunctionParameter(fn: (num: number) => boolean) {
   return fn
 }
+
+export class SimpleClass {
+  /**
+   * Comment for simpleProperty
+   */
+  simpleProperty: string
+
+  constructor() {
+    this.simpleProperty = ''
+  }
+
+  /**
+   * Comment for simpleGetter
+   */
+  get simpleGetter(): string {
+    return this.simpleProperty
+  }
+
+  /**
+   * Comment for simpleSetter
+   */
+  set simpleSetter(value: string) {
+    this.simpleProperty = value
+  }
+}

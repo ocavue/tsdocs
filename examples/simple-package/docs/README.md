@@ -28,6 +28,60 @@ A simple enum.
 
 </dl>
 
+## SimpleClass <a id="simple-class" href="#simple-class">#</a>
+
+<dl>
+
+<dt>
+
+`constructor`
+
+</dt>
+
+<dd>
+
+```
+new SimpleClass(): SimpleClass
+```
+
+</dd>
+
+<dt>
+
+`simpleProperty`
+
+</dt>
+
+<dd>
+
+Comment for simpleProperty
+
+**Type**: `string`
+
+</dd>
+
+<dt>
+
+`simpleGetter`
+
+</dt>
+
+<dd>
+
+</dd>
+
+<dt>
+
+`simpleSetter`
+
+</dt>
+
+<dd>
+
+</dd>
+
+</dl>
+
 ## SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
 
 A simple class.
