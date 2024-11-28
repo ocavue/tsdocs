@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.4.1
+
+### Patch Changes
+
+- f799d07: Update peer dependency requirement.
+
 ## 0.4.0
 
 ### Minor Changes
