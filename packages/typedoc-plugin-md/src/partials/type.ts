@@ -62,11 +62,10 @@ export function renderMemberSignature(
   const parts: string[] = [
     props.kind === ReflectionKind.GetSignature ? 'get ' : '',
     props.kind === ReflectionKind.SetSignature ? 'set ' : '',
-    !hideName
-      ? props.name
-      : props.kind === ReflectionKind.ConstructorSignature
-        ? (props.flags.isAbstract ? 'abstract ' : '') + 'new '
-        : '',
+    props.kind === ReflectionKind.ConstructorSignature
+      ? (props.flags.isAbstract ? 'abstract ' : '') + 'new '
+      : '',
+    hideName ? '' : props.name,
     renderTypeParametersSignature(props.typeParameters),
     '(',
     (props.parameters ?? []).map(renderParameter).join(', '),

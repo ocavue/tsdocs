@@ -56,11 +56,12 @@ function getCommentDisplayPartMarkdown(
     case 'relative-link':
       switch (typeof part.target) {
         case 'number': {
-          const reflection = ctx.page.project.files.resolve(part.target)
+          const project = ctx.page.project
+          const reflection = project.files.resolve(part.target, project)
           if (typeof reflection === 'object' && reflection.url) {
             return stringifyPhrasingContent(m.autolink(reflection.url))
           }
-          const fileName = ctx.page.project.files.getName(part.target)
+          const fileName = project.files.getName(part.target)
           throw new Error(`Linking to file ${fileName} is not implemented`)
         }
         default:
