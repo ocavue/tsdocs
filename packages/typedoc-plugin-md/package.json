@@ -47,7 +47,7 @@
     "unified": "^11.0.5"
   },
   "peerDependencies": {
-    "typedoc": "^0.26.7"
+    "typedoc": "^0.27.1"
   },
   "devDependencies": {
     "@types/mdast": "^4.0.4",
