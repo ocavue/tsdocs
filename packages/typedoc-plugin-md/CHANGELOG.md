@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.4.0
+
+### Minor Changes
+
+- f6cb809: Update `typedoc` to v0.27.
+
 ## 0.3.1
 
 ### Patch Changes
