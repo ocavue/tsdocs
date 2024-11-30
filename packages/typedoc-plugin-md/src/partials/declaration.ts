@@ -22,11 +22,10 @@ export function getDeclaration(
   if (model.kind === ReflectionKind.Property) {
     return [
       m.html('<dt>'),
-      m.paragraph([m.inlineCode(model.name)]),
+      ...getPropertyType(model),
       m.html('</dt>'),
       m.html('<dd>'),
       ...getCommentSummary(ctx, model.comment),
-      ...getDeclarationType(model, true),
       ...getCommentBlockTags(ctx, model.comment, { headingLevel: undefined }),
       m.html('</dd>'),
     ]
@@ -245,6 +244,35 @@ function getDeclarationChildren(
   )
 
   return [m.html('<dl>'), ...content, m.html('</dl>')]
+}
+
+function getPropertyType(model: DeclarationReflection): mdast.RootContent[] {
+  let typeString = model.name
+
+  const type = model.type
+
+  if (model.flags.isOptional) {
+    typeString += '?: '
+  } else {
+    typeString += ': '
+  }
+
+  if (!type) {
+    typeString += 'unknown'
+  } else {
+    const isSignature =
+      type.type === 'reflection' &&
+      type.declaration.signatures?.length === 1 &&
+      !type.declaration.children?.length
+    typeString += isSignature
+      ? renderMemberSignature(type.declaration.signatures![0], {
+          hideName: true,
+          arrowStyle: true,
+        })
+      : renderType(type)
+  }
+
+  return [m.paragraph([m.inlineCode(typeString)])]
 }
 
 function getDeclarationType(

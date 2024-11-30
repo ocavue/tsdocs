@@ -42,7 +42,7 @@ export interface SimpleInterface {
   method(): void
 
   /**
-   * A simple method with a type parameter.
+   * A method with a type parameter.
    */
   method2<T>(value: T): void
 

@@ -48,15 +48,13 @@ new SimpleClass(): SimpleClass
 
 <dt>
 
-`simpleProperty`
+`simpleProperty: string`
 
 </dt>
 
 <dd>
 
 Comment for simpleProperty
-
-**Type**: `string`
 
 </dd>
 
@@ -200,7 +198,7 @@ const read: () => string
 
 <dt>
 
-`fn`
+`fn: (options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
 
 </dt>
 
@@ -208,13 +206,11 @@ const read: () => string
 
 A function with a complex parameter.
 
-**Type**: `(options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
-
 </dd>
 
 <dt>
 
-`property`
+`property: string`
 
 </dt>
 
@@ -222,13 +218,11 @@ A function with a complex parameter.
 
 A simple property.
 
-**Type**: `string`
-
 </dd>
 
 <dt>
 
-`withDefault`
+`withDefault?: number`
 
 </dt>
 
@@ -236,23 +230,19 @@ A simple property.
 
 A simple property with a default tag.
 
-**Type**: `number`
-
 **Default**: `123`
 
 </dd>
 
 <dt>
 
-`withExample`
+`withExample?: number`
 
 </dt>
 
 <dd>
 
 A simple method with an example tag.
-
-**Type**: `number`
 
 **Example**
 

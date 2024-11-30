@@ -8,13 +8,11 @@
 
 <dt>
 
-`fn`
+`fn: () => number`
 
 </dt>
 
 <dd>
-
-**Type**: `() => number`
 
 </dd>
 
