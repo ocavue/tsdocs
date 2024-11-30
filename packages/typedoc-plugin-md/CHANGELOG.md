@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.4.2
+
+### Patch Changes
+
+- 49a0baf: Fix property optional mark.
+
 ## 0.4.1
 
 ### Patch Changes
