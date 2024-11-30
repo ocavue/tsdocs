@@ -252,10 +252,9 @@ function getPropertyType(model: DeclarationReflection): mdast.RootContent[] {
   const type = model.type
 
   if (model.flags.isOptional) {
-    typeString += '?: ' 
+    typeString += '?: '
   } else {
-    typeString += ': ' 
-
+    typeString += ': '
   }
 
   if (!type) {
