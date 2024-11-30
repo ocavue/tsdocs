@@ -129,7 +129,7 @@ const typeRenderers: {
       .join(' & ')
   },
   intrinsic(type) {
-    return type.name
+    return type.stringify('none')
   },
   literal(type) {
     return stringify(type.value)
