@@ -2,4 +2,4 @@
 'typedoc-plugin-md': patch
 ---
 
-Generate comment for methods.
+Generate comments for methods.
