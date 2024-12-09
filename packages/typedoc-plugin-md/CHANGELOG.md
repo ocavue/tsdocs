@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.4.3
+
+### Patch Changes
+
+- 2bcbd39: Generate comments for methods.
+
 ## 0.4.2
 
 ### Patch Changes
