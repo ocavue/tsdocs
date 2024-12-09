@@ -15,8 +15,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.0
       '@ocavue/eslint-config':
-        specifier: ^2.10.5
-        version: 2.10.5(@typescript-eslint/parser@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)
+        specifier: ^2.11.2
+        version: 2.11.2(@typescript-eslint/parser@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)
       eslint:
         specifier: ^9.16.0
         version: 9.16.0
@@ -24,8 +24,8 @@ importers:
         specifier: ^0.0.35
         version: 0.0.35
       prettier:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.2
+        version: 3.4.2
       turbo:
         specifier: ^2.3.3
         version: 2.3.3
@@ -50,8 +50,8 @@ importers:
         specifier: workspace:*
         version: link:../example-packages-pkg2
       typedoc:
-        specifier: ^0.27.2
-        version: 0.27.2(typescript@5.7.2)
+        specifier: ^0.27.4
+        version: 0.27.4(typescript@5.7.2)
       typedoc-plugin-md:
         specifier: workspace:*
         version: link:../../packages/typedoc-plugin-md
@@ -59,8 +59,8 @@ importers:
   examples/simple-package:
     devDependencies:
       typedoc:
-        specifier: ^0.27.2
-        version: 0.27.2(typescript@5.7.2)
+        specifier: ^0.27.4
+        version: 0.27.4(typescript@5.7.2)
       typedoc-plugin-md:
         specifier: workspace:*
         version: link:../../packages/typedoc-plugin-md
@@ -68,8 +68,8 @@ importers:
   examples/with-subpaths:
     devDependencies:
       typedoc:
-        specifier: ^0.27.2
-        version: 0.27.2(typescript@5.7.2)
+        specifier: ^0.27.4
+        version: 0.27.4(typescript@5.7.2)
       typedoc-plugin-md:
         specifier: workspace:*
         version: link:../../packages/typedoc-plugin-md
@@ -102,8 +102,8 @@ importers:
         specifier: ^8.3.5
         version: 8.3.5(typescript@5.7.2)(yaml@2.6.1)
       typedoc:
-        specifier: ^0.27.2
-        version: 0.27.2(typescript@5.7.2)
+        specifier: ^0.27.4
+        version: 0.27.4(typescript@5.7.2)
 
 packages:
 
@@ -458,8 +458,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@ocavue/eslint-config@2.10.5':
-    resolution: {integrity: sha512-1arnkUGgH3CK+ds1Z1rKazzZfrFwEUz2LEKW+Jrg1NoLtmU3I9ogsOLUHA0WMPjSehoJzrjJ+AEL21dXfjkItQ==}
+  '@ocavue/eslint-config@2.11.2':
+    resolution: {integrity: sha512-6BJdBBoot24PtL9dnVhR6jCii43sPT8ExtP8BUV8JhzNHI5zD6NipFu3r/38/2acdHPwSTlBjvbn5olTXnBxyQ==}
 
   '@octokit/action@6.1.0':
     resolution: {integrity: sha512-lo+nHx8kAV86bxvOVOI3vFjX3gXPd/L7guAUbvs3pUvnR2KC+R7yjBkA1uACt4gYhs4LcWP3AXSGQzsbeN2XXw==}
@@ -1195,14 +1195,14 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-unicorn@56.0.0:
-    resolution: {integrity: sha512-aXpddVz/PQMmd69uxO98PA4iidiVNvA0xOtbpUoz1WhBd4RxOQQYqN618v68drY0hmy5uU2jy1bheKEVWBjlPw==}
+  eslint-plugin-unicorn@56.0.1:
+    resolution: {integrity: sha512-FwVV0Uwf8XPfVnKSGpMg7NtlZh0G0gBarCaFcMUOoqPxXryxdYxTRRv4kH6B9TFCVIrjRXG+emcxIk2ayZilog==}
     engines: {node: '>=18.18'}
     peerDependencies:
       eslint: '>=8.56.0'
 
-  eslint-plugin-vue@9.31.0:
-    resolution: {integrity: sha512-aYMUCgivhz1o4tLkRHj5oq9YgYPM4/EJc0M7TAKRLCUA5OYxRLAhYEVD2nLtTwLyixEFI+/QXSvKU9ESZFgqjQ==}
+  eslint-plugin-vue@9.32.0:
+    resolution: {integrity: sha512-b/Y05HYmnB/32wqVcjxjHZzNpwxj1onBOvqW89W+V+XNG1dRuaFbNd3vT9CLbr2LXjEoq+3vn8DanWf7XU22Ug==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2085,8 +2085,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.4.1:
-    resolution: {integrity: sha512-G+YdqtITVZmOJje6QkXQWzl3fSfMxFwm1tjTyo9exhkmWSqC4Yhd1+lug++IlR2mvRVAxEDDWYkQdeSztajqgg==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2506,8 +2506,8 @@ packages:
     resolution: {integrity: sha512-/OxDN6OtAk5KBpGb28T+HZc2M+ADtvRxXrKKbUwtsLgdoxgX13hyy7ek6bFRl5+aBs2yZzB0c4CnQfAtVypW/g==}
     engines: {node: '>= 0.4'}
 
-  typedoc@0.27.2:
-    resolution: {integrity: sha512-C2ima5TZJHU3ecnRIz50lKd1BsYck5LhYQIy7MRPmjuSEJreUEAt+uAVcZgY7wZsSORzEI7xW8miZIdxv/cbmw==}
+  typedoc@0.27.4:
+    resolution: {integrity: sha512-wXPQs1AYC2Crk+1XFpNuutLIkNWleokZf1UNf/X8w9KsMnirkvT+LzxTXDvfF6ug3TSLf3Xu5ZXRKGfoXPX7IA==}
     engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
@@ -3064,7 +3064,7 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@ocavue/eslint-config@2.10.5(@typescript-eslint/parser@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)':
+  '@ocavue/eslint-config@2.11.2(@typescript-eslint/parser@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)':
     dependencies:
       '@eslint-types/unicorn': 52.0.0
       '@eslint/js': 9.16.0
@@ -3078,8 +3078,8 @@ snapshots:
       eslint-plugin-no-only-tests: 3.3.0
       eslint-plugin-react: 7.37.2(eslint@9.16.0)
       eslint-plugin-react-hooks: 5.0.0(eslint@9.16.0)
-      eslint-plugin-unicorn: 56.0.0(eslint@9.16.0)
-      eslint-plugin-vue: 9.31.0(eslint@9.16.0)
+      eslint-plugin-unicorn: 56.0.1(eslint@9.16.0)
+      eslint-plugin-vue: 9.32.0(eslint@9.16.0)
       jsonc-eslint-parser: 2.4.0
       typescript-eslint: 8.16.0(eslint@9.16.0)(typescript@5.7.2)
     transitivePeerDependencies:
@@ -3923,7 +3923,7 @@ snapshots:
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-unicorn@56.0.0(eslint@9.16.0):
+  eslint-plugin-unicorn@56.0.1(eslint@9.16.0):
     dependencies:
       '@babel/helper-validator-identifier': 7.24.7
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.16.0)
@@ -3943,7 +3943,7 @@ snapshots:
       semver: 7.6.3
       strip-indent: 3.0.0
 
-  eslint-plugin-vue@9.31.0(eslint@9.16.0):
+  eslint-plugin-vue@9.32.0(eslint@9.16.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.16.0)
       eslint: 9.16.0
@@ -4987,7 +4987,7 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  prettier@3.4.1: {}
+  prettier@3.4.2: {}
 
   prop-types@15.8.1:
     dependencies:
@@ -5467,7 +5467,7 @@ snapshots:
       is-typed-array: 1.1.13
       possible-typed-array-names: 1.0.0
 
-  typedoc@0.27.2(typescript@5.7.2):
+  typedoc@0.27.4(typescript@5.7.2):
     dependencies:
       '@gerrit0/mini-shiki': 1.24.1
       lunr: 2.3.9
