@@ -53,6 +53,6 @@
     "@types/mdast": "^4.0.4",
     "@types/node": "18.19.67",
     "tsup": "^8.3.5",
-    "typedoc": "^0.27.2"
+    "typedoc": "^0.27.4"
   }
 }
