@@ -94,7 +94,12 @@ export function getDeclaration(
       m.paragraph([m.inlineCode(model.name)]),
       m.html('</dt>'),
       m.html('<dd>'),
-      ...getComment(ctx, model.comment, { headingLevel: undefined }),
+      ...getComment(
+        ctx,
+        // TODO: handle multiple signatures
+        model.signatures?.[0].comment,
+        { headingLevel: undefined },
+      ),
       ...getMethod(ctx, model),
       m.html('</dd>'),
     ]
