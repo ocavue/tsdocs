@@ -124,6 +124,8 @@ new SimpleReader(): SimpleReader
 
 <dd>
 
+Reads a value from the reader.
+
 ```ts
 const read: () => string
 ```
@@ -162,6 +164,8 @@ new SimpleWriter<T>(): SimpleWriter<T>
 
 <dd>
 
+Writes a value to the writer.
+
 ```ts
 const write: (value: T) => void
 ```
@@ -183,6 +187,8 @@ A simple interface.
 </dt>
 
 <dd>
+
+Reads a value.
 
 ```ts
 const read: () => string
@@ -270,6 +276,8 @@ const c = a + b
 
 <dd>
 
+A simple method.
+
 ```ts
 const method: () => void
 ```
@@ -283,6 +291,8 @@ const method: () => void
 </dt>
 
 <dd>
+
+A method with a type parameter.
 
 ```ts
 const method2: <T>(value: T) => void
@@ -305,6 +315,8 @@ An interface with a generic type parameter.
 </dt>
 
 <dd>
+
+Writes a value.
 
 ```ts
 const write: (value: T) => void
