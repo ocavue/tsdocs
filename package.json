@@ -16,11 +16,11 @@
     "ci:publish": "pnpm run build:package && pnpm publish --access public -r --no-git-checks --tag latest"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.10",
+    "@changesets/cli": "^2.27.11",
     "@manypkg/cli": "^0.23.0",
     "@ocavue/eslint-config": "^2.11.2",
     "eslint": "^9.16.0",
-    "pkg-pr-new": "^0.0.35",
+    "pkg-pr-new": "^0.0.39",
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "^5.7.2"
