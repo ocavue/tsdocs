@@ -1,6 +1,22 @@
 # simple-package
 
-## SimpleEnum <a id="simple-enum" href="#simple-enum">#</a>
+A simple package.
+
+## Installation
+
+```bash
+npm install simple-package
+```
+
+## Usage
+
+```ts
+import { variable } from 'simple-package'
+```
+
+## API Reference
+
+### SimpleEnum <a id="simple-enum" href="#simple-enum">#</a>
 
 A simple enum.
 
@@ -28,7 +44,7 @@ A simple enum.
 
 </dl>
 
-## SimpleClass <a id="simple-class" href="#simple-class">#</a>
+### SimpleClass <a id="simple-class" href="#simple-class">#</a>
 
 <dl>
 
@@ -96,7 +112,7 @@ Comment for simpleSetter
 
 </dl>
 
-## SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
+### SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
 
 A simple class.
 
@@ -134,7 +150,7 @@ const read: () => string
 
 </dl>
 
-## SimpleWriter <a id="simple-writer" href="#simple-writer">#</a>
+### SimpleWriter <a id="simple-writer" href="#simple-writer">#</a>
 
 A simple class with a type parameter.
 
@@ -174,7 +190,7 @@ const write: (value: T) => void
 
 </dl>
 
-## Reader <a id="reader" href="#reader">#</a>
+### Reader <a id="reader" href="#reader">#</a>
 
 A simple interface.
 
@@ -198,7 +214,7 @@ const read: () => string
 
 </dl>
 
-## SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
+### SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
 
 <dl>
 
@@ -302,7 +318,7 @@ const method2: <T>(value: T) => void
 
 </dl>
 
-## Writer <a id="writer" href="#writer">#</a>
+### Writer <a id="writer" href="#writer">#</a>
 
 An interface with a generic type parameter.
 
@@ -326,29 +342,29 @@ const write: (value: T) => void
 
 </dl>
 
-## Fn1 <a id="fn1" href="#fn1">#</a>
+### Fn1 <a id="fn1" href="#fn1">#</a>
 
 Implemented by [fn1](README.md#fn1-1), [fn1\_1](README.md#fn1-1-1), [fn1\_1\_1](README.md#fn1-1-1-1) and [fn\_x](README.md#fn-x)
 
 **Type**: `() => number`
 
-## Fn2 <a id="fn2" href="#fn2">#</a>
+### Fn2 <a id="fn2" href="#fn2">#</a>
 
 **Type**: `() => number`
 
-## SimpleType <a id="simple-type" href="#simple-type">#</a>
+### SimpleType <a id="simple-type" href="#simple-type">#</a>
 
 A simple type.
 
 **Type**: `string | number`
 
-## variable <a id="variable" href="#variable">#</a>
+### variable <a id="variable" href="#variable">#</a>
 
 A simple variable.
 
 **Type**: `1`
 
-## add <a id="add" href="#add">#</a>
+### add <a id="add" href="#add">#</a>
 
 ```ts
 function add(a: number, b: number): number
@@ -356,13 +372,13 @@ function add(a: number, b: number): number
 
 A simple function.
 
-## fn\_x <a id="fn-x" href="#fn-x">#</a>
+### fn\_x <a id="fn-x" href="#fn-x">#</a>
 
 ```ts
 function fn_x(): number
 ```
 
-## fn1 <a id="fn1-1" href="#fn1-1">#</a>
+### fn1 <a id="fn1-1" href="#fn1-1">#</a>
 
 ```ts
 function fn1(): number
@@ -370,13 +386,13 @@ function fn1(): number
 
 See also [Fn1](README.md#fn1)
 
-## fn1\_1 <a id="fn1-1-1" href="#fn1-1-1">#</a>
+### fn1\_1 <a id="fn1-1-1" href="#fn1-1-1">#</a>
 
 ```ts
 function fn1_1(): number
 ```
 
-## fn1\_1\_1 <a id="fn1-1-1-1" href="#fn1-1-1-1">#</a>
+### fn1\_1\_1 <a id="fn1-1-1-1" href="#fn1-1-1-1">#</a>
 
 ```ts
 function fn1_1_1(): number
@@ -384,7 +400,7 @@ function fn1_1_1(): number
 
 See also [Fn1](README.md#fn1)
 
-## fn1\_2 <a id="fn1-2" href="#fn1-2">#</a>
+### fn1\_2 <a id="fn1-2" href="#fn1-2">#</a>
 
 ```ts
 function fn1_2(): number
@@ -392,19 +408,19 @@ function fn1_2(): number
 
 See also [Fn1](README.md#fn1)
 
-## fn2 <a id="fn2-1" href="#fn2-1">#</a>
+### fn2 <a id="fn2-1" href="#fn2-1">#</a>
 
 ```ts
 function fn2(): number
 ```
 
-## functionWithFunctionParameter <a id="function-with-function-parameter" href="#function-with-function-parameter">#</a>
+### functionWithFunctionParameter <a id="function-with-function-parameter" href="#function-with-function-parameter">#</a>
 
 ```ts
 function functionWithFunctionParameter(fn: (num: number) => boolean): (num: number) => boolean
 ```
 
-## functionWithUnionParameters <a id="function-with-union-parameters" href="#function-with-union-parameters">#</a>
+### functionWithUnionParameters <a id="function-with-union-parameters" href="#function-with-union-parameters">#</a>
 
 ```ts
 function functionWithUnionParameters(a: string | number, b: number | ((num: number) => boolean)): string

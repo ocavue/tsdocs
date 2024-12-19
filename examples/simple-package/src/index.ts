@@ -1,18 +1,18 @@
 /**
- * A simple package. 
- * 
+ * A simple package.
+ *
  * ## Installation
- * 
+ *
  * ```bash
  * npm install simple-package
  * ```
- * 
+ *
  * ## Usage
- * 
+ *
  * ```ts
  * import { variable } from 'simple-package'
  * ```
- * 
+ *
  * @packageDocumentation
  */
 
