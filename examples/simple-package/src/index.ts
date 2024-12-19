@@ -1,4 +1,22 @@
 /**
+ * A simple package.
+ *
+ * ## Installation
+ *
+ * ```bash
+ * npm install simple-package
+ * ```
+ *
+ * ## Usage
+ *
+ * ```ts
+ * import { variable } from 'simple-package'
+ * ```
+ *
+ * @packageDocumentation
+ */
+
+/**
  * A simple variable.
  */
 export const variable = 1
