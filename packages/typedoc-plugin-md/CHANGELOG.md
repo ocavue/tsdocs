@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.5.0
+
+### Minor Changes
+
+- f8113f8: Automatically adjust heading level based on the presence of heading in the `@packageDocumentation` and `@module` comments.
+
 ## 0.4.3
 
 ### Patch Changes
