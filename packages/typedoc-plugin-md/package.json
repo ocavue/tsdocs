@@ -53,7 +53,7 @@
   "devDependencies": {
     "@types/mdast": "^4.0.4",
     "@types/node": "18.19.67",
-    "tsup": "^8.3.5",
-    "typedoc": "^0.27.4"
+    "tsup": "^8.3.6",
+    "typedoc": "^0.27.7"
   }
 }
