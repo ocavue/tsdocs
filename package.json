@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.5",
   "scripts": {
     "build": "turbo build",
     "build:package": "turbo build --filter='./packages/*' --concurrency=1",
@@ -16,13 +16,13 @@
     "ci:publish": "pnpm run build:package && pnpm publish --access public -r --no-git-checks --tag latest"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.10",
+    "@changesets/cli": "^2.27.12",
     "@manypkg/cli": "^0.23.0",
-    "@ocavue/eslint-config": "^2.11.2",
-    "eslint": "^9.16.0",
-    "pkg-pr-new": "^0.0.35",
-    "prettier": "^3.4.2",
-    "turbo": "^2.3.3",
-    "typescript": "^5.7.2"
+    "@ocavue/eslint-config": "^2.12.4",
+    "eslint": "^9.18.0",
+    "pkg-pr-new": "^0.0.39",
+    "prettier": "^3.5.0",
+    "turbo": "^2.4.1",
+    "typescript": "^5.7.3"
   }
 }
