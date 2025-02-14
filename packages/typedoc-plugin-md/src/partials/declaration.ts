@@ -9,6 +9,7 @@ import { getCommentBlockTags } from './comment-block-tags'
 import { getCommentSummary } from './comment-summary'
 import { getConstructor } from './constructor'
 import { getFunction } from './function'
+import { getHierarchy } from './hierarchy'
 import { getMethod } from './method'
 import { renderMemberSignature, renderType } from './type'
 
@@ -18,6 +19,10 @@ export function getDeclaration(
   options: { headingLevel: m.HeadingLevel },
 ): mdast.RootContent[] {
   const markdownHeadingId = ctx.options.getValue('markdownHeadingId')
+
+  if (showHideMember(model)) {
+    return []
+  }
 
   if (model.kind === ReflectionKind.Property) {
     return [
@@ -196,6 +201,8 @@ export function getDeclaration(
         ...m.anchor(model.anchor, { markdownHeadingId }),
       ]),
 
+      ...getHierarchy(ctx, model.typeHierarchy),
+
       ...getComment(ctx, model.comment, {
         headingLevel: m.getNextHeadingLevel(options.headingLevel),
       }),
@@ -314,4 +321,11 @@ function getDeclarationType(
     ]
   }
   return [m.paragraph([m.strong([m.text('Type')])]), m.code(typeString)]
+}
+
+function showHideMember(model: DeclarationReflection): boolean {
+  const isClass = model.parent?.kind === ReflectionKind.Class
+  const isInherited = !!model.inheritedFrom
+
+  return isClass && isInherited
 }

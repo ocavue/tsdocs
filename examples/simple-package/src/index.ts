@@ -109,6 +109,16 @@ export interface SimpleInterface {
   withExample?: number
 }
 
+export interface SubInterface extends SimpleInterface {
+  subProperty: string
+}
+
+
+export type SubType = SimpleInterface & {
+  subProperty: string
+}
+
+
 /**
  * A simple class.
  */
@@ -195,5 +205,17 @@ export class SimpleClass {
    */
   set simpleSetter(value: string) {
     this.simpleProperty = value
+  }
+}
+
+export class SubClass extends SimpleClass {
+  /**
+   * Comment for subProperty
+   */
+  subProperty: string
+
+  constructor() {
+    super()
+    this.subProperty = ''
   }
 }
