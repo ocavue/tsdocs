@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.6.0
+
+### Minor Changes
+
+- 62dc8d8: Hide inherited class members.
+
 ## 0.5.0
 
 ### Minor Changes
