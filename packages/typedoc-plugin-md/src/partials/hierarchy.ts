@@ -15,17 +15,14 @@ export function getHierarchy(
   }
 
   return [
-    m.html('<dt>'),
-    m.paragraph([m.text('Extends')]),
-    m.html('</dt>'),
-    m.html('<dd>'),
-
-    ...model.types
-      .map((type) => renderType(type, TypeContext.conditionalExtends))
-      .flatMap((str) => {
-        return [m.paragraph([m.inlineCode(str)])]
-      }),
-
-    m.html('</dd>'),
+    m.paragraph([
+      m.strong([m.text('Extends')]),
+      m.text(' '),
+      ...model.types
+        .map((type) => renderType(type, TypeContext.conditionalExtends))
+        .flatMap((str) => {
+          return m.inlineCode(str)
+        }),
+    ]),
   ]
 }

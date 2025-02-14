@@ -192,17 +192,7 @@ const write: (value: T) => void
 
 ### SubClass <a id="sub-class" href="#sub-class">#</a>
 
-<dt>
-
-Extends
-
-</dt>
-
-<dd>
-
-`SimpleClass`
-
-</dd>
+**Extends** `SimpleClass`
 
 <dl>
 
