@@ -324,8 +324,7 @@ function getDeclarationType(
 }
 
 function showHideMember(model: DeclarationReflection): boolean {
-  const isClass = model.parent?.kind === ReflectionKind.Class
+  const isParentClass = model.parent?.kind === ReflectionKind.Class
   const isInherited = !!model.inheritedFrom
-
-  return isClass && isInherited
+  return isParentClass && isInherited
 }
