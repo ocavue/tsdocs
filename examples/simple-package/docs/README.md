@@ -190,6 +190,40 @@ const write: (value: T) => void
 
 </dl>
 
+### SubClass <a id="sub-class" href="#sub-class">#</a>
+
+**Extends** `SimpleClass`
+
+<dl>
+
+<dt>
+
+`constructor`
+
+</dt>
+
+<dd>
+
+```
+new SubClass(): SubClass
+```
+
+</dd>
+
+<dt>
+
+`subProperty: string`
+
+</dt>
+
+<dd>
+
+Comment for subProperty
+
+</dd>
+
+</dl>
+
 ### Reader <a id="reader" href="#reader">#</a>
 
 A simple interface.
@@ -318,6 +352,120 @@ const method2: <T>(value: T) => void
 
 </dl>
 
+### SubInterface <a id="sub-interface" href="#sub-interface">#</a>
+
+<dl>
+
+<dt>
+
+`fn: (options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
+
+</dt>
+
+<dd>
+
+A function with a complex parameter.
+
+</dd>
+
+<dt>
+
+`property: string`
+
+</dt>
+
+<dd>
+
+A simple property.
+
+</dd>
+
+<dt>
+
+`subProperty: string`
+
+</dt>
+
+<dd>
+
+</dd>
+
+<dt>
+
+`withDefault?: number`
+
+</dt>
+
+<dd>
+
+A simple property with a default tag.
+
+**Default**: `123`
+
+</dd>
+
+<dt>
+
+`withExample?: number`
+
+</dt>
+
+<dd>
+
+A simple method with an example tag.
+
+**Example**
+
+```ts
+const a = 1
+const b = 2
+const c = a + b
+```
+
+**Example**
+
+```ts
+const a = 2
+const b = 3
+const c = a + b
+```
+
+</dd>
+
+<dt>
+
+`method`
+
+</dt>
+
+<dd>
+
+A simple method.
+
+```ts
+const method: () => void
+```
+
+</dd>
+
+<dt>
+
+`method2`
+
+</dt>
+
+<dd>
+
+A method with a type parameter.
+
+```ts
+const method2: <T>(value: T) => void
+```
+
+</dd>
+
+</dl>
+
 ### Writer <a id="writer" href="#writer">#</a>
 
 An interface with a generic type parameter.
@@ -357,6 +505,10 @@ Implemented by [fn1](README.md#fn1-1), [fn1\_1](README.md#fn1-1-1), [fn1\_1\_1](
 A simple type.
 
 **Type**: `string | number`
+
+### SubType <a id="sub-type" href="#sub-type">#</a>
+
+**Type**: `SimpleInterface & { subProperty: string }`
 
 ### variable <a id="variable" href="#variable">#</a>
 
