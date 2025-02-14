@@ -113,11 +113,9 @@ export interface SubInterface extends SimpleInterface {
   subProperty: string
 }
 
-
 export type SubType = SimpleInterface & {
   subProperty: string
 }
-
 
 /**
  * A simple class.
