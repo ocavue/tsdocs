@@ -48,7 +48,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "peerDependencies": {
-    "typedoc": "^0.27.1"
+    "typedoc": "^0.28.0"
   },
   "devDependencies": {
     "@types/mdast": "^4.0.4",
