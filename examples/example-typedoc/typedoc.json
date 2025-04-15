@@ -6,6 +6,7 @@
   "expandParameters": true,
   "expandObjects": true,
   "theme": "my-markdown",
+  "cleanOutputDir": false,
   "router": "module",
   "mergeReadme": true,
   "sort": ["source-order"],
