@@ -102,7 +102,7 @@ on the entry point in src/index.ts
 
 > **CardA**(`__namedParameters`): `ReactElement`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:42](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L42)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:42](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L42)
 
 Renders a card around some content.
 
@@ -148,7 +148,7 @@ see the component's props.
 
 > **CardB**(`__namedParameters`): `ReactElement`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:74](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L74)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:74](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L74)
 
 Renders a card around some content.
 
@@ -191,7 +191,7 @@ but it makes your code less readable.
 
 > **EasyFormDialog**(`props`): `ReactElement`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:254](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L254)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:254](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L254)
 
 An example of a complex React component.
 
@@ -271,7 +271,7 @@ export function Example({
 
 ### `abstract` Customer
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:8](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L8)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L8)
 
 An abstract base class for the customer entity in our application.
 
@@ -288,7 +288,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 > **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](README.md#customer)
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L48)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
 The constructor of the `Customer` class.
 
@@ -322,7 +322,7 @@ the next number to use when this customer places an order
 
 > `readonly` **id**: `number`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L10)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L10)
 
 A public readonly property.
 
@@ -330,7 +330,7 @@ A public readonly property.
 
 > **name**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L13)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L13)
 
 A public property that can be reassigned.
 
@@ -338,7 +338,7 @@ A public property that can be reassigned.
 
 > `protected` `optional` **contactName**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L16)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L16)
 
 An optional protected property.
 
@@ -350,7 +350,7 @@ An optional protected property.
 
 > **get** **nextOrderNumber**(): `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L25)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
@@ -363,7 +363,7 @@ property.
 
 > **set** **nextOrderNumber**(`value`): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L33)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
@@ -384,7 +384,7 @@ A setter that takes in either a string or a number and sets the private
 
 > **onOrderPlaced**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:56](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L56)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:56](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L56)
 
 A public method. To be called when an order is placed for this customer.
 
@@ -396,7 +396,7 @@ A public method. To be called when an order is placed for this customer.
 
 > **onOrderPlacedArrowFunction**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L65)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L65)
 
 A public method that's defined using an arrow function.
 
@@ -410,7 +410,7 @@ TypeDoc knows to document this as a method rather than a property.
 
 > `protected` **isValid**(): `boolean`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:70](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L70)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:70](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L70)
 
 A protected method.
 
@@ -422,7 +422,7 @@ A protected method.
 
 ### CancellablePromise\<T\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:52](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L52)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:52](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L52)
 
 This example shows off how TypeDoc handles
 
@@ -449,7 +449,7 @@ what the `CancellablePromise` resolves to
 
 > **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
 
 ###### Parameters
 
@@ -476,7 +476,7 @@ a function that cancels `promise`. **Calling `cancel` after
 
 > `protected` `readonly` **promise**: `Promise`\<`T`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:60](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L60)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:60](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L60)
 
 As a consumer of the library, you shouldn't ever need to access
 `CancellablePromise.promise` directly.
@@ -488,7 +488,7 @@ can access this property.
 
 > `readonly` **cancel**: (`reason`?) => `void`
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L69)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L69)
 
 Cancel the `CancellablePromise`.
 
@@ -513,7 +513,7 @@ description is attached to.
 
 > **then**\<`TResult1`, `TResult2`\>(`onFulfilled`?, `onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`TResult1` \| `TResult2`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:101](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L101)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:101](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L101)
 
 Analogous to `Promise.then`.
 
@@ -558,7 +558,7 @@ a new CancellablePromise
 
 > **catch**\<`TResult`\>(`onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T` \| `TResult`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:152](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L152)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:152](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L152)
 
 Analogous to `Promise.catch`.
 
@@ -580,7 +580,7 @@ Analogous to `Promise.catch`.
 
 > **finally**(`onFinally`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:169](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L169)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:169](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L169)
 
 Attaches a callback that is invoked when the Promise is settled
 (fulfilled or rejected). The resolved value cannot be modified from the
@@ -607,7 +607,7 @@ A Promise for the completion of the callback.
 
 > `static` **resolve**(): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:185](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L185)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:185](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L185)
 
 Analogous to `Promise.resolve`.
 
@@ -623,7 +623,7 @@ is canceled, it has already resolved.
 
 > `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:187](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L187)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:187](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L187)
 
 Analogous to `Promise.resolve`.
 
@@ -649,7 +649,7 @@ is canceled, it has already resolved.
 
 > `static` **reject**\<`T`\>(`reason`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:201](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L201)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:201](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L201)
 
 Analogous to `Promise.reject`.
 
@@ -685,7 +685,7 @@ thenables, and resolved values
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L205)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L205)
 
 ###### Type Parameters
 
@@ -723,7 +723,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L220)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L220)
 
 ###### Type Parameters
 
@@ -759,7 +759,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L234)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L234)
 
 ###### Type Parameters
 
@@ -793,7 +793,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L247)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L247)
 
 ###### Type Parameters
 
@@ -825,7 +825,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L259)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L259)
 
 ###### Type Parameters
 
@@ -855,7 +855,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L270)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L270)
 
 ###### Type Parameters
 
@@ -883,7 +883,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L280)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L280)
 
 ###### Type Parameters
 
@@ -909,7 +909,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L289)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L289)
 
 ###### Type Parameters
 
@@ -933,7 +933,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 > `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`\]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L297)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L297)
 
 ###### Type Parameters
 
@@ -955,7 +955,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
 
 > `static` **all**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`[]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L301)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L301)
 
 ###### Type Parameters
 
@@ -977,7 +977,7 @@ readonly (`T` \| `PromiseLike`\<`T`\>)[]
 
 > `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:327](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L327)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:327](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L327)
 
 Creates a `CancellablePromise` that is resolved with an array of results
 when all of the provided `Promises` resolve or reject.
@@ -1004,7 +1004,7 @@ A new `CancellablePromise`.
 
 > `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:345](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L345)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:345](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L345)
 
 Creates a `CancellablePromise` that is resolved with an array of results
 when all of the provided `Promise`s resolve or reject.
@@ -1032,7 +1032,7 @@ promises.
 
 > `static` **race**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`Awaited`\<`T`\>\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:370](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L370)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:370](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L370)
 
 Creates a `CancellablePromise` that is resolved or rejected when any of
 the provided `Promises` are resolved or rejected.
@@ -1060,7 +1060,7 @@ promises.
 
 > `static` **delay**(`ms`): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
 
-Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
+Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
 
 ###### Parameters
 
@@ -1078,7 +1078,7 @@ a `CancellablePromise` that resolves after `ms` milliseconds.
 
 ### DeliveryCustomer
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:85](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L85)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L85)
 
 A class that extends [\`Customer\`](README.md#customer).
 
@@ -1094,7 +1094,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 > **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](README.md#deliverycustomer)
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L100)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L100)
 
 The constructor of the `DeliveryCustomer` class.
 
@@ -1138,7 +1138,7 @@ whether this customer has a basic or enterprise subscription
 
 > `readonly` **id**: `number`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L10)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L10)
 
 A public readonly property.
 
@@ -1150,7 +1150,7 @@ A public readonly property.
 
 > **name**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L13)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L13)
 
 A public property that can be reassigned.
 
@@ -1162,7 +1162,7 @@ A public property that can be reassigned.
 
 > `protected` `optional` **contactName**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L16)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L16)
 
 An optional protected property.
 
@@ -1174,7 +1174,7 @@ An optional protected property.
 
 > `optional` **preferredCourierId**: `number`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:87](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L87)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:87](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L87)
 
 A property defined on the subclass.
 
@@ -1182,7 +1182,7 @@ A property defined on the subclass.
 
 > `readonly` **subscriptionType**: `"basic"` \| `"enterprise"`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:90](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L90)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:90](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L90)
 
 Another property defined on the subclass.
 
@@ -1194,7 +1194,7 @@ Another property defined on the subclass.
 
 > **get** **nextOrderNumber**(): `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L25)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
@@ -1207,7 +1207,7 @@ property.
 
 > **set** **nextOrderNumber**(`value`): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L33)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
@@ -1232,7 +1232,7 @@ A setter that takes in either a string or a number and sets the private
 
 > **onOrderPlaced**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:56](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L56)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:56](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L56)
 
 A public method. To be called when an order is placed for this customer.
 
@@ -1248,7 +1248,7 @@ A public method. To be called when an order is placed for this customer.
 
 > **onOrderPlacedArrowFunction**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L65)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L65)
 
 A public method that's defined using an arrow function.
 
@@ -1266,7 +1266,7 @@ TypeDoc knows to document this as a method rather than a property.
 
 > `protected` **isValid**(): `boolean`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:116](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L116)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:116](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L116)
 
 An example of overriding a protected method.
 
@@ -1285,7 +1285,7 @@ subscription type is enterprise.
 
 ### WalkInCustomer
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:129](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L129)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:129](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L129)
 
 A class that extends [\`Customer\`](README.md#customer).
 
@@ -1301,7 +1301,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 > **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](README.md#walkincustomer)
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L48)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
 The constructor of the `Customer` class.
 
@@ -1339,7 +1339,7 @@ the next number to use when this customer places an order
 
 > `readonly` **id**: `number`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L10)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:10](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L10)
 
 A public readonly property.
 
@@ -1351,7 +1351,7 @@ A public readonly property.
 
 > **name**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L13)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:13](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L13)
 
 A public property that can be reassigned.
 
@@ -1363,7 +1363,7 @@ A public property that can be reassigned.
 
 > `protected` `optional` **contactName**: `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L16)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:16](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L16)
 
 An optional protected property.
 
@@ -1375,7 +1375,7 @@ An optional protected property.
 
 > `optional` **trustedCustomer**: `boolean`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:131](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L131)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:131](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L131)
 
 A property defined on the subclass.
 
@@ -1387,7 +1387,7 @@ A property defined on the subclass.
 
 > **get** **nextOrderNumber**(): `string`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L25)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
@@ -1400,7 +1400,7 @@ property.
 
 > **set** **nextOrderNumber**(`value`): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L33)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
@@ -1425,7 +1425,7 @@ A setter that takes in either a string or a number and sets the private
 
 > **onOrderPlacedArrowFunction**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L65)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L65)
 
 A public method that's defined using an arrow function.
 
@@ -1443,7 +1443,7 @@ TypeDoc knows to document this as a method rather than a property.
 
 > `protected` **isValid**(): `boolean`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:70](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L70)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:70](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L70)
 
 A protected method.
 
@@ -1459,7 +1459,7 @@ A protected method.
 
 > **onOrderPlaced**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/Customer.ts:139](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/Customer.ts#L139)
+Defined in: [examples/example-typedoc/src/classes/Customer.ts:139](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L139)
 
 An example of overriding a public method.
 
@@ -1475,7 +1475,7 @@ An example of overriding a public method.
 
 ### StringArray
 
-Defined in: [examples/example-typedoc/src/classes/StringArray.ts:14](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/StringArray.ts#L14)
+Defined in: [examples/example-typedoc/src/classes/StringArray.ts:14](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/StringArray.ts#L14)
 
 An array of strings that's defined as
 
@@ -1755,7 +1755,7 @@ Gets or sets the length of the array. This is a number one higher than the highe
 
 > **customMethod**(): `void`
 
-Defined in: [examples/example-typedoc/src/classes/StringArray.ts:16](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/classes/StringArray.ts#L16)
+Defined in: [examples/example-typedoc/src/classes/StringArray.ts:16](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/StringArray.ts#L16)
 
 A method that extends the functionality of a basic JavaScript array.
 
@@ -3477,7 +3477,7 @@ Value of 'this' used when executing mapfn.
 
 ### SimpleEnum
 
-Defined in: [examples/example-typedoc/src/enums.ts:5](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L5)
+Defined in: [examples/example-typedoc/src/enums.ts:5](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L5)
 
 Describes the status of a delivery order.
 
@@ -3487,7 +3487,7 @@ Describes the status of a delivery order.
 
 > **Pending**: `0`
 
-Defined in: [examples/example-typedoc/src/enums.ts:7](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L7)
+Defined in: [examples/example-typedoc/src/enums.ts:7](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L7)
 
 This order has just been placed and is yet to be processed.
 
@@ -3495,7 +3495,7 @@ This order has just been placed and is yet to be processed.
 
 > **InProgress**: `1`
 
-Defined in: [examples/example-typedoc/src/enums.ts:10](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L10)
+Defined in: [examples/example-typedoc/src/enums.ts:10](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L10)
 
 A courier is en route delivering this order.
 
@@ -3503,7 +3503,7 @@ A courier is en route delivering this order.
 
 > **Complete**: `"COMPLETE"`
 
-Defined in: [examples/example-typedoc/src/enums.ts:13](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L13)
+Defined in: [examples/example-typedoc/src/enums.ts:13](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L13)
 
 The order has been delivered.
 
@@ -3511,7 +3511,7 @@ The order has been delivered.
 
 ### CrazyEnum
 
-Defined in: [examples/example-typedoc/src/enums.ts:26](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L26)
+Defined in: [examples/example-typedoc/src/enums.ts:26](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L26)
 
 [A crazy enum from the TypeScript
 handbook](https://www.typescriptlang.org/docs/handbook/enums.html#computed-and-constant-members).
@@ -3526,37 +3526,37 @@ only available at runtime.
 
 > **None**: `0`
 
-Defined in: [examples/example-typedoc/src/enums.ts:28](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L28)
+Defined in: [examples/example-typedoc/src/enums.ts:28](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L28)
 
 ##### Read
 
 > **Read**: `2`
 
-Defined in: [examples/example-typedoc/src/enums.ts:29](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L29)
+Defined in: [examples/example-typedoc/src/enums.ts:29](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L29)
 
 ##### Write
 
 > **Write**: `4`
 
-Defined in: [examples/example-typedoc/src/enums.ts:30](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L30)
+Defined in: [examples/example-typedoc/src/enums.ts:30](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L30)
 
 ##### ReadWrite
 
 > **ReadWrite**: `6`
 
-Defined in: [examples/example-typedoc/src/enums.ts:31](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L31)
+Defined in: [examples/example-typedoc/src/enums.ts:31](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L31)
 
 ##### ComputedMember
 
 > **ComputedMember**: `number`
 
-Defined in: [examples/example-typedoc/src/enums.ts:33](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L33)
+Defined in: [examples/example-typedoc/src/enums.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L33)
 
 ***
 
 ### EnumLikeObject
 
-Defined in: [examples/example-typedoc/src/enums.ts:51](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L51)
+Defined in: [examples/example-typedoc/src/enums.ts:51](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L51)
 
 Since TypeScript's `enum` can be inconvenient to work with, some packages define their own enum-like objects:
 
@@ -3576,13 +3576,13 @@ Use the `@enum` tag to make TypeDoc document this object as an enum.
 
 > **Pending**: `"pending"`
 
-Defined in: [examples/example-typedoc/src/enums.ts:52](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L52)
+Defined in: [examples/example-typedoc/src/enums.ts:52](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L52)
 
 ##### InProgress
 
 > **InProgress**: `"inProgress"`
 
-Defined in: [examples/example-typedoc/src/enums.ts:55](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L55)
+Defined in: [examples/example-typedoc/src/enums.ts:55](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L55)
 
 Indicates that a courier is en route delivering this order.
 
@@ -3590,13 +3590,13 @@ Indicates that a courier is en route delivering this order.
 
 > **Completed**: `"completed"`
 
-Defined in: [examples/example-typedoc/src/enums.ts:57](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L57)
+Defined in: [examples/example-typedoc/src/enums.ts:57](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L57)
 
 ***
 
 ### EnumLikeObjectNumValues
 
-Defined in: [examples/example-typedoc/src/enums.ts:75](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L75)
+Defined in: [examples/example-typedoc/src/enums.ts:75](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L75)
 
 Since TypeScript's `enum` can be inconvenient to work with, some packages define their own enum-like objects:
 
@@ -3616,13 +3616,13 @@ Use the `@enum` tag to make TypeDoc document this object as an enum.
 
 > **Pending**: `1`
 
-Defined in: [examples/example-typedoc/src/enums.ts:76](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L76)
+Defined in: [examples/example-typedoc/src/enums.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L76)
 
 ##### InProgress
 
 > **InProgress**: `2`
 
-Defined in: [examples/example-typedoc/src/enums.ts:79](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L79)
+Defined in: [examples/example-typedoc/src/enums.ts:79](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L79)
 
 Indicates that a courier is en route delivering this order.
 
@@ -3630,7 +3630,7 @@ Indicates that a courier is en route delivering this order.
 
 > **Completed**: `3`
 
-Defined in: [examples/example-typedoc/src/enums.ts:81](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/enums.ts#L81)
+Defined in: [examples/example-typedoc/src/enums.ts:81](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/enums.ts#L81)
 
 ***
 
@@ -3638,7 +3638,7 @@ Defined in: [examples/example-typedoc/src/enums.ts:81](https://github.com/ocavue
 
 > **sqrt**(`x`): `number`
 
-Defined in: [examples/example-typedoc/src/functions.ts:7](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L7)
+Defined in: [examples/example-typedoc/src/functions.ts:7](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L7)
 
 Calculates the square root of a number.
 
@@ -3662,7 +3662,7 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 > **sqrtArrowFunction**(`x`): `number`
 
-Defined in: [examples/example-typedoc/src/functions.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L25)
+Defined in: [examples/example-typedoc/src/functions.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L25)
 
 Calculates the square root of a number.
 
@@ -3694,7 +3694,7 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 > **concat**\<`T`\>(`array1`, `array2`): `T`[]
 
-Defined in: [examples/example-typedoc/src/functions.ts:39](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L39)
+Defined in: [examples/example-typedoc/src/functions.ts:39](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L39)
 
 A simple generic function that concatenates two arrays.
 
@@ -3729,7 +3729,7 @@ the element type of the arrays
 
 ### MakeHttpCallAOptions
 
-Defined in: [examples/example-typedoc/src/functions.ts:46](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L46)
+Defined in: [examples/example-typedoc/src/functions.ts:46](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L46)
 
 The options type for [makeHttpCallA](README.md#makehttpcalla).
 
@@ -3739,13 +3739,13 @@ The options type for [makeHttpCallA](README.md#makehttpcalla).
 
 > **url**: `string`
 
-Defined in: [examples/example-typedoc/src/functions.ts:47](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L47)
+Defined in: [examples/example-typedoc/src/functions.ts:47](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L47)
 
 ##### method
 
 > **method**: `string`
 
-Defined in: [examples/example-typedoc/src/functions.ts:50](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L50)
+Defined in: [examples/example-typedoc/src/functions.ts:50](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L50)
 
 e.g. GET, POST, PUT, DELETE
 
@@ -3753,7 +3753,7 @@ e.g. GET, POST, PUT, DELETE
 
 > **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [examples/example-typedoc/src/functions.ts:53](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L53)
+Defined in: [examples/example-typedoc/src/functions.ts:53](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L53)
 
 e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
@@ -3761,13 +3761,13 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 > **body**: `string` \| `Blob` \| `FormData`
 
-Defined in: [examples/example-typedoc/src/functions.ts:54](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L54)
+Defined in: [examples/example-typedoc/src/functions.ts:54](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L54)
 
 ##### mode
 
 > **mode**: `"cors"` \| `"no-cors"` \| `"same-origin"`
 
-Defined in: [examples/example-typedoc/src/functions.ts:55](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L55)
+Defined in: [examples/example-typedoc/src/functions.ts:55](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L55)
 
 ***
 
@@ -3775,7 +3775,7 @@ Defined in: [examples/example-typedoc/src/functions.ts:55](https://github.com/oc
 
 > **makeHttpCallA**(`options`): `Promise`\<`Response`\>
 
-Defined in: [examples/example-typedoc/src/functions.ts:65](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L65)
+Defined in: [examples/example-typedoc/src/functions.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L65)
 
 A function that takes in an options object that is defined as a separate
 interface and makes an HTTP call.
@@ -3799,7 +3799,7 @@ TypeDoc will not document the options.
 
 > **makeHttpCallB**(`options`): `Promise`\<`Response`\>
 
-Defined in: [examples/example-typedoc/src/functions.ts:78](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L78)
+Defined in: [examples/example-typedoc/src/functions.ts:78](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L78)
 
 A function that takes in an options object and makes an HTTP call.
 
@@ -3845,7 +3845,7 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 > **overloadedFunction**(`a`, `b`): `string`
 
-Defined in: [examples/example-typedoc/src/functions.ts:102](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L102)
+Defined in: [examples/example-typedoc/src/functions.ts:102](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L102)
 
 Stringifies and concatenates two numbers into a single string.
 
@@ -3871,7 +3871,7 @@ included in the documentation.
 
 > **overloadedFunction**(`a`, `b`): `string`
 
-Defined in: [examples/example-typedoc/src/functions.ts:111](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/functions.ts#L111)
+Defined in: [examples/example-typedoc/src/functions.ts:111](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L111)
 
 Concatenates two strings.
 
@@ -3899,7 +3899,7 @@ included in the documentation.
 
 > **anInternalFunction**(): `void`
 
-Defined in: [examples/example-typedoc/src/internals.ts:8](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/internals.ts#L8)
+Defined in: [examples/example-typedoc/src/internals.ts:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/internals.ts#L8)
 
 **`Internal`**
 
@@ -3915,7 +3915,7 @@ code.
 
 ### CardAProps
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:6](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L6)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:6](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L6)
 
 The props type for [CardA](README.md#carda).
 
@@ -3925,7 +3925,7 @@ The props type for [CardA](README.md#carda).
 
 > **variant**: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:8](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L8)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L8)
 
 The theme of the card. Defaults to `primary`.
 
@@ -3933,7 +3933,7 @@ The theme of the card. Defaults to `primary`.
 
 ### EasyFormDialogProps
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:85](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L85)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L85)
 
 The props type of [\`EasyFormDialog\`](README.md#easyformdialog).
 
@@ -3943,7 +3943,7 @@ The props type of [\`EasyFormDialog\`](README.md#easyformdialog).
 
 > **title**: `ReactNode`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:87](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L87)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:87](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L87)
 
 The title of the dialog. Can be a JSX element.
 
@@ -3951,7 +3951,7 @@ The title of the dialog. Can be a JSX element.
 
 > **submitButtonText**: `string`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:90](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L90)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:90](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L90)
 
 The text of the submit button.
 
@@ -3959,7 +3959,7 @@ The text of the submit button.
 
 > `optional` **submitButtonClass**: `string`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:93](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L93)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:93](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L93)
 
 The CSS class of the submit button.
 
@@ -3967,7 +3967,7 @@ The CSS class of the submit button.
 
 > `optional` **cancelButtonText**: `string`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:96](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L96)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:96](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L96)
 
 The text of the cancel button. Defaults to "Cancel".
 
@@ -3975,7 +3975,7 @@ The text of the cancel button. Defaults to "Cancel".
 
 > `optional` **submitEnabled**: `boolean`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:105](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L105)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:105](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L105)
 
 Allows you to disable the submit button even if `getSubmitEnabled()`
 would return true.
@@ -3987,7 +3987,7 @@ is in progress.
 
 > **formIsValid**: `boolean`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:108](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L108)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:108](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L108)
 
 A boolean indicating if the form is valid.
 
@@ -3995,7 +3995,7 @@ A boolean indicating if the form is valid.
 
 > **showValidation**: `boolean`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:111](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L111)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:111](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L111)
 
 A boolean indicating if validation feedback is being shown.
 
@@ -4003,7 +4003,7 @@ A boolean indicating if validation feedback is being shown.
 
 > `optional` **closeRef**: `MutableRefObject`\<() => `void`\>
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:177](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L177)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:177](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L177)
 
 This prop accepts a ref object that holds a function of type `() =>
 void`. You can execute the function to programmatically close the dialog:
@@ -4016,7 +4016,7 @@ closeRef.current()
 
 > `optional` **modalClass**: `string`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:180](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L180)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:180](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L180)
 
 The CSS class added to the underlying Bootstrap modal.
 
@@ -4024,7 +4024,7 @@ The CSS class added to the underlying Bootstrap modal.
 
 > `optional` **focusFirst**: `boolean`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:186](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L186)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:186](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L186)
 
 Set to `false` to disable the default behavior of focusing the first
 input.
@@ -4033,7 +4033,7 @@ input.
 
 > `optional` **showFooter**: `boolean`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:192](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L192)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:192](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L192)
 
 Set to `false` to hide the modal footer, which contains the submit and
 cancel buttons.
@@ -4044,7 +4044,7 @@ cancel buttons.
 
 > **onShowValidationChange**(`showValidation`): `void`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:114](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L114)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:114](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L114)
 
 A callback that fires when the dialog is submitted.
 
@@ -4062,7 +4062,7 @@ A callback that fires when the dialog is submitted.
 
 > **onSuccess**(`payload`): `Promise`\<`void`\>
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:126](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L126)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:126](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L126)
 
 A callback that fires after the `submit` function succeeds.
 
@@ -4087,7 +4087,7 @@ to support refetching the data that was updated by the form submission.
 
 > **onClose**(): `void`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:134](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L134)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:134](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L134)
 
 A callback that fires when the dialog has completely closed. Your
 `onClose` callback should update call, for example,
@@ -4102,7 +4102,7 @@ rendered.
 
 > **onSubmit**(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:154](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L154)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:154](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L154)
 
 A callback that fires when the form is submitted. You will typically
 perform an API call in your `submit` function.
@@ -4135,7 +4135,7 @@ installed.
 
 > `optional` **onCancel**(): `void`
 
-Defined in: [examples/example-typedoc/src/reactComponents.tsx:167](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/reactComponents.tsx#L167)
+Defined in: [examples/example-typedoc/src/reactComponents.tsx:167](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L167)
 
 An uncommonly-used callback that fires when the user clicks the cancel button.
 
@@ -4149,7 +4149,7 @@ An uncommonly-used callback that fires when the user clicks the cancel button.
 
 > **SimpleTypeAlias**: `string` \| `number` \| `boolean`
 
-Defined in: [examples/example-typedoc/src/types.ts:2](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L2)
+Defined in: [examples/example-typedoc/src/types.ts:2](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L2)
 
 A simple type alias defined using the `type` keyword.
 
@@ -4159,7 +4159,7 @@ A simple type alias defined using the `type` keyword.
 
 > **ComplexGenericTypeAlias**\<`T`\>: `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
 
-Defined in: [examples/example-typedoc/src/types.ts:5](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L5)
+Defined in: [examples/example-typedoc/src/types.ts:5](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L5)
 
 A complex generic type.
 
@@ -4171,7 +4171,7 @@ A complex generic type.
 
 ### User
 
-Defined in: [examples/example-typedoc/src/types.ts:17](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L17)
+Defined in: [examples/example-typedoc/src/types.ts:17](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L17)
 
 A simple interface. Each property has its own doc comment.
 
@@ -4187,7 +4187,7 @@ TypeDoc even supports doc comments on nested type definitions, as shown by the `
 
 > **id**: `number`
 
-Defined in: [examples/example-typedoc/src/types.ts:19](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L19)
+Defined in: [examples/example-typedoc/src/types.ts:19](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L19)
 
 The user's ID.
 
@@ -4195,7 +4195,7 @@ The user's ID.
 
 > **email**: `string`
 
-Defined in: [examples/example-typedoc/src/types.ts:22](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L22)
+Defined in: [examples/example-typedoc/src/types.ts:22](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L22)
 
 The user's email address.
 
@@ -4203,7 +4203,7 @@ The user's email address.
 
 > **name**: `object`
 
-Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L25)
+Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
 The user's name.
 
@@ -4223,7 +4223,7 @@ The person's family name.
 
 ### AdminUser
 
-Defined in: [examples/example-typedoc/src/types.ts:40](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L40)
+Defined in: [examples/example-typedoc/src/types.ts:40](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L40)
 
 An interface that extends [\`User\`](README.md#user) and adds more properties.
 
@@ -4240,7 +4240,7 @@ each property was originally defined.
 
 > **id**: `number`
 
-Defined in: [examples/example-typedoc/src/types.ts:19](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L19)
+Defined in: [examples/example-typedoc/src/types.ts:19](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L19)
 
 The user's ID.
 
@@ -4252,7 +4252,7 @@ The user's ID.
 
 > **email**: `string`
 
-Defined in: [examples/example-typedoc/src/types.ts:22](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L22)
+Defined in: [examples/example-typedoc/src/types.ts:22](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L22)
 
 The user's email address.
 
@@ -4264,7 +4264,7 @@ The user's email address.
 
 > **name**: `object`
 
-Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L25)
+Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
 The user's name.
 
@@ -4288,13 +4288,13 @@ The person's family name.
 
 > **administrativeArea**: `"sales"` \| `"delivery"` \| `"billing"`
 
-Defined in: [examples/example-typedoc/src/types.ts:41](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L41)
+Defined in: [examples/example-typedoc/src/types.ts:41](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L41)
 
 ##### jobTitle
 
 > **jobTitle**: `string`
 
-Defined in: [examples/example-typedoc/src/types.ts:42](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/types.ts#L42)
+Defined in: [examples/example-typedoc/src/types.ts:42](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L42)
 
 ***
 
@@ -4302,7 +4302,7 @@ Defined in: [examples/example-typedoc/src/types.ts:42](https://github.com/ocavue
 
 > `const` **PI**: `3.14159265359` = `3.14159265359`
 
-Defined in: [examples/example-typedoc/src/variables.ts:2](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/variables.ts#L2)
+Defined in: [examples/example-typedoc/src/variables.ts:2](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L2)
 
 A simple numeric constant.
 
@@ -4312,7 +4312,7 @@ A simple numeric constant.
 
 > `const` **STRING\_CONSTANT**: `"FOOBAR"` = `"FOOBAR"`
 
-Defined in: [examples/example-typedoc/src/variables.ts:5](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/variables.ts#L5)
+Defined in: [examples/example-typedoc/src/variables.ts:5](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L5)
 
 A simple string constant.
 
@@ -4322,7 +4322,7 @@ A simple string constant.
 
 > `const` **ObjectConstant**: `object`
 
-Defined in: [examples/example-typedoc/src/variables.ts:8](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/variables.ts#L8)
+Defined in: [examples/example-typedoc/src/variables.ts:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L8)
 
 An plain JavaScript object using `as const`.
 
@@ -4348,7 +4348,7 @@ How many people starred us on GitHub.
 
 > **E**: `number` = `2.718281828459045235`
 
-Defined in: [examples/example-typedoc/src/variables.ts:22](https://github.com/ocavue/tsdocs/blob/a862e4bff17240f010d6629fd841c7e13332eedc/examples/example-typedoc/src/variables.ts#L22)
+Defined in: [examples/example-typedoc/src/variables.ts:22](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L22)
 
 An exported variable defined with `let`.
 

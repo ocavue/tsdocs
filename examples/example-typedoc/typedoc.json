@@ -6,6 +6,7 @@
   "outputFileStrategy": "modules",
   "mergeReadme": true,
   "sort": ["source-order"],
+  "gitRevision": "HEAD",
   "categorizeByGroup": false,
   "searchCategoryBoosts": {
     "Component": 2,
