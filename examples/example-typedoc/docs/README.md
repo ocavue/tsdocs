@@ -1,8 +1,12 @@
+**Generated using `index.page.begin` hook**
+
 **TypeDoc Example**
 
 ***
 
 https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
+
+**Generated using `content.begin` hook**
 
 ## Collection
 
@@ -4531,3 +4535,5 @@ Defined in: [examples/example-typedoc/src/variables.ts:22](https://github.com/oc
 An exported variable defined with `let`.
 
 This pattern should generally be avoided because the variable can be reassigned.
+
+**Generated using `index.page.end` hook**
