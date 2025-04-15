@@ -14,7 +14,7 @@ https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees?`): `T`[]
+> **lodashSortBy**\<`T`\>(`collection`: `undefined` \| `null` \| `List`\<`T`\>, ...`iteratees?`: `Many`\<`ListIteratee`\<`T`\>\>[]): `T`[]
 
 Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1908
 
@@ -73,7 +73,7 @@ _.sortBy(users, 'user', function(o) {
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees`): `T`\[keyof `T`\][]
+> **lodashSortBy**\<`T`\>(`collection`: `undefined` \| `null` \| `T`, ...`iteratees`: `Many`\<`ObjectIteratee`\<`T`\>\>[]): `T`\[keyof `T`\][]
 
 Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1912
 
@@ -108,7 +108,7 @@ on the entry point in src/index.ts
 
 ### CardA()
 
-> **CardA**(`__namedParameters`): `ReactElement`
+> **CardA**(`__namedParameters`: `PropsWithChildren`\<[`CardAProps`](#cardaprops)\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:42](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L42)
 
@@ -154,7 +154,7 @@ see the component's props.
 
 ### CardB()
 
-> **CardB**(`__namedParameters`): `ReactElement`
+> **CardB**(`__namedParameters`: `PropsWithChildren`\<\{ `variant`: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`; \}\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:74](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L74)
 
@@ -197,7 +197,7 @@ but it makes your code less readable.
 
 ### EasyFormDialog()
 
-> **EasyFormDialog**(`props`): `ReactElement`
+> **EasyFormDialog**(`props`: `PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:254](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L254)
 
@@ -294,7 +294,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 ##### Constructor
 
-> **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](#customer)
+> **new Customer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`): [`Customer`](#customer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
@@ -369,7 +369,7 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -457,7 +457,7 @@ what the `CancellablePromise` resolves to
 
 ##### Constructor
 
-> **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+> **new CancellablePromise**\<`T`\>(`promise`: `PromiseLike`\<`T`\>, `cancel`: (`reason?`: `string`) => `void`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
 
@@ -471,7 +471,7 @@ a normal promise or thenable
 
 ###### cancel
 
-(`reason?`) => `void`
+(`reason?`: `string`) => `void`
 
 a function that cancels `promise`. **Calling `cancel` after
 `promise` has resolved must be a no-op.**
@@ -496,7 +496,7 @@ can access this property.
 
 ##### cancel()
 
-> `readonly` **cancel**: (`reason?`) => `void`
+> `readonly` **cancel**: (`reason?`: `string`) => `void`
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L69)
 
@@ -521,7 +521,7 @@ description is attached to.
 
 ##### then()
 
-> **then**\<`TResult1`, `TResult2`\>(`onFulfilled?`, `onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
+> **then**\<`TResult1`, `TResult2`\>(`onFulfilled?`: `null` \| (`value`: `T`) => `TResult1` \| `PromiseLike`\<`TResult1`\>, `onRejected?`: `null` \| (`reason`: `any`) => `TResult2` \| `PromiseLike`\<`TResult2`\>): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:101](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L101)
 
@@ -556,11 +556,11 @@ whichever async operation is in progress will be canceled.
 
 ###### onFulfilled?
 
-`null` | (`value`) => `TResult1` \| `PromiseLike`\<`TResult1`\>
+`null` | (`value`: `T`) => `TResult1` \| `PromiseLike`\<`TResult1`\>
 
 ###### onRejected?
 
-`null` | (`reason`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
+`null` | (`reason`: `any`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
 
 ###### Returns
 
@@ -570,7 +570,7 @@ a new CancellablePromise
 
 ##### catch()
 
-> **catch**\<`TResult`\>(`onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
+> **catch**\<`TResult`\>(`onRejected?`: `null` \| (`reason`: `any`) => `TResult` \| `PromiseLike`\<`TResult`\>): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:152](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L152)
 
@@ -586,7 +586,7 @@ Analogous to `Promise.catch`.
 
 ###### onRejected?
 
-`null` | (`reason`) => `TResult` \| `PromiseLike`\<`TResult`\>
+`null` | (`reason`: `any`) => `TResult` \| `PromiseLike`\<`TResult`\>
 
 ###### Returns
 
@@ -594,7 +594,7 @@ Analogous to `Promise.catch`.
 
 ##### finally()
 
-> **finally**(`onFinally?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+> **finally**(`onFinally?`: `null` \| () => `void`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:169](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L169)
 
@@ -637,7 +637,7 @@ is canceled, it has already resolved.
 
 ###### Call Signature
 
-> `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+> `static` **resolve**\<`T`\>(`value`: `T`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:187](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L187)
 
@@ -665,7 +665,7 @@ is canceled, it has already resolved.
 
 ##### reject()
 
-> `static` **reject**\<`T`\>(`reason?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+> `static` **reject**\<`T`\>(`reason?`: `unknown`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:201](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L201)
 
@@ -703,7 +703,7 @@ thenables, and resolved values
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>, `T10` \| `PromiseLike`\<`T10`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L205)
 
@@ -761,7 +761,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L220)
 
@@ -815,7 +815,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L234)
 
@@ -865,7 +865,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L247)
 
@@ -911,7 +911,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L259)
 
@@ -953,7 +953,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L270)
 
@@ -991,7 +991,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L280)
 
@@ -1025,7 +1025,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L289)
 
@@ -1055,7 +1055,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
+> `static` **all**\<`T1`, `T2`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L297)
 
@@ -1081,7 +1081,7 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
 
 ###### Call Signature
 
-> `static` **all**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`T`[]\>
+> `static` **all**\<`T`\>(`values`: readonly (`T` \| `PromiseLike`\<`T`\>)[]): [`CancellablePromise`](#cancellablepromise)\<`T`[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L301)
 
@@ -1105,7 +1105,7 @@ readonly (`T` \| `PromiseLike`\<`T`\>)[]
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+> `static` **allSettled**\<`T`\>(`values`: `T`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:327](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L327)
 
@@ -1134,7 +1134,7 @@ A new `CancellablePromise`.
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+> `static` **allSettled**\<`T`\>(`values`: `Iterable`\<`T`\>): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:345](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L345)
 
@@ -1164,7 +1164,7 @@ promises.
 
 ##### race()
 
-> `static` **race**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
+> `static` **race**\<`T`\>(`values`: readonly `T`[]): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:370](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L370)
 
@@ -1194,7 +1194,7 @@ promises.
 
 ##### delay()
 
-> `static` **delay**(`ms`): [`CancellablePromise`](#cancellablepromise)\<`void`\>
+> `static` **delay**(`ms`: `number`): [`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
 
@@ -1228,7 +1228,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 ##### Constructor
 
-> **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](#deliverycustomer)
+> **new DeliveryCustomer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`, `subscriptionType`: `"basic"` \| `"enterprise"`): [`DeliveryCustomer`](#deliverycustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L100)
 
@@ -1341,7 +1341,7 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -1435,7 +1435,7 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 ##### Constructor
 
-> **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](#walkincustomer)
+> **new WalkInCustomer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`): [`WalkInCustomer`](#walkincustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
@@ -1534,7 +1534,7 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -1637,7 +1637,7 @@ the methods inherited from `Array`. For example, the `values` method returns
 
 ##### Constructor
 
-> **new StringArray**(`arrayLength`): [`StringArray`](#stringarray)
+> **new StringArray**(`arrayLength`: `number`): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1508
 
@@ -1657,7 +1657,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### Constructor
 
-> **new StringArray**(...`items`): [`StringArray`](#stringarray)
+> **new StringArray**(...`items`: `string`[]): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1509
 
@@ -1903,7 +1903,7 @@ A method that extends the functionality of a basic JavaScript array.
 
 ###### Call Signature
 
-> **find**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
+> **find**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `value is S`, `thisArg?`: `any`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:29
 
@@ -1920,7 +1920,7 @@ otherwise.
 
 ###### predicate
 
-(`value`, `index`, `obj`) => `value is S`
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `value is S`
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found, find
@@ -1943,7 +1943,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **find**(`predicate`, `thisArg?`): `undefined` \| `string`
+> **find**(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:30
 
@@ -1951,7 +1951,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### predicate
 
-(`value`, `index`, `obj`) => `unknown`
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`
 
 ###### thisArg?
 
@@ -1967,7 +1967,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findIndex()
 
-> **findIndex**(`predicate`, `thisArg?`): `number`
+> **findIndex**(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`, `thisArg?`: `any`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:41
 
@@ -1978,7 +1978,7 @@ otherwise.
 
 ###### predicate
 
-(`value`, `index`, `obj`) => `unknown`
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found,
@@ -2001,7 +2001,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ##### fill()
 
-> **fill**(`value`, `start?`, `end?`): `this`
+> **fill**(`value`: `string`, `start?`: `number`, `end?`: `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:51
 
@@ -2039,7 +2039,7 @@ length+end.
 
 ##### copyWithin()
 
-> **copyWithin**(`target`, `start`, `end?`): `this`
+> **copyWithin**(`target`: `number`, `start`: `number`, `end?`: `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:62
 
@@ -2080,7 +2080,7 @@ If not specified, length of the this object is used as its default value.
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`arrayLike`): `T`[]
+> `static` **from**\<`T`\>(`arrayLike`: `ArrayLike`\<`T`\>): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:72
 
@@ -2110,7 +2110,7 @@ An array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`arrayLike`, `mapfn`, `thisArg?`): `U`[]
+> `static` **from**\<`T`, `U`\>(`arrayLike`: `ArrayLike`\<`T`\>, `mapfn`: (`v`: `T`, `k`: `number`) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:80
 
@@ -2136,7 +2136,7 @@ An array-like object to convert to an array.
 
 ###### mapfn
 
-(`v`, `k`) => `U`
+(`v`: `T`, `k`: `number`) => `U`
 
 A mapping function to call on every element of the array.
 
@@ -2156,7 +2156,7 @@ Value of 'this' used to invoke the mapfn.
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`iterable`): `T`[]
+> `static` **from**\<`T`\>(`iterable`: `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:101
 
@@ -2186,7 +2186,7 @@ An iterable object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`iterable`, `mapfn`, `thisArg?`): `U`[]
+> `static` **from**\<`T`, `U`\>(`iterable`: `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>, `mapfn`: (`v`: `T`, `k`: `number`) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:109
 
@@ -2212,7 +2212,7 @@ An iterable object to convert to an array.
 
 ###### mapfn
 
-(`v`, `k`) => `U`
+(`v`: `T`, `k`: `number`) => `U`
 
 A mapping function to call on every element of the array.
 
@@ -2232,7 +2232,7 @@ Value of 'this' used to invoke the mapfn.
 
 ##### of()
 
-> `static` **of**\<`T`\>(...`items`): `T`[]
+> `static` **of**\<`T`\>(...`items`: `T`[]): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:86
 
@@ -2326,7 +2326,7 @@ Returns an iterable of values in the array
 
 ##### includes()
 
-> **includes**(`searchElement`, `fromIndex?`): `boolean`
+> **includes**(`searchElement`: `string`, `fromIndex?`: `number`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
 
@@ -2356,7 +2356,7 @@ The position in this array at which to begin searching for searchElement.
 
 ##### flatMap()
 
-> **flatMap**\<`U`, `This`\>(`callback`, `thisArg?`): `U`[]
+> **flatMap**\<`U`, `This`\>(`callback`: (`this`: `This`, `value`: `string`, `index`: `number`, `array`: `string`[]) => `U` \| readonly `U`[], `thisArg?`: `This`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:64
 
@@ -2378,7 +2378,7 @@ This is identical to a map followed by flat with depth 1.
 
 ###### callback
 
-(`this`, `value`, `index`, `array`) => `U` \| readonly `U`[]
+(`this`: `This`, `value`: `string`, `index`: `number`, `array`: `string`[]) => `U` \| readonly `U`[]
 
 A function that accepts up to three arguments. The flatMap method calls the
 callback function one time for each element in the array.
@@ -2400,7 +2400,7 @@ thisArg is omitted, undefined is used as the this value.
 
 ##### flat()
 
-> **flat**\<`A`, `D`\>(`this`, `depth?`): `FlatArray`\<`A`, `D`\>[]
+> **flat**\<`A`, `D`\>(`this`: `A`, `depth?`: `D`): `FlatArray`\<`A`, `D`\>[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:75
 
@@ -2439,7 +2439,7 @@ The maximum recursion depth
 
 ##### at()
 
-> **at**(`index`): `undefined` \| `string`
+> **at**(`index`: `number`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2022.array.d.ts:24
 
@@ -2465,7 +2465,7 @@ The zero-based index of the desired code unit. A negative index will count back 
 
 ###### Call Signature
 
-> **findLast**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
+> **findLast**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:29
 
@@ -2482,7 +2482,7 @@ otherwise.
 
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
 
 findLast calls predicate once for each element of the array, in descending
 order, until it finds one where predicate returns true. If such an element is found, findLast
@@ -2505,7 +2505,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **findLast**(`predicate`, `thisArg?`): `undefined` \| `string`
+> **findLast**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:30
 
@@ -2513,7 +2513,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
 
 ###### thisArg?
 
@@ -2529,7 +2529,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findLastIndex()
 
-> **findLastIndex**(`predicate`, `thisArg?`): `number`
+> **findLastIndex**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:41
 
@@ -2540,7 +2540,7 @@ otherwise.
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
 
 findLastIndex calls predicate once for each element of the array, in descending
 order, until it finds one where predicate returns true. If such an element is found,
@@ -2579,7 +2579,7 @@ Returns a copy of an array with its elements reversed.
 
 ##### toSorted()
 
-> **toSorted**(`compareFn?`): `string`[]
+> **toSorted**(`compareFn?`: (`a`: `string`, `b`: `string`) => `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:57
 
@@ -2589,7 +2589,7 @@ Returns a copy of an array with its elements sorted.
 
 ###### compareFn?
 
-(`a`, `b`) => `number`
+(`a`: `string`, `b`: `string`) => `number`
 
 Function used to determine the order of the elements. It is expected to return
 a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
@@ -2610,7 +2610,7 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount`, ...`items`): `string`[]
+> **toSpliced**(`start`: `number`, `deleteCount`: `number`, ...`items`: `string`[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:66
 
@@ -2648,7 +2648,7 @@ The copied array.
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount?`): `string`[]
+> **toSpliced**(`start`: `number`, `deleteCount?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:74
 
@@ -2680,7 +2680,7 @@ A copy of the original array with the remaining elements.
 
 ##### with()
 
-> **with**(`index`, `value`): `string`[]
+> **with**(`index`: `number`, `value`: `string`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:85
 
@@ -2749,7 +2749,7 @@ Returns a string representation of an array. The elements are converted to strin
 
 ###### Call Signature
 
-> **toLocaleString**(`locales`, `options?`): `string`
+> **toLocaleString**(`locales`: `string` \| `string`[], `options?`: `NumberFormatOptions` & `DateTimeFormatOptions`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:64
 
@@ -2790,7 +2790,7 @@ If the array is empty, undefined is returned and the array is not modified.
 
 ##### push()
 
-> **push**(...`items`): `number`
+> **push**(...`items`: `string`[]): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1344
 
@@ -2816,7 +2816,7 @@ New elements to add to the array.
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+> **concat**(...`items`: `ConcatArray`\<`string`\>[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1350
 
@@ -2841,7 +2841,7 @@ Additional arrays and/or items to add to the end of the array.
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+> **concat**(...`items`: (`string` \| `ConcatArray`\<`string`\>)[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1356
 
@@ -2866,7 +2866,7 @@ Additional arrays and/or items to add to the end of the array.
 
 ##### join()
 
-> **join**(`separator?`): `string`
+> **join**(`separator?`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1361
 
@@ -2924,7 +2924,7 @@ If the array is empty, undefined is returned and the array is not modified.
 
 ##### slice()
 
-> **slice**(`start?`, `end?`): `string`[]
+> **slice**(`start?`: `number`, `end?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1381
 
@@ -2958,7 +2958,7 @@ If end is undefined, then the slice extends to the end of the array.
 
 ##### sort()
 
-> **sort**(`compareFn?`): `this`
+> **sort**(`compareFn?`: (`a`: `string`, `b`: `string`) => `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1392
 
@@ -2969,7 +2969,7 @@ This method mutates the array and returns a reference to the same array.
 
 ###### compareFn?
 
-(`a`, `b`) => `number`
+(`a`: `string`, `b`: `string`) => `number`
 
 Function used to determine the order of the elements. It is expected to return
 a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
@@ -2990,7 +2990,7 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount?`): `string`[]
+> **splice**(`start`: `number`, `deleteCount?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1399
 
@@ -3022,7 +3022,7 @@ An array containing the elements that were deleted.
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount`, ...`items`): `string`[]
+> **splice**(`start`: `number`, `deleteCount`: `number`, ...`items`: `string`[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1407
 
@@ -3060,7 +3060,7 @@ An array containing the elements that were deleted.
 
 ##### unshift()
 
-> **unshift**(...`items`): `number`
+> **unshift**(...`items`: `string`[]): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1412
 
@@ -3084,7 +3084,7 @@ Elements to insert at the start of the array.
 
 ##### indexOf()
 
-> **indexOf**(`searchElement`, `fromIndex?`): `number`
+> **indexOf**(`searchElement`: `string`, `fromIndex?`: `number`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1418
 
@@ -3114,7 +3114,7 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 ##### lastIndexOf()
 
-> **lastIndexOf**(`searchElement`, `fromIndex?`): `number`
+> **lastIndexOf**(`searchElement`: `string`, `fromIndex?`: `number`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1424
 
@@ -3146,7 +3146,7 @@ The array index at which to begin searching backward. If fromIndex is omitted, t
 
 ###### Call Signature
 
-> **every**\<`S`\>(`predicate`, `thisArg?`): `this is S[]`
+> **every**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `this is S[]`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1433
 
@@ -3162,7 +3162,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
@@ -3185,7 +3185,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ###### Call Signature
 
-> **every**(`predicate`, `thisArg?`): `boolean`
+> **every**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1442
 
@@ -3195,7 +3195,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
@@ -3218,7 +3218,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### some()
 
-> **some**(`predicate`, `thisArg?`): `boolean`
+> **some**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1451
 
@@ -3228,7 +3228,7 @@ Determines whether the specified callback function returns true for any element 
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
 
 A function that accepts up to three arguments. The some method calls
 the predicate function for each element in the array until the predicate returns a value
@@ -3251,7 +3251,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### forEach()
 
-> **forEach**(`callbackfn`, `thisArg?`): `void`
+> **forEach**(`callbackfn`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `void`, `thisArg?`: `any`): `void`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1457
 
@@ -3261,7 +3261,7 @@ Performs the specified action for each element in an array.
 
 ###### callbackfn
 
-(`value`, `index`, `array`) => `void`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `void`
 
 A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
 
@@ -3281,7 +3281,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ##### map()
 
-> **map**\<`U`\>(`callbackfn`, `thisArg?`): `U`[]
+> **map**\<`U`\>(`callbackfn`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1463
 
@@ -3297,7 +3297,7 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 ###### callbackfn
 
-(`value`, `index`, `array`) => `U`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `U`
 
 A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
 
@@ -3319,7 +3319,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ###### Call Signature
 
-> **filter**\<`S`\>(`predicate`, `thisArg?`): `S`[]
+> **filter**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `S`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1469
 
@@ -3335,7 +3335,7 @@ Returns the elements of an array that meet the condition specified in a callback
 
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
@@ -3355,7 +3355,7 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ###### Call Signature
 
-> **filter**(`predicate`, `thisArg?`): `string`[]
+> **filter**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1475
 
@@ -3365,7 +3365,7 @@ Returns the elements of an array that meet the condition specified in a callback
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
@@ -3387,7 +3387,7 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`): `string`
+> **reduce**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1481
 
@@ -3397,7 +3397,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
@@ -3411,7 +3411,7 @@ A function that accepts up to four arguments. The reduce method calls the callba
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`, `initialValue`): `string`
+> **reduce**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`, `initialValue`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1482
 
@@ -3419,7 +3419,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 ###### initialValue
 
@@ -3435,7 +3435,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> **reduce**\<`U`\>(`callbackfn`, `initialValue`): `U`
+> **reduce**\<`U`\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`, `initialValue`: `U`): `U`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1488
 
@@ -3451,7 +3451,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
+(`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
@@ -3473,7 +3473,7 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`): `string`
+> **reduceRight**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1494
 
@@ -3483,7 +3483,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
@@ -3497,7 +3497,7 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`, `initialValue`): `string`
+> **reduceRight**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`, `initialValue`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1495
 
@@ -3505,7 +3505,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 ###### initialValue
 
@@ -3521,7 +3521,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> **reduceRight**\<`U`\>(`callbackfn`, `initialValue`): `U`
+> **reduceRight**\<`U`\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`, `initialValue`: `U`): `U`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1501
 
@@ -3537,7 +3537,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
+(`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
@@ -3557,7 +3557,7 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ##### isArray()
 
-> `static` **isArray**(`arg`): `arg is any[]`
+> `static` **isArray**(`arg`: `any`): `arg is any[]`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1513
 
@@ -3579,7 +3579,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`\>(`iterableOrArrayLike`): `Promise`\<`T`[]\>
+> `static` **fromAsync**\<`T`\>(`iterableOrArrayLike`: `AsyncIterable`\<`T`, `any`, `any`\> \| `Iterable`\<`T` \| `PromiseLike`\<`T`\>, `any`, `any`\> \| `ArrayLike`\<`T` \| `PromiseLike`\<`T`\>\>): `Promise`\<`T`[]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.esnext.array.d.ts:24
 
@@ -3609,7 +3609,7 @@ An async iterator or array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`, `mapFn`, `thisArg?`): `Promise`\<`Awaited`\<`U`\>[]\>
+> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`: `AsyncIterable`\<`T`, `any`, `any`\> \| `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>, `mapFn`: (`value`: `Awaited`\<`T`\>, `index`: `number`) => `U`, `thisArg?`: `any`): `Promise`\<`Awaited`\<`U`\>[]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.esnext.array.d.ts:34
 
@@ -3635,7 +3635,7 @@ An async iterator or array-like object to convert to an array.
 
 ###### mapFn
 
-(`value`, `index`) => `U`
+(`value`: `Awaited`\<`T`\>, `index`: `number`) => `U`
 
 ###### thisArg?
 
@@ -3814,7 +3814,7 @@ Defined in: [examples/example-typedoc/src/enums.ts:81](https://github.com/ocavue
 
 ### sqrt()
 
-> **sqrt**(`x`): `number`
+> **sqrt**(`x`: `number`): `number`
 
 Defined in: [examples/example-typedoc/src/functions.ts:7](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L7)
 
@@ -3838,7 +3838,7 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 ### sqrtArrowFunction()
 
-> **sqrtArrowFunction**(`x`): `number`
+> **sqrtArrowFunction**(`x`: `number`): `number`
 
 Defined in: [examples/example-typedoc/src/functions.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L25)
 
@@ -3870,7 +3870,7 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 ### concat()
 
-> **concat**\<`T`\>(`array1`, `array2`): `T`[]
+> **concat**\<`T`\>(`array1`: `T`[], `array2`: `T`[]): `T`[]
 
 Defined in: [examples/example-typedoc/src/functions.ts:39](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L39)
 
@@ -3953,7 +3953,7 @@ Defined in: [examples/example-typedoc/src/functions.ts:55](https://github.com/oc
 
 ### makeHttpCallA()
 
-> **makeHttpCallA**(`options`): `Promise`\<`Response`\>
+> **makeHttpCallA**(`options`: [`MakeHttpCallAOptions`](#makehttpcallaoptions)): `Promise`\<`Response`\>
 
 Defined in: [examples/example-typedoc/src/functions.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L65)
 
@@ -3977,7 +3977,7 @@ TypeDoc will not document the options.
 
 ### makeHttpCallB()
 
-> **makeHttpCallB**(`options`): `Promise`\<`Response`\>
+> **makeHttpCallB**(`options`: `object`): `Promise`\<`Response`\>
 
 Defined in: [examples/example-typedoc/src/functions.ts:78](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L78)
 
@@ -4023,7 +4023,7 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+> **overloadedFunction**(`a`: `number`, `b`: `number`): `string`
 
 Defined in: [examples/example-typedoc/src/functions.ts:102](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L102)
 
@@ -4049,7 +4049,7 @@ included in the documentation.
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+> **overloadedFunction**(`a`: `string`, `b`: `string`): `string`
 
 Defined in: [examples/example-typedoc/src/functions.ts:111](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L111)
 
@@ -4222,7 +4222,7 @@ cancel buttons.
 
 ##### onShowValidationChange()
 
-> **onShowValidationChange**(`showValidation`): `void`
+> **onShowValidationChange**(`showValidation`: `boolean`): `void`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:114](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L114)
 
@@ -4240,7 +4240,7 @@ A callback that fires when the dialog is submitted.
 
 ##### onSuccess()
 
-> **onSuccess**(`payload`): `Promise`\<`void`\>
+> **onSuccess**(`payload`: `unknown`): `Promise`\<`void`\>
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:126](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L126)
 
@@ -4280,7 +4280,7 @@ rendered.
 
 ##### onSubmit()
 
-> **onSubmit**(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
+> **onSubmit**(`formData`: `Record`\<`string`, `string` \| `boolean`\>): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:154](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L154)
 
