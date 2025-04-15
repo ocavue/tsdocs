@@ -133,7 +133,7 @@ importers:
         version: 18.19.67
       tsup:
         specifier: ^8.4.0
-        version: 8.4.0(typescript@5.8.3)(yaml@2.6.1)
+        version: 8.4.0(typescript@5.8.3)(yaml@2.7.1)
       typedoc:
         specifier: ^0.27.9
         version: 0.27.9(typescript@5.8.3)
@@ -2861,6 +2861,11 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
+  yaml@2.7.1:
+    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
+    engines: {node: '>= 14'}
+    hasBin: true
+
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -5326,11 +5331,11 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-load-config@6.0.1(yaml@2.6.1):
+  postcss-load-config@6.0.1(yaml@2.7.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
-      yaml: 2.6.1
+      yaml: 2.7.1
 
   postcss-selector-parser@6.1.2:
     dependencies:
@@ -5786,7 +5791,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.4.0(typescript@5.8.3)(yaml@2.6.1):
+  tsup@8.4.0(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.0)
       cac: 6.7.14
@@ -5796,7 +5801,7 @@ snapshots:
       esbuild: 0.25.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(yaml@2.6.1)
+      postcss-load-config: 6.0.1(yaml@2.7.1)
       resolve-from: 5.0.0
       rollup: 4.34.8
       source-map: 0.8.0-beta.0
@@ -6094,6 +6099,9 @@ snapshots:
   y18n@5.0.8: {}
 
   yaml@2.6.1: {}
+
+  yaml@2.7.1:
+    optional: true
 
   yargs-parser@21.1.1: {}
 
