@@ -57,7 +57,7 @@ importers:
         version: link:../../packages/typedoc-plugin-md
 
   examples/example-typedoc:
-    dependencies:
+    devDependencies:
       '@types/lodash':
         specifier: ^4.17.5
         version: 4.17.16
@@ -79,7 +79,9 @@ importers:
       typedoc:
         specifier: ^0.27.9
         version: 0.27.9(typescript@5.8.3)
-    devDependencies:
+      typedoc-plugin-markdown:
+        specifier: ~4.4.2
+        version: 4.4.2(typedoc@0.27.9(typescript@5.8.3))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -2693,6 +2695,12 @@ packages:
   typed-array-length@1.0.7:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
+
+  typedoc-plugin-markdown@4.4.2:
+    resolution: {integrity: sha512-kJVkU2Wd+AXQpyL6DlYXXRrfNrHrEIUgiABWH8Z+2Lz5Sq6an4dQ/hfvP75bbokjNDUskOdFlEEm/0fSVyC7eg==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      typedoc: 0.27.x
 
   typedoc@0.27.9:
     resolution: {integrity: sha512-/z585740YHURLl9DN2jCWe6OW7zKYm6VoQ93H0sxZ1cwHQEQrUn5BJrEnkWhfzUdyO+BLGjnKUZ9iz9hKloFDw==}
@@ -5871,6 +5879,10 @@ snapshots:
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
+
+  typedoc-plugin-markdown@4.4.2(typedoc@0.27.9(typescript@5.8.3)):
+    dependencies:
+      typedoc: 0.27.9(typescript@5.8.3)
 
   typedoc@0.27.9(typescript@5.8.3):
     dependencies:
