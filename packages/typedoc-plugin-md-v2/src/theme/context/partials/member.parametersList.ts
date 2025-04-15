@@ -21,10 +21,12 @@ export function parametersList(
     (parameter) => parameter.flags.isOptional,
   )
 
-  const md: string[] = []
+  const md: string[] = ['<dl>']
 
   model.forEach((parameter, i) => {
-    const row: string[] = []
+    const row: string[] = [
+      '<dt>',
+    ]
 
     const isOptional =
       parameter.flags.isOptional ||
@@ -34,7 +36,7 @@ export function parametersList(
 
     const name = `${escapeChars(parameter.name)}${optional}`
 
-    row.push(heading(options.headingLevel + 1, name))
+    row.push(heading(options.headingLevel + 1, name), '</dt>', '<dd data-debug-parm-list>')
 
     if (parameter.type instanceof UnionType && parameter.type?.types) {
       const unions: string[] = []
@@ -75,20 +77,30 @@ export function parametersList(
       if (parameter.type instanceof ReflectionType) {
         if (parameter.type.declaration?.signatures) {
           row.push(
+            "<dl data-debug-parm-list-4>",
             this.partials.someType(parameter.type, { forceCollapse: true }),
+            '</dl>',
           )
         }
         row.push(
+          '<dl data-debug-parm-list-5>',
           `${'\n\n'}${getReflectionType(this, options, parameter, parameter.type)}`,
+          '</dl>',
         )
       } else {
-        row.push(getOtherType(this, parameter))
+        row.push(
+          '<dl data-debug-parm-list-6>',
+          getOtherType(this, parameter),
+          '</dl>',
+        )
       }
     }
 
+    row.push('</dd>', '</dl>')
     md.push(row.join('\n\n'))
   })
 
+  md.push('</dl>')
   return md.join('\n\n')
 }
 
