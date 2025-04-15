@@ -94,11 +94,16 @@ export function signature(
 
   if (model.parameters?.length) {
     md.push(
+      '<dl>',
+      '<dt>',
       heading(
         options.headingLevel,
         ReflectionKind.pluralString(ReflectionKind.Parameter),
       ),
+      '</dt>',
+      '<dd>',
     )
+
     if (this.helpers.useTableFormat('parameters')) {
       md.push(this.partials.parametersTable(model.parameters))
     } else {
@@ -108,6 +113,8 @@ export function signature(
         }),
       )
     }
+
+    md.push('</dd>', '</dl>')
   }
 
   if (model.type) {

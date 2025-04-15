@@ -31,7 +31,15 @@ equal elements. The iteratees are invoked with one argument: (value).
 
 `T`
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
 
 ###### collection
 
@@ -44,6 +52,10 @@ The collection to iterate over.
 ...`Many`\<`ListIteratee`\<`T`\>\>[]
 
 The iteratees to sort by, specified individually or in arrays.
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -87,7 +99,15 @@ Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodas
 
 `T` *extends* `object`
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
 
 ###### collection
 
@@ -96,6 +116,10 @@ Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodas
 ###### iteratees
 
 ...`Many`\<`ObjectIteratee`\<`T`\>\>[]
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -146,11 +170,23 @@ This is our recommended way to define React components as it makes your code
 more readable. The minor drawback is you must click the `CardAProps` link to
 see the component's props.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### \_\_namedParameters
 
 `PropsWithChildren`\<[`CardAProps`](#cardaprops)\>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -191,11 +227,23 @@ export function CardB({
 This can make the TypeDoc documentation a bit cleaner for very simple components,
 but it makes your code less readable.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### \_\_namedParameters
 
 `PropsWithChildren`\<\{ `variant`: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`; \}\>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -268,11 +316,23 @@ export function Example({
 }
 ```
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### props
 
 `PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -312,7 +372,15 @@ Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github
 
 The constructor of the `Customer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### id
 
@@ -331,6 +399,10 @@ the customer's name
 the next number to use when this customer places an order
 
 `string` | `number`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -485,7 +557,15 @@ what the `CancellablePromise` resolves to
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### promise
 
@@ -499,6 +579,10 @@ a normal promise or thenable
 
 a function that cancels `promise`. **Calling `cancel` after
 `promise` has resolved must be a no-op.**
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -526,11 +610,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](http
 
 Cancel the `CancellablePromise`.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### reason?
 
 `string`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -578,7 +674,15 @@ whichever async operation is in progress will be canceled.
 
 `TResult2` = `never`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### onFulfilled?
 
@@ -587,6 +691,10 @@ whichever async operation is in progress will be canceled.
 ###### onRejected?
 
 `null` | (`reason`: `any`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -610,11 +718,23 @@ Analogous to `Promise.catch`.
 
 `TResult` = `never`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### onRejected?
 
 `null` | (`reason`: `any`) => `TResult` \| `PromiseLike`\<`TResult`\>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -632,7 +752,15 @@ Attaches a callback that is invoked when the Promise is settled
 (fulfilled or rejected). The resolved value cannot be modified from the
 callback.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### onFinally?
 
@@ -640,6 +768,10 @@ The callback to execute when the Promise is settled
 (fulfilled or rejected).
 
 `null` | () => `void`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -687,11 +819,23 @@ is canceled, it has already resolved.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### value
 
 `T`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -716,13 +860,25 @@ Like `CancellablePromise.resolve`, canceling the returned
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### reason?
 
 `unknown`
 
 this should probably be an `Error` object
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -787,11 +943,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](htt
 
 `T10`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>, `T10` \| `PromiseLike`\<`T10`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -843,11 +1011,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](htt
 
 `T9`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -895,11 +1075,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](htt
 
 `T8`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -943,11 +1135,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](htt
 
 `T7`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -987,11 +1191,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](htt
 
 `T6`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1027,11 +1243,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](htt
 
 `T5`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1063,11 +1291,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](htt
 
 `T4`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1095,11 +1335,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](htt
 
 `T3`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1123,11 +1375,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](htt
 
 `T2`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1147,11 +1411,23 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](htt
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly (`T` \| `PromiseLike`\<`T`\>)[]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1176,13 +1452,25 @@ when all of the provided `Promises` resolve or reject.
 
 `T` *extends* readonly `unknown`[] \| readonly \[`unknown`\]
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 `T`
 
 An array of `Promises`.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1207,13 +1495,25 @@ when all of the provided `Promise`s resolve or reject.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 `Iterable`\<`T`\>
 
 An array of `Promise`s.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1239,13 +1539,25 @@ the provided `Promises` are resolved or rejected.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### values
 
 readonly `T`[]
 
 An array of `Promises`.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1262,11 +1574,23 @@ promises.
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### ms
 
 `number`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1300,7 +1624,15 @@ Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://githu
 
 The constructor of the `DeliveryCustomer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### id
 
@@ -1325,6 +1657,10 @@ the next number to use when this customer places an order
 whether this customer has a basic or enterprise subscription
 
 `"basic"` | `"enterprise"`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1519,7 +1855,15 @@ Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github
 
 The constructor of the `Customer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### id
 
@@ -1538,6 +1882,10 @@ the customer's name
 the next number to use when this customer places an order
 
 `string` | `number`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1731,11 +2079,23 @@ the methods inherited from `Array`. For example, the `values` method returns
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1508
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### arrayLength
 
 `number`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1753,11 +2113,23 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1509
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...`string`[]
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2012,7 +2384,15 @@ otherwise.
 
 `S` *extends* `string`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2028,6 +2408,10 @@ immediately returns that element value. Otherwise, find returns undefined.
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2045,7 +2429,15 @@ predicate. If it is not provided, undefined is used instead.
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:30
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2054,6 +2446,10 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 ###### thisArg?
 
 `any`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2074,7 +2470,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Returns the index of the first element in the array where predicate is true, and -1
 otherwise.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2090,6 +2494,10 @@ findIndex immediately returns that element index. Otherwise, findIndex returns -
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2109,7 +2517,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### value
 
@@ -2131,6 +2547,10 @@ length+start where length is the length of the array.
 index to stop filling the array at. If end is negative, it is treated as
 length+end.
 
+</dd>
+
+</dl>
+
 ###### Returns
 
 `this`
@@ -2150,7 +2570,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Returns the this object after copying a section of the array identified by start and end
 to the same array starting at position target
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### target
 
@@ -2171,6 +2599,10 @@ is treated as length+end.
 `number`
 
 If not specified, length of the this object is used as its default value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2198,13 +2630,25 @@ Creates an array from an array-like object.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### arrayLike
 
 `ArrayLike`\<`T`\>
 
 An array-like object to convert to an array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2234,7 +2678,15 @@ Creates an array from an iterable object.
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### arrayLike
 
@@ -2253,6 +2705,10 @@ A mapping function to call on every element of the array.
 `any`
 
 Value of 'this' used to invoke the mapfn.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2278,13 +2734,25 @@ Creates an array from an iterable object.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### iterable
 
 An iterable object to convert to an array.
 
 `Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2314,7 +2782,15 @@ Creates an array from an iterable object.
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### iterable
 
@@ -2333,6 +2809,10 @@ A mapping function to call on every element of the array.
 `any`
 
 Value of 'this' used to invoke the mapfn.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2358,13 +2838,25 @@ Returns a new array from a set of elements.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...`T`[]
 
 A set of elements to include in the new array object.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2456,7 +2948,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Determines whether an array includes a certain element, returning true or false as appropriate.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### searchElement
 
@@ -2469,6 +2969,10 @@ The element to search for.
 `number`
 
 The position in this array at which to begin searching for searchElement.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2500,7 +3004,15 @@ This is identical to a map followed by flat with depth 1.
 
 `This` = `undefined`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callback
 
@@ -2515,6 +3027,10 @@ callback function one time for each element in the array.
 
 An object to which the this keyword can refer in the callback function. If
 thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2545,7 +3061,15 @@ specified depth.
 
 `D` *extends* `number` = `1`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### this
 
@@ -2556,6 +3080,10 @@ specified depth.
 `D`
 
 The maximum recursion depth
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2575,13 +3103,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Returns the item located at the specified index.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### index
 
 `number`
 
 The zero-based index of the desired code unit. A negative index will count back from the last item.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2610,7 +3150,15 @@ otherwise.
 
 `S` *extends* `string`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2626,6 +3174,10 @@ immediately returns that element value. Otherwise, findLast returns undefined.
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2643,7 +3195,15 @@ predicate. If it is not provided, undefined is used instead.
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:30
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2652,6 +3212,10 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 ###### thisArg?
 
 `any`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2672,7 +3236,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Returns the index of the last element in the array where predicate is true, and -1
 otherwise.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -2688,6 +3260,10 @@ findLastIndex immediately returns that element index. Otherwise, findLastIndex r
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2725,7 +3301,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Returns a copy of an array with its elements sorted.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### compareFn?
 
@@ -2737,6 +3321,10 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 ```ts
 [11, 2, 22, 1].toSorted((a, b) => a - b) // [1, 2, 11, 22]
 ```
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2758,7 +3346,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Copies an array and removes elements and, if necessary, inserts new elements in their place. Returns the copied array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### start
 
@@ -2777,6 +3373,10 @@ The number of elements to remove.
 ...`string`[]
 
 Elements to insert into the copied array in place of the deleted elements.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2798,7 +3398,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Copies an array and removes elements while returning the remaining elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### start
 
@@ -2811,6 +3419,10 @@ The zero-based location in the array from which to start removing elements.
 `number`
 
 The number of elements to remove.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2834,7 +3446,15 @@ Copies an array, then overwrites the value at the provided index with the
 given value. If the index is negative, then it replaces from the end
 of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### index
 
@@ -2848,6 +3468,10 @@ negative, then it replaces from the end of the array.
 `string`
 
 The value to write into the copied array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2905,7 +3529,15 @@ Returns a string representation of an array. The elements are converted to strin
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:64
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### locales
 
@@ -2914,6 +3546,10 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 ###### options?
 
 `NumberFormatOptions` & `DateTimeFormatOptions`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2952,13 +3588,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Appends new elements to the end of an array, and returns the new length of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...`string`[]
 
 New elements to add to the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2981,13 +3629,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...`ConcatArray`\<`string`\>[]
 
 Additional arrays and/or items to add to the end of the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3008,13 +3668,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...(`string` \| `ConcatArray`\<`string`\>)[]
 
 Additional arrays and/or items to add to the end of the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3034,13 +3706,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Adds all the elements of an array into a string, separated by the specified separator string.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### separator?
 
 `string`
 
 A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3100,7 +3784,15 @@ Returns a copy of a section of an array.
 For both start and end, a negative index can be used to indicate an offset from the end of the array.
 For example, -2 refers to the second to last element of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### start?
 
@@ -3115,6 +3807,10 @@ If start is undefined, then the slice begins at index 0.
 
 The end index of the specified portion of the array. This is exclusive of the element at the index 'end'.
 If end is undefined, then the slice extends to the end of the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3135,7 +3831,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 Sorts an array in place.
 This method mutates the array and returns a reference to the same array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### compareFn?
 
@@ -3147,6 +3851,10 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 ```ts
 [11,2,22,1].sort((a, b) => a - b)
 ```
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3168,7 +3876,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### start
 
@@ -3181,6 +3897,10 @@ The zero-based location in the array from which to start removing elements.
 `number`
 
 The number of elements to remove.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3202,7 +3922,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### start
 
@@ -3221,6 +3949,10 @@ The number of elements to remove.
 ...`string`[]
 
 Elements to insert into the array in place of the deleted elements.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3242,13 +3974,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Inserts new elements at the start of an array, and returns the new length of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### items
 
 ...`string`[]
 
 Elements to insert at the start of the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3268,7 +4012,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### searchElement
 
@@ -3281,6 +4033,10 @@ The value to locate in the array.
 `number`
 
 The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3300,7 +4056,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### searchElement
 
@@ -3313,6 +4077,10 @@ The value to locate in the array.
 `number`
 
 The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3340,7 +4108,15 @@ Determines whether all the members of an array satisfy the specified test.
 
 `S` *extends* `string`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -3356,6 +4132,10 @@ which is coercible to the Boolean value false, or until the end of the array.
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3375,7 +4155,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Determines whether all the members of an array satisfy the specified test.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -3391,6 +4179,10 @@ which is coercible to the Boolean value false, or until the end of the array.
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3410,7 +4202,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Determines whether the specified callback function returns true for any element of an array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -3426,6 +4226,10 @@ which is coercible to the Boolean value true, or until the end of the array.
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3445,7 +4249,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Performs the specified action for each element in an array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3458,6 +4270,10 @@ A function that accepts up to three arguments. forEach calls the callbackfn func
 `any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3483,7 +4299,15 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3496,6 +4320,10 @@ A function that accepts up to three arguments. The map method calls the callback
 `any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3523,7 +4351,15 @@ Returns the elements of an array that meet the condition specified in a callback
 
 `S` *extends* `string`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -3536,6 +4372,10 @@ A function that accepts up to three arguments. The filter method calls the predi
 `any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3555,7 +4395,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### predicate
 
@@ -3568,6 +4416,10 @@ A function that accepts up to three arguments. The filter method calls the predi
 `any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3589,13 +4441,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
 (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3613,7 +4477,15 @@ A function that accepts up to four arguments. The reduce method calls the callba
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1482
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3622,6 +4494,10 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 ###### initialValue
 
 `string`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3647,7 +4523,15 @@ Calls the specified callback function for all the elements in an array. The retu
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3660,6 +4544,10 @@ A function that accepts up to four arguments. The reduce method calls the callba
 `U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3681,13 +4569,25 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
 (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3705,7 +4605,15 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1495
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3714,6 +4622,10 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 ###### initialValue
 
 `string`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3739,7 +4651,15 @@ Calls the specified callback function for all the elements in an array, in desce
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### callbackfn
 
@@ -3752,6 +4672,10 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 `U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3769,11 +4693,23 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1513
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### arg
 
 `any`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3801,13 +4737,25 @@ Creates an array from an async iterator or iterable object.
 
 `T`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### iterableOrArrayLike
 
 An async iterator or array-like object to convert to an array.
 
 `AsyncIterable`\<`T`, `any`, `any`\> | `Iterable`\<`T` \| `PromiseLike`\<`T`\>, `any`, `any`\> | `ArrayLike`\<`T` \| `PromiseLike`\<`T`\>\>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3837,7 +4785,15 @@ Creates an array from an async iterator or iterable object.
 
 `U`
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### iterableOrArrayLike
 
@@ -3854,6 +4810,10 @@ An async iterator or array-like object to convert to an array.
 `any`
 
 Value of 'this' used when executing mapfn.
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -4034,13 +4994,25 @@ Defined in: [examples/example-typedoc/src/functions.ts:7](https://github.com/oca
 
 Calculates the square root of a number.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### x
 
 `number`
 
 the number to calculate the root of.
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -4068,13 +5040,25 @@ export const sqrtArrowFunction = (x: number): number => Math.sqrt(x);
 
 TypeDoc is smart and documents `sqrtArrowFunction` as a function rather than a variable.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### x
 
 `number`
 
 the number do calculate the root of.
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -4109,7 +5093,15 @@ to document generic type parameters, e.g.
 
 the element type of the arrays
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### array1
 
@@ -4118,6 +5110,10 @@ the element type of the arrays
 ##### array2
 
 `T`[]
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -4183,11 +5179,23 @@ interface and makes an HTTP call.
 **Make sure to export the options type when using this pattern.** Otherwise,
 TypeDoc will not document the options.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### options
 
 [`MakeHttpCallAOptions`](#makehttpcallaoptions)
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -4207,7 +5215,15 @@ A function that takes in an options object and makes an HTTP call.
 
 The options type is written directly in the function definition.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
 
 ##### options
 
@@ -4235,6 +5251,10 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 `"cors"` \| `"no-cors"` \| `"same-origin"`
 
+</dd>
+
+</dl>
+
 #### Returns
 
 `Promise`\<`Response`\>
@@ -4257,7 +5277,15 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
 
 ###### a
 
@@ -4266,6 +5294,10 @@ included in the documentation.
 ###### b
 
 `number`
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -4285,7 +5317,15 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
 
 ###### a
 
@@ -4294,6 +5334,10 @@ included in the documentation.
 ###### b
 
 `string`
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -4458,11 +5502,23 @@ Defined in: [examples/example-typedoc/src/reactComponents.tsx:114](https://githu
 
 A callback that fires when the dialog is submitted.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### showValidation
 
 `boolean`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -4485,11 +5541,23 @@ Your `onSuccess` callback must return a promise. The submit button will
 continue showing a loading indicator until the promise resolves. This is
 to support refetching the data that was updated by the form submission.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### payload
 
 `unknown`
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -4537,11 +5605,23 @@ Using `formData` is deprecated. Use controlled components instead.
 `formData` will be `{}` if the optional peer dependency `jquery` is not
 installed.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
 
 ###### formData
 
 `Record`\<`string`, `string` \| `boolean`\>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
