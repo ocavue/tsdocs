@@ -138,6 +138,40 @@ importers:
         specifier: ^0.27.9
         version: 0.27.9(typescript@5.8.3)
 
+  packages/typedoc-plugin-md-v2:
+    dependencies:
+      '@sindresorhus/slugify':
+        specifier: ^2.2.1
+        version: 2.2.1
+      change-case:
+        specifier: ^5.4.4
+        version: 5.4.4
+      remark-parse:
+        specifier: ^11.0.0
+        version: 11.0.0
+      remark-stringify:
+        specifier: ^11.0.0
+        version: 11.0.0
+      unified:
+        specifier: ^11.0.5
+        version: 11.0.5
+      unist-util-visit:
+        specifier: ^5.0.0
+        version: 5.0.0
+    devDependencies:
+      '@types/mdast':
+        specifier: ^4.0.4
+        version: 4.0.4
+      '@types/node':
+        specifier: 18.19.67
+        version: 18.19.67
+      tsup:
+        specifier: ^8.4.0
+        version: 8.4.0(typescript@5.8.3)(yaml@2.7.1)
+      typedoc:
+        specifier: ^0.27.9
+        version: 0.27.9(typescript@5.8.3)
+
 packages:
 
   '@altano/repository-tools@0.1.1':
