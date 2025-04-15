@@ -3,7 +3,7 @@ import { type MarkdownApplication } from 'typedoc-plugin-markdown'
 import { MyMarkdownTheme } from './markdown-theme'
 
 export function load(app: MarkdownApplication) {
-  console.log('[typedoc-plugin-md-v2] load 3:', app)
+  console.log('[typedoc-plugin-md-v2] load 4:', app)
 
   app.renderer.markdownHooks.on(
     'page.begin',

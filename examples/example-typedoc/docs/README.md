@@ -1679,7 +1679,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### \[unscopables\]
 
-> `readonly` **\[unscopables\]**: `object`
+> `readonly` **\[unscopables\]**: \{[`key`: `number`]: `undefined` \| `boolean`; `find`: `boolean`; `findIndex`: `boolean`; `fill`: `boolean`; `copyWithin`: `boolean`; `[iterator]`: `boolean`; `entries`: `boolean`; `keys`: `boolean`; `values`: `boolean`; `[unscopables]`: `boolean`; `includes`: `boolean`; `flatMap`: `boolean`; `flat`: `boolean`; `at`: `boolean`; `findLast`: `boolean`; `findLastIndex`: `boolean`; `toReversed`: `boolean`; `toSorted`: `boolean`; `toSpliced`: `boolean`; `with`: `boolean`; `length`: `boolean`; `toString`: `boolean`; `toLocaleString`: `boolean`; `pop`: `boolean`; `push`: `boolean`; `concat`: `boolean`; `join`: `boolean`; `reverse`: `boolean`; `shift`: `boolean`; `slice`: `boolean`; `sort`: `boolean`; `splice`: `boolean`; `unshift`: `boolean`; `indexOf`: `boolean`; `lastIndexOf`: `boolean`; `every`: `boolean`; `some`: `boolean`; `forEach`: `boolean`; `map`: `boolean`; `filter`: `boolean`; `reduce`: `boolean`; `reduceRight`: `boolean`; \}
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
 
@@ -3977,7 +3977,7 @@ TypeDoc will not document the options.
 
 ### makeHttpCallB()
 
-> **makeHttpCallB**(`options`: `object`): `Promise`\<`Response`\>
+> **makeHttpCallB**(`options`: \{ `url`: `string`; `method`: `string`; `headers`: `Record`\<`string`, `string`\>; `body`: `string` \| `Blob` \| `FormData`; `mode`: `"cors"` \| `"no-cors"` \| `"same-origin"`; \}): `Promise`\<`Response`\>
 
 Defined in: [examples/example-typedoc/src/functions.ts:78](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L78)
 
@@ -4383,7 +4383,7 @@ The user's email address.
 
 ##### name
 
-> **name**: `object`
+> **name**: \{ `first`: `string`; `last`: `string`; \}
 
 Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
@@ -4444,7 +4444,7 @@ The user's email address.
 
 ##### name
 
-> **name**: `object`
+> **name**: \{ `first`: `string`; `last`: `string`; \}
 
 Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
@@ -4502,7 +4502,7 @@ A simple string constant.
 
 ### ObjectConstant
 
-> `const` **ObjectConstant**: `object`
+> `const` **ObjectConstant**: \{ `library`: `"typedoc"`; `version`: `"1.2.3"`; `githubStars`: `1000000`; \}
 
 Defined in: [examples/example-typedoc/src/variables.ts:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L8)
 
