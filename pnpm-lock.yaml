@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   typedoc-plugin-markdown:
-    hash: knb445ykkhqa2ixnhephnsv4hi
+    hash: pzwk2hci374letoqvvlu4khycu
     path: patches/typedoc-plugin-markdown.patch
 
 importers:
@@ -89,7 +89,7 @@ importers:
         version: 0.28.2(typescript@5.8.3)
       typedoc-plugin-markdown:
         specifier: ^4.6.2
-        version: 4.6.2(patch_hash=knb445ykkhqa2ixnhephnsv4hi)(typedoc@0.28.2(typescript@5.8.3))
+        version: 4.6.2(patch_hash=pzwk2hci374letoqvvlu4khycu)(typedoc@0.28.2(typescript@5.8.3))
       typedoc-plugin-md-v2:
         specifier: workspace:*
         version: link:../../packages/typedoc-plugin-md-v2
@@ -184,7 +184,7 @@ importers:
         version: 0.28.2(typescript@5.8.3)
       typedoc-plugin-markdown:
         specifier: ^4.6.2
-        version: 4.6.2(patch_hash=knb445ykkhqa2ixnhephnsv4hi)(typedoc@0.28.2(typescript@5.8.3))
+        version: 4.6.2(patch_hash=pzwk2hci374letoqvvlu4khycu)(typedoc@0.28.2(typescript@5.8.3))
 
 packages:
 
@@ -7072,7 +7072,7 @@ snapshots:
     dependencies:
       is-typedarray: 1.0.0
 
-  typedoc-plugin-markdown@4.6.2(patch_hash=knb445ykkhqa2ixnhephnsv4hi)(typedoc@0.28.2(typescript@5.8.3)):
+  typedoc-plugin-markdown@4.6.2(patch_hash=pzwk2hci374letoqvvlu4khycu)(typedoc@0.28.2(typescript@5.8.3)):
     dependencies:
       typedoc: 0.28.2(typescript@5.8.3)
 

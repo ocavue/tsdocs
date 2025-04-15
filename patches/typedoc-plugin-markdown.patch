@@ -8,7 +8,7 @@ index e7fba5448489eee05311a950a23892d4d1be20ce..73422b4508bd680e3ed6cb2cade7c565
    "exports": {
 -    ".": "./dist/index.js"
 +    ".": "./dist/index.js",
-+    "./lib/*.js": "./dist/lib/*.js"
++    "./*.js": "./dist/*.js"
    },
    "type": "module",
    "files": [
