@@ -1,7 +1,9 @@
-import type { MarkdownApplication } from 'typedoc-plugin-markdown'
+import { type MarkdownApplication } from 'typedoc-plugin-markdown'
+
+import { MyMarkdownTheme } from './markdown-theme'
 
 export function load(app: MarkdownApplication) {
-  console.log('[typedoc-plugin-md-v2] load 1:', app)
+  console.log('[typedoc-plugin-md-v2] load 2:', app)
 
   app.renderer.markdownHooks.on(
     'page.begin',
@@ -27,4 +29,7 @@ export function load(app: MarkdownApplication) {
     'index.page.end',
     () => `**Generated using \`index.page.end\` hook**`,
   )
+
+  // Define the markdown theme
+  app.renderer.defineTheme('my-markdown', MyMarkdownTheme)
 }
