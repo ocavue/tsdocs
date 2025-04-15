@@ -10,7 +10,7 @@ https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees`?): `T`[]
+> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees?`): `T`[]
 
 Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1908
 
@@ -21,7 +21,9 @@ equal elements. The iteratees are invoked with one argument: (value).
 
 ##### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ##### Parameters
 
@@ -73,7 +75,9 @@ Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodas
 
 ##### Type Parameters
 
-• **T** *extends* `object`
+###### T
+
+`T` *extends* `object`
 
 ##### Parameters
 
@@ -136,7 +140,7 @@ see the component's props.
 
 ##### \_\_namedParameters
 
-`PropsWithChildren`\<[`CardAProps`](README.md#cardaprops)\>
+`PropsWithChildren`\<[`CardAProps`](#cardaprops)\>
 
 #### Returns
 
@@ -254,7 +258,7 @@ export function Example({
 
 ##### props
 
-`PropsWithChildren`\<[`EasyFormDialogProps`](README.md#easyformdialogprops)\>
+`PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>
 
 #### Returns
 
@@ -279,14 +283,14 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extended by
 
-- [`DeliveryCustomer`](README.md#deliverycustomer)
-- [`WalkInCustomer`](README.md#walkincustomer)
+- [`DeliveryCustomer`](#deliverycustomer)
+- [`WalkInCustomer`](#walkincustomer)
 
 #### Constructors
 
-##### new Customer()
+##### Constructor
 
-> **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](README.md#customer)
+> **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](#customer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
@@ -314,7 +318,7 @@ the next number to use when this customer places an order
 
 ###### Returns
 
-[`Customer`](README.md#customer)
+[`Customer`](#customer)
 
 #### Properties
 
@@ -439,15 +443,17 @@ reject with a `Cancellation` object. Originally from
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 what the `CancellablePromise` resolves to
 
 #### Constructors
 
-##### new CancellablePromise()
+##### Constructor
 
-> **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+> **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
 
@@ -461,14 +467,14 @@ a normal promise or thenable
 
 ###### cancel
 
-(`reason`?) => `void`
+(`reason?`) => `void`
 
 a function that cancels `promise`. **Calling `cancel` after
 `promise` has resolved must be a no-op.**
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 #### Properties
 
@@ -486,7 +492,7 @@ can access this property.
 
 ##### cancel()
 
-> `readonly` **cancel**: (`reason`?) => `void`
+> `readonly` **cancel**: (`reason?`) => `void`
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L69)
 
@@ -511,7 +517,7 @@ description is attached to.
 
 ##### then()
 
-> **then**\<`TResult1`, `TResult2`\>(`onFulfilled`?, `onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`TResult1` \| `TResult2`\>
+> **then**\<`TResult1`, `TResult2`\>(`onFulfilled?`, `onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:101](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L101)
 
@@ -534,9 +540,13 @@ whichever async operation is in progress will be canceled.
 
 ###### Type Parameters
 
-• **TResult1** = `T`
+###### TResult1
 
-• **TResult2** = `never`
+`TResult1` = `T`
+
+###### TResult2
+
+`TResult2` = `never`
 
 ###### Parameters
 
@@ -550,13 +560,13 @@ whichever async operation is in progress will be canceled.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`TResult1` \| `TResult2`\>
+[`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
 
 a new CancellablePromise
 
 ##### catch()
 
-> **catch**\<`TResult`\>(`onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T` \| `TResult`\>
+> **catch**\<`TResult`\>(`onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:152](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L152)
 
@@ -564,7 +574,9 @@ Analogous to `Promise.catch`.
 
 ###### Type Parameters
 
-• **TResult** = `never`
+###### TResult
+
+`TResult` = `never`
 
 ###### Parameters
 
@@ -574,11 +586,11 @@ Analogous to `Promise.catch`.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T` \| `TResult`\>
+[`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
 
 ##### finally()
 
-> **finally**(`onFinally`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+> **finally**(`onFinally?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:169](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L169)
 
@@ -597,7 +609,7 @@ The callback to execute when the Promise is settled
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 A Promise for the completion of the callback.
 
@@ -605,7 +617,7 @@ A Promise for the completion of the callback.
 
 ###### Call Signature
 
-> `static` **resolve**(): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+> `static` **resolve**(): [`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:185](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L185)
 
@@ -617,11 +629,11 @@ is canceled, it has already resolved.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+[`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 ###### Call Signature
 
-> `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+> `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:187](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L187)
 
@@ -633,7 +645,9 @@ is canceled, it has already resolved.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -643,11 +657,11 @@ is canceled, it has already resolved.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 ##### reject()
 
-> `static` **reject**\<`T`\>(`reason`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+> `static` **reject**\<`T`\>(`reason?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:201](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L201)
 
@@ -658,7 +672,9 @@ Like `CancellablePromise.resolve`, canceling the returned
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -670,7 +686,7 @@ this should probably be an `Error` object
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 ##### all()
 
@@ -683,31 +699,51 @@ thenables, and resolved values
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L205)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
 
-• **T9**
+###### T5
 
-• **T10**
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
+
+###### T9
+
+`T9`
+
+###### T10
+
+`T10`
 
 ###### Parameters
 
@@ -717,33 +753,51 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L220)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
 
-• **T9**
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
+
+###### T9
+
+`T9`
 
 ###### Parameters
 
@@ -753,31 +807,47 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L234)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
 
 ###### Parameters
 
@@ -787,29 +857,43 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L247)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
 
 ###### Parameters
 
@@ -819,27 +903,39 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L259)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
+
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
 
 ###### Parameters
 
@@ -849,25 +945,35 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L270)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
+
+`T3`
+
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
 
 ###### Parameters
 
@@ -877,23 +983,31 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L280)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
+
+###### T3
+
+`T3`
+
+###### T4
+
+`T4`
 
 ###### Parameters
 
@@ -903,21 +1017,27 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`\]\>
+> `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L289)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
+
+`T2`
+
+###### T3
+
+`T3`
 
 ###### Parameters
 
@@ -927,19 +1047,23 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \|
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`\]\>
+> `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L297)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
+
+###### T2
+
+`T2`
 
 ###### Parameters
 
@@ -949,17 +1073,19 @@ readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`[]\>
+> `static` **all**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`T`[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L301)
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -969,13 +1095,13 @@ readonly (`T` \| `PromiseLike`\<`T`\>)[]
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`[]\>
+[`CancellablePromise`](#cancellablepromise)\<`T`[]\>
 
 ##### allSettled()
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:327](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L327)
 
@@ -984,7 +1110,9 @@ when all of the provided `Promises` resolve or reject.
 
 ###### Type Parameters
 
-• **T** *extends* readonly `unknown`[] \| readonly \[`unknown`\]
+###### T
+
+`T` *extends* readonly `unknown`[] \| readonly \[`unknown`\]
 
 ###### Parameters
 
@@ -996,13 +1124,13 @@ An array of `Promises`.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+[`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
 A new `CancellablePromise`.
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:345](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L345)
 
@@ -1011,7 +1139,9 @@ when all of the provided `Promise`s resolve or reject.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -1023,14 +1153,14 @@ An array of `Promise`s.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+[`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
 A new `CancellablePromise`. Canceling it cancels all of the input
 promises.
 
 ##### race()
 
-> `static` **race**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`Awaited`\<`T`\>\>
+> `static` **race**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:370](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L370)
 
@@ -1039,7 +1169,9 @@ the provided `Promises` are resolved or rejected.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -1051,14 +1183,14 @@ An array of `Promises`.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`Awaited`\<`T`\>\>
+[`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
 
 A new `CancellablePromise`. Canceling it cancels all of the input
 promises.
 
 ##### delay()
 
-> `static` **delay**(`ms`): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+> `static` **delay**(`ms`): [`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
 
@@ -1070,7 +1202,7 @@ Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](htt
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+[`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 a `CancellablePromise` that resolves after `ms` milliseconds.
 
@@ -1080,19 +1212,19 @@ a `CancellablePromise` that resolves after `ms` milliseconds.
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L85)
 
-A class that extends [\`Customer\`](README.md#customer).
+A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extends
 
-- [`Customer`](README.md#customer)
+- [`Customer`](#customer)
 
 #### Constructors
 
-##### new DeliveryCustomer()
+##### Constructor
 
-> **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](README.md#deliverycustomer)
+> **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](#deliverycustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L100)
 
@@ -1126,11 +1258,11 @@ whether this customer has a basic or enterprise subscription
 
 ###### Returns
 
-[`DeliveryCustomer`](README.md#deliverycustomer)
+[`DeliveryCustomer`](#deliverycustomer)
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`constructor`](README.md#constructors-1)
+[`Customer`](#customer).[`constructor`](#constructor-1)
 
 #### Properties
 
@@ -1144,7 +1276,7 @@ A public readonly property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`id`](README.md#id)
+[`Customer`](#customer).[`id`](#id)
 
 ##### name
 
@@ -1156,7 +1288,7 @@ A public property that can be reassigned.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`name`](README.md#name)
+[`Customer`](#customer).[`name`](#name)
 
 ##### contactName?
 
@@ -1168,7 +1300,7 @@ An optional protected property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`contactName`](README.md#contactname)
+[`Customer`](#customer).[`contactName`](#contactname)
 
 ##### preferredCourierId?
 
@@ -1224,7 +1356,7 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`nextOrderNumber`](README.md#nextordernumber)
+[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
 
 #### Methods
 
@@ -1242,7 +1374,7 @@ A public method. To be called when an order is placed for this customer.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlaced`](README.md#onorderplaced)
+[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
 
 ##### onOrderPlacedArrowFunction()
 
@@ -1260,7 +1392,7 @@ TypeDoc knows to document this as a method rather than a property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlacedArrowFunction`](README.md#onorderplacedarrowfunction)
+[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
 
 ##### isValid()
 
@@ -1279,7 +1411,7 @@ subscription type is enterprise.
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`isValid`](README.md#isvalid)
+[`Customer`](#customer).[`isValid`](#isvalid)
 
 ***
 
@@ -1287,19 +1419,19 @@ subscription type is enterprise.
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:129](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L129)
 
-A class that extends [\`Customer\`](README.md#customer).
+A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extends
 
-- [`Customer`](README.md#customer)
+- [`Customer`](#customer)
 
 #### Constructors
 
-##### new WalkInCustomer()
+##### Constructor
 
-> **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](README.md#walkincustomer)
+> **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](#walkincustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
@@ -1327,11 +1459,11 @@ the next number to use when this customer places an order
 
 ###### Returns
 
-[`WalkInCustomer`](README.md#walkincustomer)
+[`WalkInCustomer`](#walkincustomer)
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`constructor`](README.md#constructors-1)
+[`Customer`](#customer).[`constructor`](#constructor-1)
 
 #### Properties
 
@@ -1345,7 +1477,7 @@ A public readonly property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`id`](README.md#id)
+[`Customer`](#customer).[`id`](#id)
 
 ##### name
 
@@ -1357,7 +1489,7 @@ A public property that can be reassigned.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`name`](README.md#name)
+[`Customer`](#customer).[`name`](#name)
 
 ##### contactName?
 
@@ -1369,7 +1501,7 @@ An optional protected property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`contactName`](README.md#contactname)
+[`Customer`](#customer).[`contactName`](#contactname)
 
 ##### trustedCustomer?
 
@@ -1417,7 +1549,7 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`nextOrderNumber`](README.md#nextordernumber)
+[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
 
 #### Methods
 
@@ -1437,7 +1569,7 @@ TypeDoc knows to document this as a method rather than a property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlacedArrowFunction`](README.md#onorderplacedarrowfunction)
+[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
 
 ##### isValid()
 
@@ -1453,7 +1585,7 @@ A protected method.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`isValid`](README.md#isvalid)
+[`Customer`](#customer).[`isValid`](#isvalid)
 
 ##### onOrderPlaced()
 
@@ -1469,7 +1601,7 @@ An example of overriding a public method.
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`onOrderPlaced`](README.md#onorderplaced)
+[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
 
 ***
 
@@ -1499,9 +1631,9 @@ the methods inherited from `Array`. For example, the `values` method returns
 
 #### Constructors
 
-##### new StringArray()
+##### Constructor
 
-> **new StringArray**(`arrayLength`): [`StringArray`](README.md#stringarray)
+> **new StringArray**(`arrayLength`): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1508
 
@@ -1513,15 +1645,15 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Returns
 
-[`StringArray`](README.md#stringarray)
+[`StringArray`](#stringarray)
 
 ###### Inherited from
 
 `Array<string>.constructor`
 
-##### new StringArray()
+##### Constructor
 
-> **new StringArray**(...`items`): [`StringArray`](README.md#stringarray)
+> **new StringArray**(...`items`): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1509
 
@@ -1533,7 +1665,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Returns
 
-[`StringArray`](README.md#stringarray)
+[`StringArray`](#stringarray)
 
 ###### Inherited from
 
@@ -1767,7 +1899,7 @@ A method that extends the functionality of a basic JavaScript array.
 
 ###### Call Signature
 
-> **find**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+> **find**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:29
 
@@ -1776,7 +1908,9 @@ otherwise.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
 
 ###### Parameters
 
@@ -1805,7 +1939,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **find**(`predicate`, `thisArg`?): `undefined` \| `string`
+> **find**(`predicate`, `thisArg?`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:30
 
@@ -1829,7 +1963,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findIndex()
 
-> **findIndex**(`predicate`, `thisArg`?): `number`
+> **findIndex**(`predicate`, `thisArg?`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:41
 
@@ -1863,7 +1997,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ##### fill()
 
-> **fill**(`value`, `start`?, `end`?): `this`
+> **fill**(`value`, `start?`, `end?`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:51
 
@@ -1901,7 +2035,7 @@ length+end.
 
 ##### copyWithin()
 
-> **copyWithin**(`target`, `start`, `end`?): `this`
+> **copyWithin**(`target`, `start`, `end?`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:62
 
@@ -1950,7 +2084,9 @@ Creates an array from an array-like object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -1970,7 +2106,7 @@ An array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`arrayLike`, `mapfn`, `thisArg`?): `U`[]
+> `static` **from**\<`T`, `U`\>(`arrayLike`, `mapfn`, `thisArg?`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:80
 
@@ -1978,9 +2114,13 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -2020,7 +2160,9 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -2040,7 +2182,7 @@ An iterable object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`iterable`, `mapfn`, `thisArg`?): `U`[]
+> `static` **from**\<`T`, `U`\>(`iterable`, `mapfn`, `thisArg?`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:109
 
@@ -2048,9 +2190,13 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -2090,7 +2236,9 @@ Returns a new array from a set of elements.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -2174,7 +2322,7 @@ Returns an iterable of values in the array
 
 ##### includes()
 
-> **includes**(`searchElement`, `fromIndex`?): `boolean`
+> **includes**(`searchElement`, `fromIndex?`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
 
@@ -2204,7 +2352,7 @@ The position in this array at which to begin searching for searchElement.
 
 ##### flatMap()
 
-> **flatMap**\<`U`, `This`\>(`callback`, `thisArg`?): `U`[]
+> **flatMap**\<`U`, `This`\>(`callback`, `thisArg?`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:64
 
@@ -2214,9 +2362,13 @@ This is identical to a map followed by flat with depth 1.
 
 ###### Type Parameters
 
-• **U**
+###### U
 
-• **This** = `undefined`
+`U`
+
+###### This
+
+`This` = `undefined`
 
 ###### Parameters
 
@@ -2244,7 +2396,7 @@ thisArg is omitted, undefined is used as the this value.
 
 ##### flat()
 
-> **flat**\<`A`, `D`\>(`this`, `depth`?): `FlatArray`\<`A`, `D`\>[]
+> **flat**\<`A`, `D`\>(`this`, `depth?`): `FlatArray`\<`A`, `D`\>[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:75
 
@@ -2253,9 +2405,13 @@ specified depth.
 
 ###### Type Parameters
 
-• **A**
+###### A
 
-• **D** *extends* `number` = `1`
+`A`
+
+###### D
+
+`D` *extends* `number` = `1`
 
 ###### Parameters
 
@@ -2305,7 +2461,7 @@ The zero-based index of the desired code unit. A negative index will count back 
 
 ###### Call Signature
 
-> **findLast**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+> **findLast**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:29
 
@@ -2314,7 +2470,9 @@ otherwise.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
 
 ###### Parameters
 
@@ -2343,7 +2501,7 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **findLast**(`predicate`, `thisArg`?): `undefined` \| `string`
+> **findLast**(`predicate`, `thisArg?`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:30
 
@@ -2367,7 +2525,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findLastIndex()
 
-> **findLastIndex**(`predicate`, `thisArg`?): `number`
+> **findLastIndex**(`predicate`, `thisArg?`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:41
 
@@ -2417,7 +2575,7 @@ Returns a copy of an array with its elements reversed.
 
 ##### toSorted()
 
-> **toSorted**(`compareFn`?): `string`[]
+> **toSorted**(`compareFn?`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:57
 
@@ -2486,7 +2644,7 @@ The copied array.
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount`?): `string`[]
+> **toSpliced**(`start`, `deleteCount?`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:74
 
@@ -2587,7 +2745,7 @@ Returns a string representation of an array. The elements are converted to strin
 
 ###### Call Signature
 
-> **toLocaleString**(`locales`, `options`?): `string`
+> **toLocaleString**(`locales`, `options?`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:64
 
@@ -2704,7 +2862,7 @@ Additional arrays and/or items to add to the end of the array.
 
 ##### join()
 
-> **join**(`separator`?): `string`
+> **join**(`separator?`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1361
 
@@ -2762,7 +2920,7 @@ If the array is empty, undefined is returned and the array is not modified.
 
 ##### slice()
 
-> **slice**(`start`?, `end`?): `string`[]
+> **slice**(`start?`, `end?`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1381
 
@@ -2796,7 +2954,7 @@ If end is undefined, then the slice extends to the end of the array.
 
 ##### sort()
 
-> **sort**(`compareFn`?): `this`
+> **sort**(`compareFn?`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1392
 
@@ -2828,7 +2986,7 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount`?): `string`[]
+> **splice**(`start`, `deleteCount?`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1399
 
@@ -2922,7 +3080,7 @@ Elements to insert at the start of the array.
 
 ##### indexOf()
 
-> **indexOf**(`searchElement`, `fromIndex`?): `number`
+> **indexOf**(`searchElement`, `fromIndex?`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1418
 
@@ -2952,7 +3110,7 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 ##### lastIndexOf()
 
-> **lastIndexOf**(`searchElement`, `fromIndex`?): `number`
+> **lastIndexOf**(`searchElement`, `fromIndex?`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1424
 
@@ -2984,7 +3142,7 @@ The array index at which to begin searching backward. If fromIndex is omitted, t
 
 ###### Call Signature
 
-> **every**\<`S`\>(`predicate`, `thisArg`?): `this is S[]`
+> **every**\<`S`\>(`predicate`, `thisArg?`): `this is S[]`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1433
 
@@ -2992,7 +3150,9 @@ Determines whether all the members of an array satisfy the specified test.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
 
 ###### Parameters
 
@@ -3021,7 +3181,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ###### Call Signature
 
-> **every**(`predicate`, `thisArg`?): `boolean`
+> **every**(`predicate`, `thisArg?`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1442
 
@@ -3054,7 +3214,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### some()
 
-> **some**(`predicate`, `thisArg`?): `boolean`
+> **some**(`predicate`, `thisArg?`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1451
 
@@ -3087,7 +3247,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### forEach()
 
-> **forEach**(`callbackfn`, `thisArg`?): `void`
+> **forEach**(`callbackfn`, `thisArg?`): `void`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1457
 
@@ -3117,7 +3277,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ##### map()
 
-> **map**\<`U`\>(`callbackfn`, `thisArg`?): `U`[]
+> **map**\<`U`\>(`callbackfn`, `thisArg?`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1463
 
@@ -3125,7 +3285,9 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -3153,7 +3315,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ###### Call Signature
 
-> **filter**\<`S`\>(`predicate`, `thisArg`?): `S`[]
+> **filter**\<`S`\>(`predicate`, `thisArg?`): `S`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1469
 
@@ -3161,7 +3323,9 @@ Returns the elements of an array that meet the condition specified in a callback
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
 
 ###### Parameters
 
@@ -3187,7 +3351,7 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ###### Call Signature
 
-> **filter**(`predicate`, `thisArg`?): `string`[]
+> **filter**(`predicate`, `thisArg?`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1475
 
@@ -3275,7 +3439,9 @@ Calls the specified callback function for all the elements in an array. The retu
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -3359,7 +3525,9 @@ Calls the specified callback function for all the elements in an array, in desce
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -3415,7 +3583,9 @@ Creates an array from an async iterator or iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
 
 ###### Parameters
 
@@ -3435,7 +3605,7 @@ An async iterator or array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`, `mapFn`, `thisArg`?): `Promise`\<`Awaited`\<`U`\>[]\>
+> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`, `mapFn`, `thisArg?`): `Promise`\<`Awaited`\<`U`\>[]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.esnext.array.d.ts:34
 
@@ -3443,9 +3613,13 @@ Creates an array from an async iterator or iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
 
 ###### Parameters
 
@@ -3707,7 +3881,9 @@ to document generic type parameters, e.g.
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 the element type of the arrays
 
@@ -3731,7 +3907,7 @@ the element type of the arrays
 
 Defined in: [examples/example-typedoc/src/functions.ts:46](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L46)
 
-The options type for [makeHttpCallA](README.md#makehttpcalla).
+The options type for [makeHttpCallA](#makehttpcalla).
 
 #### Properties
 
@@ -3787,7 +3963,7 @@ TypeDoc will not document the options.
 
 ##### options
 
-[`MakeHttpCallAOptions`](README.md#makehttpcallaoptions)
+[`MakeHttpCallAOptions`](#makehttpcallaoptions)
 
 #### Returns
 
@@ -3917,7 +4093,7 @@ code.
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:6](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L6)
 
-The props type for [CardA](README.md#carda).
+The props type for [CardA](#carda).
 
 #### Properties
 
@@ -3935,7 +4111,7 @@ The theme of the card. Defaults to `primary`.
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L85)
 
-The props type of [\`EasyFormDialog\`](README.md#easyformdialog).
+The props type of [\`EasyFormDialog\`](#easyformdialog).
 
 #### Properties
 
@@ -4147,7 +4323,7 @@ An uncommonly-used callback that fires when the user clicks the cancel button.
 
 ### SimpleTypeAlias
 
-> **SimpleTypeAlias**: `string` \| `number` \| `boolean`
+> **SimpleTypeAlias** = `string` \| `number` \| `boolean`
 
 Defined in: [examples/example-typedoc/src/types.ts:2](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L2)
 
@@ -4157,7 +4333,7 @@ A simple type alias defined using the `type` keyword.
 
 ### ComplexGenericTypeAlias\<T\>
 
-> **ComplexGenericTypeAlias**\<`T`\>: `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
+> **ComplexGenericTypeAlias**\<`T`\> = `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
 
 Defined in: [examples/example-typedoc/src/types.ts:5](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L5)
 
@@ -4165,7 +4341,9 @@ A complex generic type.
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 ***
 
@@ -4179,7 +4357,7 @@ TypeDoc even supports doc comments on nested type definitions, as shown by the `
 
 #### Extended by
 
-- [`AdminUser`](README.md#adminuser)
+- [`AdminUser`](#adminuser)
 
 #### Properties
 
@@ -4225,14 +4403,14 @@ The person's family name.
 
 Defined in: [examples/example-typedoc/src/types.ts:40](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L40)
 
-An interface that extends [\`User\`](README.md#user) and adds more properties.
+An interface that extends [\`User\`](#user) and adds more properties.
 
 Notice how TypeDoc automatically shows the inheritance hierarchy and where
 each property was originally defined.
 
 #### Extends
 
-- [`User`](README.md#user)
+- [`User`](#user)
 
 #### Properties
 
@@ -4246,7 +4424,7 @@ The user's ID.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`id`](README.md#id-3)
+[`User`](#user).[`id`](#id-3)
 
 ##### email
 
@@ -4258,7 +4436,7 @@ The user's email address.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`email`](README.md#email)
+[`User`](#user).[`email`](#email)
 
 ##### name
 
@@ -4282,7 +4460,7 @@ The person's family name.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`name`](README.md#name-3)
+[`User`](#user).[`name`](#name-3)
 
 ##### administrativeArea
 
