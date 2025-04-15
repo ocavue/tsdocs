@@ -3,3 +3,4 @@ CHANGELOG.md
 .tsup
 .temp
 **/examples/**/*.md
+**/examples/example-typedoc/src/**/*
