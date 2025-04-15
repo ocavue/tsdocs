@@ -3,6 +3,7 @@
   "name": "TypeDoc Example",
   "entryPoints": ["./src"],
   "plugin": ["typedoc-plugin-markdown"],
+  "outputFileStrategy": "modules",
   "sort": ["source-order"],
   "categorizeByGroup": false,
   "searchCategoryBoosts": {
