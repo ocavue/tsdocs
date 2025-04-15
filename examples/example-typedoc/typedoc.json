@@ -3,7 +3,7 @@
   "name": "TypeDoc Example",
   "entryPoints": ["./src"],
   "plugin": ["typedoc-plugin-markdown"],
-  "outputFileStrategy": "modules",
+  "router": "module",
   "mergeReadme": true,
   "sort": ["source-order"],
   "gitRevision": "HEAD",
