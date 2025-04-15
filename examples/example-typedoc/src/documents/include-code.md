@@ -9,5 +9,3 @@ As an example, this file is inserting the code block below using:
 
 **Result:**
 {@includeCode ../reexports.ts}
-
-{@include ../../../site/tags/include.md#includePartsOfFiles}

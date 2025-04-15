@@ -6,7 +6,7 @@
     "author": "TypeDoc contributors",
     "license": "Apache-2.0",
     "scripts": {
-        "typedoc": "tsc && typedoc"
+        "docs": "tsc && typedoc"
     },
     "dependencies": {
         "@types/lodash": "^4.17.5",
