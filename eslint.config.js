@@ -10,8 +10,8 @@ const configs = [
     },
   },
   {
-    ignores: ["examples/example-typedoc/src/**/*"],
-  }
+    ignores: ['examples/example-typedoc/**/*'],
+  },
 ]
 
 export default configs
