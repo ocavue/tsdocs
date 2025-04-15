@@ -4,6 +4,7 @@
   "entryPoints": ["./src"],
   "plugin": ["typedoc-plugin-markdown"],
   "outputFileStrategy": "modules",
+  "mergeReadme": true,
   "sort": ["source-order"],
   "categorizeByGroup": false,
   "searchCategoryBoosts": {
