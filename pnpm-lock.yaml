@@ -76,6 +76,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      typedoc:
+        specifier: ^0.27.9
+        version: 0.27.9(typescript@5.8.3)
     devDependencies:
       typescript:
         specifier: ^5.4.5
