@@ -9,6 +9,9 @@ const configs = [
       'no-console': ['warn', { allow: ['warn', 'error', 'assert'] }],
     },
   },
+  {
+    ignores: ["examples/example-typedoc/src/**/*"],
+  }
 ]
 
 export default configs

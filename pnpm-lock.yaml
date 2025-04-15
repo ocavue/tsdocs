@@ -81,7 +81,7 @@ importers:
         version: 0.27.9(typescript@5.8.3)
     devDependencies:
       typescript:
-        specifier: ^5.4.5
+        specifier: ^5.8.3
         version: 5.8.3
 
   examples/simple-package:
