@@ -14,5 +14,7 @@ export class MyMarkdownThemeContext extends MarkdownThemeContext {
     }
 
     this.partials.signature = (...args) => partials.signature.apply(this, args)
+    this.partials.parametersList = (...args) =>
+      partials.parametersList.apply(this, args)
   }
 }
