@@ -1,0 +1,61 @@
+{
+  "name": "typedoc-plugin-md-v2",
+  "type": "module",
+  "version": "0.6.0",
+  "private": false,
+  "description": "A typedoc plugin for generating markdown documentation",
+  "author": {
+    "name": "ocavue",
+    "email": "ocavue@gmail.com"
+  },
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/tsdocs/tree/master/packages/typedoc-plugin-md#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/tsdocs.git",
+    "directory": "packages/typedoc-plugin-md-v2"
+  },
+  "bugs": "https://github.com/ocavue/tsdocs/issues",
+  "keywords": [
+    "api",
+    "documentation",
+    "markdown",
+    "jsdoc",
+    "tsdoc",
+    "tsdocs",
+    "typedoc",
+    "typescript",
+    "typedoc-plugin"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:tsup": "tsup",
+    "build:tsc": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^2.2.1",
+    "change-case": "^5.4.4",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-markdown": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "18.19.67",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-markdown": "^4.6.2"
+  }
+}

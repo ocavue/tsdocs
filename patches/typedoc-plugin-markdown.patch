@@ -1,0 +1,14 @@
+diff --git a/package.json b/package.json
+index e7fba5448489eee05311a950a23892d4d1be20ce..73422b4508bd680e3ed6cb2cade7c565349eba2c 100644
+--- a/package.json
++++ b/package.json
+@@ -3,7 +3,8 @@
+   "version": "4.6.2",
+   "description": "A plugin for TypeDoc that enables TypeScript API documentation to be generated in Markdown.",
+   "exports": {
+-    ".": "./dist/index.js"
++    ".": "./dist/index.js",
++    "./*.js": "./dist/*.js"
+   },
+   "type": "module",
+   "files": [

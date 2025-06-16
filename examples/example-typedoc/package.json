@@ -6,17 +6,20 @@
   "author": "TypeDoc contributors",
   "license": "Apache-2.0",
   "scripts": {
-    "docs": "tsc && typedoc"
+    "docs": "tsc && typedoc",
+    "serve": "docsify serve docs"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "docsify-cli": "^4.4.4",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "typedoc": "^0.27.9",
-    "typedoc-plugin-markdown": "~4.4.2",
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-markdown": "^4.6.2",
+    "typedoc-plugin-md-v2": "workspace:*",
     "typescript": "^5.8.3"
   }
 }

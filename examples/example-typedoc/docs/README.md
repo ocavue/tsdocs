@@ -1,8 +1,12 @@
+**Generated using `index.page.begin` hook**
+
 **TypeDoc Example**
 
 ***
 
 https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
+
+**Generated using `content.begin` hook**
 
 ## Collection
 
@@ -10,7 +14,9 @@ https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees`?): `T`[]
+<!-- DEBUG_signatureTitle -->
+
+> **lodashSortBy**\<`T`\>(`collection`: `undefined` \| `null` \| `List`\<`T`\>, ...`iteratees?`: `Many`\<`ListIteratee`\<`T`\>\>[]): `T`[]
 
 Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1908
 
@@ -21,21 +27,63 @@ equal elements. The iteratees are invoked with one argument: (value).
 
 ##### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ##### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### collection
+
+</dt>
+
+<dd data-debug-parm-list>
 
 The collection to iterate over.
 
 `undefined` | `null` | `List`\<`T`\>
 
+</dd>
+
+</dl>
+
+<dt>
+
 ###### iteratees?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`Many`\<`ListIteratee`\<`T`\>\>[]
 
 The iteratees to sort by, specified individually or in arrays.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -67,23 +115,67 @@ _.sortBy(users, 'user', function(o) {
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees`): `T`\[keyof `T`\][]
+<!-- DEBUG_signatureTitle -->
+
+> **lodashSortBy**\<`T`\>(`collection`: `undefined` \| `null` \| `T`, ...`iteratees`: `Many`\<`ObjectIteratee`\<`T`\>\>[]): `T`\[keyof `T`\][]
 
 Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1912
 
 ##### Type Parameters
 
-• **T** *extends* `object`
+###### T
+
+`T` *extends* `object`
+
+<dl>
+
+<dt>
 
 ##### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### collection
+
+</dt>
+
+<dd data-debug-parm-list>
 
 `undefined` | `null` | `T`
 
+</dd>
+
+</dl>
+
+<dt>
+
 ###### iteratees
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 ...`Many`\<`ObjectIteratee`\<`T`\>\>[]
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -100,7 +192,9 @@ on the entry point in src/index.ts
 
 ### CardA()
 
-> **CardA**(`__namedParameters`): `ReactElement`
+<!-- DEBUG_signatureTitle -->
+
+> **CardA**(`__namedParameters`: `PropsWithChildren`\<[`CardAProps`](#cardaprops)\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:42](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L42)
 
@@ -132,11 +226,41 @@ This is our recommended way to define React components as it makes your code
 more readable. The minor drawback is you must click the `CardAProps` link to
 see the component's props.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ##### \_\_namedParameters
 
-`PropsWithChildren`\<[`CardAProps`](README.md#cardaprops)\>
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
+`PropsWithChildren`\<[`CardAProps`](#cardaprops)\>
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -146,7 +270,9 @@ see the component's props.
 
 ### CardB()
 
-> **CardB**(`__namedParameters`): `ReactElement`
+<!-- DEBUG_signatureTitle -->
+
+> **CardB**(`__namedParameters`: `PropsWithChildren`\<\{ `variant`: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`; \}\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:74](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L74)
 
@@ -175,11 +301,41 @@ export function CardB({
 This can make the TypeDoc documentation a bit cleaner for very simple components,
 but it makes your code less readable.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ##### \_\_namedParameters
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `PropsWithChildren`\<\{ `variant`: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`; \}\>
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -189,7 +345,9 @@ but it makes your code less readable.
 
 ### EasyFormDialog()
 
-> **EasyFormDialog**(`props`): `ReactElement`
+<!-- DEBUG_signatureTitle -->
+
+> **EasyFormDialog**(`props`: `PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>): `ReactElement`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:254](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L254)
 
@@ -250,11 +408,41 @@ export function Example({
 }
 ```
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ##### props
 
-`PropsWithChildren`\<[`EasyFormDialogProps`](README.md#easyformdialogprops)\>
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
+`PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -279,42 +467,98 @@ Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extended by
 
-- [`DeliveryCustomer`](README.md#deliverycustomer)
-- [`WalkInCustomer`](README.md#walkincustomer)
+- [`DeliveryCustomer`](#deliverycustomer)
+- [`WalkInCustomer`](#walkincustomer)
 
 #### Constructors
 
-##### new Customer()
+##### Constructor
 
-> **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](README.md#customer)
+<!-- DEBUG_signatureTitle -->
+
+> **new Customer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`): [`Customer`](#customer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
 The constructor of the `Customer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### id
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 the customer's database ID
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### name
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 the customer's name
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### nextOrderNumber
+
+</dt>
+
+<dd data-debug-parm-list>
 
 the next number to use when this customer places an order
 
 `string` | `number`
 
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`Customer`](README.md#customer)
+[`Customer`](#customer)
 
 #### Properties
 
@@ -348,6 +592,8 @@ An optional protected property.
 
 ###### Get Signature
 
+<!-- DEBUG_signatureTitle -->
+
 > **get** **nextOrderNumber**(): `string`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
@@ -361,7 +607,9 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+<!-- DEBUG_signatureTitle -->
+
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -370,9 +618,23 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Parameters
 
+<dl>
+
+<dt>
+
 ###### value
 
+</dt>
+
+<dd data-debug-parm-list>
+
 `string` | `number`
+
+</dd>
+
+</dl>
+
+</dl>
 
 ###### Returns
 
@@ -381,6 +643,8 @@ A setter that takes in either a string or a number and sets the private
 #### Methods
 
 ##### onOrderPlaced()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlaced**(): `void`
 
@@ -393,6 +657,8 @@ A public method. To be called when an order is placed for this customer.
 `void`
 
 ##### onOrderPlacedArrowFunction()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlacedArrowFunction**(): `void`
 
@@ -407,6 +673,8 @@ TypeDoc knows to document this as a method rather than a property.
 `void`
 
 ##### isValid()
+
+<!-- DEBUG_signatureTitle -->
 
 > `protected` **isValid**(): `boolean`
 
@@ -439,36 +707,88 @@ reject with a `Cancellation` object. Originally from
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 what the `CancellablePromise` resolves to
 
 #### Constructors
 
-##### new CancellablePromise()
+##### Constructor
 
-> **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+<!-- DEBUG_signatureTitle -->
+
+> **new CancellablePromise**\<`T`\>(`promise`: `PromiseLike`\<`T`\>, `cancel`: (`reason?`: `string`) => `void`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:76](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L76)
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### promise
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `PromiseLike`\<`T`\>
 
 a normal promise or thenable
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### cancel
 
-(`reason`?) => `void`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`reason?`: `string`) => `void`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 a function that cancels `promise`. **Calling `cancel` after
 `promise` has resolved must be a no-op.**
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 #### Properties
 
@@ -486,17 +806,47 @@ can access this property.
 
 ##### cancel()
 
-> `readonly` **cancel**: (`reason`?) => `void`
+> `readonly` **cancel**: (`reason?`: `string`) => `void`
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:69](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L69)
 
 Cancel the `CancellablePromise`.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### reason?
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `string`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -511,7 +861,9 @@ description is attached to.
 
 ##### then()
 
-> **then**\<`TResult1`, `TResult2`\>(`onFulfilled`?, `onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`TResult1` \| `TResult2`\>
+<!-- DEBUG_signatureTitle -->
+
+> **then**\<`TResult1`, `TResult2`\>(`onFulfilled?`: `null` \| (`value`: `T`) => `TResult1` \| `PromiseLike`\<`TResult1`\>, `onRejected?`: `null` \| (`reason`: `any`) => `TResult2` \| `PromiseLike`\<`TResult2`\>): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:101](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L101)
 
@@ -534,29 +886,71 @@ whichever async operation is in progress will be canceled.
 
 ###### Type Parameters
 
-• **TResult1** = `T`
+###### TResult1
 
-• **TResult2** = `never`
+`TResult1` = `T`
+
+###### TResult2
+
+`TResult2` = `never`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### onFulfilled?
 
-`null` | (`value`) => `TResult1` \| `PromiseLike`\<`TResult1`\>
+</dt>
+
+<dd data-debug-parm-list>
+
+`null` | (`value`: `T`) => `TResult1` \| `PromiseLike`\<`TResult1`\>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### onRejected?
 
-`null` | (`reason`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
+</dt>
+
+<dd data-debug-parm-list>
+
+`null` | (`reason`: `any`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`TResult1` \| `TResult2`\>
+[`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
 
 a new CancellablePromise
 
 ##### catch()
 
-> **catch**\<`TResult`\>(`onRejected`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T` \| `TResult`\>
+<!-- DEBUG_signatureTitle -->
+
+> **catch**\<`TResult`\>(`onRejected?`: `null` \| (`reason`: `any`) => `TResult` \| `PromiseLike`\<`TResult`\>): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:152](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L152)
 
@@ -564,21 +958,51 @@ Analogous to `Promise.catch`.
 
 ###### Type Parameters
 
-• **TResult** = `never`
+###### TResult
+
+`TResult` = `never`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### onRejected?
 
-`null` | (`reason`) => `TResult` \| `PromiseLike`\<`TResult`\>
+</dt>
+
+<dd data-debug-parm-list>
+
+`null` | (`reason`: `any`) => `TResult` \| `PromiseLike`\<`TResult`\>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T` \| `TResult`\>
+[`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
 
 ##### finally()
 
-> **finally**(`onFinally`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+<!-- DEBUG_signatureTitle -->
+
+> **finally**(`onFinally?`: `null` \| () => `void`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:169](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L169)
 
@@ -586,18 +1010,44 @@ Attaches a callback that is invoked when the Promise is settled
 (fulfilled or rejected). The resolved value cannot be modified from the
 callback.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### onFinally?
+
+</dt>
+
+<dd data-debug-parm-list>
 
 The callback to execute when the Promise is settled
 (fulfilled or rejected).
 
 `null` | () => `void`
 
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 A Promise for the completion of the callback.
 
@@ -605,7 +1055,9 @@ A Promise for the completion of the callback.
 
 ###### Call Signature
 
-> `static` **resolve**(): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **resolve**(): [`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:185](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L185)
 
@@ -617,11 +1069,13 @@ is canceled, it has already resolved.
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+[`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 ###### Call Signature
 
-> `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **resolve**\<`T`\>(`value`: `T`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:187](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L187)
 
@@ -633,21 +1087,55 @@ is canceled, it has already resolved.
 
 ###### Type Parameters
 
-• **T**
-
-###### Parameters
-
-###### value
+###### T
 
 `T`
 
+<dl>
+
+<dt>
+
+###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
+###### value
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
+`T`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 ##### reject()
 
-> `static` **reject**\<`T`\>(`reason`?): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **reject**\<`T`\>(`reason?`: `unknown`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:201](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L201)
 
@@ -658,19 +1146,51 @@ Like `CancellablePromise.resolve`, canceling the returned
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### reason?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `unknown`
 
 this should probably be an `Error` object
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`\>
+[`CancellablePromise`](#cancellablepromise)\<`T`\>
 
 ##### all()
 
@@ -683,299 +1203,731 @@ thenables, and resolved values
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>, `T10` \| `PromiseLike`\<`T10`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:205](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L205)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
 
-• **T9**
+###### T5
 
-• **T10**
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
+
+###### T9
+
+`T9`
+
+###### T10
+
+`T10`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>, `T10` \| `PromiseLike`\<`T10`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:220](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L220)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
 
-• **T9**
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
+
+###### T9
+
+`T9`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:234](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L234)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
 
-• **T8**
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+###### T8
+
+`T8`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:247](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L247)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
 
-• **T7**
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+###### T7
+
+`T7`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:259](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L259)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
 
-• **T6**
+`T3`
+
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
+
+###### T6
+
+`T6`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:270](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L270)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
 
-• **T5**
+###### T3
+
+`T3`
+
+###### T4
+
+`T4`
+
+###### T5
+
+`T5`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:280](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L280)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
 
-• **T4**
+`T2`
+
+###### T3
+
+`T3`
+
+###### T4
+
+`T4`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`, `T3`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:289](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L289)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
 
-• **T3**
+###### T2
+
+`T2`
+
+###### T3
+
+`T3`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`, `T3`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`\]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T1`, `T2`\>(`values`: readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:297](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L297)
 
 ###### Type Parameters
 
-• **T1**
+###### T1
 
-• **T2**
+`T1`
+
+###### T2
+
+`T2`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\[`T1`, `T2`\]\>
+[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
 
 ###### Call Signature
 
-> `static` **all**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`T`[]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **all**\<`T`\>(`values`: readonly (`T` \| `PromiseLike`\<`T`\>)[]): [`CancellablePromise`](#cancellablepromise)\<`T`[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:301](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L301)
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly (`T` \| `PromiseLike`\<`T`\>)[]
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`T`[]\>
+[`CancellablePromise`](#cancellablepromise)\<`T`[]\>
 
 ##### allSettled()
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **allSettled**\<`T`\>(`values`: `T`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:327](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L327)
 
@@ -984,25 +1936,59 @@ when all of the provided `Promises` resolve or reject.
 
 ###### Type Parameters
 
-• **T** *extends* readonly `unknown`[] \| readonly \[`unknown`\]
+###### T
+
+`T` *extends* readonly `unknown`[] \| readonly \[`unknown`\]
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `T`
 
 An array of `Promises`.
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+[`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
 
 A new `CancellablePromise`.
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **allSettled**\<`T`\>(`values`: `Iterable`\<`T`\>): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:345](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L345)
 
@@ -1011,26 +1997,60 @@ when all of the provided `Promise`s resolve or reject.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `Iterable`\<`T`\>
 
 An array of `Promise`s.
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+[`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
 
 A new `CancellablePromise`. Canceling it cancels all of the input
 promises.
 
 ##### race()
 
-> `static` **race**\<`T`\>(`values`): [`CancellablePromise`](README.md#cancellablepromiset)\<`Awaited`\<`T`\>\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **race**\<`T`\>(`values`: readonly `T`[]): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:370](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L370)
 
@@ -1039,38 +2059,102 @@ the provided `Promises` are resolved or rejected.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### values
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 readonly `T`[]
 
 An array of `Promises`.
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`Awaited`\<`T`\>\>
+[`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
 
 A new `CancellablePromise`. Canceling it cancels all of the input
 promises.
 
 ##### delay()
 
-> `static` **delay**(`ms`): [`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **delay**(`ms`: `number`): [`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 Defined in: [examples/example-typedoc/src/classes/CancellablePromise.ts:385](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/CancellablePromise.ts#L385)
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### ms
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `number`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
-[`CancellablePromise`](README.md#cancellablepromiset)\<`void`\>
+[`CancellablePromise`](#cancellablepromise)\<`void`\>
 
 a `CancellablePromise` that resolves after `ms` milliseconds.
 
@@ -1080,57 +2164,123 @@ a `CancellablePromise` that resolves after `ms` milliseconds.
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L85)
 
-A class that extends [\`Customer\`](README.md#customer).
+A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extends
 
-- [`Customer`](README.md#customer)
+- [`Customer`](#customer)
 
 #### Constructors
 
-##### new DeliveryCustomer()
+##### Constructor
 
-> **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](README.md#deliverycustomer)
+<!-- DEBUG_signatureTitle -->
+
+> **new DeliveryCustomer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`, `subscriptionType`: `"basic"` \| `"enterprise"`): [`DeliveryCustomer`](#deliverycustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:100](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L100)
 
 The constructor of the `DeliveryCustomer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### id
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 the customer's database ID
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### name
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 the customer's name
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### nextOrderNumber
+
+</dt>
+
+<dd data-debug-parm-list>
 
 the next number to use when this customer places an order
 
 `string` | `number`
 
+</dd>
+
+</dl>
+
+<dt>
+
 ###### subscriptionType
+
+</dt>
+
+<dd data-debug-parm-list>
 
 whether this customer has a basic or enterprise subscription
 
 `"basic"` | `"enterprise"`
 
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`DeliveryCustomer`](README.md#deliverycustomer)
+[`DeliveryCustomer`](#deliverycustomer)
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`constructor`](README.md#constructors-1)
+[`Customer`](#customer).[`constructor`](#constructor-1)
 
 #### Properties
 
@@ -1144,7 +2294,7 @@ A public readonly property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`id`](README.md#id)
+[`Customer`](#customer).[`id`](#id)
 
 ##### name
 
@@ -1156,7 +2306,7 @@ A public property that can be reassigned.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`name`](README.md#name)
+[`Customer`](#customer).[`name`](#name)
 
 ##### contactName?
 
@@ -1168,7 +2318,7 @@ An optional protected property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`contactName`](README.md#contactname)
+[`Customer`](#customer).[`contactName`](#contactname)
 
 ##### preferredCourierId?
 
@@ -1192,6 +2342,8 @@ Another property defined on the subclass.
 
 ###### Get Signature
 
+<!-- DEBUG_signatureTitle -->
+
 > **get** **nextOrderNumber**(): `string`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
@@ -1205,7 +2357,9 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+<!-- DEBUG_signatureTitle -->
+
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -1214,9 +2368,23 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Parameters
 
+<dl>
+
+<dt>
+
 ###### value
 
+</dt>
+
+<dd data-debug-parm-list>
+
 `string` | `number`
+
+</dd>
+
+</dl>
+
+</dl>
 
 ###### Returns
 
@@ -1224,11 +2392,13 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`nextOrderNumber`](README.md#nextordernumber)
+[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
 
 #### Methods
 
 ##### onOrderPlaced()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlaced**(): `void`
 
@@ -1242,9 +2412,11 @@ A public method. To be called when an order is placed for this customer.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlaced`](README.md#onorderplaced)
+[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
 
 ##### onOrderPlacedArrowFunction()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlacedArrowFunction**(): `void`
 
@@ -1260,9 +2432,11 @@ TypeDoc knows to document this as a method rather than a property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlacedArrowFunction`](README.md#onorderplacedarrowfunction)
+[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
 
 ##### isValid()
+
+<!-- DEBUG_signatureTitle -->
 
 > `protected` **isValid**(): `boolean`
 
@@ -1279,7 +2453,7 @@ subscription type is enterprise.
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`isValid`](README.md#isvalid)
+[`Customer`](#customer).[`isValid`](#isvalid)
 
 ***
 
@@ -1287,51 +2461,107 @@ subscription type is enterprise.
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:129](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L129)
 
-A class that extends [\`Customer\`](README.md#customer).
+A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
 #### Extends
 
-- [`Customer`](README.md#customer)
+- [`Customer`](#customer)
 
 #### Constructors
 
-##### new WalkInCustomer()
+##### Constructor
 
-> **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](README.md#walkincustomer)
+<!-- DEBUG_signatureTitle -->
+
+> **new WalkInCustomer**(`id`: `number`, `name`: `string`, `nextOrderNumber`: `string` \| `number`): [`WalkInCustomer`](#walkincustomer)
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:48](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L48)
 
 The constructor of the `Customer` class.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### id
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 the customer's database ID
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### name
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 the customer's name
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### nextOrderNumber
+
+</dt>
+
+<dd data-debug-parm-list>
 
 the next number to use when this customer places an order
 
 `string` | `number`
 
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
-[`WalkInCustomer`](README.md#walkincustomer)
+[`WalkInCustomer`](#walkincustomer)
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`constructor`](README.md#constructors-1)
+[`Customer`](#customer).[`constructor`](#constructor-1)
 
 #### Properties
 
@@ -1345,7 +2575,7 @@ A public readonly property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`id`](README.md#id)
+[`Customer`](#customer).[`id`](#id)
 
 ##### name
 
@@ -1357,7 +2587,7 @@ A public property that can be reassigned.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`name`](README.md#name)
+[`Customer`](#customer).[`name`](#name)
 
 ##### contactName?
 
@@ -1369,7 +2599,7 @@ An optional protected property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`contactName`](README.md#contactname)
+[`Customer`](#customer).[`contactName`](#contactname)
 
 ##### trustedCustomer?
 
@@ -1385,6 +2615,8 @@ A property defined on the subclass.
 
 ###### Get Signature
 
+<!-- DEBUG_signatureTitle -->
+
 > **get** **nextOrderNumber**(): `string`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L25)
@@ -1398,7 +2630,9 @@ property.
 
 ###### Set Signature
 
-> **set** **nextOrderNumber**(`value`): `void`
+<!-- DEBUG_signatureTitle -->
+
+> **set** **nextOrderNumber**(`value`: `string` \| `number`): `void`
 
 Defined in: [examples/example-typedoc/src/classes/Customer.ts:33](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/Customer.ts#L33)
 
@@ -1407,9 +2641,23 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Parameters
 
+<dl>
+
+<dt>
+
 ###### value
 
+</dt>
+
+<dd data-debug-parm-list>
+
 `string` | `number`
+
+</dd>
+
+</dl>
+
+</dl>
 
 ###### Returns
 
@@ -1417,11 +2665,13 @@ A setter that takes in either a string or a number and sets the private
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`nextOrderNumber`](README.md#nextordernumber)
+[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
 
 #### Methods
 
 ##### onOrderPlacedArrowFunction()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlacedArrowFunction**(): `void`
 
@@ -1437,9 +2687,11 @@ TypeDoc knows to document this as a method rather than a property.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`onOrderPlacedArrowFunction`](README.md#onorderplacedarrowfunction)
+[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
 
 ##### isValid()
+
+<!-- DEBUG_signatureTitle -->
 
 > `protected` **isValid**(): `boolean`
 
@@ -1453,9 +2705,11 @@ A protected method.
 
 ###### Inherited from
 
-[`Customer`](README.md#customer).[`isValid`](README.md#isvalid)
+[`Customer`](#customer).[`isValid`](#isvalid)
 
 ##### onOrderPlaced()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onOrderPlaced**(): `void`
 
@@ -1469,7 +2723,7 @@ An example of overriding a public method.
 
 ###### Overrides
 
-[`Customer`](README.md#customer).[`onOrderPlaced`](README.md#onorderplaced)
+[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
 
 ***
 
@@ -1499,41 +2753,105 @@ the methods inherited from `Array`. For example, the `values` method returns
 
 #### Constructors
 
-##### new StringArray()
+##### Constructor
 
-> **new StringArray**(`arrayLength`): [`StringArray`](README.md#stringarray)
+<!-- DEBUG_signatureTitle -->
+
+> **new StringArray**(`arrayLength`: `number`): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1508
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### arrayLength
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `number`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
-[`StringArray`](README.md#stringarray)
+[`StringArray`](#stringarray)
 
 ###### Inherited from
 
 `Array<string>.constructor`
 
-##### new StringArray()
+##### Constructor
 
-> **new StringArray**(...`items`): [`StringArray`](README.md#stringarray)
+<!-- DEBUG_signatureTitle -->
+
+> **new StringArray**(...`items`: `string`[]): [`StringArray`](#stringarray)
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1509
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### items
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 ...`string`[]
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
-[`StringArray`](README.md#stringarray)
+[`StringArray`](#stringarray)
 
 ###### Inherited from
 
@@ -1543,7 +2861,7 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### \[unscopables\]
 
-> `readonly` **\[unscopables\]**: `object`
+> `readonly` **\[unscopables\]**: \{[`key`: `number`]: `undefined` \| `boolean`; `find`: `boolean`; `findIndex`: `boolean`; `fill`: `boolean`; `copyWithin`: `boolean`; `[iterator]`: `boolean`; `entries`: `boolean`; `keys`: `boolean`; `values`: `boolean`; `[unscopables]`: `boolean`; `includes`: `boolean`; `flatMap`: `boolean`; `flat`: `boolean`; `at`: `boolean`; `findLast`: `boolean`; `findLastIndex`: `boolean`; `toReversed`: `boolean`; `toSorted`: `boolean`; `toSpliced`: `boolean`; `with`: `boolean`; `length`: `boolean`; `toString`: `boolean`; `toLocaleString`: `boolean`; `pop`: `boolean`; `push`: `boolean`; `concat`: `boolean`; `join`: `boolean`; `reverse`: `boolean`; `shift`: `boolean`; `slice`: `boolean`; `sort`: `boolean`; `splice`: `boolean`; `unshift`: `boolean`; `indexOf`: `boolean`; `lastIndexOf`: `boolean`; `every`: `boolean`; `some`: `boolean`; `forEach`: `boolean`; `map`: `boolean`; `filter`: `boolean`; `reduce`: `boolean`; `reduceRight`: `boolean`; \}
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
 
@@ -1753,6 +3071,8 @@ Gets or sets the length of the array. This is a number one higher than the highe
 
 ##### customMethod()
 
+<!-- DEBUG_signatureTitle -->
+
 > **customMethod**(): `void`
 
 Defined in: [examples/example-typedoc/src/classes/StringArray.ts:16](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/classes/StringArray.ts#L16)
@@ -1767,7 +3087,9 @@ A method that extends the functionality of a basic JavaScript array.
 
 ###### Call Signature
 
-> **find**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+<!-- DEBUG_signatureTitle -->
+
+> **find**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `value is S`, `thisArg?`: `any`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:29
 
@@ -1776,24 +3098,74 @@ otherwise.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### predicate
 
-(`value`, `index`, `obj`) => `value is S`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `value is S`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found, find
 immediately returns that element value. Otherwise, find returns undefined.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1805,19 +3177,69 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **find**(`predicate`, `thisArg`?): `undefined` \| `string`
+<!-- DEBUG_signatureTitle -->
+
+> **find**(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:30
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `obj`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### thisArg?
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `any`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1829,29 +3251,79 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findIndex()
 
-> **findIndex**(`predicate`, `thisArg`?): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **findIndex**(`predicate`: (`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`, `thisArg?`: `any`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:41
 
 Returns the index of the first element in the array where predicate is true, and -1
 otherwise.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `obj`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `obj`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found,
 findIndex immediately returns that element index. Otherwise, findIndex returns -1.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1863,33 +3335,93 @@ predicate. If it is not provided, undefined is used instead.
 
 ##### fill()
 
-> **fill**(`value`, `start`?, `end`?): `this`
+<!-- DEBUG_signatureTitle -->
+
+> **fill**(`value`: `string`, `start?`: `number`, `end?`: `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:51
 
 Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### value
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 value to fill array section with
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### start?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 index to start filling the array at. If start is negative, it is treated as
 length+start where length is the length of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### end?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 index to stop filling the array at. If end is negative, it is treated as
 length+end.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1901,34 +3433,94 @@ length+end.
 
 ##### copyWithin()
 
-> **copyWithin**(`target`, `start`, `end`?): `this`
+<!-- DEBUG_signatureTitle -->
+
+> **copyWithin**(`target`: `number`, `start`: `number`, `end?`: `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:62
 
 Returns the this object after copying a section of the array identified by start and end
 to the same array starting at position target
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### target
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 If target is negative, it is treated as length+target where length is the
 length of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### start
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 If start is negative, it is treated as length+start. If end is negative, it
 is treated as length+end.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### end?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 If not specified, length of the this object is used as its default value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1942,7 +3534,9 @@ If not specified, length of the this object is used as its default value.
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`arrayLike`): `T`[]
+<!-- DEBUG_signatureTitle -->
+
+> `static` **from**\<`T`\>(`arrayLike`: `ArrayLike`\<`T`\>): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:72
 
@@ -1950,15 +3544,47 @@ Creates an array from an array-like object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### arrayLike
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `ArrayLike`\<`T`\>
 
 An array-like object to convert to an array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -1970,7 +3596,9 @@ An array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`arrayLike`, `mapfn`, `thisArg`?): `U`[]
+<!-- DEBUG_signatureTitle -->
+
+> `static` **from**\<`T`, `U`\>(`arrayLike`: `ArrayLike`\<`T`\>, `mapfn`: (`v`: `T`, `k`: `number`) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:80
 
@@ -1978,29 +3606,95 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### arrayLike
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `ArrayLike`\<`T`\>
 
 An array-like object to convert to an array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### mapfn
 
-(`v`, `k`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`v`: `T`, `k`: `number`) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A mapping function to call on every element of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 Value of 'this' used to invoke the mapfn.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2012,7 +3706,9 @@ Value of 'this' used to invoke the mapfn.
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`iterable`): `T`[]
+<!-- DEBUG_signatureTitle -->
+
+> `static` **from**\<`T`\>(`iterable`: `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:101
 
@@ -2020,15 +3716,43 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### iterable
+
+</dt>
+
+<dd data-debug-parm-list>
 
 An iterable object to convert to an array.
 
 `Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2040,7 +3764,9 @@ An iterable object to convert to an array.
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`iterable`, `mapfn`, `thisArg`?): `U`[]
+<!-- DEBUG_signatureTitle -->
+
+> `static` **from**\<`T`, `U`\>(`iterable`: `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>, `mapfn`: (`v`: `T`, `k`: `number`) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:109
 
@@ -2048,29 +3774,91 @@ Creates an array from an iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### iterable
+
+</dt>
+
+<dd data-debug-parm-list>
 
 An iterable object to convert to an array.
 
 `Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
 
+</dd>
+
+</dl>
+
+<dt>
+
 ###### mapfn
 
-(`v`, `k`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`v`: `T`, `k`: `number`) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A mapping function to call on every element of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 Value of 'this' used to invoke the mapfn.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2082,7 +3870,9 @@ Value of 'this' used to invoke the mapfn.
 
 ##### of()
 
-> `static` **of**\<`T`\>(...`items`): `T`[]
+<!-- DEBUG_signatureTitle -->
+
+> `static` **of**\<`T`\>(...`items`: `T`[]): `T`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:86
 
@@ -2090,15 +3880,47 @@ Returns a new array from a set of elements.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`T`[]
 
 A set of elements to include in the new array object.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2109,6 +3931,8 @@ A set of elements to include in the new array object.
 `Array.of`
 
 ##### \[iterator\]()
+
+<!-- DEBUG_signatureTitle -->
 
 > **\[iterator\]**(): `ArrayIterator`\<`string`\>
 
@@ -2126,6 +3950,8 @@ Iterator
 
 ##### entries()
 
+<!-- DEBUG_signatureTitle -->
+
 > **entries**(): `ArrayIterator`\<\[`number`, `string`\]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:83
@@ -2141,6 +3967,8 @@ Returns an iterable of key, value pairs for every entry in the array
 `Array.entries`
 
 ##### keys()
+
+<!-- DEBUG_signatureTitle -->
 
 > **keys**(): `ArrayIterator`\<`number`\>
 
@@ -2158,6 +3986,8 @@ Returns an iterable of keys in the array
 
 ##### values()
 
+<!-- DEBUG_signatureTitle -->
+
 > **values**(): `ArrayIterator`\<`string`\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:93
@@ -2174,25 +4004,71 @@ Returns an iterable of values in the array
 
 ##### includes()
 
-> **includes**(`searchElement`, `fromIndex`?): `boolean`
+<!-- DEBUG_signatureTitle -->
+
+> **includes**(`searchElement`: `string`, `fromIndex?`: `number`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
 
 Determines whether an array includes a certain element, returning true or false as appropriate.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### searchElement
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 The element to search for.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### fromIndex?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The position in this array at which to begin searching for searchElement.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2204,7 +4080,9 @@ The position in this array at which to begin searching for searchElement.
 
 ##### flatMap()
 
-> **flatMap**\<`U`, `This`\>(`callback`, `thisArg`?): `U`[]
+<!-- DEBUG_signatureTitle -->
+
+> **flatMap**\<`U`, `This`\>(`callback`: (`this`: `This`, `value`: `string`, `index`: `number`, `array`: `string`[]) => `U` \| readonly `U`[], `thisArg?`: `This`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:64
 
@@ -2214,25 +4092,77 @@ This is identical to a map followed by flat with depth 1.
 
 ###### Type Parameters
 
-• **U**
+###### U
 
-• **This** = `undefined`
+`U`
+
+###### This
+
+`This` = `undefined`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### callback
 
-(`this`, `value`, `index`, `array`) => `U` \| readonly `U`[]
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`this`: `This`, `value`: `string`, `index`: `number`, `array`: `string`[]) => `U` \| readonly `U`[]
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The flatMap method calls the
 callback function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `This`
 
 An object to which the this keyword can refer in the callback function. If
 thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2244,7 +4174,9 @@ thisArg is omitted, undefined is used as the this value.
 
 ##### flat()
 
-> **flat**\<`A`, `D`\>(`this`, `depth`?): `FlatArray`\<`A`, `D`\>[]
+<!-- DEBUG_signatureTitle -->
+
+> **flat**\<`A`, `D`\>(`this`: `A`, `depth?`: `D`): `FlatArray`\<`A`, `D`\>[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2019.array.d.ts:75
 
@@ -2253,21 +4185,69 @@ specified depth.
 
 ###### Type Parameters
 
-• **A**
-
-• **D** *extends* `number` = `1`
-
-###### Parameters
-
-###### this
+###### A
 
 `A`
 
+###### D
+
+`D` *extends* `number` = `1`
+
+<dl>
+
+<dt>
+
+###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
+###### this
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
+`A`
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### depth?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `D`
 
 The maximum recursion depth
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2279,19 +4259,51 @@ The maximum recursion depth
 
 ##### at()
 
-> **at**(`index`): `undefined` \| `string`
+<!-- DEBUG_signatureTitle -->
+
+> **at**(`index`: `number`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2022.array.d.ts:24
 
 Returns the item located at the specified index.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### index
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The zero-based index of the desired code unit. A negative index will count back from the last item.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2305,7 +4317,9 @@ The zero-based index of the desired code unit. A negative index will count back 
 
 ###### Call Signature
 
-> **findLast**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+<!-- DEBUG_signatureTitle -->
+
+> **findLast**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `undefined` \| `S`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:29
 
@@ -2314,24 +4328,74 @@ otherwise.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 findLast calls predicate once for each element of the array, in descending
 order, until it finds one where predicate returns true. If such an element is found, findLast
 immediately returns that element value. Otherwise, findLast returns undefined.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2343,19 +4407,69 @@ predicate. If it is not provided, undefined is used instead.
 
 ###### Call Signature
 
-> **findLast**(`predicate`, `thisArg`?): `undefined` \| `string`
+<!-- DEBUG_signatureTitle -->
+
+> **findLast**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:30
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### thisArg?
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `any`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2367,29 +4481,79 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ##### findLastIndex()
 
-> **findLastIndex**(`predicate`, `thisArg`?): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **findLastIndex**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:41
 
 Returns the index of the last element in the array where predicate is true, and -1
 otherwise.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 findLastIndex calls predicate once for each element of the array, in descending
 order, until it finds one where predicate returns true. If such an element is found,
 findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2400,6 +4564,8 @@ predicate. If it is not provided, undefined is used instead.
 `Array.findLastIndex`
 
 ##### toReversed()
+
+<!-- DEBUG_signatureTitle -->
 
 > **toReversed**(): `string`[]
 
@@ -2417,17 +4583,41 @@ Returns a copy of an array with its elements reversed.
 
 ##### toSorted()
 
-> **toSorted**(`compareFn`?): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **toSorted**(`compareFn?`: (`a`: `string`, `b`: `string`) => `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:57
 
 Returns a copy of an array with its elements sorted.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### compareFn?
 
-(`a`, `b`) => `number`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`a`: `string`, `b`: `string`) => `number`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 Function used to determine the order of the elements. It is expected to return
 a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
@@ -2435,6 +4625,18 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 ```ts
 [11, 2, 22, 1].toSorted((a, b) => a - b) // [1, 2, 11, 22]
 ```
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2448,31 +4650,91 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount`, ...`items`): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **toSpliced**(`start`: `number`, `deleteCount`: `number`, ...`items`: `string`[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:66
 
 Copies an array and removes elements and, if necessary, inserts new elements in their place. Returns the copied array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### start
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The zero-based location in the array from which to start removing elements.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### deleteCount
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The number of elements to remove.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`string`[]
 
 Elements to insert into the copied array in place of the deleted elements.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2486,25 +4748,71 @@ The copied array.
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount`?): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **toSpliced**(`start`: `number`, `deleteCount?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:74
 
 Copies an array and removes elements while returning the remaining elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### start
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The zero-based location in the array from which to start removing elements.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### deleteCount?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The number of elements to remove.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2518,7 +4826,9 @@ A copy of the original array with the remaining elements.
 
 ##### with()
 
-> **with**(`index`, `value`): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **with**(`index`: `number`, `value`: `string`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2023.array.d.ts:85
 
@@ -2526,20 +4836,64 @@ Copies an array, then overwrites the value at the provided index with the
 given value. If the index is negative, then it replaces from the end
 of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### index
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The index of the value to overwrite. If the index is
 negative, then it replaces from the end of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### value
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 The value to write into the copied array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2552,6 +4906,8 @@ The copied array with the updated value.
 `Array.with`
 
 ##### toString()
+
+<!-- DEBUG_signatureTitle -->
 
 > **toString**(): `string`
 
@@ -2571,6 +4927,8 @@ Returns a string representation of an array.
 
 ###### Call Signature
 
+<!-- DEBUG_signatureTitle -->
+
 > **toLocaleString**(): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1334
@@ -2587,19 +4945,61 @@ Returns a string representation of an array. The elements are converted to strin
 
 ###### Call Signature
 
-> **toLocaleString**(`locales`, `options`?): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **toLocaleString**(`locales`: `string` \| `string`[], `options?`: `NumberFormatOptions` & `DateTimeFormatOptions`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:64
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### locales
 
+</dt>
+
+<dd data-debug-parm-list>
+
 `string` | `string`[]
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### options?
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `NumberFormatOptions` & `DateTimeFormatOptions`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2610,6 +5010,8 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 `Array.toLocaleString`
 
 ##### pop()
+
+<!-- DEBUG_signatureTitle -->
 
 > **pop**(): `undefined` \| `string`
 
@@ -2628,19 +5030,51 @@ If the array is empty, undefined is returned and the array is not modified.
 
 ##### push()
 
-> **push**(...`items`): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **push**(...`items`: `string`[]): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1344
 
 Appends new elements to the end of an array, and returns the new length of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`string`[]
 
 New elements to add to the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2654,20 +5088,52 @@ New elements to add to the array.
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **concat**(...`items`: `ConcatArray`\<`string`\>[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1350
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`ConcatArray`\<`string`\>[]
 
 Additional arrays and/or items to add to the end of the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2679,20 +5145,52 @@ Additional arrays and/or items to add to the end of the array.
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **concat**(...`items`: (`string` \| `ConcatArray`\<`string`\>)[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1356
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...(`string` \| `ConcatArray`\<`string`\>)[]
 
 Additional arrays and/or items to add to the end of the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2704,19 +5202,51 @@ Additional arrays and/or items to add to the end of the array.
 
 ##### join()
 
-> **join**(`separator`?): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **join**(`separator?`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1361
 
 Adds all the elements of an array into a string, separated by the specified separator string.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### separator?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2727,6 +5257,8 @@ A string used to separate one element of the array from the next in the resultin
 `Array.join`
 
 ##### reverse()
+
+<!-- DEBUG_signatureTitle -->
 
 > **reverse**(): `string`[]
 
@@ -2745,6 +5277,8 @@ This method mutates the array and returns a reference to the same array.
 
 ##### shift()
 
+<!-- DEBUG_signatureTitle -->
+
 > **shift**(): `undefined` \| `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1371
@@ -2762,7 +5296,9 @@ If the array is empty, undefined is returned and the array is not modified.
 
 ##### slice()
 
-> **slice**(`start`?, `end`?): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **slice**(`start?`: `number`, `end?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1381
 
@@ -2770,21 +5306,65 @@ Returns a copy of a section of an array.
 For both start and end, a negative index can be used to indicate an offset from the end of the array.
 For example, -2 refers to the second to last element of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### start?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The beginning index of the specified portion of the array.
 If start is undefined, then the slice begins at index 0.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### end?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The end index of the specified portion of the array. This is exclusive of the element at the index 'end'.
 If end is undefined, then the slice extends to the end of the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2796,18 +5376,42 @@ If end is undefined, then the slice extends to the end of the array.
 
 ##### sort()
 
-> **sort**(`compareFn`?): `this`
+<!-- DEBUG_signatureTitle -->
+
+> **sort**(`compareFn?`: (`a`: `string`, `b`: `string`) => `number`): `this`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1392
 
 Sorts an array in place.
 This method mutates the array and returns a reference to the same array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### compareFn?
 
-(`a`, `b`) => `number`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`a`: `string`, `b`: `string`) => `number`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 Function used to determine the order of the elements. It is expected to return
 a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
@@ -2815,6 +5419,18 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 ```ts
 [11,2,22,1].sort((a, b) => a - b)
 ```
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2828,25 +5444,71 @@ value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code u
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount`?): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **splice**(`start`: `number`, `deleteCount?`: `number`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1399
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### start
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The zero-based location in the array from which to start removing elements.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### deleteCount?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The number of elements to remove.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2860,31 +5522,91 @@ An array containing the elements that were deleted.
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount`, ...`items`): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **splice**(`start`: `number`, `deleteCount`: `number`, ...`items`: `string`[]): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1407
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### start
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The zero-based location in the array from which to start removing elements.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### deleteCount
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The number of elements to remove.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`string`[]
 
 Elements to insert into the array in place of the deleted elements.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2898,19 +5620,51 @@ An array containing the elements that were deleted.
 
 ##### unshift()
 
-> **unshift**(...`items`): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **unshift**(...`items`: `string`[]): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1412
 
 Inserts new elements at the start of an array, and returns the new length of the array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### items
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 ...`string`[]
 
 Elements to insert at the start of the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2922,25 +5676,71 @@ Elements to insert at the start of the array.
 
 ##### indexOf()
 
-> **indexOf**(`searchElement`, `fromIndex`?): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **indexOf**(`searchElement`: `string`, `fromIndex?`: `number`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1418
 
 Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### searchElement
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 The value to locate in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### fromIndex?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2952,25 +5752,71 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 ##### lastIndexOf()
 
-> **lastIndexOf**(`searchElement`, `fromIndex`?): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **lastIndexOf**(`searchElement`: `string`, `fromIndex?`: `number`): `number`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1424
 
 Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
 
+<dl>
+
+<dt>
+
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### searchElement
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `string`
 
 The value to locate in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### fromIndex?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -2984,7 +5830,9 @@ The array index at which to begin searching backward. If fromIndex is omitted, t
 
 ###### Call Signature
 
-> **every**\<`S`\>(`predicate`, `thisArg`?): `this is S[]`
+<!-- DEBUG_signatureTitle -->
+
+> **every**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `this is S[]`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1433
 
@@ -2992,24 +5840,74 @@ Determines whether all the members of an array satisfy the specified test.
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value false, or until the end of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3021,28 +5919,78 @@ If thisArg is omitted, undefined is used as the this value.
 
 ###### Call Signature
 
-> **every**(`predicate`, `thisArg`?): `boolean`
+<!-- DEBUG_signatureTitle -->
+
+> **every**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1442
 
 Determines whether all the members of an array satisfy the specified test.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value false, or until the end of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3054,28 +6002,78 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### some()
 
-> **some**(`predicate`, `thisArg`?): `boolean`
+<!-- DEBUG_signatureTitle -->
+
+> **some**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `boolean`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1451
 
 Determines whether the specified callback function returns true for any element of an array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The some method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value true, or until the end of the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3087,25 +6085,75 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### forEach()
 
-> **forEach**(`callbackfn`, `thisArg`?): `void`
+<!-- DEBUG_signatureTitle -->
+
+> **forEach**(`callbackfn`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `void`, `thisArg?`: `any`): `void`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1457
 
 Performs the specified action for each element in an array.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### callbackfn
 
-(`value`, `index`, `array`) => `void`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `void`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3117,7 +6165,9 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ##### map()
 
-> **map**\<`U`\>(`callbackfn`, `thisArg`?): `U`[]
+<!-- DEBUG_signatureTitle -->
+
+> **map**\<`U`\>(`callbackfn`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `U`, `thisArg?`: `any`): `U`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1463
 
@@ -3125,21 +6175,71 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### callbackfn
 
-(`value`, `index`, `array`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3153,7 +6253,9 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 ###### Call Signature
 
-> **filter**\<`S`\>(`predicate`, `thisArg`?): `S`[]
+<!-- DEBUG_signatureTitle -->
+
+> **filter**\<`S`\>(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`, `thisArg?`: `any`): `S`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1469
 
@@ -3161,21 +6263,71 @@ Returns the elements of an array that meet the condition specified in a callback
 
 ###### Type Parameters
 
-• **S** *extends* `string`
+###### S
+
+`S` *extends* `string`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### predicate
 
-(`value`, `index`, `array`) => `value is S`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `value is S`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3187,25 +6339,75 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ###### Call Signature
 
-> **filter**(`predicate`, `thisArg`?): `string`[]
+<!-- DEBUG_signatureTitle -->
+
+> **filter**(`predicate`: (`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`, `thisArg?`: `any`): `string`[]
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1475
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### predicate
 
-(`value`, `index`, `array`) => `unknown`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `string`, `index`: `number`, `array`: `string`[]) => `unknown`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3219,20 +6421,56 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **reduce**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1481
 
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
 `string`
@@ -3243,19 +6481,69 @@ A function that accepts up to four arguments. The reduce method calls the callba
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`, `initialValue`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **reduce**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`, `initialValue`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1482
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
+
+</dl>
+
+<dl data-debug-parm-list-5>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### initialValue
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `string`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3267,7 +6555,9 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> **reduce**\<`U`\>(`callbackfn`, `initialValue`): `U`
+<!-- DEBUG_signatureTitle -->
+
+> **reduce**\<`U`\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`, `initialValue`: `U`): `U`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1488
 
@@ -3275,21 +6565,71 @@ Calls the specified callback function for all the elements in an array. The retu
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### initialValue
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3303,20 +6643,56 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **reduceRight**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1494
 
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 ###### Returns
 
 `string`
@@ -3327,19 +6703,69 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`, `initialValue`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **reduceRight**(`callbackfn`: (`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`, `initialValue`: `string`): `string`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1495
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `string`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `string`
+
+</dl>
+
+<dl data-debug-parm-list-5>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### initialValue
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `string`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3351,7 +6777,9 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> **reduceRight**\<`U`\>(`callbackfn`, `initialValue`): `U`
+<!-- DEBUG_signatureTitle -->
+
+> **reduceRight**\<`U`\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`, `initialValue`: `U`): `U`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1501
 
@@ -3359,21 +6787,71 @@ Calls the specified callback function for all the elements in an array, in desce
 
 ###### Type Parameters
 
-• **U**
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### callbackfn
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`previousValue`: `U`, `currentValue`: `string`, `currentIndex`: `number`, `array`: `string`[]) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
+
 ###### initialValue
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3385,15 +6863,47 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ##### isArray()
 
-> `static` **isArray**(`arg`): `arg is any[]`
+<!-- DEBUG_signatureTitle -->
+
+> `static` **isArray**(`arg`: `any`): `arg is any[]`
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.es5.d.ts:1513
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### arg
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `any`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3407,7 +6917,9 @@ Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/li
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`\>(`iterableOrArrayLike`): `Promise`\<`T`[]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **fromAsync**\<`T`\>(`iterableOrArrayLike`: `AsyncIterable`\<`T`, `any`, `any`\> \| `Iterable`\<`T` \| `PromiseLike`\<`T`\>, `any`, `any`\> \| `ArrayLike`\<`T` \| `PromiseLike`\<`T`\>\>): `Promise`\<`T`[]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.esnext.array.d.ts:24
 
@@ -3415,15 +6927,43 @@ Creates an array from an async iterator or iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
+
+`T`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### iterableOrArrayLike
+
+</dt>
+
+<dd data-debug-parm-list>
 
 An async iterator or array-like object to convert to an array.
 
 `AsyncIterable`\<`T`, `any`, `any`\> | `Iterable`\<`T` \| `PromiseLike`\<`T`\>, `any`, `any`\> | `ArrayLike`\<`T` \| `PromiseLike`\<`T`\>\>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3435,7 +6975,9 @@ An async iterator or array-like object to convert to an array.
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`, `mapFn`, `thisArg`?): `Promise`\<`Awaited`\<`U`\>[]\>
+<!-- DEBUG_signatureTitle -->
+
+> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`: `AsyncIterable`\<`T`, `any`, `any`\> \| `Iterable`\<`T`, `any`, `any`\> \| `ArrayLike`\<`T`\>, `mapFn`: (`value`: `Awaited`\<`T`\>, `index`: `number`) => `U`, `thisArg?`: `any`): `Promise`\<`Awaited`\<`U`\>[]\>
 
 Defined in: node\_modules/.pnpm/typescript@5.8.3/node\_modules/typescript/lib/lib.esnext.array.d.ts:34
 
@@ -3443,27 +6985,89 @@ Creates an array from an async iterator or iterable object.
 
 ###### Type Parameters
 
-• **T**
+###### T
 
-• **U**
+`T`
+
+###### U
+
+`U`
+
+<dl>
+
+<dt>
 
 ###### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ###### iterableOrArrayLike
+
+</dt>
+
+<dd data-debug-parm-list>
 
 An async iterator or array-like object to convert to an array.
 
 `AsyncIterable`\<`T`, `any`, `any`\> | `Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
 
+</dd>
+
+</dl>
+
+<dt>
+
 ###### mapFn
 
-(`value`, `index`) => `U`
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-4>
+
+(`value`: `Awaited`\<`T`\>, `index`: `number`) => `U`
+
+</dl>
+
+<dl data-debug-parm-list-5>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### thisArg?
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `any`
 
 Value of 'this' used when executing mapfn.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -3636,19 +7240,51 @@ Defined in: [examples/example-typedoc/src/enums.ts:81](https://github.com/ocavue
 
 ### sqrt()
 
-> **sqrt**(`x`): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **sqrt**(`x`: `number`): `number`
 
 Defined in: [examples/example-typedoc/src/functions.ts:7](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L7)
 
 Calculates the square root of a number.
 
+<dl>
+
+<dt>
+
 #### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ##### x
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 the number to calculate the root of.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -3660,7 +7296,9 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 ### sqrtArrowFunction()
 
-> **sqrtArrowFunction**(`x`): `number`
+<!-- DEBUG_signatureTitle -->
+
+> **sqrtArrowFunction**(`x`: `number`): `number`
 
 Defined in: [examples/example-typedoc/src/functions.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L25)
 
@@ -3674,13 +7312,43 @@ export const sqrtArrowFunction = (x: number): number => Math.sqrt(x);
 
 TypeDoc is smart and documents `sqrtArrowFunction` as a function rather than a variable.
 
+<dl>
+
+<dt>
+
 #### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ##### x
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
 
 `number`
 
 the number do calculate the root of.
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -3692,7 +7360,9 @@ the square root if `x` is non-negative or `NaN` if `x` is negative.
 
 ### concat()
 
-> **concat**\<`T`\>(`array1`, `array2`): `T`[]
+<!-- DEBUG_signatureTitle -->
+
+> **concat**\<`T`\>(`array1`: `T`[], `array2`: `T`[]): `T`[]
 
 Defined in: [examples/example-typedoc/src/functions.ts:39](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L39)
 
@@ -3707,19 +7377,65 @@ to document generic type parameters, e.g.
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 the element type of the arrays
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ##### array1
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `T`[]
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ##### array2
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `T`[]
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -3731,7 +7447,7 @@ the element type of the arrays
 
 Defined in: [examples/example-typedoc/src/functions.ts:46](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L46)
 
-The options type for [makeHttpCallA](README.md#makehttpcalla).
+The options type for [makeHttpCallA](#makehttpcalla).
 
 #### Properties
 
@@ -3773,7 +7489,9 @@ Defined in: [examples/example-typedoc/src/functions.ts:55](https://github.com/oc
 
 ### makeHttpCallA()
 
-> **makeHttpCallA**(`options`): `Promise`\<`Response`\>
+<!-- DEBUG_signatureTitle -->
+
+> **makeHttpCallA**(`options`: [`MakeHttpCallAOptions`](#makehttpcallaoptions)): `Promise`\<`Response`\>
 
 Defined in: [examples/example-typedoc/src/functions.ts:65](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L65)
 
@@ -3783,11 +7501,41 @@ interface and makes an HTTP call.
 **Make sure to export the options type when using this pattern.** Otherwise,
 TypeDoc will not document the options.
 
+<dl>
+
+<dt>
+
 #### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ##### options
 
-[`MakeHttpCallAOptions`](README.md#makehttpcallaoptions)
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
+[`MakeHttpCallAOptions`](#makehttpcallaoptions)
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 #### Returns
 
@@ -3797,7 +7545,9 @@ TypeDoc will not document the options.
 
 ### makeHttpCallB()
 
-> **makeHttpCallB**(`options`): `Promise`\<`Response`\>
+<!-- DEBUG_signatureTitle -->
+
+> **makeHttpCallB**(`options`: \{ `url`: `string`; `method`: `string`; `headers`: `Record`\<`string`, `string`\>; `body`: `string` \| `Blob` \| `FormData`; `mode`: `"cors"` \| `"no-cors"` \| `"same-origin"`; \}): `Promise`\<`Response`\>
 
 Defined in: [examples/example-typedoc/src/functions.ts:78](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L78)
 
@@ -3805,9 +7555,27 @@ A function that takes in an options object and makes an HTTP call.
 
 The options type is written directly in the function definition.
 
+<dl>
+
+<dt>
+
 #### Parameters
 
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
+
 ##### options
+
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-5>
 
 ###### url
 
@@ -3833,6 +7601,18 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 `"cors"` \| `"no-cors"` \| `"same-origin"`
 
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
+
 #### Returns
 
 `Promise`\<`Response`\>
@@ -3843,7 +7623,9 @@ e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **overloadedFunction**(`a`: `number`, `b`: `number`): `string`
 
 Defined in: [examples/example-typedoc/src/functions.ts:102](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L102)
 
@@ -3853,15 +7635,59 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### a
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `number`
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### b
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `number`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -3869,7 +7695,9 @@ included in the documentation.
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+<!-- DEBUG_signatureTitle -->
+
+> **overloadedFunction**(`a`: `string`, `b`: `string`): `string`
 
 Defined in: [examples/example-typedoc/src/functions.ts:111](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/functions.ts#L111)
 
@@ -3879,15 +7707,59 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
+<dl>
+
+<dt>
+
 ##### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### a
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `string`
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dt>
 
 ###### b
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `string`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ##### Returns
 
@@ -3896,6 +7768,8 @@ included in the documentation.
 ***
 
 ### anInternalFunction()
+
+<!-- DEBUG_signatureTitle -->
 
 > **anInternalFunction**(): `void`
 
@@ -3917,7 +7791,7 @@ code.
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:6](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L6)
 
-The props type for [CardA](README.md#carda).
+The props type for [CardA](#carda).
 
 #### Properties
 
@@ -3935,7 +7809,7 @@ The theme of the card. Defaults to `primary`.
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:85](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L85)
 
-The props type of [\`EasyFormDialog\`](README.md#easyformdialog).
+The props type of [\`EasyFormDialog\`](#easyformdialog).
 
 #### Properties
 
@@ -4042,17 +7916,49 @@ cancel buttons.
 
 ##### onShowValidationChange()
 
-> **onShowValidationChange**(`showValidation`): `void`
+<!-- DEBUG_signatureTitle -->
+
+> **onShowValidationChange**(`showValidation`: `boolean`): `void`
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:114](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L114)
 
 A callback that fires when the dialog is submitted.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### showValidation
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `boolean`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
@@ -4060,7 +7966,9 @@ A callback that fires when the dialog is submitted.
 
 ##### onSuccess()
 
-> **onSuccess**(`payload`): `Promise`\<`void`\>
+<!-- DEBUG_signatureTitle -->
+
+> **onSuccess**(`payload`: `unknown`): `Promise`\<`void`\>
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:126](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L126)
 
@@ -4073,17 +7981,49 @@ Your `onSuccess` callback must return a promise. The submit button will
 continue showing a loading indicator until the promise resolves. This is
 to support refetching the data that was updated by the form submission.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### payload
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `unknown`
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
 `Promise`\<`void`\>
 
 ##### onClose()
+
+<!-- DEBUG_signatureTitle -->
 
 > **onClose**(): `void`
 
@@ -4100,7 +8040,9 @@ rendered.
 
 ##### onSubmit()
 
-> **onSubmit**(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
+<!-- DEBUG_signatureTitle -->
+
+> **onSubmit**(`formData`: `Record`\<`string`, `string` \| `boolean`\>): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
 
 Defined in: [examples/example-typedoc/src/reactComponents.tsx:154](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/reactComponents.tsx#L154)
 
@@ -4121,17 +8063,49 @@ Using `formData` is deprecated. Use controlled components instead.
 `formData` will be `{}` if the optional peer dependency `jquery` is not
 installed.
 
+<dl>
+
+<dt>
+
 ###### Parameters
+
+</dt>
+
+<dd>
+
+<dl>
+
+<dt>
 
 ###### formData
 
+</dt>
+
+<dd data-debug-parm-list>
+
+<dl data-debug-parm-list-6>
+
 `Record`\<`string`, `string` \| `boolean`\>
+
+</dl>
+
+</dd>
+
+</dl>
+
+</dl>
+
+</dd>
+
+</dl>
 
 ###### Returns
 
 `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose`: `boolean`; `responseData`: `unknown`; \}\>
 
 ##### onCancel()?
+
+<!-- DEBUG_signatureTitle -->
 
 > `optional` **onCancel**(): `void`
 
@@ -4147,7 +8121,7 @@ An uncommonly-used callback that fires when the user clicks the cancel button.
 
 ### SimpleTypeAlias
 
-> **SimpleTypeAlias**: `string` \| `number` \| `boolean`
+> **SimpleTypeAlias** = `string` \| `number` \| `boolean`
 
 Defined in: [examples/example-typedoc/src/types.ts:2](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L2)
 
@@ -4157,7 +8131,7 @@ A simple type alias defined using the `type` keyword.
 
 ### ComplexGenericTypeAlias\<T\>
 
-> **ComplexGenericTypeAlias**\<`T`\>: `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
+> **ComplexGenericTypeAlias**\<`T`\> = `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
 
 Defined in: [examples/example-typedoc/src/types.ts:5](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L5)
 
@@ -4165,7 +8139,9 @@ A complex generic type.
 
 #### Type Parameters
 
-• **T**
+##### T
+
+`T`
 
 ***
 
@@ -4179,7 +8155,7 @@ TypeDoc even supports doc comments on nested type definitions, as shown by the `
 
 #### Extended by
 
-- [`AdminUser`](README.md#adminuser)
+- [`AdminUser`](#adminuser)
 
 #### Properties
 
@@ -4201,7 +8177,7 @@ The user's email address.
 
 ##### name
 
-> **name**: `object`
+> **name**: \{ `first`: `string`; `last`: `string`; \}
 
 Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
@@ -4225,14 +8201,14 @@ The person's family name.
 
 Defined in: [examples/example-typedoc/src/types.ts:40](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L40)
 
-An interface that extends [\`User\`](README.md#user) and adds more properties.
+An interface that extends [\`User\`](#user) and adds more properties.
 
 Notice how TypeDoc automatically shows the inheritance hierarchy and where
 each property was originally defined.
 
 #### Extends
 
-- [`User`](README.md#user)
+- [`User`](#user)
 
 #### Properties
 
@@ -4246,7 +8222,7 @@ The user's ID.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`id`](README.md#id-3)
+[`User`](#user).[`id`](#id-3)
 
 ##### email
 
@@ -4258,11 +8234,11 @@ The user's email address.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`email`](README.md#email)
+[`User`](#user).[`email`](#email)
 
 ##### name
 
-> **name**: `object`
+> **name**: \{ `first`: `string`; `last`: `string`; \}
 
 Defined in: [examples/example-typedoc/src/types.ts:25](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/types.ts#L25)
 
@@ -4282,7 +8258,7 @@ The person's family name.
 
 ###### Inherited from
 
-[`User`](README.md#user).[`name`](README.md#name-3)
+[`User`](#user).[`name`](#name-3)
 
 ##### administrativeArea
 
@@ -4320,7 +8296,7 @@ A simple string constant.
 
 ### ObjectConstant
 
-> `const` **ObjectConstant**: `object`
+> `const` **ObjectConstant**: \{ `library`: `"typedoc"`; `version`: `"1.2.3"`; `githubStars`: `1000000`; \}
 
 Defined in: [examples/example-typedoc/src/variables.ts:8](https://github.com/ocavue/tsdocs/blob/HEAD/examples/example-typedoc/src/variables.ts#L8)
 
@@ -4353,3 +8329,5 @@ Defined in: [examples/example-typedoc/src/variables.ts:22](https://github.com/oc
 An exported variable defined with `let`.
 
 This pattern should generally be avoided because the variable can be reassigned.
+
+**Generated using `index.page.end` hook**
