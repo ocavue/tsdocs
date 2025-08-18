@@ -1,7 +1,7 @@
 import { Application, type TypeDocOptions } from 'typedoc'
-import {
-  type MarkdownApplication,
-  type PluginOptions,
+import type {
+  MarkdownApplication,
+  PluginOptions,
 } from 'typedoc-plugin-markdown'
 
 import { TSDocsMarkdownTheme } from './markdown-theme'

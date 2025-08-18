@@ -1,9 +1,6 @@
-import { basic, markdown } from '@ocavue/eslint-config'
+import { defineESLintConfig } from '@ocavue/eslint-config'
 
-/** @type {import('eslint').Linter.Config[]} */
-const configs = [
-  ...basic(),
-  ...markdown(),
+export default defineESLintConfig({}, [
   {
     rules: {
       'no-console': ['warn', { allow: ['warn', 'error', 'assert'] }],
@@ -12,6 +9,4 @@ const configs = [
   {
     ignores: ['examples/example-typedoc/**/*'],
   },
-]
-
-export default configs
+])
