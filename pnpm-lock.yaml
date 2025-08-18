@@ -110,6 +110,9 @@ importers:
         specifier: ^4.8.1
         version: 4.8.1(typedoc@0.28.10(typescript@5.9.2))
     devDependencies:
+      '@ocavue/tsconfig':
+        specifier: ^0.3.7
+        version: 0.3.7
       '@types/node':
         specifier: ^20.19.10
         version: 20.19.11
@@ -363,6 +366,9 @@ packages:
 
   '@ocavue/eslint-config@2.14.1':
     resolution: {integrity: sha512-EnKyNADlTK7hlSVzR2JiNMYygRkFdUTT792wpIB4XLyv0WIM7xzfQChFIMkSgQYAlOZoiwW+E/U/cM+9Pp0u7A==}
+
+  '@ocavue/tsconfig@0.3.7':
+    resolution: {integrity: sha512-eHvgeLxI4jxoTpp63uM5+Vt44ioQRUxb2wwEQcdBFnd/KGNvf4dRmDfGtghhFmTuwpXbAD12wMSIuTlwauExww==}
 
   '@octokit/action@6.1.0':
     resolution: {integrity: sha512-lo+nHx8kAV86bxvOVOI3vFjX3gXPd/L7guAUbvs3pUvnR2KC+R7yjBkA1uACt4gYhs4LcWP3AXSGQzsbeN2XXw==}
@@ -3006,6 +3012,8 @@ snapshots:
       - jsonc-eslint-parser
       - supports-color
       - typescript
+
+  '@ocavue/tsconfig@0.3.7': {}
 
   '@octokit/action@6.1.0':
     dependencies:
