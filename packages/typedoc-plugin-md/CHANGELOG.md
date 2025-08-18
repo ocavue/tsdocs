@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.7.1
+
+### Patch Changes
+
+- fcbdede: Remove unnecessary spaces.
+
 ## 0.7.0
 
 ### Minor Changes
