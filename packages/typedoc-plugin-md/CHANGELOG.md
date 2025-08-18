@@ -1,5 +1,11 @@
 # typedoc-plugin-md
 
+## 0.7.0
+
+### Minor Changes
+
+- 2b552ba: This is a complete rewrite of the `typedoc-plugin-md` plugin. It's now based on the `typedoc-plugin-markdown` plugin. You need to add both `typedoc-plugin-md` and `typedoc-plugin-markdown` to your TypeDoc config.
+
 ## 0.6.0
 
 ### Minor Changes
