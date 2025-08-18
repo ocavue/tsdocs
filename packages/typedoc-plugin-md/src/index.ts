@@ -1,33 +1,43 @@
-/**
- * The plugin entrypoint and bootstrapping of the plugin.
- *
- * @module
- */
-import type { Application, Renderer } from 'typedoc'
+import { Application, type TypeDocOptions } from 'typedoc'
+import {
+  type MarkdownApplication,
+  type PluginOptions,
+} from 'typedoc-plugin-markdown'
 
-import { declarations } from './options'
-import { MarkdownTheme } from './theme'
+import { TSDocsMarkdownTheme } from './markdown-theme'
 
-/**
- * The function that is called by TypeDoc to bootstrap the plugin.
- *
- * Here we expose additional TypeDoc options and make some adjustments.
- *
- * This method is not intended to be consumed in any other context that via the `plugin` option.
- *
- * @see https://typedoc.org/guides/development/#plugins.
- */
-export function load(app: Application) {
-  for (const declaration of Object.values(declarations)) {
-    app.options.addDeclaration(declaration)
+export function load(app: MarkdownApplication) {
+  // Define the markdown theme
+  app.renderer.defineTheme('md-theme', TSDocsMarkdownTheme)
+
+  app.on(Application.EVENT_BOOTSTRAP_END, (app) => {
+    updateOptions(app)
+  })
+}
+
+function updateOptions(app: Application) {
+  const markdownPluginOptions: PluginOptions = {
+    hidePageHeader: true,
+    hideBreadcrumbs: true,
+    // hidePageTitle: true,
+    useCustomAnchors: true,
+    useCodeBlocks: false,
   }
 
-  /**
-   * Replace the default HTML theme the with the MarkdownTheme
-   */
-  Object.defineProperty(app.renderer, 'themes', {
-    value: new Map<string, new (renderer: Renderer) => MarkdownTheme>([
-      ['default', MarkdownTheme],
-    ]),
-  })
+  const typedocOptions: TypeDocOptions = {
+    router: 'module',
+    readme: 'none',
+    theme: 'md-theme',
+    disableSources: true,
+  }
+
+  for (const [key, value] of Object.entries({
+    ...markdownPluginOptions,
+    ...typedocOptions,
+  })) {
+    if (app.options.isSet(key)) {
+      continue
+    }
+    app.options.setValue(key, value)
+  }
 }

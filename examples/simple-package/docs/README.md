@@ -14,57 +14,63 @@ npm install simple-package
 import { variable } from 'simple-package'
 ```
 
-## API Reference
+## Enumerations
 
-### SimpleEnum <a id="simple-enum" href="#simple-enum">#</a>
+### SimpleEnum {#simpleenum}
 
 A simple enum.
 
+#### Enumeration Members
+
+##### Value1 {#value1}
+
 <dl>
 
 <dt>
 
-`Value1 = 0`
+<code data-typedoc-code><i></i> <a id="value1" href="#value1">Value1</a>: `0`</code>
 
 </dt>
-
-<dd>
-
-</dd>
-
-<dt>
-
-`Value2 = 1`
-
-</dt>
-
-<dd>
-
-</dd>
 
 </dl>
 
-### SimpleClass <a id="simple-class" href="#simple-class">#</a>
+##### Value2 {#value2}
 
 <dl>
 
 <dt>
 
-`constructor`
+<code data-typedoc-code><i></i> <a id="value2" href="#value2">Value2</a>: `1`</code>
 
 </dt>
 
-<dd>
+</dl>
 
-```
-new SimpleClass(): SimpleClass
-```
+## Classes
 
-</dd>
+### SimpleClass {#simpleclass}
+
+#### Constructors
+
+##### Constructor
+
+<dl>
 
 <dt>
 
-`simpleProperty: string`
+<code data-typedoc-code><i></i> new <a id="constructor" href="#constructor">SimpleClass</a>(): [`SimpleClass`](#simpleclass)</code>
+
+</dt>
+
+</dl>
+
+#### Properties
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> <a id="simpleproperty" href="#simpleproperty">simpleProperty</a>: `string`</code>
 
 </dt>
 
@@ -74,9 +80,15 @@ Comment for simpleProperty
 
 </dd>
 
+</dl>
+
+#### Accessors
+
+<dl>
+
 <dt>
 
-`get complexGetter(): { a: number; b?: string; c: number | (() => number); d: { fn: () => number } }`
+<code data-typedoc-code>get <i></i> <a id="complexgetter" href="#complexgetter">complexGetter</a>(): `object`</code>
 
 </dt>
 
@@ -86,9 +98,13 @@ Comment for complexGetter
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`get simpleGetter(): string`
+<code data-typedoc-code>get <i></i> <a id="simplegetter" href="#simplegetter">simpleGetter</a>(): `string`</code>
 
 </dt>
 
@@ -98,9 +114,13 @@ Comment for simpleGetter
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`set simpleSetter(value: string)`
+<code data-typedoc-code>set <i></i> <a id="simplesetter" href="#simplesetter">simpleSetter</a>(`value`): `void`</code>
 
 </dt>
 
@@ -112,29 +132,33 @@ Comment for simpleSetter
 
 </dl>
 
-### SimpleReader <a id="simple-reader" href="#simple-reader">#</a>
+***
+
+### SimpleReader {#simplereader}
 
 A simple class.
+
+#### Constructors
+
+##### Constructor
 
 <dl>
 
 <dt>
 
-`constructor`
+<code data-typedoc-code><i></i> new <a id="constructor-1" href="#constructor-1">SimpleReader</a>(): [`SimpleReader`](#simplereader)</code>
 
 </dt>
 
-<dd>
+</dl>
 
-```
-new SimpleReader(): SimpleReader
-```
+#### Methods
 
-</dd>
+<dl>
 
 <dt>
 
-`read`
+<code data-typedoc-code><i></i> <a id="read" href="#read">read</a>(): `string`</code>
 
 </dt>
 
@@ -142,39 +166,39 @@ new SimpleReader(): SimpleReader
 
 Reads a value from the reader.
 
-```ts
-const read: () => string
-```
-
 </dd>
 
 </dl>
 
-### SimpleWriter <a id="simple-writer" href="#simple-writer">#</a>
+***
+
+### SimpleWriter\<T\> {#simplewriter}
 
 A simple class with a type parameter.
 
-This class implements [Writer](README.md#writer).
+This class implements [Writer](#writer).
+
+#### Constructors
+
+##### Constructor
 
 <dl>
 
 <dt>
 
-`constructor`
+<code data-typedoc-code><i></i> new <a id="constructor-2" href="#constructor-2">SimpleWriter</a>\<T\>(): [`SimpleWriter`](#simplewriter)\<`T`\></code>
 
 </dt>
 
-<dd>
+</dl>
 
-```
-new SimpleWriter<T>(): SimpleWriter<T>
-```
+#### Methods
 
-</dd>
+<dl>
 
 <dt>
 
-`write`
+<code data-typedoc-code><i></i> <a id="write" href="#write">write</a>(`value`): `void`</code>
 
 </dt>
 
@@ -182,37 +206,51 @@ new SimpleWriter<T>(): SimpleWriter<T>
 
 Writes a value to the writer.
 
-```ts
-const write: (value: T) => void
-```
-
 </dd>
 
 </dl>
 
-### SubClass <a id="sub-class" href="#sub-class">#</a>
+***
 
-**Extends** `SimpleClass`
+### SubClass {#subclass}
+
+#### Constructors
+
+##### Constructor
 
 <dl>
 
 <dt>
 
-`constructor`
+<code data-typedoc-code><i></i> new <a id="constructor-3" href="#constructor-3">SubClass</a>(): [`SubClass`](#subclass)</code>
+
+</dt>
+
+</dl>
+
+#### Properties
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> <a id="simpleproperty-1" href="#simpleproperty-1">simpleProperty</a>: `string`</code>
 
 </dt>
 
 <dd>
 
-```
-new SubClass(): SubClass
-```
+Comment for simpleProperty
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`subProperty: string`
+<code data-typedoc-code><i></i> <a id="subproperty" href="#subproperty">subProperty</a>: `string`</code>
 
 </dt>
 
@@ -224,15 +262,69 @@ Comment for subProperty
 
 </dl>
 
-### Reader <a id="reader" href="#reader">#</a>
-
-A simple interface.
+#### Accessors
 
 <dl>
 
 <dt>
 
-`read`
+<code data-typedoc-code>get <i></i> <a id="complexgetter-1" href="#complexgetter-1">complexGetter</a>(): `object`</code>
+
+</dt>
+
+<dd>
+
+Comment for complexGetter
+
+</dd>
+
+</dl>
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code>get <i></i> <a id="simplegetter-1" href="#simplegetter-1">simpleGetter</a>(): `string`</code>
+
+</dt>
+
+<dd>
+
+Comment for simpleGetter
+
+</dd>
+
+</dl>
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code>set <i></i> <a id="simplesetter-1" href="#simplesetter-1">simpleSetter</a>(`value`): `void`</code>
+
+</dt>
+
+<dd>
+
+Comment for simpleSetter
+
+</dd>
+
+</dl>
+
+## Interfaces
+
+### Reader {#reader}
+
+A simple interface.
+
+#### Methods
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> <a id="read-2" href="#read-2">read</a>(): `string`</code>
 
 </dt>
 
@@ -240,21 +332,21 @@ A simple interface.
 
 Reads a value.
 
-```ts
-const read: () => string
-```
-
 </dd>
 
 </dl>
 
-### SimpleInterface <a id="simple-interface" href="#simple-interface">#</a>
+***
+
+### SimpleInterface {#simpleinterface}
+
+#### Properties
 
 <dl>
 
 <dt>
 
-`fn: (options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
+<code data-typedoc-code><i></i> <a id="fn" href="#fn">fn</a>: (`options`) => `number`</code>
 
 </dt>
 
@@ -264,9 +356,13 @@ A function with a complex parameter.
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`property: string`
+<code data-typedoc-code><i></i> <a id="property" href="#property">property</a>: `string`</code>
 
 </dt>
 
@@ -276,9 +372,13 @@ A simple property.
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`withDefault?: number`
+<code data-typedoc-code><i></i> <a id="withdefault" href="#withdefault">withDefault</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -286,13 +386,19 @@ A simple property.
 
 A simple property with a default tag.
 
-**Default**: `123`
+###### Default
+
+`123`
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`withExample?: number`
+<code data-typedoc-code><i></i> <a id="withexample" href="#withexample">withExample</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -300,15 +406,13 @@ A simple property with a default tag.
 
 A simple method with an example tag.
 
-**Example**
+###### Examples
 
 ```ts
 const a = 1
 const b = 2
 const c = a + b
 ```
-
-**Example**
 
 ```ts
 const a = 2
@@ -318,9 +422,15 @@ const c = a + b
 
 </dd>
 
+</dl>
+
+#### Methods
+
+<dl>
+
 <dt>
 
-`method`
+<code data-typedoc-code><i></i> <a id="method" href="#method">method</a>(): `void`</code>
 
 </dt>
 
@@ -328,15 +438,15 @@ const c = a + b
 
 A simple method.
 
-```ts
-const method: () => void
-```
-
 </dd>
+
+</dl>
+
+<dl>
 
 <dt>
 
-`method2`
+<code data-typedoc-code><i></i> <a id="method2" href="#method2">method2</a>\<T\>(`value`): `void`</code>
 
 </dt>
 
@@ -344,21 +454,21 @@ const method: () => void
 
 A method with a type parameter.
 
-```ts
-const method2: <T>(value: T) => void
-```
-
 </dd>
 
 </dl>
 
-### SubInterface <a id="sub-interface" href="#sub-interface">#</a>
+***
+
+### SubInterface {#subinterface}
+
+#### Properties
 
 <dl>
 
 <dt>
 
-`fn: (options: { a: number; b: Pick<{ b1: string; b2: number }, "b1">; c: () => Promise<void>; d: <T>(...args: T[]) => T extends string ? string : number }) => number`
+<code data-typedoc-code><i></i> <a id="fn-1" href="#fn-1">fn</a>: (`options`) => `number`</code>
 
 </dt>
 
@@ -368,9 +478,13 @@ A function with a complex parameter.
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`property: string`
+<code data-typedoc-code><i></i> <a id="property-1" href="#property-1">property</a>: `string`</code>
 
 </dt>
 
@@ -380,19 +494,23 @@ A simple property.
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`subProperty: string`
+<code data-typedoc-code><i></i> <a id="subproperty-1" href="#subproperty-1">subProperty</a>: `string`</code>
 
 </dt>
 
-<dd>
+</dl>
 
-</dd>
+<dl>
 
 <dt>
 
-`withDefault?: number`
+<code data-typedoc-code><i></i> <a id="withdefault-1" href="#withdefault-1">withDefault</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -400,13 +518,19 @@ A simple property.
 
 A simple property with a default tag.
 
-**Default**: `123`
+###### Default
+
+`123`
 
 </dd>
 
+</dl>
+
+<dl>
+
 <dt>
 
-`withExample?: number`
+<code data-typedoc-code><i></i> <a id="withexample-1" href="#withexample-1">withExample</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -414,15 +538,13 @@ A simple property with a default tag.
 
 A simple method with an example tag.
 
-**Example**
+###### Examples
 
 ```ts
 const a = 1
 const b = 2
 const c = a + b
 ```
-
-**Example**
 
 ```ts
 const a = 2
@@ -432,9 +554,15 @@ const c = a + b
 
 </dd>
 
+</dl>
+
+#### Methods
+
+<dl>
+
 <dt>
 
-`method`
+<code data-typedoc-code><i></i> <a id="method-2" href="#method-2">method</a>(): `void`</code>
 
 </dt>
 
@@ -442,15 +570,15 @@ const c = a + b
 
 A simple method.
 
-```ts
-const method: () => void
-```
-
 </dd>
+
+</dl>
+
+<dl>
 
 <dt>
 
-`method2`
+<code data-typedoc-code><i></i> <a id="method2-2" href="#method2-2">method2</a>\<T\>(`value`): `void`</code>
 
 </dt>
 
@@ -458,23 +586,23 @@ const method: () => void
 
 A method with a type parameter.
 
-```ts
-const method2: <T>(value: T) => void
-```
-
 </dd>
 
 </dl>
 
-### Writer <a id="writer" href="#writer">#</a>
+***
+
+### Writer\<T\> {#writer}
 
 An interface with a generic type parameter.
 
+#### Methods
+
 <dl>
 
 <dt>
 
-`write`
+<code data-typedoc-code><i></i> <a id="write-2" href="#write-2">write</a>(`value`): `void`</code>
 
 </dt>
 
@@ -482,98 +610,260 @@ An interface with a generic type parameter.
 
 Writes a value.
 
-```ts
-const write: (value: T) => void
-```
+</dd>
+
+</dl>
+
+## Type Aliases
+
+### Fn1() {#fn1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> type <a id="fn1" href="#fn1">Fn1</a> = () => `number`</code>
+
+</dt>
+
+<dd>
+
+Implemented by [fn1](#fn1-1), [fn1\_1](#fn1_1), [fn1\_1\_1](#fn1_1_1) and [fn\_x](#fn_x)
 
 </dd>
 
 </dl>
 
-### Fn1 <a id="fn1" href="#fn1">#</a>
+***
 
-Implemented by [fn1](README.md#fn1-1), [fn1\_1](README.md#fn1-1-1), [fn1\_1\_1](README.md#fn1-1-1-1) and [fn\_x](README.md#fn-x)
+### Fn2() {#fn2}
 
-**Type**: `() => number`
+<dl>
 
-### Fn2 <a id="fn2" href="#fn2">#</a>
+<dt>
 
-**Type**: `() => number`
+<code data-typedoc-code><i></i> type <a id="fn2" href="#fn2">Fn2</a> = () => `number`</code>
 
-### SimpleType <a id="simple-type" href="#simple-type">#</a>
+</dt>
+
+</dl>
+
+***
+
+### SimpleType {#simpletype}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> type <a id="simpletype" href="#simpletype">SimpleType</a> = `string` \| `number`</code>
+
+</dt>
+
+<dd>
 
 A simple type.
 
-**Type**: `string | number`
+</dd>
 
-### SubType <a id="sub-type" href="#sub-type">#</a>
+</dl>
 
-**Type**: `SimpleInterface & { subProperty: string }`
+***
 
-### variable <a id="variable" href="#variable">#</a>
+### SubType {#subtype}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> type <a id="subtype" href="#subtype">SubType</a> = [`SimpleInterface`](#simpleinterface) & `object`</code>
+
+</dt>
+
+<dd>
+
+#### Type declaration
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i></i> subProperty: `string`</code>
+
+</dt>
+
+</dl>
+
+</dd>
+
+</dl>
+
+## Variables
+
+### variable {#variable}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>const</i> <a id="variable" href="#variable">variable</a>: `1` = `1`</code>
+
+</dt>
+
+<dd>
 
 A simple variable.
 
-**Type**: `1`
+</dd>
 
-### add <a id="add" href="#add">#</a>
+</dl>
 
-```ts
-function add(a: number, b: number): number
-```
+## Functions
+
+### add() {#add}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="add" href="#add">add</a>(`a`, `b`): `number`</code>
+
+</dt>
+
+<dd>
 
 A simple function.
 
-### fn\_x <a id="fn-x" href="#fn-x">#</a>
+</dd>
 
-```ts
-function fn_x(): number
-```
+</dl>
 
-### fn1 <a id="fn1-1" href="#fn1-1">#</a>
+***
 
-```ts
-function fn1(): number
-```
+### fn\_x() {#fn_x}
 
-See also [Fn1](README.md#fn1)
+<dl>
 
-### fn1\_1 <a id="fn1-1-1" href="#fn1-1-1">#</a>
+<dt>
 
-```ts
-function fn1_1(): number
-```
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn_x" href="#fn_x">fn_x</a>(): `number`</code>
 
-### fn1\_1\_1 <a id="fn1-1-1-1" href="#fn1-1-1-1">#</a>
+</dt>
 
-```ts
-function fn1_1_1(): number
-```
+</dl>
 
-See also [Fn1](README.md#fn1)
+***
 
-### fn1\_2 <a id="fn1-2" href="#fn1-2">#</a>
+### fn1() {#fn1-1}
 
-```ts
-function fn1_2(): number
-```
+<dl>
 
-See also [Fn1](README.md#fn1)
+<dt>
 
-### fn2 <a id="fn2-1" href="#fn2-1">#</a>
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn1-1" href="#fn1-1">fn1</a>(): `number`</code>
 
-```ts
-function fn2(): number
-```
+</dt>
 
-### functionWithFunctionParameter <a id="function-with-function-parameter" href="#function-with-function-parameter">#</a>
+<dd>
 
-```ts
-function functionWithFunctionParameter(fn: (num: number) => boolean): (num: number) => boolean
-```
+See also [Fn1](#fn1)
 
-### functionWithUnionParameters <a id="function-with-union-parameters" href="#function-with-union-parameters">#</a>
+</dd>
 
-```ts
-function functionWithUnionParameters(a: string | number, b: number | ((num: number) => boolean)): string
-```
+</dl>
+
+***
+
+### fn1\_1() {#fn1_1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_1" href="#fn1_1">fn1_1</a>(): `number`</code>
+
+</dt>
+
+</dl>
+
+***
+
+### fn1\_1\_1() {#fn1_1_1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_1_1" href="#fn1_1_1">fn1_1_1</a>(): `number`</code>
+
+</dt>
+
+<dd>
+
+See also [Fn1](#fn1)
+
+</dd>
+
+</dl>
+
+***
+
+### fn1\_2() {#fn1_2}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_2" href="#fn1_2">fn1_2</a>(): `number`</code>
+
+</dt>
+
+<dd>
+
+See also [Fn1](#fn1)
+
+</dd>
+
+</dl>
+
+***
+
+### fn2() {#fn2-1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="fn2-1" href="#fn2-1">fn2</a>(): `number`</code>
+
+</dt>
+
+</dl>
+
+***
+
+### functionWithFunctionParameter() {#functionwithfunctionparameter}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="functionwithfunctionparameter" href="#functionwithfunctionparameter">functionWithFunctionParameter</a>(`fn`): (`num`) => `boolean`</code>
+
+</dt>
+
+</dl>
+
+***
+
+### functionWithUnionParameters() {#functionwithunionparameters}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="functionwithunionparameters" href="#functionwithunionparameters">functionWithUnionParameters</a>(`a`, `b`): `string`</code>
+
+</dt>
+
+</dl>

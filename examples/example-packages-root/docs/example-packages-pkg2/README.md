@@ -1,9 +1,6 @@
 # example-packages-pkg2
 
-## index {#index}
+## Modules
 
-<!-- Declaration kind 2 is not implemented (name: index) -->
-
-## subdir {#subdir}
-
-<!-- Declaration kind 2 is not implemented (name: subdir) -->
+- [index](index.md)
+- [subdir](subdir.md)
