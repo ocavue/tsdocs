@@ -14,8 +14,6 @@ Comment for pkg1
 
 <dd>
 
-Defined in: [index.ts:10](https://github.com/ocavue/tsdocs/blob/ccc0273516f1d7f575b67f2fb7e42663958b0af6/examples/example-packages-pkg1/src/index.ts#L10)
-
 Comment for fn1
 
 </dd>

@@ -10,13 +10,7 @@
   "readme": "none",
   "mergeReadme": true,
   "cleanOutputDir": true,
+  "disableSources": true,
 
-  "hidePageHeader": true,
-  "hideBreadcrumbs": true,
-  "hidePageTitle": true,
-  "useCustomAnchors": true,
-  "useCodeBlocks": false,
-  "expandParameters": true,
-  "parametersFormat": "htmlTable",
-  "enumMembersFormat": "htmlTable",
+
 }
