@@ -31,7 +31,7 @@ jobs:
     name: Publish
     permissions:
       contents: write
-      id-token: write    
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
