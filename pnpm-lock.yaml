@@ -82,6 +82,9 @@ importers:
       typedoc-plugin-markdown:
         specifier: ^4.8.1
         version: 4.8.1(typedoc@0.28.10(typescript@5.9.2))
+      typedoc-plugin-md:
+        specifier: workspace:*
+        version: link:../../packages/typedoc-plugin-md
       typescript:
         specifier: ^5.8.3
         version: 5.9.2
@@ -4456,8 +4459,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.14.1
-      acorn-jsx: 5.3.2(acorn@8.14.1)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       eslint-visitor-keys: 3.4.3
 
   esprima@4.0.1: {}
@@ -4864,7 +4867,7 @@ snapshots:
 
   jsonc-eslint-parser@2.4.0:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       semver: 7.7.2
