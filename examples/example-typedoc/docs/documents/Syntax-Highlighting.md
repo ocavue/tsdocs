@@ -1,9 +1,3 @@
-[**TypeDoc Example**](../README.md)
-
-***
-
-[TypeDoc Example](../README.md) / Syntax Highlighting
-
 TypeDoc supports code blocks in Markdown and uses
 [Shiki](https://shiki.matsu.io/) to provide syntax highlighting.
 

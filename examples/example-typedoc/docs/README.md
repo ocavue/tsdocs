@@ -1,51 +1,27 @@
-**TypeDoc Example**
-
-***
-
-https://github.com/TypeStrong/typedoc/tree/v0.28.2/example
+# TypeDoc Example
 
 ## Collection
 
-### lodashSortBy()
+### lodashSortBy() {#lodashsortby}
 
 Here is a useful function re-exported from Lodash.
 
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees?`): `T`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1908
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="lodashsortby" href="#lodashsortby">lodashSortBy</a>\<T\>(`collection`, ...`iteratees?`): `T`[]</code>
+
+</dt>
+
+<dd>
 
 Creates an array of elements, sorted in ascending order by the results of
 running each element in a collection through each iteratee. This method
 performs a stable sort, that is, it preserves the original sort order of
 equal elements. The iteratees are invoked with one argument: (value).
-
-##### Type Parameters
-
-###### T
-
-`T`
-
-##### Parameters
-
-###### collection
-
-The collection to iterate over.
-
-`undefined` | `null` | `List`\<`T`\>
-
-###### iteratees?
-
-...`Many`\<`ListIteratee`\<`T`\>\>[]
-
-The iteratees to sort by, specified individually or in arrays.
-
-##### Returns
-
-`T`[]
-
-Returns the new sorted array.
 
 ##### Example
 
@@ -69,46 +45,46 @@ _.sortBy(users, 'user', function(o) {
 // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 42]]
 ```
 
+</dd>
+
+</dl>
+
 #### Call Signature
 
-> **lodashSortBy**\<`T`\>(`collection`, ...`iteratees`): `T`\[keyof `T`\][]
+<dl>
 
-Defined in: node\_modules/.pnpm/@types+lodash@4.17.16/node\_modules/@types/lodash/common/collection.d.ts:1912
+<dt>
 
-##### Type Parameters
+<code data-typedoc-code><i>function</i> <a id="lodashsortby" href="#lodashsortby">lodashSortBy</a>\<T\>(`collection`, ...`iteratees`): `T`\[keyof `T`\][]</code>
 
-###### T
+</dt>
 
-`T` *extends* `object`
-
-##### Parameters
-
-###### collection
-
-`undefined` | `null` | `T`
-
-###### iteratees
-
-...`Many`\<`ObjectIteratee`\<`T`\>\>[]
-
-##### Returns
-
-`T`\[keyof `T`\][]
+<dd>
 
 ##### See
 
 _.sortBy
+
+</dd>
+
+</dl>
 
 ## Component
 
 React Components -- This description is added with the `@categoryDescription` tag
 on the entry point in src/index.ts
 
-### CardA()
+### CardA() {#carda}
 
-> **CardA**(`__namedParameters`): `ReactElement`
+<dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:42
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="carda" href="#carda">CardA</a>(`__namedParameters`): `ReactElement`</code>
+
+</dt>
+
+<dd>
 
 Renders a card around some content.
 
@@ -138,23 +114,23 @@ This is our recommended way to define React components as it makes your code
 more readable. The minor drawback is you must click the `CardAProps` link to
 see the component's props.
 
-#### Parameters
+</dd>
 
-##### \_\_namedParameters
-
-`PropsWithChildren`\<[`CardAProps`](#cardaprops)\>
-
-#### Returns
-
-`ReactElement`
+</dl>
 
 ***
 
-### CardB()
+### CardB() {#cardb}
 
-> **CardB**(`__namedParameters`): `ReactElement`
+<dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:74
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="cardb" href="#cardb">CardB</a>(`__namedParameters`): `ReactElement`</code>
+
+</dt>
+
+<dd>
 
 Renders a card around some content.
 
@@ -181,23 +157,23 @@ export function CardB({
 This can make the TypeDoc documentation a bit cleaner for very simple components,
 but it makes your code less readable.
 
-#### Parameters
+</dd>
 
-##### \_\_namedParameters
-
-`PropsWithChildren`\<\{ `variant`: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`; \}\>
-
-#### Returns
-
-`ReactElement`
+</dl>
 
 ***
 
-### EasyFormDialog()
+### EasyFormDialog() {#easyformdialog}
 
-> **EasyFormDialog**(`props`): `ReactElement`
+<dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:254
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="easyformdialog" href="#easyformdialog">EasyFormDialog</a>(`props`): `ReactElement`</code>
+
+</dt>
+
+<dd>
 
 An example of a complex React component.
 
@@ -256,15 +232,9 @@ export function Example({
 }
 ```
 
-#### Parameters
+</dd>
 
-##### props
-
-`PropsWithChildren`\<[`EasyFormDialogProps`](#easyformdialogprops)\>
-
-#### Returns
-
-`ReactElement`
+</dl>
 
 ## Documents
 
@@ -275,160 +245,169 @@ export function Example({
 
 ## Model
 
-### `abstract` Customer
-
-Defined in: examples/example-typedoc/src/classes/Customer.ts:8
+### abstract Customer {#customer}
 
 An abstract base class for the customer entity in our application.
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
-#### Extended by
-
-- [`DeliveryCustomer`](#deliverycustomer)
-- [`WalkInCustomer`](#walkincustomer)
-
 #### Constructors
 
 ##### Constructor
 
-> **new Customer**(`id`, `name`, `nextOrderNumber`): [`Customer`](#customer)
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:48
+<dt>
+
+<code data-typedoc-code>new <a id="constructor-1" href="#constructor-1">Customer</a>(`id`, `name`, `nextOrderNumber`): [`Customer`](#customer)</code>
+
+</dt>
+
+<dd>
 
 The constructor of the `Customer` class.
 
-###### Parameters
+</dd>
 
-###### id
-
-`number`
-
-the customer's database ID
-
-###### name
-
-`string`
-
-the customer's name
-
-###### nextOrderNumber
-
-the next number to use when this customer places an order
-
-`string` | `number`
-
-###### Returns
-
-[`Customer`](#customer)
+</dl>
 
 #### Properties
 
-##### id
+<dl>
 
-> `readonly` **id**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:10
+<code data-typedoc-code><i>readonly</i> <a id="id" href="#id">id</a>: `number`</code>
+
+</dt>
+
+<dd>
 
 A public readonly property.
 
-##### name
+</dd>
 
-> **name**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:13
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="name" href="#name">name</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 A public property that can be reassigned.
 
-##### contactName?
+</dd>
 
-> `protected` `optional` **contactName**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:16
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>protected</i> <a id="contactname" href="#contactname">contactName</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 An optional protected property.
 
+</dd>
+
+</dl>
+
 #### Accessors
 
-##### nextOrderNumber
+<dl>
 
-###### Get Signature
+<dt>
 
-> **get** **nextOrderNumber**(): `string`
+<code data-typedoc-code>get <a id="nextordernumber" href="#nextordernumber">nextOrderNumber</a>(): `string`</code>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:25
+</dt>
+
+<dd>
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
 
-###### Returns
+</dd>
 
-`string`
+<dt>
 
-###### Set Signature
+<code data-typedoc-code>set <a id="nextordernumber" href="#nextordernumber">nextOrderNumber</a>(`value`): `void`</code>
 
-> **set** **nextOrderNumber**(`value`): `void`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:33
+<dd>
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
 
-###### Parameters
+</dd>
 
-###### value
-
-`string` | `number`
-
-###### Returns
-
-`void`
+</dl>
 
 #### Methods
 
-##### onOrderPlaced()
+<dl>
 
-> **onOrderPlaced**(): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:56
+<code data-typedoc-code><a id="onorderplaced" href="#onorderplaced">onOrderPlaced</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 A public method. To be called when an order is placed for this customer.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-##### onOrderPlacedArrowFunction()
+<dl>
 
-> **onOrderPlacedArrowFunction**(): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:65
+<code data-typedoc-code><a id="onorderplacedarrowfunction" href="#onorderplacedarrowfunction">onOrderPlacedArrowFunction</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 A public method that's defined using an arrow function.
 
 TypeDoc knows to document this as a method rather than a property.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-##### isValid()
+<dl>
 
-> `protected` **isValid**(): `boolean`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:70
+<code data-typedoc-code><i>protected</i> <a id="isvalid" href="#isvalid">isValid</a>(): `boolean`</code>
+
+</dt>
+
+<dd>
 
 A protected method.
 
-###### Returns
+</dd>
 
-`boolean`
+</dl>
 
 ## Other
 
-### CancellablePromise\<T\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:52
+### CancellablePromise\<T\> {#cancellablepromise}
 
 This example shows off how TypeDoc handles
 
@@ -443,48 +422,35 @@ A promise with a `cancel` method.  If canceled, the `CancellablePromise` will
 reject with a `Cancellation` object. Originally from
 [real-cancellable-promise](https://github.com/srmagura/real-cancellable-promise).
 
-#### Type Parameters
-
-##### T
-
-`T`
-
-what the `CancellablePromise` resolves to
-
 #### Constructors
 
 ##### Constructor
 
-> **new CancellablePromise**\<`T`\>(`promise`, `cancel`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:76
+<dt>
 
-###### Parameters
+<code data-typedoc-code>new <a id="constructor" href="#constructor">CancellablePromise</a>\<T\>(`promise`, `cancel`): [`CancellablePromise`](#cancellablepromise)\<`T`\></code>
 
-###### promise
+</dt>
 
-`PromiseLike`\<`T`\>
+<dd>
 
-a normal promise or thenable
+</dd>
 
-###### cancel
-
-(`reason?`) => `void`
-
-a function that cancels `promise`. **Calling `cancel` after
-`promise` has resolved must be a no-op.**
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T`\>
+</dl>
 
 #### Properties
 
-##### promise
+<dl>
 
-> `protected` `readonly` **promise**: `Promise`\<`T`\>
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:60
+<code data-typedoc-code><i>protected</i> <i>readonly</i> <a id="promise" href="#promise">promise</a>: `Promise`\<`T`\></code>
+
+</dt>
+
+<dd>
 
 As a consumer of the library, you shouldn't ever need to access
 `CancellablePromise.promise` directly.
@@ -492,23 +458,25 @@ As a consumer of the library, you shouldn't ever need to access
 If you are subclassing `CancellablePromise` for some reason, you
 can access this property.
 
-##### cancel()
+</dd>
 
-> `readonly` **cancel**: (`reason?`) => `void`
+</dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:69
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>readonly</i> <a id="cancel" href="#cancel">cancel</a>: (`reason?`) => `void`</code>
+
+</dt>
+
+<dd>
 
 Cancel the `CancellablePromise`.
 
-###### Parameters
+</dd>
 
-###### reason?
-
-`string`
-
-###### Returns
-
-`void`
+</dl>
 
 #### Methods
 
@@ -517,11 +485,15 @@ the index where groups are listed. This works for both manually created groups w
 are created with `@group`, and implicit groups like the `Methods` group that this
 description is attached to.
 
-##### then()
+<dl>
 
-> **then**\<`TResult1`, `TResult2`\>(`onFulfilled?`, `onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:101
+<code data-typedoc-code><a id="then" href="#then">then</a>\<TResult1, TResult2\>(`onFulfilled?`, `onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\></code>
+
+</dt>
+
+<dd>
 
 Analogous to `Promise.then`.
 
@@ -540,88 +512,55 @@ Then if you call `overallPromise.cancel`, `cancel` is called on all
 `CancellablePromise`s in the chain! In practice, this means that
 whichever async operation is in progress will be canceled.
 
-###### Type Parameters
+</dd>
 
-###### TResult1
+</dl>
 
-`TResult1` = `T`
+<dl>
 
-###### TResult2
+<dt>
 
-`TResult2` = `never`
+<code data-typedoc-code><a id="catch" href="#catch">catch</a>\<TResult\>(`onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\></code>
 
-###### Parameters
+</dt>
 
-###### onFulfilled?
-
-`null` | (`value`) => `TResult1` \| `PromiseLike`\<`TResult1`\>
-
-###### onRejected?
-
-`null` | (`reason`) => `TResult2` \| `PromiseLike`\<`TResult2`\>
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`TResult1` \| `TResult2`\>
-
-a new CancellablePromise
-
-##### catch()
-
-> **catch**\<`TResult`\>(`onRejected?`): [`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:152
+<dd>
 
 Analogous to `Promise.catch`.
 
-###### Type Parameters
+</dd>
 
-###### TResult
+</dl>
 
-`TResult` = `never`
+<dl>
 
-###### Parameters
+<dt>
 
-###### onRejected?
+<code data-typedoc-code><a id="finally" href="#finally">finally</a>(`onFinally?`): [`CancellablePromise`](#cancellablepromise)\<`T`\></code>
 
-`null` | (`reason`) => `TResult` \| `PromiseLike`\<`TResult`\>
+</dt>
 
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T` \| `TResult`\>
-
-##### finally()
-
-> **finally**(`onFinally?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:169
+<dd>
 
 Attaches a callback that is invoked when the Promise is settled
 (fulfilled or rejected). The resolved value cannot be modified from the
 callback.
 
-###### Parameters
+</dd>
 
-###### onFinally?
-
-The callback to execute when the Promise is settled
-(fulfilled or rejected).
-
-`null` | () => `void`
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T`\>
-
-A Promise for the completion of the callback.
-
-##### resolve()
+</dl>
 
 ###### Call Signature
 
-> `static` **resolve**(): [`CancellablePromise`](#cancellablepromise)\<`void`\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:185
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="resolve" href="#resolve">resolve</a>(): [`CancellablePromise`](#cancellablepromise)\<`void`\></code>
+
+</dt>
+
+<dd>
 
 Analogous to `Promise.resolve`.
 
@@ -629,15 +568,21 @@ The returned promise should resolve even if it is canceled. The idea is
 that the promise is resolved instantaneously, so by the time the promise
 is canceled, it has already resolved.
 
-###### Returns
+</dd>
 
-[`CancellablePromise`](#cancellablepromise)\<`void`\>
+</dl>
 
 ###### Call Signature
 
-> `static` **resolve**\<`T`\>(`value`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:187
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="resolve" href="#resolve">resolve</a>\<T\>(`value`): [`CancellablePromise`](#cancellablepromise)\<`T`\></code>
+
+</dt>
+
+<dd>
 
 Analogous to `Promise.resolve`.
 
@@ -645,52 +590,28 @@ The returned promise should resolve even if it is canceled. The idea is
 that the promise is resolved instantaneously, so by the time the promise
 is canceled, it has already resolved.
 
-###### Type Parameters
+</dd>
 
-###### T
+</dl>
 
-`T`
+<dl>
 
-###### Parameters
+<dt>
 
-###### value
+<code data-typedoc-code><i>static</i> <a id="reject" href="#reject">reject</a>\<T\>(`reason?`): [`CancellablePromise`](#cancellablepromise)\<`T`\></code>
 
-`T`
+</dt>
 
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T`\>
-
-##### reject()
-
-> `static` **reject**\<`T`\>(`reason?`): [`CancellablePromise`](#cancellablepromise)\<`T`\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:201
+<dd>
 
 Analogous to `Promise.reject`.
 
 Like `CancellablePromise.resolve`, canceling the returned
 `CancellablePromise` is a no-op.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### Parameters
-
-###### reason?
-
-`unknown`
-
-this should probably be an `Error` object
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T`\>
-
-##### all()
+</dl>
 
 Analogous to `Promise.all`.
 
@@ -701,915 +622,571 @@ thenables, and resolved values
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:205
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### T6
-
-`T6`
-
-###### T7
-
-`T7`
-
-###### T8
-
-`T8`
-
-###### T9
-
-`T9`
-
-###### T10
-
-`T10`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>, `T10` \| `PromiseLike`\<`T10`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:220
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5, T6, T7, T8, T9\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### T6
-
-`T6`
-
-###### T7
-
-`T7`
-
-###### T8
-
-`T8`
-
-###### T9
-
-`T9`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>, `T9` \| `PromiseLike`\<`T9`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:234
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5, T6, T7, T8\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### T6
-
-`T6`
-
-###### T7
-
-`T7`
-
-###### T8
-
-`T8`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>, `T8` \| `PromiseLike`\<`T8`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:247
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5, T6, T7\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### T6
-
-`T6`
-
-###### T7
-
-`T7`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>, `T7` \| `PromiseLike`\<`T7`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`, `T7`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:259
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5, T6\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### T6
-
-`T6`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>, `T6` \| `PromiseLike`\<`T6`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`, `T6`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`, `T5`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:270
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4, T5\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### T5
-
-`T5`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>, `T5` \| `PromiseLike`\<`T5`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`, `T5`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`, `T4`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:280
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3, T4\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### T4
-
-`T4`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>, `T4` \| `PromiseLike`\<`T4`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`, `T4`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`, `T3`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:289
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2, T3\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### T3
-
-`T3`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>, `T3` \| `PromiseLike`\<`T3`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`, `T3`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T1`, `T2`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:297
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T1, T2\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\></code>
 
-###### T1
+</dt>
 
-`T1`
-
-###### T2
-
-`T2`
-
-###### Parameters
-
-###### values
-
-readonly \[`T1` \| `PromiseLike`\<`T1`\>, `T2` \| `PromiseLike`\<`T2`\>\]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\[`T1`, `T2`\]\>
+</dl>
 
 ###### Call Signature
 
-> `static` **all**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`T`[]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:301
+<dt>
 
-###### Type Parameters
+<code data-typedoc-code><i>static</i> <a id="all" href="#all">all</a>\<T\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`T`[]\></code>
 
-###### T
+</dt>
 
-`T`
-
-###### Parameters
-
-###### values
-
-readonly (`T` \| `PromiseLike`\<`T`\>)[]
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`T`[]\>
-
-##### allSettled()
+</dl>
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:327
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="allsettled" href="#allsettled">allSettled</a>\<T\>(`values`): [`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\></code>
+
+</dt>
+
+<dd>
 
 Creates a `CancellablePromise` that is resolved with an array of results
 when all of the provided `Promises` resolve or reject.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T` *extends* readonly `unknown`[] \| readonly \[`unknown`\]
-
-###### Parameters
-
-###### values
-
-`T`
-
-An array of `Promises`.
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<\{ -readonly \[P in string \| number \| symbol\]: PromiseSettledResult\<T\[P\<P\>\] extends PromiseLike\<U\> ? U : T\[P\<P\>\]\> \}\>
-
-A new `CancellablePromise`.
+</dl>
 
 ###### Call Signature
 
-> `static` **allSettled**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:345
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="allsettled" href="#allsettled">allSettled</a>\<T\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\></code>
+
+</dt>
+
+<dd>
 
 Creates a `CancellablePromise` that is resolved with an array of results
 when all of the provided `Promise`s resolve or reject.
 
-###### Type Parameters
+</dd>
 
-###### T
+</dl>
 
-`T`
+<dl>
 
-###### Parameters
+<dt>
 
-###### values
+<code data-typedoc-code><i>static</i> <a id="race" href="#race">race</a>\<T\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\></code>
 
-`Iterable`\<`T`\>
+</dt>
 
-An array of `Promise`s.
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`PromiseSettledResult`\<`T` *extends* `PromiseLike`\<`U`\> ? `U` : `T`\>[]\>
-
-A new `CancellablePromise`. Canceling it cancels all of the input
-promises.
-
-##### race()
-
-> `static` **race**\<`T`\>(`values`): [`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:370
+<dd>
 
 Creates a `CancellablePromise` that is resolved or rejected when any of
 the provided `Promises` are resolved or rejected.
 
-###### Type Parameters
+</dd>
 
-###### T
+</dl>
 
-`T`
+<dl>
 
-###### Parameters
+<dt>
 
-###### values
+<code data-typedoc-code><i>static</i> <a id="delay" href="#delay">delay</a>(`ms`): [`CancellablePromise`](#cancellablepromise)\<`void`\></code>
 
-readonly `T`[]
+</dt>
 
-An array of `Promises`.
+<dd>
 
-###### Returns
+</dd>
 
-[`CancellablePromise`](#cancellablepromise)\<`Awaited`\<`T`\>\>
-
-A new `CancellablePromise`. Canceling it cancels all of the input
-promises.
-
-##### delay()
-
-> `static` **delay**(`ms`): [`CancellablePromise`](#cancellablepromise)\<`void`\>
-
-Defined in: examples/example-typedoc/src/classes/CancellablePromise.ts:385
-
-###### Parameters
-
-###### ms
-
-`number`
-
-###### Returns
-
-[`CancellablePromise`](#cancellablepromise)\<`void`\>
-
-a `CancellablePromise` that resolves after `ms` milliseconds.
+</dl>
 
 ***
 
-### DeliveryCustomer
-
-Defined in: examples/example-typedoc/src/classes/Customer.ts:85
+### DeliveryCustomer {#deliverycustomer}
 
 A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
-#### Extends
-
-- [`Customer`](#customer)
-
 #### Constructors
 
 ##### Constructor
 
-> **new DeliveryCustomer**(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](#deliverycustomer)
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:100
+<dt>
+
+<code data-typedoc-code>new <a id="constructor-2" href="#constructor-2">DeliveryCustomer</a>(`id`, `name`, `nextOrderNumber`, `subscriptionType`): [`DeliveryCustomer`](#deliverycustomer)</code>
+
+</dt>
+
+<dd>
 
 The constructor of the `DeliveryCustomer` class.
 
-###### Parameters
+</dd>
 
-###### id
-
-`number`
-
-the customer's database ID
-
-###### name
-
-`string`
-
-the customer's name
-
-###### nextOrderNumber
-
-the next number to use when this customer places an order
-
-`string` | `number`
-
-###### subscriptionType
-
-whether this customer has a basic or enterprise subscription
-
-`"basic"` | `"enterprise"`
-
-###### Returns
-
-[`DeliveryCustomer`](#deliverycustomer)
-
-###### Overrides
-
-[`Customer`](#customer).[`constructor`](#constructor-1)
+</dl>
 
 #### Properties
 
-##### id
+<dl>
 
-> `readonly` **id**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:10
+<code data-typedoc-code><i>readonly</i> <a id="id-1" href="#id-1">id</a>: `number`</code>
+
+</dt>
+
+<dd>
 
 A public readonly property.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`id`](#id)
+</dl>
 
-##### name
+<dl>
 
-> **name**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:13
+<code data-typedoc-code><a id="name-1" href="#name-1">name</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 A public property that can be reassigned.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`name`](#name)
+</dl>
 
-##### contactName?
+<dl>
 
-> `protected` `optional` **contactName**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:16
+<code data-typedoc-code><i>protected</i> <a id="contactname-1" href="#contactname-1">contactName</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 An optional protected property.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`contactName`](#contactname)
+</dl>
 
-##### preferredCourierId?
+<dl>
 
-> `optional` **preferredCourierId**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:87
+<code data-typedoc-code><a id="preferredcourierid" href="#preferredcourierid">preferredCourierId</a><i>?</i>: `number`</code>
+
+</dt>
+
+<dd>
 
 A property defined on the subclass.
 
-##### subscriptionType
+</dd>
 
-> `readonly` **subscriptionType**: `"basic"` \| `"enterprise"`
+</dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:90
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>readonly</i> <a id="subscriptiontype" href="#subscriptiontype">subscriptionType</a>: `"basic"` \| `"enterprise"`</code>
+
+</dt>
+
+<dd>
 
 Another property defined on the subclass.
 
+</dd>
+
+</dl>
+
 #### Accessors
 
-##### nextOrderNumber
+<dl>
 
-###### Get Signature
+<dt>
 
-> **get** **nextOrderNumber**(): `string`
+<code data-typedoc-code>get <a id="nextordernumber-1" href="#nextordernumber-1">nextOrderNumber</a>(): `string`</code>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:25
+</dt>
+
+<dd>
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
 
-###### Returns
+</dd>
 
-`string`
+<dt>
 
-###### Set Signature
+<code data-typedoc-code>set <a id="nextordernumber-1" href="#nextordernumber-1">nextOrderNumber</a>(`value`): `void`</code>
 
-> **set** **nextOrderNumber**(`value`): `void`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:33
+<dd>
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
 
-###### Parameters
+</dd>
 
-###### value
-
-`string` | `number`
-
-###### Returns
-
-`void`
-
-###### Inherited from
-
-[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
+</dl>
 
 #### Methods
 
-##### onOrderPlaced()
+<dl>
 
-> **onOrderPlaced**(): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:56
+<code data-typedoc-code><a id="onorderplaced-2" href="#onorderplaced-2">onOrderPlaced</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 A public method. To be called when an order is placed for this customer.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-###### Inherited from
+<dl>
 
-[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
+<dt>
 
-##### onOrderPlacedArrowFunction()
+<code data-typedoc-code><a id="onorderplacedarrowfunction-2" href="#onorderplacedarrowfunction-2">onOrderPlacedArrowFunction</a>(): `void`</code>
 
-> **onOrderPlacedArrowFunction**(): `void`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:65
+<dd>
 
 A public method that's defined using an arrow function.
 
 TypeDoc knows to document this as a method rather than a property.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-###### Inherited from
+<dl>
 
-[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
+<dt>
 
-##### isValid()
+<code data-typedoc-code><i>protected</i> <a id="isvalid-2" href="#isvalid-2">isValid</a>(): `boolean`</code>
 
-> `protected` **isValid**(): `boolean`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:116
+<dd>
 
 An example of overriding a protected method.
 
 A `DeliveryCustomer` can only have a preferred courier if its
 subscription type is enterprise.
 
-###### Returns
+</dd>
 
-`boolean`
-
-###### Overrides
-
-[`Customer`](#customer).[`isValid`](#isvalid)
+</dl>
 
 ***
 
-### WalkInCustomer
-
-Defined in: examples/example-typedoc/src/classes/Customer.ts:129
+### WalkInCustomer {#walkincustomer}
 
 A class that extends [\`Customer\`](#customer).
 
 Notice how TypeDoc shows the inheritance hierarchy for our class.
 
-#### Extends
-
-- [`Customer`](#customer)
-
 #### Constructors
 
 ##### Constructor
 
-> **new WalkInCustomer**(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](#walkincustomer)
+<dl>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:48
+<dt>
+
+<code data-typedoc-code>new <a id="constructor-3" href="#constructor-3">WalkInCustomer</a>(`id`, `name`, `nextOrderNumber`): [`WalkInCustomer`](#walkincustomer)</code>
+
+</dt>
+
+<dd>
 
 The constructor of the `Customer` class.
 
-###### Parameters
+</dd>
 
-###### id
-
-`number`
-
-the customer's database ID
-
-###### name
-
-`string`
-
-the customer's name
-
-###### nextOrderNumber
-
-the next number to use when this customer places an order
-
-`string` | `number`
-
-###### Returns
-
-[`WalkInCustomer`](#walkincustomer)
-
-###### Inherited from
-
-[`Customer`](#customer).[`constructor`](#constructor-1)
+</dl>
 
 #### Properties
 
-##### id
+<dl>
 
-> `readonly` **id**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:10
+<code data-typedoc-code><i>readonly</i> <a id="id-2" href="#id-2">id</a>: `number`</code>
+
+</dt>
+
+<dd>
 
 A public readonly property.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`id`](#id)
+</dl>
 
-##### name
+<dl>
 
-> **name**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:13
+<code data-typedoc-code><a id="name-2" href="#name-2">name</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 A public property that can be reassigned.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`name`](#name)
+</dl>
 
-##### contactName?
+<dl>
 
-> `protected` `optional` **contactName**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:16
+<code data-typedoc-code><i>protected</i> <a id="contactname-2" href="#contactname-2">contactName</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 An optional protected property.
 
-###### Inherited from
+</dd>
 
-[`Customer`](#customer).[`contactName`](#contactname)
+</dl>
 
-##### trustedCustomer?
+<dl>
 
-> `optional` **trustedCustomer**: `boolean`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:131
+<code data-typedoc-code><a id="trustedcustomer" href="#trustedcustomer">trustedCustomer</a><i>?</i>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 A property defined on the subclass.
 
+</dd>
+
+</dl>
+
 #### Accessors
 
-##### nextOrderNumber
+<dl>
 
-###### Get Signature
+<dt>
 
-> **get** **nextOrderNumber**(): `string`
+<code data-typedoc-code>get <a id="nextordernumber-2" href="#nextordernumber-2">nextOrderNumber</a>(): `string`</code>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:25
+</dt>
+
+<dd>
 
 A getter that prepends a number sign to the private `_nextOrderNumber`
 property.
 
-###### Returns
+</dd>
 
-`string`
+<dt>
 
-###### Set Signature
+<code data-typedoc-code>set <a id="nextordernumber-2" href="#nextordernumber-2">nextOrderNumber</a>(`value`): `void`</code>
 
-> **set** **nextOrderNumber**(`value`): `void`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:33
+<dd>
 
 A setter that takes in either a string or a number and sets the private
 `_nextOrderNumber` property.
 
-###### Parameters
+</dd>
 
-###### value
-
-`string` | `number`
-
-###### Returns
-
-`void`
-
-###### Inherited from
-
-[`Customer`](#customer).[`nextOrderNumber`](#nextordernumber)
+</dl>
 
 #### Methods
 
-##### onOrderPlacedArrowFunction()
+<dl>
 
-> **onOrderPlacedArrowFunction**(): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:65
+<code data-typedoc-code><a id="onorderplacedarrowfunction-4" href="#onorderplacedarrowfunction-4">onOrderPlacedArrowFunction</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 A public method that's defined using an arrow function.
 
 TypeDoc knows to document this as a method rather than a property.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-###### Inherited from
+<dl>
 
-[`Customer`](#customer).[`onOrderPlacedArrowFunction`](#onorderplacedarrowfunction)
+<dt>
 
-##### isValid()
+<code data-typedoc-code><i>protected</i> <a id="isvalid-4" href="#isvalid-4">isValid</a>(): `boolean`</code>
 
-> `protected` **isValid**(): `boolean`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:70
+<dd>
 
 A protected method.
 
-###### Returns
+</dd>
 
-`boolean`
+</dl>
 
-###### Inherited from
+<dl>
 
-[`Customer`](#customer).[`isValid`](#isvalid)
+<dt>
 
-##### onOrderPlaced()
+<code data-typedoc-code><a id="onorderplaced-4" href="#onorderplaced-4">onOrderPlaced</a>(): `void`</code>
 
-> **onOrderPlaced**(): `void`
+</dt>
 
-Defined in: examples/example-typedoc/src/classes/Customer.ts:139
+<dd>
 
 An example of overriding a public method.
 
-###### Returns
+</dd>
 
-`void`
-
-###### Overrides
-
-[`Customer`](#customer).[`onOrderPlaced`](#onorderplaced)
+</dl>
 
 ***
 
-### StringArray
-
-Defined in: examples/example-typedoc/src/classes/StringArray.ts:14
+### StringArray {#stringarray}
 
 An array of strings that's defined as
 
@@ -1623,2075 +1200,1154 @@ Notice how TypeDoc has substituted `string` for the generic type argument in all
 the methods inherited from `Array`. For example, the `values` method returns
 `IterableIterator<string>`.
 
-#### Extends
-
-- `Array`\<`string`\>
-
 #### Indexable
 
-\[`n`: `number`\]: `string`
+<dl>
+
+<dt>
+
+<code data-typedoc-code>\[n: `number`\]: `string`</code>
+
+</dt>
+
+</dl>
 
 #### Constructors
 
 ##### Constructor
 
-> **new StringArray**(`arrayLength`): [`StringArray`](#stringarray)
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1515
+<dt>
 
-###### Parameters
+<code data-typedoc-code>new <a id="constructor-4" href="#constructor-4">StringArray</a>(`arrayLength`): [`StringArray`](#stringarray)</code>
 
-###### arrayLength
+</dt>
 
-`number`
-
-###### Returns
-
-[`StringArray`](#stringarray)
-
-###### Inherited from
-
-`Array<string>.constructor`
+</dl>
 
 ##### Constructor
 
-> **new StringArray**(...`items`): [`StringArray`](#stringarray)
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1516
+<dt>
 
-###### Parameters
+<code data-typedoc-code>new <a id="constructor-4" href="#constructor-4">StringArray</a>(...`items`): [`StringArray`](#stringarray)</code>
 
-###### items
+</dt>
 
-...`string`[]
-
-###### Returns
-
-[`StringArray`](#stringarray)
-
-###### Inherited from
-
-`Array<string>.constructor`
+</dl>
 
 #### Properties
 
-##### \[unscopables\]
+<dl>
 
-> `readonly` **\[unscopables\]**: `object`
+<dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
+<code data-typedoc-code><i>readonly</i> <a id="unscopables" href="#unscopables">[unscopables]</a>: `object`</code>
 
-Is an object whose properties have the value 'true'
-when they will be absent when used in a 'with' statement.
+</dt>
 
-###### Index Signature
-
-\[`key`: `number`\]: `undefined` \| `boolean`
-
-###### find?
-
-> `optional` **find**: `boolean`
-
-###### findIndex?
-
-> `optional` **findIndex**: `boolean`
-
-###### fill?
-
-> `optional` **fill**: `boolean`
-
-###### copyWithin?
-
-> `optional` **copyWithin**: `boolean`
-
-###### \[iterator\]?
-
-> `optional` **\[iterator\]**: `boolean`
-
-###### entries?
-
-> `optional` **entries**: `boolean`
-
-###### keys?
-
-> `optional` **keys**: `boolean`
-
-###### values?
-
-> `optional` **values**: `boolean`
-
-###### \[unscopables\]?
-
-> `readonly` `optional` **\[unscopables\]**: `boolean`
+<dd>
 
 Is an object whose properties have the value 'true'
 when they will be absent when used in a 'with' statement.
 
-###### includes?
+</dd>
 
-> `optional` **includes**: `boolean`
+</dl>
 
-###### flatMap?
+<dl>
 
-> `optional` **flatMap**: `boolean`
+<dt>
 
-###### flat?
+<code data-typedoc-code><i>readonly</i> <i>static</i> <a id="species" href="#species">[species]</a>: `ArrayConstructor`</code>
 
-> `optional` **flat**: `boolean`
+</dt>
 
-###### at?
+</dl>
 
-> `optional` **at**: `boolean`
+<dl>
 
-###### findLast?
+<dt>
 
-> `optional` **findLast**: `boolean`
+<code data-typedoc-code><a id="length" href="#length">length</a>: `number`</code>
 
-###### findLastIndex?
+</dt>
 
-> `optional` **findLastIndex**: `boolean`
-
-###### toReversed?
-
-> `optional` **toReversed**: `boolean`
-
-###### toSorted?
-
-> `optional` **toSorted**: `boolean`
-
-###### toSpliced?
-
-> `optional` **toSpliced**: `boolean`
-
-###### with?
-
-> `optional` **with**: `boolean`
-
-###### length?
-
-> `optional` **length**: `boolean`
+<dd>
 
 Gets or sets the length of the array. This is a number one higher than the highest index in the array.
 
-###### toString?
+</dd>
 
-> `optional` **toString**: `boolean`
-
-###### toLocaleString?
-
-> `optional` **toLocaleString**: `boolean`
-
-###### pop?
-
-> `optional` **pop**: `boolean`
-
-###### push?
-
-> `optional` **push**: `boolean`
-
-###### concat?
-
-> `optional` **concat**: `boolean`
-
-###### join?
-
-> `optional` **join**: `boolean`
-
-###### reverse?
-
-> `optional` **reverse**: `boolean`
-
-###### shift?
-
-> `optional` **shift**: `boolean`
-
-###### slice?
-
-> `optional` **slice**: `boolean`
-
-###### sort?
-
-> `optional` **sort**: `boolean`
-
-###### splice?
-
-> `optional` **splice**: `boolean`
-
-###### unshift?
-
-> `optional` **unshift**: `boolean`
-
-###### indexOf?
-
-> `optional` **indexOf**: `boolean`
-
-###### lastIndexOf?
-
-> `optional` **lastIndexOf**: `boolean`
-
-###### every?
-
-> `optional` **every**: `boolean`
-
-###### some?
-
-> `optional` **some**: `boolean`
-
-###### forEach?
-
-> `optional` **forEach**: `boolean`
-
-###### map?
-
-> `optional` **map**: `boolean`
-
-###### filter?
-
-> `optional` **filter**: `boolean`
-
-###### reduce?
-
-> `optional` **reduce**: `boolean`
-
-###### reduceRight?
-
-> `optional` **reduceRight**: `boolean`
-
-###### Inherited from
-
-`Array.[unscopables]`
-
-##### \[species\]
-
-> `readonly` `static` **\[species\]**: `ArrayConstructor`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:316
-
-###### Inherited from
-
-`Array.[species]`
-
-##### length
-
-> **length**: `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1329
-
-Gets or sets the length of the array. This is a number one higher than the highest index in the array.
-
-###### Inherited from
-
-`Array.length`
+</dl>
 
 #### Methods
 
-##### customMethod()
+<dl>
 
-> **customMethod**(): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/classes/StringArray.ts:16
+<code data-typedoc-code><a id="custommethod" href="#custommethod">customMethod</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 A method that extends the functionality of a basic JavaScript array.
 
-###### Returns
+</dd>
 
-`void`
-
-##### find()
+</dl>
 
 ###### Call Signature
 
-> **find**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:29
+<dt>
+
+<code data-typedoc-code><a id="find" href="#find">find</a>\<S\>(`predicate`, `thisArg?`): `undefined` \| `S`</code>
+
+</dt>
+
+<dd>
 
 Returns the value of the first element in the array where predicate is true, and undefined
 otherwise.
 
-###### Type Parameters
+</dd>
 
-###### S
-
-`S` *extends* `string`
-
-###### Parameters
-
-###### predicate
-
-(`value`, `index`, `obj`) => `value is S`
-
-find calls predicate once for each element of the array, in ascending
-order, until it finds one where predicate returns true. If such an element is found, find
-immediately returns that element value. Otherwise, find returns undefined.
-
-###### thisArg?
-
-`any`
-
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-###### Returns
-
-`undefined` \| `S`
-
-###### Inherited from
-
-`Array.find`
+</dl>
 
 ###### Call Signature
 
-> **find**(`predicate`, `thisArg?`): `undefined` \| `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:30
+<dt>
 
-###### Parameters
+<code data-typedoc-code><a id="find" href="#find">find</a>(`predicate`, `thisArg?`): `undefined` \| `string`</code>
 
-###### predicate
+</dt>
 
-(`value`, `index`, `obj`) => `unknown`
+</dl>
 
-###### thisArg?
+<dl>
 
-`any`
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="findindex" href="#findindex">findIndex</a>(`predicate`, `thisArg?`): `number`</code>
 
-`undefined` \| `string`
+</dt>
 
-###### Inherited from
-
-`Array.find`
-
-##### findIndex()
-
-> **findIndex**(`predicate`, `thisArg?`): `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:41
+<dd>
 
 Returns the index of the first element in the array where predicate is true, and -1
 otherwise.
 
-###### Parameters
+</dd>
 
-###### predicate
+</dl>
 
-(`value`, `index`, `obj`) => `unknown`
+<dl>
 
-find calls predicate once for each element of the array, in ascending
-order, until it finds one where predicate returns true. If such an element is found,
-findIndex immediately returns that element index. Otherwise, findIndex returns -1.
+<dt>
 
-###### thisArg?
+<code data-typedoc-code><a id="fill" href="#fill">fill</a>(`value`, `start?`, `end?`): `this`</code>
 
-`any`
+</dt>
 
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-###### Returns
-
-`number`
-
-###### Inherited from
-
-`Array.findIndex`
-
-##### fill()
-
-> **fill**(`value`, `start?`, `end?`): `this`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:51
+<dd>
 
 Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
 
-###### Parameters
+</dd>
 
-###### value
+</dl>
 
-`string`
+<dl>
 
-value to fill array section with
+<dt>
 
-###### start?
+<code data-typedoc-code><a id="copywithin" href="#copywithin">copyWithin</a>(`target`, `start`, `end?`): `this`</code>
 
-`number`
+</dt>
 
-index to start filling the array at. If start is negative, it is treated as
-length+start where length is the length of the array.
-
-###### end?
-
-`number`
-
-index to stop filling the array at. If end is negative, it is treated as
-length+end.
-
-###### Returns
-
-`this`
-
-###### Inherited from
-
-`Array.fill`
-
-##### copyWithin()
-
-> **copyWithin**(`target`, `start`, `end?`): `this`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:62
+<dd>
 
 Returns the this object after copying a section of the array identified by start and end
 to the same array starting at position target
 
-###### Parameters
+</dd>
 
-###### target
-
-`number`
-
-If target is negative, it is treated as length+target where length is the
-length of the array.
-
-###### start
-
-`number`
-
-If start is negative, it is treated as length+start. If end is negative, it
-is treated as length+end.
-
-###### end?
-
-`number`
-
-If not specified, length of the this object is used as its default value.
-
-###### Returns
-
-`this`
-
-###### Inherited from
-
-`Array.copyWithin`
-
-##### from()
+</dl>
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`arrayLike`): `T`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:72
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="from" href="#from">from</a>\<T\>(`arrayLike`): `T`[]</code>
+
+</dt>
+
+<dd>
 
 Creates an array from an array-like object.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### Parameters
-
-###### arrayLike
-
-`ArrayLike`\<`T`\>
-
-An array-like object to convert to an array.
-
-###### Returns
-
-`T`[]
-
-###### Inherited from
-
-`Array.from`
+</dl>
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`arrayLike`, `mapfn`, `thisArg?`): `U`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:80
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="from" href="#from">from</a>\<T, U\>(`arrayLike`, `mapfn`, `thisArg?`): `U`[]</code>
+
+</dt>
+
+<dd>
 
 Creates an array from an iterable object.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### U
-
-`U`
-
-###### Parameters
-
-###### arrayLike
-
-`ArrayLike`\<`T`\>
-
-An array-like object to convert to an array.
-
-###### mapfn
-
-(`v`, `k`) => `U`
-
-A mapping function to call on every element of the array.
-
-###### thisArg?
-
-`any`
-
-Value of 'this' used to invoke the mapfn.
-
-###### Returns
-
-`U`[]
-
-###### Inherited from
-
-`Array.from`
+</dl>
 
 ###### Call Signature
 
-> `static` **from**\<`T`\>(`iterable`): `T`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:101
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="from" href="#from">from</a>\<T\>(`iterable`): `T`[]</code>
+
+</dt>
+
+<dd>
 
 Creates an array from an iterable object.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### Parameters
-
-###### iterable
-
-An iterable object to convert to an array.
-
-`Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
-
-###### Returns
-
-`T`[]
-
-###### Inherited from
-
-`Array.from`
+</dl>
 
 ###### Call Signature
 
-> `static` **from**\<`T`, `U`\>(`iterable`, `mapfn`, `thisArg?`): `U`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:109
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="from" href="#from">from</a>\<T, U\>(`iterable`, `mapfn`, `thisArg?`): `U`[]</code>
+
+</dt>
+
+<dd>
 
 Creates an array from an iterable object.
 
-###### Type Parameters
+</dd>
 
-###### T
+</dl>
 
-`T`
+<dl>
 
-###### U
+<dt>
 
-`U`
+<code data-typedoc-code><i>static</i> <a id="of" href="#of">of</a>\<T\>(...`items`): `T`[]</code>
 
-###### Parameters
+</dt>
 
-###### iterable
-
-An iterable object to convert to an array.
-
-`Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
-
-###### mapfn
-
-(`v`, `k`) => `U`
-
-A mapping function to call on every element of the array.
-
-###### thisArg?
-
-`any`
-
-Value of 'this' used to invoke the mapfn.
-
-###### Returns
-
-`U`[]
-
-###### Inherited from
-
-`Array.from`
-
-##### of()
-
-> `static` **of**\<`T`\>(...`items`): `T`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:86
+<dd>
 
 Returns a new array from a set of elements.
 
-###### Type Parameters
+</dd>
 
-###### T
+</dl>
 
-`T`
+<dl>
 
-###### Parameters
+<dt>
 
-###### items
+<code data-typedoc-code><a id="iterator" href="#iterator">[iterator]</a>(): `ArrayIterator`\<`string`\></code>
 
-...`T`[]
+</dt>
 
-A set of elements to include in the new array object.
-
-###### Returns
-
-`T`[]
-
-###### Inherited from
-
-`Array.of`
-
-##### \[iterator\]()
-
-> **\[iterator\]**(): `ArrayIterator`\<`string`\>
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:78
+<dd>
 
 Iterator
 
-###### Returns
+</dd>
 
-`ArrayIterator`\<`string`\>
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.[iterator]`
+<dt>
 
-##### entries()
+<code data-typedoc-code><a id="entries" href="#entries">entries</a>(): `ArrayIterator`\<\[`number`, `string`\]\></code>
 
-> **entries**(): `ArrayIterator`\<\[`number`, `string`\]\>
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:83
+<dd>
 
 Returns an iterable of key, value pairs for every entry in the array
 
-###### Returns
+</dd>
 
-`ArrayIterator`\<\[`number`, `string`\]\>
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.entries`
+<dt>
 
-##### keys()
+<code data-typedoc-code><a id="keys" href="#keys">keys</a>(): `ArrayIterator`\<`number`\></code>
 
-> **keys**(): `ArrayIterator`\<`number`\>
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:88
+<dd>
 
 Returns an iterable of keys in the array
 
-###### Returns
+</dd>
 
-`ArrayIterator`\<`number`\>
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.keys`
+<dt>
 
-##### values()
+<code data-typedoc-code><a id="values" href="#values">values</a>(): `ArrayIterator`\<`string`\></code>
 
-> **values**(): `ArrayIterator`\<`string`\>
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:93
+<dd>
 
 Returns an iterable of values in the array
 
-###### Returns
+</dd>
 
-`ArrayIterator`\<`string`\>
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.values`
+<dt>
 
-##### includes()
+<code data-typedoc-code><a id="includes" href="#includes">includes</a>(`searchElement`, `fromIndex?`): `boolean`</code>
 
-> **includes**(`searchElement`, `fromIndex?`): `boolean`
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
+<dd>
 
 Determines whether an array includes a certain element, returning true or false as appropriate.
 
-###### Parameters
+</dd>
 
-###### searchElement
+</dl>
 
-`string`
+<dl>
 
-The element to search for.
+<dt>
 
-###### fromIndex?
+<code data-typedoc-code><a id="flatmap" href="#flatmap">flatMap</a>\<U, This\>(`callback`, `thisArg?`): `U`[]</code>
 
-`number`
+</dt>
 
-The position in this array at which to begin searching for searchElement.
-
-###### Returns
-
-`boolean`
-
-###### Inherited from
-
-`Array.includes`
-
-##### flatMap()
-
-> **flatMap**\<`U`, `This`\>(`callback`, `thisArg?`): `U`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2019.array.d.ts:64
+<dd>
 
 Calls a defined callback function on each element of an array. Then, flattens the result into
 a new array.
 This is identical to a map followed by flat with depth 1.
 
-###### Type Parameters
+</dd>
 
-###### U
+</dl>
 
-`U`
+<dl>
 
-###### This
+<dt>
 
-`This` = `undefined`
+<code data-typedoc-code><a id="flat" href="#flat">flat</a>\<A, D\>(`this`, `depth?`): `FlatArray`\<`A`, `D`\>[]</code>
 
-###### Parameters
+</dt>
 
-###### callback
-
-(`this`, `value`, `index`, `array`) => `U` \| readonly `U`[]
-
-A function that accepts up to three arguments. The flatMap method calls the
-callback function one time for each element in the array.
-
-###### thisArg?
-
-`This`
-
-An object to which the this keyword can refer in the callback function. If
-thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`U`[]
-
-###### Inherited from
-
-`Array.flatMap`
-
-##### flat()
-
-> **flat**\<`A`, `D`\>(`this`, `depth?`): `FlatArray`\<`A`, `D`\>[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2019.array.d.ts:75
+<dd>
 
 Returns a new array with all sub-array elements concatenated into it recursively up to the
 specified depth.
 
-###### Type Parameters
+</dd>
 
-###### A
+</dl>
 
-`A`
+<dl>
 
-###### D
+<dt>
 
-`D` *extends* `number` = `1`
+<code data-typedoc-code><a id="at" href="#at">at</a>(`index`): `undefined` \| `string`</code>
 
-###### Parameters
+</dt>
 
-###### this
-
-`A`
-
-###### depth?
-
-`D`
-
-The maximum recursion depth
-
-###### Returns
-
-`FlatArray`\<`A`, `D`\>[]
-
-###### Inherited from
-
-`Array.flat`
-
-##### at()
-
-> **at**(`index`): `undefined` \| `string`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2022.array.d.ts:24
+<dd>
 
 Returns the item located at the specified index.
 
-###### Parameters
+</dd>
 
-###### index
-
-`number`
-
-The zero-based index of the desired code unit. A negative index will count back from the last item.
-
-###### Returns
-
-`undefined` \| `string`
-
-###### Inherited from
-
-`Array.at`
-
-##### findLast()
+</dl>
 
 ###### Call Signature
 
-> **findLast**\<`S`\>(`predicate`, `thisArg?`): `undefined` \| `S`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:29
+<dt>
+
+<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>\<S\>(`predicate`, `thisArg?`): `undefined` \| `S`</code>
+
+</dt>
+
+<dd>
 
 Returns the value of the last element in the array where predicate is true, and undefined
 otherwise.
 
-###### Type Parameters
+</dd>
 
-###### S
-
-`S` *extends* `string`
-
-###### Parameters
-
-###### predicate
-
-(`value`, `index`, `array`) => `value is S`
-
-findLast calls predicate once for each element of the array, in descending
-order, until it finds one where predicate returns true. If such an element is found, findLast
-immediately returns that element value. Otherwise, findLast returns undefined.
-
-###### thisArg?
-
-`any`
-
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-###### Returns
-
-`undefined` \| `S`
-
-###### Inherited from
-
-`Array.findLast`
+</dl>
 
 ###### Call Signature
 
-> **findLast**(`predicate`, `thisArg?`): `undefined` \| `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:30
+<dt>
 
-###### Parameters
+<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>(`predicate`, `thisArg?`): `undefined` \| `string`</code>
 
-###### predicate
+</dt>
 
-(`value`, `index`, `array`) => `unknown`
+</dl>
 
-###### thisArg?
+<dl>
 
-`any`
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="findlastindex" href="#findlastindex">findLastIndex</a>(`predicate`, `thisArg?`): `number`</code>
 
-`undefined` \| `string`
+</dt>
 
-###### Inherited from
-
-`Array.findLast`
-
-##### findLastIndex()
-
-> **findLastIndex**(`predicate`, `thisArg?`): `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:41
+<dd>
 
 Returns the index of the last element in the array where predicate is true, and -1
 otherwise.
 
-###### Parameters
+</dd>
 
-###### predicate
+</dl>
 
-(`value`, `index`, `array`) => `unknown`
+<dl>
 
-findLastIndex calls predicate once for each element of the array, in descending
-order, until it finds one where predicate returns true. If such an element is found,
-findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+<dt>
 
-###### thisArg?
+<code data-typedoc-code><a id="toreversed" href="#toreversed">toReversed</a>(): `string`[]</code>
 
-`any`
+</dt>
 
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-###### Returns
-
-`number`
-
-###### Inherited from
-
-`Array.findLastIndex`
-
-##### toReversed()
-
-> **toReversed**(): `string`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:46
+<dd>
 
 Returns a copy of an array with its elements reversed.
 
-###### Returns
+</dd>
 
-`string`[]
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.toReversed`
+<dt>
 
-##### toSorted()
+<code data-typedoc-code><a id="tosorted" href="#tosorted">toSorted</a>(`compareFn?`): `string`[]</code>
 
-> **toSorted**(`compareFn?`): `string`[]
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:57
+<dd>
 
 Returns a copy of an array with its elements sorted.
 
-###### Parameters
+</dd>
 
-###### compareFn?
-
-(`a`, `b`) => `number`
-
-Function used to determine the order of the elements. It is expected to return
-a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
-value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code unit order.
-```ts
-[11, 2, 22, 1].toSorted((a, b) => a - b) // [1, 2, 11, 22]
-```
-
-###### Returns
-
-`string`[]
-
-###### Inherited from
-
-`Array.toSorted`
-
-##### toSpliced()
+</dl>
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount`, ...`items`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:66
+<dt>
+
+<code data-typedoc-code><a id="tospliced" href="#tospliced">toSpliced</a>(`start`, `deleteCount`, ...`items`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Copies an array and removes elements and, if necessary, inserts new elements in their place. Returns the copied array.
 
-###### Parameters
+</dd>
 
-###### start
-
-`number`
-
-The zero-based location in the array from which to start removing elements.
-
-###### deleteCount
-
-`number`
-
-The number of elements to remove.
-
-###### items
-
-...`string`[]
-
-Elements to insert into the copied array in place of the deleted elements.
-
-###### Returns
-
-`string`[]
-
-The copied array.
-
-###### Inherited from
-
-`Array.toSpliced`
+</dl>
 
 ###### Call Signature
 
-> **toSpliced**(`start`, `deleteCount?`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:74
+<dt>
+
+<code data-typedoc-code><a id="tospliced" href="#tospliced">toSpliced</a>(`start`, `deleteCount?`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Copies an array and removes elements while returning the remaining elements.
 
-###### Parameters
+</dd>
 
-###### start
+</dl>
 
-`number`
+<dl>
 
-The zero-based location in the array from which to start removing elements.
+<dt>
 
-###### deleteCount?
+<code data-typedoc-code><a id="with" href="#with">with</a>(`index`, `value`): `string`[]</code>
 
-`number`
+</dt>
 
-The number of elements to remove.
-
-###### Returns
-
-`string`[]
-
-A copy of the original array with the remaining elements.
-
-###### Inherited from
-
-`Array.toSpliced`
-
-##### with()
-
-> **with**(`index`, `value`): `string`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2023.array.d.ts:85
+<dd>
 
 Copies an array, then overwrites the value at the provided index with the
 given value. If the index is negative, then it replaces from the end
 of the array.
 
-###### Parameters
+</dd>
 
-###### index
+</dl>
 
-`number`
+<dl>
 
-The index of the value to overwrite. If the index is
-negative, then it replaces from the end of the array.
+<dt>
 
-###### value
+<code data-typedoc-code><a id="tostring" href="#tostring">toString</a>(): `string`</code>
 
-`string`
+</dt>
 
-The value to write into the copied array.
-
-###### Returns
-
-`string`[]
-
-The copied array with the updated value.
-
-###### Inherited from
-
-`Array.with`
-
-##### toString()
-
-> **toString**(): `string`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1333
+<dd>
 
 Returns a string representation of an array.
 
-###### Returns
+</dd>
 
-`string`
-
-###### Inherited from
-
-`Array.toString`
-
-##### toLocaleString()
+</dl>
 
 ###### Call Signature
 
-> **toLocaleString**(): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1337
+<dt>
+
+<code data-typedoc-code><a id="tolocalestring" href="#tolocalestring">toLocaleString</a>(): `string`</code>
+
+</dt>
+
+<dd>
 
 Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
 
-###### Returns
+</dd>
 
-`string`
-
-###### Inherited from
-
-`Array.toLocaleString`
+</dl>
 
 ###### Call Signature
 
-> **toLocaleString**(`locales`, `options?`): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:64
+<dt>
 
-###### Parameters
+<code data-typedoc-code><a id="tolocalestring" href="#tolocalestring">toLocaleString</a>(`locales`, `options?`): `string`</code>
 
-###### locales
+</dt>
 
-`string` | `string`[]
+</dl>
 
-###### options?
+<dl>
 
-`NumberFormatOptions` & `DateTimeFormatOptions`
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="pop" href="#pop">pop</a>(): `undefined` \| `string`</code>
 
-`string`
+</dt>
 
-###### Inherited from
-
-`Array.toLocaleString`
-
-##### pop()
-
-> **pop**(): `undefined` \| `string`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1342
+<dd>
 
 Removes the last element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
 
-###### Returns
+</dd>
 
-`undefined` \| `string`
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.pop`
+<dt>
 
-##### push()
+<code data-typedoc-code><a id="push" href="#push">push</a>(...`items`): `number`</code>
 
-> **push**(...`items`): `number`
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1347
+<dd>
 
 Appends new elements to the end of an array, and returns the new length of the array.
 
-###### Parameters
+</dd>
 
-###### items
-
-...`string`[]
-
-New elements to add to the array.
-
-###### Returns
-
-`number`
-
-###### Inherited from
-
-`Array.push`
-
-##### concat()
+</dl>
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1353
+<dt>
+
+<code data-typedoc-code><a id="concat" href="#concat">concat</a>(...`items`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
-###### Parameters
+</dd>
 
-###### items
-
-...`ConcatArray`\<`string`\>[]
-
-Additional arrays and/or items to add to the end of the array.
-
-###### Returns
-
-`string`[]
-
-###### Inherited from
-
-`Array.concat`
+</dl>
 
 ###### Call Signature
 
-> **concat**(...`items`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1359
+<dt>
+
+<code data-typedoc-code><a id="concat" href="#concat">concat</a>(...`items`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
-###### Parameters
+</dd>
 
-###### items
+</dl>
 
-...(`string` \| `ConcatArray`\<`string`\>)[]
+<dl>
 
-Additional arrays and/or items to add to the end of the array.
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="join" href="#join">join</a>(`separator?`): `string`</code>
 
-`string`[]
+</dt>
 
-###### Inherited from
-
-`Array.concat`
-
-##### join()
-
-> **join**(`separator?`): `string`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1364
+<dd>
 
 Adds all the elements of an array into a string, separated by the specified separator string.
 
-###### Parameters
+</dd>
 
-###### separator?
+</dl>
 
-`string`
+<dl>
 
-A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="reverse" href="#reverse">reverse</a>(): `string`[]</code>
 
-`string`
+</dt>
 
-###### Inherited from
-
-`Array.join`
-
-##### reverse()
-
-> **reverse**(): `string`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1369
+<dd>
 
 Reverses the elements in an array in place.
 This method mutates the array and returns a reference to the same array.
 
-###### Returns
+</dd>
 
-`string`[]
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.reverse`
+<dt>
 
-##### shift()
+<code data-typedoc-code><a id="shift" href="#shift">shift</a>(): `undefined` \| `string`</code>
 
-> **shift**(): `undefined` \| `string`
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1374
+<dd>
 
 Removes the first element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
 
-###### Returns
+</dd>
 
-`undefined` \| `string`
+</dl>
 
-###### Inherited from
+<dl>
 
-`Array.shift`
+<dt>
 
-##### slice()
+<code data-typedoc-code><a id="slice" href="#slice">slice</a>(`start?`, `end?`): `string`[]</code>
 
-> **slice**(`start?`, `end?`): `string`[]
+</dt>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1384
+<dd>
 
 Returns a copy of a section of an array.
 For both start and end, a negative index can be used to indicate an offset from the end of the array.
 For example, -2 refers to the second to last element of the array.
 
-###### Parameters
+</dd>
 
-###### start?
+</dl>
 
-`number`
+<dl>
 
-The beginning index of the specified portion of the array.
-If start is undefined, then the slice begins at index 0.
+<dt>
 
-###### end?
+<code data-typedoc-code><a id="sort" href="#sort">sort</a>(`compareFn?`): `this`</code>
 
-`number`
+</dt>
 
-The end index of the specified portion of the array. This is exclusive of the element at the index 'end'.
-If end is undefined, then the slice extends to the end of the array.
-
-###### Returns
-
-`string`[]
-
-###### Inherited from
-
-`Array.slice`
-
-##### sort()
-
-> **sort**(`compareFn?`): `this`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1395
+<dd>
 
 Sorts an array in place.
 This method mutates the array and returns a reference to the same array.
 
-###### Parameters
+</dd>
 
-###### compareFn?
-
-(`a`, `b`) => `number`
-
-Function used to determine the order of the elements. It is expected to return
-a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
-value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code unit order.
-```ts
-[11,2,22,1].sort((a, b) => a - b)
-```
-
-###### Returns
-
-`this`
-
-###### Inherited from
-
-`Array.sort`
-
-##### splice()
+</dl>
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount?`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1404
+<dt>
+
+<code data-typedoc-code><a id="splice" href="#splice">splice</a>(`start`, `deleteCount?`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
-###### Parameters
+</dd>
 
-###### start
-
-`number`
-
-The zero-based location in the array from which to start removing elements.
-
-###### deleteCount?
-
-`number`
-
-The number of elements to remove. Omitting this argument will remove all elements from the start
-paramater location to end of the array. If value of this argument is either a negative number, zero, undefined, or a type
-that cannot be converted to an integer, the function will evaluate the argument as zero and not remove any elements.
-
-###### Returns
-
-`string`[]
-
-An array containing the elements that were deleted.
-
-###### Inherited from
-
-`Array.splice`
+</dl>
 
 ###### Call Signature
 
-> **splice**(`start`, `deleteCount`, ...`items`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1414
+<dt>
+
+<code data-typedoc-code><a id="splice" href="#splice">splice</a>(`start`, `deleteCount`, ...`items`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
-###### Parameters
+</dd>
 
-###### start
+</dl>
 
-`number`
+<dl>
 
-The zero-based location in the array from which to start removing elements.
+<dt>
 
-###### deleteCount
+<code data-typedoc-code><a id="unshift" href="#unshift">unshift</a>(...`items`): `number`</code>
 
-`number`
+</dt>
 
-The number of elements to remove. If value of this argument is either a negative number, zero,
-undefined, or a type that cannot be converted to an integer, the function will evaluate the argument as zero and
-not remove any elements.
-
-###### items
-
-...`string`[]
-
-Elements to insert into the array in place of the deleted elements.
-
-###### Returns
-
-`string`[]
-
-An array containing the elements that were deleted.
-
-###### Inherited from
-
-`Array.splice`
-
-##### unshift()
-
-> **unshift**(...`items`): `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1419
+<dd>
 
 Inserts new elements at the start of an array, and returns the new length of the array.
 
-###### Parameters
+</dd>
 
-###### items
+</dl>
 
-...`string`[]
+<dl>
 
-Elements to insert at the start of the array.
+<dt>
 
-###### Returns
+<code data-typedoc-code><a id="indexof" href="#indexof">indexOf</a>(`searchElement`, `fromIndex?`): `number`</code>
 
-`number`
+</dt>
 
-###### Inherited from
-
-`Array.unshift`
-
-##### indexOf()
-
-> **indexOf**(`searchElement`, `fromIndex?`): `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1425
+<dd>
 
 Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
-###### Parameters
+</dd>
 
-###### searchElement
+</dl>
 
-`string`
+<dl>
 
-The value to locate in the array.
+<dt>
 
-###### fromIndex?
+<code data-typedoc-code><a id="lastindexof" href="#lastindexof">lastIndexOf</a>(`searchElement`, `fromIndex?`): `number`</code>
 
-`number`
+</dt>
 
-The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
-
-###### Returns
-
-`number`
-
-###### Inherited from
-
-`Array.indexOf`
-
-##### lastIndexOf()
-
-> **lastIndexOf**(`searchElement`, `fromIndex?`): `number`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1431
+<dd>
 
 Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
 
-###### Parameters
+</dd>
 
-###### searchElement
-
-`string`
-
-The value to locate in the array.
-
-###### fromIndex?
-
-`number`
-
-The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
-
-###### Returns
-
-`number`
-
-###### Inherited from
-
-`Array.lastIndexOf`
-
-##### every()
+</dl>
 
 ###### Call Signature
 
-> **every**\<`S`\>(`predicate`, `thisArg?`): `this is S[]`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1440
+<dt>
+
+<code data-typedoc-code><a id="every" href="#every">every</a>\<S\>(`predicate`, `thisArg?`): `this is S[]`</code>
+
+</dt>
+
+<dd>
 
 Determines whether all the members of an array satisfy the specified test.
 
-###### Type Parameters
+</dd>
 
-###### S
-
-`S` *extends* `string`
-
-###### Parameters
-
-###### predicate
-
-(`value`, `index`, `array`) => `value is S`
-
-A function that accepts up to three arguments. The every method calls
-the predicate function for each element in the array until the predicate returns a value
-which is coercible to the Boolean value false, or until the end of the array.
-
-###### thisArg?
-
-`any`
-
-An object to which the this keyword can refer in the predicate function.
-If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`this is S[]`
-
-###### Inherited from
-
-`Array.every`
+</dl>
 
 ###### Call Signature
 
-> **every**(`predicate`, `thisArg?`): `boolean`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1449
+<dt>
+
+<code data-typedoc-code><a id="every" href="#every">every</a>(`predicate`, `thisArg?`): `boolean`</code>
+
+</dt>
+
+<dd>
 
 Determines whether all the members of an array satisfy the specified test.
 
-###### Parameters
+</dd>
 
-###### predicate
+</dl>
 
-(`value`, `index`, `array`) => `unknown`
+<dl>
 
-A function that accepts up to three arguments. The every method calls
-the predicate function for each element in the array until the predicate returns a value
-which is coercible to the Boolean value false, or until the end of the array.
+<dt>
 
-###### thisArg?
+<code data-typedoc-code><a id="some" href="#some">some</a>(`predicate`, `thisArg?`): `boolean`</code>
 
-`any`
+</dt>
 
-An object to which the this keyword can refer in the predicate function.
-If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`boolean`
-
-###### Inherited from
-
-`Array.every`
-
-##### some()
-
-> **some**(`predicate`, `thisArg?`): `boolean`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1458
+<dd>
 
 Determines whether the specified callback function returns true for any element of an array.
 
-###### Parameters
+</dd>
 
-###### predicate
+</dl>
 
-(`value`, `index`, `array`) => `unknown`
+<dl>
 
-A function that accepts up to three arguments. The some method calls
-the predicate function for each element in the array until the predicate returns a value
-which is coercible to the Boolean value true, or until the end of the array.
+<dt>
 
-###### thisArg?
+<code data-typedoc-code><a id="foreach" href="#foreach">forEach</a>(`callbackfn`, `thisArg?`): `void`</code>
 
-`any`
+</dt>
 
-An object to which the this keyword can refer in the predicate function.
-If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`boolean`
-
-###### Inherited from
-
-`Array.some`
-
-##### forEach()
-
-> **forEach**(`callbackfn`, `thisArg?`): `void`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1464
+<dd>
 
 Performs the specified action for each element in an array.
 
-###### Parameters
+</dd>
 
-###### callbackfn
+</dl>
 
-(`value`, `index`, `array`) => `void`
+<dl>
 
-A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
+<dt>
 
-###### thisArg?
+<code data-typedoc-code><a id="map" href="#map">map</a>\<U\>(`callbackfn`, `thisArg?`): `U`[]</code>
 
-`any`
+</dt>
 
-An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`void`
-
-###### Inherited from
-
-`Array.forEach`
-
-##### map()
-
-> **map**\<`U`\>(`callbackfn`, `thisArg?`): `U`[]
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1470
+<dd>
 
 Calls a defined callback function on each element of an array, and returns an array that contains the results.
 
-###### Type Parameters
+</dd>
 
-###### U
-
-`U`
-
-###### Parameters
-
-###### callbackfn
-
-(`value`, `index`, `array`) => `U`
-
-A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-
-###### thisArg?
-
-`any`
-
-An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`U`[]
-
-###### Inherited from
-
-`Array.map`
-
-##### filter()
+</dl>
 
 ###### Call Signature
 
-> **filter**\<`S`\>(`predicate`, `thisArg?`): `S`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1476
+<dt>
+
+<code data-typedoc-code><a id="filter" href="#filter">filter</a>\<S\>(`predicate`, `thisArg?`): `S`[]</code>
+
+</dt>
+
+<dd>
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
-###### Type Parameters
+</dd>
 
-###### S
-
-`S` *extends* `string`
-
-###### Parameters
-
-###### predicate
-
-(`value`, `index`, `array`) => `value is S`
-
-A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-
-###### thisArg?
-
-`any`
-
-An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`S`[]
-
-###### Inherited from
-
-`Array.filter`
+</dl>
 
 ###### Call Signature
 
-> **filter**(`predicate`, `thisArg?`): `string`[]
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1482
+<dt>
+
+<code data-typedoc-code><a id="filter" href="#filter">filter</a>(`predicate`, `thisArg?`): `string`[]</code>
+
+</dt>
+
+<dd>
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
-###### Parameters
+</dd>
 
-###### predicate
-
-(`value`, `index`, `array`) => `unknown`
-
-A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-
-###### thisArg?
-
-`any`
-
-An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-
-###### Returns
-
-`string`[]
-
-###### Inherited from
-
-`Array.filter`
-
-##### reduce()
+</dl>
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1488
+<dt>
+
+<code data-typedoc-code><a id="reduce" href="#reduce">reduce</a>(`callbackfn`): `string`</code>
+
+</dt>
+
+<dd>
 
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-###### Parameters
+</dd>
 
-###### callbackfn
-
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
-
-A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-
-###### Returns
-
-`string`
-
-###### Inherited from
-
-`Array.reduce`
+</dl>
 
 ###### Call Signature
 
-> **reduce**(`callbackfn`, `initialValue`): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1489
+<dt>
 
-###### Parameters
+<code data-typedoc-code><a id="reduce" href="#reduce">reduce</a>(`callbackfn`, `initialValue`): `string`</code>
 
-###### callbackfn
+</dt>
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
-
-###### initialValue
-
-`string`
-
-###### Returns
-
-`string`
-
-###### Inherited from
-
-`Array.reduce`
+</dl>
 
 ###### Call Signature
 
-> **reduce**\<`U`\>(`callbackfn`, `initialValue`): `U`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1495
+<dt>
+
+<code data-typedoc-code><a id="reduce" href="#reduce">reduce</a>\<U\>(`callbackfn`, `initialValue`): `U`</code>
+
+</dt>
+
+<dd>
 
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-###### Type Parameters
+</dd>
 
-###### U
-
-`U`
-
-###### Parameters
-
-###### callbackfn
-
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
-
-A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-
-###### initialValue
-
-`U`
-
-If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-
-###### Returns
-
-`U`
-
-###### Inherited from
-
-`Array.reduce`
-
-##### reduceRight()
+</dl>
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1501
+<dt>
+
+<code data-typedoc-code><a id="reduceright" href="#reduceright">reduceRight</a>(`callbackfn`): `string`</code>
+
+</dt>
+
+<dd>
 
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-###### Parameters
+</dd>
 
-###### callbackfn
-
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
-
-A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-
-###### Returns
-
-`string`
-
-###### Inherited from
-
-`Array.reduceRight`
+</dl>
 
 ###### Call Signature
 
-> **reduceRight**(`callbackfn`, `initialValue`): `string`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1502
+<dt>
 
-###### Parameters
+<code data-typedoc-code><a id="reduceright" href="#reduceright">reduceRight</a>(`callbackfn`, `initialValue`): `string`</code>
 
-###### callbackfn
+</dt>
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `string`
-
-###### initialValue
-
-`string`
-
-###### Returns
-
-`string`
-
-###### Inherited from
-
-`Array.reduceRight`
+</dl>
 
 ###### Call Signature
 
-> **reduceRight**\<`U`\>(`callbackfn`, `initialValue`): `U`
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1508
+<dt>
+
+<code data-typedoc-code><a id="reduceright" href="#reduceright">reduceRight</a>\<U\>(`callbackfn`, `initialValue`): `U`</code>
+
+</dt>
+
+<dd>
 
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-###### Type Parameters
+</dd>
 
-###### U
+</dl>
 
-`U`
+<dl>
 
-###### Parameters
+<dt>
 
-###### callbackfn
+<code data-typedoc-code><i>static</i> <a id="isarray" href="#isarray">isArray</a>(`arg`): `arg is any[]`</code>
 
-(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
+</dt>
 
-A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-
-###### initialValue
-
-`U`
-
-If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-
-###### Returns
-
-`U`
-
-###### Inherited from
-
-`Array.reduceRight`
-
-##### isArray()
-
-> `static` **isArray**(`arg`): `arg is any[]`
-
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.es5.d.ts:1520
-
-###### Parameters
-
-###### arg
-
-`any`
-
-###### Returns
-
-`arg is any[]`
-
-###### Inherited from
-
-`Array.isArray`
-
-##### fromAsync()
+</dl>
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`\>(`iterableOrArrayLike`): `Promise`\<`T`[]\>
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.esnext.array.d.ts:24
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="fromasync" href="#fromasync">fromAsync</a>\<T\>(`iterableOrArrayLike`): `Promise`\<`T`[]\></code>
+
+</dt>
+
+<dd>
 
 Creates an array from an async iterator or iterable object.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### Parameters
-
-###### iterableOrArrayLike
-
-An async iterator or array-like object to convert to an array.
-
-`AsyncIterable`\<`T`, `any`, `any`\> | `Iterable`\<`T` \| `PromiseLike`\<`T`\>, `any`, `any`\> | `ArrayLike`\<`T` \| `PromiseLike`\<`T`\>\>
-
-###### Returns
-
-`Promise`\<`T`[]\>
-
-###### Inherited from
-
-`Array.fromAsync`
+</dl>
 
 ###### Call Signature
 
-> `static` **fromAsync**\<`T`, `U`\>(`iterableOrArrayLike`, `mapFn`, `thisArg?`): `Promise`\<`Awaited`\<`U`\>[]\>
+<dl>
 
-Defined in: node\_modules/.pnpm/typescript@5.9.2/node\_modules/typescript/lib/lib.esnext.array.d.ts:34
+<dt>
+
+<code data-typedoc-code><i>static</i> <a id="fromasync" href="#fromasync">fromAsync</a>\<T, U\>(`iterableOrArrayLike`, `mapFn`, `thisArg?`): `Promise`\<`Awaited`\<`U`\>[]\></code>
+
+</dt>
+
+<dd>
 
 Creates an array from an async iterator or iterable object.
 
-###### Type Parameters
+</dd>
 
-###### T
-
-`T`
-
-###### U
-
-`U`
-
-###### Parameters
-
-###### iterableOrArrayLike
-
-An async iterator or array-like object to convert to an array.
-
-`AsyncIterable`\<`T`, `any`, `any`\> | `Iterable`\<`T`, `any`, `any`\> | `ArrayLike`\<`T`\>
-
-###### mapFn
-
-(`value`, `index`) => `U`
-
-###### thisArg?
-
-`any`
-
-Value of 'this' used when executing mapfn.
-
-###### Returns
-
-`Promise`\<`Awaited`\<`U`\>[]\>
-
-###### Inherited from
-
-`Array.fromAsync`
+</dl>
 
 ***
 
-### SimpleEnum
-
-Defined in: examples/example-typedoc/src/enums.ts:5
+### SimpleEnum {#simpleenum}
 
 Describes the status of a delivery order.
 
 #### Enumeration Members
 
-##### Pending
+##### Pending {#pending}
 
-> **Pending**: `0`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:7
+<dt>
+
+<code data-typedoc-code><a id="pending" href="#pending">Pending</a>: `0`</code>
+
+</dt>
+
+<dd>
 
 This order has just been placed and is yet to be processed.
 
-##### InProgress
+</dd>
 
-> **InProgress**: `1`
+</dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:10
+##### InProgress {#inprogress}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="inprogress" href="#inprogress">InProgress</a>: `1`</code>
+
+</dt>
+
+<dd>
 
 A courier is en route delivering this order.
 
-##### Complete
+</dd>
 
-> **Complete**: `"COMPLETE"`
+</dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:13
+##### Complete {#complete}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="complete" href="#complete">Complete</a>: `"COMPLETE"`</code>
+
+</dt>
+
+<dd>
 
 The order has been delivered.
 
+</dd>
+
+</dl>
+
 ***
 
-### CrazyEnum
-
-Defined in: examples/example-typedoc/src/enums.ts:26
+### CrazyEnum {#crazyenum}
 
 [A crazy enum from the TypeScript
 handbook](https://www.typescriptlang.org/docs/handbook/enums.html#computed-and-constant-members).
@@ -3702,41 +2358,69 @@ only available at runtime.
 
 #### Enumeration Members
 
-##### None
+##### None {#none}
 
-> **None**: `0`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:28
+<dt>
 
-##### Read
+<code data-typedoc-code><a id="none" href="#none">None</a>: `0`</code>
 
-> **Read**: `2`
+</dt>
 
-Defined in: examples/example-typedoc/src/enums.ts:29
+</dl>
 
-##### Write
+##### Read {#read}
 
-> **Write**: `4`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:30
+<dt>
 
-##### ReadWrite
+<code data-typedoc-code><a id="read" href="#read">Read</a>: `2`</code>
 
-> **ReadWrite**: `6`
+</dt>
 
-Defined in: examples/example-typedoc/src/enums.ts:31
+</dl>
 
-##### ComputedMember
+##### Write {#write}
 
-> **ComputedMember**: `number`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:33
+<dt>
+
+<code data-typedoc-code><a id="write" href="#write">Write</a>: `4`</code>
+
+</dt>
+
+</dl>
+
+##### ReadWrite {#readwrite}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="readwrite" href="#readwrite">ReadWrite</a>: `6`</code>
+
+</dt>
+
+</dl>
+
+##### ComputedMember {#computedmember}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="computedmember" href="#computedmember">ComputedMember</a>: `number`</code>
+
+</dt>
+
+</dl>
 
 ***
 
-### EnumLikeObject
-
-Defined in: examples/example-typedoc/src/enums.ts:51
+### EnumLikeObject {#enumlikeobject}
 
 Since TypeScript's `enum` can be inconvenient to work with, some packages define their own enum-like objects:
 
@@ -3752,31 +2436,51 @@ Use the `@enum` tag to make TypeDoc document this object as an enum.
 
 #### Enumeration Members
 
-##### Pending
+##### Pending {#pending-1}
 
-> **Pending**: `"pending"`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:52
+<dt>
 
-##### InProgress
+<code data-typedoc-code><a id="pending-1" href="#pending-1">Pending</a>: `"pending"`</code>
 
-> **InProgress**: `"inProgress"`
+</dt>
 
-Defined in: examples/example-typedoc/src/enums.ts:55
+</dl>
+
+##### InProgress {#inprogress-1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="inprogress-1" href="#inprogress-1">InProgress</a>: `"inProgress"`</code>
+
+</dt>
+
+<dd>
 
 Indicates that a courier is en route delivering this order.
 
-##### Completed
+</dd>
 
-> **Completed**: `"completed"`
+</dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:57
+##### Completed {#completed}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="completed" href="#completed">Completed</a>: `"completed"`</code>
+
+</dt>
+
+</dl>
 
 ***
 
-### EnumLikeObjectNumValues
-
-Defined in: examples/example-typedoc/src/enums.ts:75
+### EnumLikeObjectNumValues {#enumlikeobjectnumvalues}
 
 Since TypeScript's `enum` can be inconvenient to work with, some packages define their own enum-like objects:
 
@@ -3792,57 +2496,81 @@ Use the `@enum` tag to make TypeDoc document this object as an enum.
 
 #### Enumeration Members
 
-##### Pending
+##### Pending {#pending-2}
 
-> **Pending**: `1`
+<dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:76
+<dt>
 
-##### InProgress
+<code data-typedoc-code><a id="pending-2" href="#pending-2">Pending</a>: `1`</code>
 
-> **InProgress**: `2`
+</dt>
 
-Defined in: examples/example-typedoc/src/enums.ts:79
+</dl>
+
+##### InProgress {#inprogress-2}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="inprogress-2" href="#inprogress-2">InProgress</a>: `2`</code>
+
+</dt>
+
+<dd>
 
 Indicates that a courier is en route delivering this order.
 
-##### Completed
+</dd>
 
-> **Completed**: `3`
+</dl>
 
-Defined in: examples/example-typedoc/src/enums.ts:81
+##### Completed {#completed-1}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="completed-1" href="#completed-1">Completed</a>: `3`</code>
+
+</dt>
+
+</dl>
 
 ***
 
-### sqrt()
+### sqrt() {#sqrt}
 
-> **sqrt**(`x`): `number`
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:7
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="sqrt" href="#sqrt">sqrt</a>(`x`): `number`</code>
+
+</dt>
+
+<dd>
 
 Calculates the square root of a number.
 
-#### Parameters
+</dd>
 
-##### x
-
-`number`
-
-the number to calculate the root of.
-
-#### Returns
-
-`number`
-
-the square root if `x` is non-negative or `NaN` if `x` is negative.
+</dl>
 
 ***
 
-### sqrtArrowFunction()
+### sqrtArrowFunction() {#sqrtarrowfunction}
 
-> **sqrtArrowFunction**(`x`): `number`
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:25
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="sqrtarrowfunction" href="#sqrtarrowfunction">sqrtArrowFunction</a>(`x`): `number`</code>
+
+</dt>
+
+<dd>
 
 Calculates the square root of a number.
 
@@ -3854,27 +2582,23 @@ export const sqrtArrowFunction = (x: number): number => Math.sqrt(x);
 
 TypeDoc is smart and documents `sqrtArrowFunction` as a function rather than a variable.
 
-#### Parameters
+</dd>
 
-##### x
-
-`number`
-
-the number do calculate the root of.
-
-#### Returns
-
-`number`
-
-the square root if `x` is non-negative or `NaN` if `x` is negative.
+</dl>
 
 ***
 
-### concat()
+### concat() {#concat-3}
 
-> **concat**\<`T`\>(`array1`, `array2`): `T`[]
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:39
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="concat-3" href="#concat-3">concat</a>\<T\>(`array1`, `array2`): `T`[]</code>
+
+</dt>
+
+<dd>
 
 A simple generic function that concatenates two arrays.
 
@@ -3885,79 +2609,93 @@ to document generic type parameters, e.g.
 @typeParam T the element type of the arrays
 ```
 
-#### Type Parameters
+</dd>
 
-##### T
-
-`T`
-
-the element type of the arrays
-
-#### Parameters
-
-##### array1
-
-`T`[]
-
-##### array2
-
-`T`[]
-
-#### Returns
-
-`T`[]
+</dl>
 
 ***
 
-### MakeHttpCallAOptions
-
-Defined in: examples/example-typedoc/src/functions.ts:46
+### MakeHttpCallAOptions {#makehttpcallaoptions}
 
 The options type for [makeHttpCallA](#makehttpcalla).
 
 #### Properties
 
-##### url
+<dl>
 
-> **url**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/functions.ts:47
+<code data-typedoc-code><a id="url" href="#url">url</a>: `string`</code>
 
-##### method
+</dt>
 
-> **method**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:50
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="method" href="#method">method</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 e.g. GET, POST, PUT, DELETE
 
-##### headers
+</dd>
 
-> **headers**: `Record`\<`string`, `string`\>
+</dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:53
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="headers" href="#headers">headers</a>: `Record`\<`string`, `string`\></code>
+
+</dt>
+
+<dd>
 
 e.g. `{ 'Authorization': 'Bearer <access token>' }`
 
-##### body
+</dd>
 
-> **body**: `string` \| `Blob` \| `FormData`
+</dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:54
+<dl>
 
-##### mode
+<dt>
 
-> **mode**: `"cors"` \| `"no-cors"` \| `"same-origin"`
+<code data-typedoc-code><a id="body" href="#body">body</a>: `string` \| `Blob` \| `FormData`</code>
 
-Defined in: examples/example-typedoc/src/functions.ts:55
+</dt>
+
+</dl>
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="mode" href="#mode">mode</a>: `"cors"` \| `"no-cors"` \| `"same-origin"`</code>
+
+</dt>
+
+</dl>
 
 ***
 
-### makeHttpCallA()
+### makeHttpCallA() {#makehttpcalla}
 
-> **makeHttpCallA**(`options`): `Promise`\<`Response`\>
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:65
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="makehttpcalla" href="#makehttpcalla">makeHttpCallA</a>(`options`): `Promise`\<`Response`\></code>
+
+</dt>
+
+<dd>
 
 A function that takes in an options object that is defined as a separate
 interface and makes an HTTP call.
@@ -3965,69 +2703,47 @@ interface and makes an HTTP call.
 **Make sure to export the options type when using this pattern.** Otherwise,
 TypeDoc will not document the options.
 
-#### Parameters
+</dd>
 
-##### options
-
-[`MakeHttpCallAOptions`](#makehttpcallaoptions)
-
-#### Returns
-
-`Promise`\<`Response`\>
+</dl>
 
 ***
 
-### makeHttpCallB()
+### makeHttpCallB() {#makehttpcallb}
 
-> **makeHttpCallB**(`options`): `Promise`\<`Response`\>
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:78
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="makehttpcallb" href="#makehttpcallb">makeHttpCallB</a>(`options`): `Promise`\<`Response`\></code>
+
+</dt>
+
+<dd>
 
 A function that takes in an options object and makes an HTTP call.
 
 The options type is written directly in the function definition.
 
-#### Parameters
+</dd>
 
-##### options
-
-###### url
-
-`string`
-
-###### method
-
-`string`
-
-e.g. GET, POST, PUT, DELETE
-
-###### headers
-
-`Record`\<`string`, `string`\>
-
-e.g. `{ 'Authorization': 'Bearer <access token>' }`
-
-###### body
-
-`string` \| `Blob` \| `FormData`
-
-###### mode
-
-`"cors"` \| `"no-cors"` \| `"same-origin"`
-
-#### Returns
-
-`Promise`\<`Response`\>
+</dl>
 
 ***
 
-### overloadedFunction()
+### overloadedFunction() {#overloadedfunction}
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:102
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="overloadedfunction" href="#overloadedfunction">overloadedFunction</a>(`a`, `b`): `string`</code>
+
+</dt>
+
+<dd>
 
 Stringifies and concatenates two numbers into a single string.
 
@@ -4035,25 +2751,21 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
-##### Parameters
+</dd>
 
-###### a
-
-`number`
-
-###### b
-
-`number`
-
-##### Returns
-
-`string`
+</dl>
 
 #### Call Signature
 
-> **overloadedFunction**(`a`, `b`): `string`
+<dl>
 
-Defined in: examples/example-typedoc/src/functions.ts:111
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="overloadedfunction" href="#overloadedfunction">overloadedFunction</a>(`a`, `b`): `string`</code>
+
+</dt>
+
+<dd>
 
 Concatenates two strings.
 
@@ -4061,27 +2773,23 @@ The documentation site allows you to toggle between the different overloads
 of a function. The implementation signature of the overloaded function is not
 included in the documentation.
 
-##### Parameters
+</dd>
 
-###### a
-
-`string`
-
-###### b
-
-`string`
-
-##### Returns
-
-`string`
+</dl>
 
 ***
 
-### anInternalFunction()
+### anInternalFunction() {#aninternalfunction}
 
-> **anInternalFunction**(): `void`
+<dl>
 
-Defined in: examples/example-typedoc/src/internals.ts:8
+<dt>
+
+<code data-typedoc-code><i>function</i> <a id="aninternalfunction" href="#aninternalfunction">anInternalFunction</a>(): `void`</code>
+
+</dt>
+
+<dd>
 
 **`Internal`**
 
@@ -4089,75 +2797,115 @@ Use `@internal` to indicate that something is for internal use. If the
 `--excludeInternal` option is passed, TypeDoc will not document the given
 code.
 
-#### Returns
+</dd>
 
-`void`
+</dl>
 
 ***
 
-### CardAProps
-
-Defined in: examples/example-typedoc/src/reactComponents.tsx:6
+### CardAProps {#cardaprops}
 
 The props type for [CardA](#carda).
 
 #### Properties
 
-##### variant
+<dl>
 
-> **variant**: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`
+<dt>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:8
+<code data-typedoc-code><a id="variant" href="#variant">variant</a>: `"primary"` \| `"secondary"` \| `"success"` \| `"danger"` \| `"light"` \| `"dark"`</code>
+
+</dt>
+
+<dd>
 
 The theme of the card. Defaults to `primary`.
 
+</dd>
+
+</dl>
+
 ***
 
-### EasyFormDialogProps
-
-Defined in: examples/example-typedoc/src/reactComponents.tsx:85
+### EasyFormDialogProps {#easyformdialogprops}
 
 The props type of [\`EasyFormDialog\`](#easyformdialog).
 
 #### Properties
 
-##### title
+<dl>
 
-> **title**: `ReactNode`
+<dt>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:87
+<code data-typedoc-code><a id="title" href="#title">title</a>: `ReactNode`</code>
+
+</dt>
+
+<dd>
 
 The title of the dialog. Can be a JSX element.
 
-##### submitButtonText
+</dd>
 
-> **submitButtonText**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:90
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="submitbuttontext" href="#submitbuttontext">submitButtonText</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 The text of the submit button.
 
-##### submitButtonClass?
+</dd>
 
-> `optional` **submitButtonClass**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:93
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="submitbuttonclass" href="#submitbuttonclass">submitButtonClass</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 The CSS class of the submit button.
 
-##### cancelButtonText?
+</dd>
 
-> `optional` **cancelButtonText**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:96
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="cancelbuttontext" href="#cancelbuttontext">cancelButtonText</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 The text of the cancel button. Defaults to "Cancel".
 
-##### submitEnabled?
+</dd>
 
-> `optional` **submitEnabled**: `boolean`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:105
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="submitenabled" href="#submitenabled">submitEnabled</a><i>?</i>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 Allows you to disable the submit button even if `getSubmitEnabled()`
 would return true.
@@ -4165,27 +2913,51 @@ would return true.
 This can be useful if you want to disable the submit button while a query
 is in progress.
 
-##### formIsValid
+</dd>
 
-> **formIsValid**: `boolean`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:108
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="formisvalid" href="#formisvalid">formIsValid</a>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 A boolean indicating if the form is valid.
 
-##### showValidation
+</dd>
 
-> **showValidation**: `boolean`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:111
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="showvalidation" href="#showvalidation">showValidation</a>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 A boolean indicating if validation feedback is being shown.
 
-##### closeRef?
+</dd>
 
-> `optional` **closeRef**: `MutableRefObject`\<() => `void`\>
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:177
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="closeref" href="#closeref">closeRef</a><i>?</i>: `MutableRefObject`\<() => `void`\></code>
+
+</dt>
+
+<dd>
 
 This prop accepts a ref object that holds a function of type `() =>
 void`. You can execute the function to programmatically close the dialog:
@@ -4194,57 +2966,87 @@ void`. You can execute the function to programmatically close the dialog:
 closeRef.current()
 ```
 
-##### modalClass?
+</dd>
 
-> `optional` **modalClass**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:180
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="modalclass" href="#modalclass">modalClass</a><i>?</i>: `string`</code>
+
+</dt>
+
+<dd>
 
 The CSS class added to the underlying Bootstrap modal.
 
-##### focusFirst?
+</dd>
 
-> `optional` **focusFirst**: `boolean`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:186
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="focusfirst" href="#focusfirst">focusFirst</a><i>?</i>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 Set to `false` to disable the default behavior of focusing the first
 input.
 
-##### showFooter?
+</dd>
 
-> `optional` **showFooter**: `boolean`
+</dl>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:192
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="showfooter" href="#showfooter">showFooter</a><i>?</i>: `boolean`</code>
+
+</dt>
+
+<dd>
 
 Set to `false` to hide the modal footer, which contains the submit and
 cancel buttons.
 
+</dd>
+
+</dl>
+
 #### Methods
 
-##### onShowValidationChange()
+<dl>
 
-> **onShowValidationChange**(`showValidation`): `void`
+<dt>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:114
+<code data-typedoc-code><a id="onshowvalidationchange" href="#onshowvalidationchange">onShowValidationChange</a>(`showValidation`): `void`</code>
+
+</dt>
+
+<dd>
 
 A callback that fires when the dialog is submitted.
 
-###### Parameters
+</dd>
 
-###### showValidation
+</dl>
 
-`boolean`
+<dl>
 
-###### Returns
+<dt>
 
-`void`
+<code data-typedoc-code><a id="onsuccess" href="#onsuccess">onSuccess</a>(`payload`): `Promise`\<`void`\></code>
 
-##### onSuccess()
+</dt>
 
-> **onSuccess**(`payload`): `Promise`\<`void`\>
-
-Defined in: examples/example-typedoc/src/reactComponents.tsx:126
+<dd>
 
 A callback that fires after the `submit` function succeeds.
 
@@ -4255,36 +3057,38 @@ Your `onSuccess` callback must return a promise. The submit button will
 continue showing a loading indicator until the promise resolves. This is
 to support refetching the data that was updated by the form submission.
 
-###### Parameters
+</dd>
 
-###### payload
+</dl>
 
-`unknown`
+<dl>
 
-###### Returns
+<dt>
 
-`Promise`\<`void`\>
+<code data-typedoc-code><a id="onclose" href="#onclose">onClose</a>(): `void`</code>
 
-##### onClose()
+</dt>
 
-> **onClose**(): `void`
-
-Defined in: examples/example-typedoc/src/reactComponents.tsx:134
+<dd>
 
 A callback that fires when the dialog has completely closed. Your
 `onClose` callback should update call, for example,
 `setDialogVisible(false)` so that the `EasyFormDialog` is no longer
 rendered.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
-##### onSubmit()
+<dl>
 
-> **onSubmit**(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose?`: `boolean`; `responseData`: `unknown`; \}\>
+<dt>
 
-Defined in: examples/example-typedoc/src/reactComponents.tsx:154
+<code data-typedoc-code><a id="onsubmit" href="#onsubmit">onSubmit</a>(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose?`: `boolean`; `responseData`: `unknown`; \}\></code>
+
+</dt>
+
+<dd>
 
 A callback that fires when the form is submitted. You will typically
 perform an API call in your `submit` function.
@@ -4303,237 +3107,281 @@ Using `formData` is deprecated. Use controlled components instead.
 `formData` will be `{}` if the optional peer dependency `jquery` is not
 installed.
 
-###### Parameters
+</dd>
 
-###### formData
+</dl>
 
-`Record`\<`string`, `string` \| `boolean`\>
+<dl>
 
-###### Returns
+<dt>
 
-`Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose?`: `boolean`; `responseData`: `unknown`; \}\>
+<code data-typedoc-code><a id="oncancel" href="#oncancel">onCancel</a>(): `void`</code>
 
-##### onCancel()?
+</dt>
 
-> `optional` **onCancel**(): `void`
-
-Defined in: examples/example-typedoc/src/reactComponents.tsx:167
+<dd>
 
 An uncommonly-used callback that fires when the user clicks the cancel button.
 
-###### Returns
+</dd>
 
-`void`
+</dl>
 
 ***
 
-### SimpleTypeAlias
+### SimpleTypeAlias {#simpletypealias}
 
-> **SimpleTypeAlias** = `string` \| `number` \| `boolean`
+<dl>
 
-Defined in: examples/example-typedoc/src/types.ts:2
+<dt>
+
+<code data-typedoc-code>type <a id="simpletypealias" href="#simpletypealias">SimpleTypeAlias</a> = `string` \| `number` \| `boolean`</code>
+
+</dt>
+
+<dd>
 
 A simple type alias defined using the `type` keyword.
 
+</dd>
+
+</dl>
+
 ***
 
-### ComplexGenericTypeAlias\<T\>
+### ComplexGenericTypeAlias\<T\> {#complexgenerictypealias}
 
-> **ComplexGenericTypeAlias**\<`T`\> = `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\>
+<dl>
 
-Defined in: examples/example-typedoc/src/types.ts:5
+<dt>
+
+<code data-typedoc-code>type <a id="complexgenerictypealias" href="#complexgenerictypealias">ComplexGenericTypeAlias</a>\<T\> = `T` \| `T`[] \| `Promise`\<`T`\> \| `Promise`\<`T`[]\> \| `Record`\<`string`, `Promise`\<`T`\>\></code>
+
+</dt>
+
+<dd>
 
 A complex generic type.
 
-#### Type Parameters
+</dd>
 
-##### T
-
-`T`
+</dl>
 
 ***
 
-### User
-
-Defined in: examples/example-typedoc/src/types.ts:17
+### User {#user}
 
 A simple interface. Each property has its own doc comment.
 
 TypeDoc even supports doc comments on nested type definitions, as shown by the `name` property.
 
-#### Extended by
-
-- [`AdminUser`](#adminuser)
-
 #### Properties
 
-##### id
+<dl>
 
-> **id**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/types.ts:19
+<code data-typedoc-code><a id="id-3" href="#id-3">id</a>: `number`</code>
+
+</dt>
+
+<dd>
 
 The user's ID.
 
-##### email
+</dd>
 
-> **email**: `string`
+</dl>
 
-Defined in: examples/example-typedoc/src/types.ts:22
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="email" href="#email">email</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 The user's email address.
 
-##### name
+</dd>
 
-> **name**: `object`
+</dl>
 
-Defined in: examples/example-typedoc/src/types.ts:25
+<dl>
+
+<dt>
+
+<code data-typedoc-code><a id="name-3" href="#name-3">name</a>: `object`</code>
+
+</dt>
+
+<dd>
 
 The user's name.
 
-###### first
+</dd>
 
-> **first**: `string`
-
-The person's given name.
-
-###### last
-
-> **last**: `string`
-
-The person's family name.
+</dl>
 
 ***
 
-### AdminUser
-
-Defined in: examples/example-typedoc/src/types.ts:40
+### AdminUser {#adminuser}
 
 An interface that extends [\`User\`](#user) and adds more properties.
 
 Notice how TypeDoc automatically shows the inheritance hierarchy and where
 each property was originally defined.
 
-#### Extends
-
-- [`User`](#user)
-
 #### Properties
 
-##### id
+<dl>
 
-> **id**: `number`
+<dt>
 
-Defined in: examples/example-typedoc/src/types.ts:19
+<code data-typedoc-code><a id="id-4" href="#id-4">id</a>: `number`</code>
+
+</dt>
+
+<dd>
 
 The user's ID.
 
-###### Inherited from
+</dd>
 
-[`User`](#user).[`id`](#id-3)
+</dl>
 
-##### email
+<dl>
 
-> **email**: `string`
+<dt>
 
-Defined in: examples/example-typedoc/src/types.ts:22
+<code data-typedoc-code><a id="email-1" href="#email-1">email</a>: `string`</code>
+
+</dt>
+
+<dd>
 
 The user's email address.
 
-###### Inherited from
+</dd>
 
-[`User`](#user).[`email`](#email)
+</dl>
 
-##### name
+<dl>
 
-> **name**: `object`
+<dt>
 
-Defined in: examples/example-typedoc/src/types.ts:25
+<code data-typedoc-code><a id="name-4" href="#name-4">name</a>: `object`</code>
+
+</dt>
+
+<dd>
 
 The user's name.
 
-###### first
+</dd>
 
-> **first**: `string`
+</dl>
 
-The person's given name.
+<dl>
 
-###### last
+<dt>
 
-> **last**: `string`
+<code data-typedoc-code><a id="administrativearea" href="#administrativearea">administrativeArea</a>: `"sales"` \| `"delivery"` \| `"billing"`</code>
 
-The person's family name.
+</dt>
 
-###### Inherited from
+</dl>
 
-[`User`](#user).[`name`](#name-3)
+<dl>
 
-##### administrativeArea
+<dt>
 
-> **administrativeArea**: `"sales"` \| `"delivery"` \| `"billing"`
+<code data-typedoc-code><a id="jobtitle" href="#jobtitle">jobTitle</a>: `string`</code>
 
-Defined in: examples/example-typedoc/src/types.ts:41
+</dt>
 
-##### jobTitle
-
-> **jobTitle**: `string`
-
-Defined in: examples/example-typedoc/src/types.ts:42
+</dl>
 
 ***
 
-### PI
+### PI {#pi}
 
-> `const` **PI**: `3.14159265359` = `3.14159265359`
+<dl>
 
-Defined in: examples/example-typedoc/src/variables.ts:2
+<dt>
+
+<code data-typedoc-code><i>const</i> <a id="pi" href="#pi">PI</a>: `3.14159265359` = `3.14159265359`</code>
+
+</dt>
+
+<dd>
 
 A simple numeric constant.
 
+</dd>
+
+</dl>
+
 ***
 
-### STRING\_CONSTANT
+### STRING\_CONSTANT {#string_constant}
 
-> `const` **STRING\_CONSTANT**: `"FOOBAR"` = `"FOOBAR"`
+<dl>
 
-Defined in: examples/example-typedoc/src/variables.ts:5
+<dt>
+
+<code data-typedoc-code><i>const</i> <a id="string_constant" href="#string_constant">STRING_CONSTANT</a>: `"FOOBAR"` = `"FOOBAR"`</code>
+
+</dt>
+
+<dd>
 
 A simple string constant.
 
+</dd>
+
+</dl>
+
 ***
 
-### ObjectConstant
+### ObjectConstant {#objectconstant}
 
-> `const` **ObjectConstant**: `object`
+<dl>
 
-Defined in: examples/example-typedoc/src/variables.ts:8
+<dt>
+
+<code data-typedoc-code><i>const</i> <a id="objectconstant" href="#objectconstant">ObjectConstant</a>: `object`</code>
+
+</dt>
+
+<dd>
 
 An plain JavaScript object using `as const`.
 
-#### Type declaration
+</dd>
 
-##### library
-
-> `readonly` **library**: `"typedoc"` = `"typedoc"`
-
-##### version
-
-> `readonly` **version**: `"1.2.3"` = `"1.2.3"`
-
-##### githubStars
-
-> `readonly` **githubStars**: `1000000` = `1_000_000`
-
-How many people starred us on GitHub.
+</dl>
 
 ***
 
-### E
+### E {#e}
 
-> **E**: `number` = `2.718281828459045235`
+<dl>
 
-Defined in: examples/example-typedoc/src/variables.ts:22
+<dt>
+
+<code data-typedoc-code><a id="e" href="#e">E</a>: `number` = `2.718281828459045235`</code>
+
+</dt>
+
+<dd>
 
 An exported variable defined with `let`.
 
 This pattern should generally be avoided because the variable can be reassigned.
+
+</dd>
+
+</dl>
