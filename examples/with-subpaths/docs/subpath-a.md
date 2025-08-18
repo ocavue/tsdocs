@@ -8,7 +8,7 @@
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fna" href="#fna">fnA</a>(`options?`): `void`</code>
+<code data-typedoc-code><i>function</i> <a id="fna" href="#fna">fnA</a>(`options?`): `void`</code>
 
 </dt>
 

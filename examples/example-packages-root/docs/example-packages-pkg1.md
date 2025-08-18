@@ -10,7 +10,7 @@ Comment for pkg1
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn1" href="#fn1">fn1</a>(): `string`</code>
+<code data-typedoc-code><i>function</i> <a id="fn1" href="#fn1">fn1</a>(): `string`</code>
 
 </dt>
 

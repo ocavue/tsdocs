@@ -27,6 +27,7 @@ export function signatureTitle(
       ...this.helpers
         .getReflectionFlags(model.parent.flags)
         .split(' ')
+        .filter((flag) => flag)
         .flatMap((flag) => [`<i>${flag}</i>`, ' ']),
     )
   }
