@@ -1,9 +1,3 @@
-[**TypeDoc Example**](../README.md)
-
-***
-
-[TypeDoc Example](../README.md) / Include and Include Code
-
 # Including other files
 
 It can be convenient to write long-form guides/tutorials outside of doc comments.

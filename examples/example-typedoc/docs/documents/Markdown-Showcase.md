@@ -1,9 +1,3 @@
-[**TypeDoc Example**](../README.md)
-
-***
-
-[TypeDoc Example](../README.md) / Markdown Showcase
-
 # Markdown Showcase
 
 All comments are parsed as **Markdown**. TypeDoc uses the
