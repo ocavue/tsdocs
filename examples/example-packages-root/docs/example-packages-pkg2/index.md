@@ -1,3 +1,5 @@
+# index
+
 ## Functions
 
 ### fn2() {#fn2}

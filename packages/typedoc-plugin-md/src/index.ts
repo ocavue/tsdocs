@@ -1,5 +1,5 @@
+import { Application, type TypeDocOptions } from 'typedoc'
 import {
-  MarkdownRendererEvent,
   type MarkdownApplication,
   type PluginOptions,
 } from 'typedoc-plugin-markdown'
@@ -10,27 +10,32 @@ export function load(app: MarkdownApplication) {
   // Define the markdown theme
   app.renderer.defineTheme('md-theme', TSDocsMarkdownTheme)
 
-  app.renderer.on(MarkdownRendererEvent.BEGIN, () => {
+  app.on(Application.EVENT_BOOTSTRAP_END, (app) => {
     updateOptions(app)
   })
 }
 
-function updateOptions(app: MarkdownApplication) {
-  if (app.options.getValue('theme') !== 'md-theme') {
-    throw new Error(
-      `[typedoc-plugin-md] You must set the "theme" option to "md-theme" in your typedoc config. Got ${JSON.stringify(app.options.getValue('theme'))}`,
-    )
-  }
-
+function updateOptions(app: Application) {
   const markdownPluginOptions: PluginOptions = {
     hidePageHeader: true,
     hideBreadcrumbs: true,
-    hidePageTitle: true,
+    // hidePageTitle: true,
     useCustomAnchors: true,
     useCodeBlocks: false,
   }
 
-  for (const [key, value] of Object.entries(markdownPluginOptions)) {
+  const typedocOptions: TypeDocOptions = {
+    router: 'module',
+    readme: 'none',
+    theme: 'md-theme',
+    disableSources: true, 
+    
+  }
+
+  for (const [key, value] of Object.entries({
+    ...markdownPluginOptions,
+    ...typedocOptions,
+  })) {
     if (app.options.isSet(key)) {
       continue
     }

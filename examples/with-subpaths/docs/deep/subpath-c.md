@@ -1,19 +1,19 @@
 # deep/subpath-c
 
-## InterfaceC <a id="interface-c" href="#interface-c">#</a>
+## Interfaces
 
-[fnB](../subpath-b.md#fn-b) returns this interface.
+### InterfaceC {#interfacec}
+
+[fnB](../subpath-b.md#fnb) returns this interface.
+
+#### Properties
 
 <dl>
 
 <dt>
 
-`fn: () => number`
+<code data-typedoc-code><i></i> <a id="fn" href="#fn">fn</a>: () => `number`</code>
 
 </dt>
-
-<dd>
-
-</dd>
 
 </dl>

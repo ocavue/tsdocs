@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docs": "typedoc --plugin typedoc-plugin-md --out ./docs ./src/index.ts ./src/subpath-a.ts ./src/subpath-b.ts ./src/deep/subpath-c.ts"
+    "docs": "typedoc --plugin typedoc-plugin-md --plugin typedoc-plugin-markdown --out ./docs ./src/index.ts ./src/subpath-a.ts ./src/subpath-b.ts ./src/deep/subpath-c.ts"
   },
   "devDependencies": {
-    "typedoc": "^0.28.9",
+    "typedoc": "^0.28.10",
     "typedoc-plugin-md": "workspace:*"
   }
 }

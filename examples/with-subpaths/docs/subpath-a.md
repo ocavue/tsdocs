@@ -1,9 +1,21 @@
 # subpath-a
 
-## fnA <a id="fn-a" href="#fn-a">#</a>
+## Functions
 
-```ts
-function fnA(options?: InterfaceC): void
-```
+### fnA() {#fna}
 
-[InterfaceC](deep/subpath-c.md#interface-c) An optional object.
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="fna" href="#fna">fnA</a>(`options?`): `void`</code>
+
+</dt>
+
+<dd>
+
+[InterfaceC](deep/subpath-c.md#interfacec) An optional object.
+
+</dd>
+
+</dl>

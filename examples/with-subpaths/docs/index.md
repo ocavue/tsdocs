@@ -1,7 +1,15 @@
 # index
 
-## main <a id="main" href="#main">#</a>
+## Functions
 
-```ts
-function main(): void
-```
+### main() {#main}
+
+<dl>
+
+<dt>
+
+<code data-typedoc-code><i>function</i> <i></i> <a id="main" href="#main">main</a>(): `void`</code>
+
+</dt>
+
+</dl>

@@ -5,12 +5,5 @@
   "plugin": ["typedoc-plugin-md", "typedoc-plugin-markdown"],
   "entryPointStrategy": "packages",
   "githubPages": false,
-  "theme": "md-theme",
-  "router": "module",
-  "readme": "none",
-  "mergeReadme": true,
   "cleanOutputDir": true,
-  "disableSources": true,
-
-
 }
