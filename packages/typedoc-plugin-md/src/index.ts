@@ -28,8 +28,7 @@ function updateOptions(app: Application) {
     router: 'module',
     readme: 'none',
     theme: 'md-theme',
-    disableSources: true, 
-    
+    disableSources: true,
   }
 
   for (const [key, value] of Object.entries({

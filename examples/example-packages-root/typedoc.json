@@ -5,5 +5,5 @@
   "plugin": ["typedoc-plugin-md", "typedoc-plugin-markdown"],
   "entryPointStrategy": "packages",
   "githubPages": false,
-  "cleanOutputDir": true,
+  "cleanOutputDir": true
 }
