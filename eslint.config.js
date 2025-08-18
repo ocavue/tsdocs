@@ -9,4 +9,11 @@ export default defineESLintConfig({}, [
   {
     ignores: ['examples/example-typedoc/**/*'],
   },
+  {
+    rules: {
+      'package-json/require-type': 'off',
+      'package-json/require-description': 'off',
+    },
+    files: ['examples/**/*'],
+  },
 ])
