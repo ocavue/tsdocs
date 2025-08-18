@@ -12,7 +12,7 @@
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="fn" href="#fn">fn</a>: () => `number`</code>
+<code data-typedoc-code><a id="fn" href="#fn">fn</a>: () => `number`</code>
 
 </dt>
 

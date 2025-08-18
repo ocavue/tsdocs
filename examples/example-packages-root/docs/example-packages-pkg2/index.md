@@ -8,7 +8,7 @@
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn2" href="#fn2">fn2</a>(): `string`</code>
+<code data-typedoc-code><i>function</i> <a id="fn2" href="#fn2">fn2</a>(): `string`</code>
 
 </dt>
 

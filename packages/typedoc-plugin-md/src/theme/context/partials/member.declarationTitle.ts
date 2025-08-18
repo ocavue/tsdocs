@@ -14,6 +14,7 @@ export function declarationTitle(
     ...this.helpers
       .getReflectionFlags(model.flags)
       .split(' ')
+      .filter((flag) => flag)
       .flatMap((flag) => [`<i>${flag}</i>`, ' ']),
   )
 

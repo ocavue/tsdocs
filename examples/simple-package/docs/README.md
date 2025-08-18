@@ -28,7 +28,7 @@ A simple enum.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="value1" href="#value1">Value1</a>: `0`</code>
+<code data-typedoc-code><a id="value1" href="#value1">Value1</a>: `0`</code>
 
 </dt>
 
@@ -40,7 +40,7 @@ A simple enum.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="value2" href="#value2">Value2</a>: `1`</code>
+<code data-typedoc-code><a id="value2" href="#value2">Value2</a>: `1`</code>
 
 </dt>
 
@@ -58,7 +58,7 @@ A simple enum.
 
 <dt>
 
-<code data-typedoc-code><i></i> new <a id="constructor" href="#constructor">SimpleClass</a>(): [`SimpleClass`](#simpleclass)</code>
+<code data-typedoc-code>new <a id="constructor" href="#constructor">SimpleClass</a>(): [`SimpleClass`](#simpleclass)</code>
 
 </dt>
 
@@ -70,7 +70,7 @@ A simple enum.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="simpleproperty" href="#simpleproperty">simpleProperty</a>: `string`</code>
+<code data-typedoc-code><a id="simpleproperty" href="#simpleproperty">simpleProperty</a>: `string`</code>
 
 </dt>
 
@@ -88,7 +88,7 @@ Comment for simpleProperty
 
 <dt>
 
-<code data-typedoc-code>get <i></i> <a id="complexgetter" href="#complexgetter">complexGetter</a>(): `object`</code>
+<code data-typedoc-code>get <a id="complexgetter" href="#complexgetter">complexGetter</a>(): `object`</code>
 
 </dt>
 
@@ -104,7 +104,7 @@ Comment for complexGetter
 
 <dt>
 
-<code data-typedoc-code>get <i></i> <a id="simplegetter" href="#simplegetter">simpleGetter</a>(): `string`</code>
+<code data-typedoc-code>get <a id="simplegetter" href="#simplegetter">simpleGetter</a>(): `string`</code>
 
 </dt>
 
@@ -120,7 +120,7 @@ Comment for simpleGetter
 
 <dt>
 
-<code data-typedoc-code>set <i></i> <a id="simplesetter" href="#simplesetter">simpleSetter</a>(`value`): `void`</code>
+<code data-typedoc-code>set <a id="simplesetter" href="#simplesetter">simpleSetter</a>(`value`): `void`</code>
 
 </dt>
 
@@ -146,7 +146,7 @@ A simple class.
 
 <dt>
 
-<code data-typedoc-code><i></i> new <a id="constructor-1" href="#constructor-1">SimpleReader</a>(): [`SimpleReader`](#simplereader)</code>
+<code data-typedoc-code>new <a id="constructor-1" href="#constructor-1">SimpleReader</a>(): [`SimpleReader`](#simplereader)</code>
 
 </dt>
 
@@ -158,7 +158,7 @@ A simple class.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="read" href="#read">read</a>(): `string`</code>
+<code data-typedoc-code><a id="read" href="#read">read</a>(): `string`</code>
 
 </dt>
 
@@ -186,7 +186,7 @@ This class implements [Writer](#writer).
 
 <dt>
 
-<code data-typedoc-code><i></i> new <a id="constructor-2" href="#constructor-2">SimpleWriter</a>\<T\>(): [`SimpleWriter`](#simplewriter)\<`T`\></code>
+<code data-typedoc-code>new <a id="constructor-2" href="#constructor-2">SimpleWriter</a>\<T\>(): [`SimpleWriter`](#simplewriter)\<`T`\></code>
 
 </dt>
 
@@ -198,7 +198,7 @@ This class implements [Writer](#writer).
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="write" href="#write">write</a>(`value`): `void`</code>
+<code data-typedoc-code><a id="write" href="#write">write</a>(`value`): `void`</code>
 
 </dt>
 
@@ -222,7 +222,7 @@ Writes a value to the writer.
 
 <dt>
 
-<code data-typedoc-code><i></i> new <a id="constructor-3" href="#constructor-3">SubClass</a>(): [`SubClass`](#subclass)</code>
+<code data-typedoc-code>new <a id="constructor-3" href="#constructor-3">SubClass</a>(): [`SubClass`](#subclass)</code>
 
 </dt>
 
@@ -234,7 +234,7 @@ Writes a value to the writer.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="simpleproperty-1" href="#simpleproperty-1">simpleProperty</a>: `string`</code>
+<code data-typedoc-code><a id="simpleproperty-1" href="#simpleproperty-1">simpleProperty</a>: `string`</code>
 
 </dt>
 
@@ -250,7 +250,7 @@ Comment for simpleProperty
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="subproperty" href="#subproperty">subProperty</a>: `string`</code>
+<code data-typedoc-code><a id="subproperty" href="#subproperty">subProperty</a>: `string`</code>
 
 </dt>
 
@@ -268,7 +268,7 @@ Comment for subProperty
 
 <dt>
 
-<code data-typedoc-code>get <i></i> <a id="complexgetter-1" href="#complexgetter-1">complexGetter</a>(): `object`</code>
+<code data-typedoc-code>get <a id="complexgetter-1" href="#complexgetter-1">complexGetter</a>(): `object`</code>
 
 </dt>
 
@@ -284,7 +284,7 @@ Comment for complexGetter
 
 <dt>
 
-<code data-typedoc-code>get <i></i> <a id="simplegetter-1" href="#simplegetter-1">simpleGetter</a>(): `string`</code>
+<code data-typedoc-code>get <a id="simplegetter-1" href="#simplegetter-1">simpleGetter</a>(): `string`</code>
 
 </dt>
 
@@ -300,7 +300,7 @@ Comment for simpleGetter
 
 <dt>
 
-<code data-typedoc-code>set <i></i> <a id="simplesetter-1" href="#simplesetter-1">simpleSetter</a>(`value`): `void`</code>
+<code data-typedoc-code>set <a id="simplesetter-1" href="#simplesetter-1">simpleSetter</a>(`value`): `void`</code>
 
 </dt>
 
@@ -324,7 +324,7 @@ A simple interface.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="read-2" href="#read-2">read</a>(): `string`</code>
+<code data-typedoc-code><a id="read-2" href="#read-2">read</a>(): `string`</code>
 
 </dt>
 
@@ -346,7 +346,7 @@ Reads a value.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="fn" href="#fn">fn</a>: (`options`) => `number`</code>
+<code data-typedoc-code><a id="fn" href="#fn">fn</a>: (`options`) => `number`</code>
 
 </dt>
 
@@ -362,7 +362,7 @@ A function with a complex parameter.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="property" href="#property">property</a>: `string`</code>
+<code data-typedoc-code><a id="property" href="#property">property</a>: `string`</code>
 
 </dt>
 
@@ -378,7 +378,7 @@ A simple property.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="withdefault" href="#withdefault">withDefault</a><i>?</i>: `number`</code>
+<code data-typedoc-code><a id="withdefault" href="#withdefault">withDefault</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -398,7 +398,7 @@ A simple property with a default tag.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="withexample" href="#withexample">withExample</a><i>?</i>: `number`</code>
+<code data-typedoc-code><a id="withexample" href="#withexample">withExample</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -430,7 +430,7 @@ const c = a + b
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="method" href="#method">method</a>(): `void`</code>
+<code data-typedoc-code><a id="method" href="#method">method</a>(): `void`</code>
 
 </dt>
 
@@ -446,7 +446,7 @@ A simple method.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="method2" href="#method2">method2</a>\<T\>(`value`): `void`</code>
+<code data-typedoc-code><a id="method2" href="#method2">method2</a>\<T\>(`value`): `void`</code>
 
 </dt>
 
@@ -468,7 +468,7 @@ A method with a type parameter.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="fn-1" href="#fn-1">fn</a>: (`options`) => `number`</code>
+<code data-typedoc-code><a id="fn-1" href="#fn-1">fn</a>: (`options`) => `number`</code>
 
 </dt>
 
@@ -484,7 +484,7 @@ A function with a complex parameter.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="property-1" href="#property-1">property</a>: `string`</code>
+<code data-typedoc-code><a id="property-1" href="#property-1">property</a>: `string`</code>
 
 </dt>
 
@@ -500,7 +500,7 @@ A simple property.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="subproperty-1" href="#subproperty-1">subProperty</a>: `string`</code>
+<code data-typedoc-code><a id="subproperty-1" href="#subproperty-1">subProperty</a>: `string`</code>
 
 </dt>
 
@@ -510,7 +510,7 @@ A simple property.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="withdefault-1" href="#withdefault-1">withDefault</a><i>?</i>: `number`</code>
+<code data-typedoc-code><a id="withdefault-1" href="#withdefault-1">withDefault</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -530,7 +530,7 @@ A simple property with a default tag.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="withexample-1" href="#withexample-1">withExample</a><i>?</i>: `number`</code>
+<code data-typedoc-code><a id="withexample-1" href="#withexample-1">withExample</a><i>?</i>: `number`</code>
 
 </dt>
 
@@ -562,7 +562,7 @@ const c = a + b
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="method-2" href="#method-2">method</a>(): `void`</code>
+<code data-typedoc-code><a id="method-2" href="#method-2">method</a>(): `void`</code>
 
 </dt>
 
@@ -578,7 +578,7 @@ A simple method.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="method2-2" href="#method2-2">method2</a>\<T\>(`value`): `void`</code>
+<code data-typedoc-code><a id="method2-2" href="#method2-2">method2</a>\<T\>(`value`): `void`</code>
 
 </dt>
 
@@ -602,7 +602,7 @@ An interface with a generic type parameter.
 
 <dt>
 
-<code data-typedoc-code><i></i> <a id="write-2" href="#write-2">write</a>(`value`): `void`</code>
+<code data-typedoc-code><a id="write-2" href="#write-2">write</a>(`value`): `void`</code>
 
 </dt>
 
@@ -622,7 +622,7 @@ Writes a value.
 
 <dt>
 
-<code data-typedoc-code><i></i> type <a id="fn1" href="#fn1">Fn1</a> = () => `number`</code>
+<code data-typedoc-code>type <a id="fn1" href="#fn1">Fn1</a> = () => `number`</code>
 
 </dt>
 
@@ -642,7 +642,7 @@ Implemented by [fn1](#fn1-1), [fn1\_1](#fn1_1), [fn1\_1\_1](#fn1_1_1) and [fn\_x
 
 <dt>
 
-<code data-typedoc-code><i></i> type <a id="fn2" href="#fn2">Fn2</a> = () => `number`</code>
+<code data-typedoc-code>type <a id="fn2" href="#fn2">Fn2</a> = () => `number`</code>
 
 </dt>
 
@@ -656,7 +656,7 @@ Implemented by [fn1](#fn1-1), [fn1\_1](#fn1_1), [fn1\_1\_1](#fn1_1_1) and [fn\_x
 
 <dt>
 
-<code data-typedoc-code><i></i> type <a id="simpletype" href="#simpletype">SimpleType</a> = `string` \| `number`</code>
+<code data-typedoc-code>type <a id="simpletype" href="#simpletype">SimpleType</a> = `string` \| `number`</code>
 
 </dt>
 
@@ -676,7 +676,7 @@ A simple type.
 
 <dt>
 
-<code data-typedoc-code><i></i> type <a id="subtype" href="#subtype">SubType</a> = [`SimpleInterface`](#simpleinterface) & `object`</code>
+<code data-typedoc-code>type <a id="subtype" href="#subtype">SubType</a> = [`SimpleInterface`](#simpleinterface) & `object`</code>
 
 </dt>
 
@@ -688,7 +688,7 @@ A simple type.
 
 <dt>
 
-<code data-typedoc-code><i></i> subProperty: `string`</code>
+<code data-typedoc-code>subProperty: `string`</code>
 
 </dt>
 
@@ -726,7 +726,7 @@ A simple variable.
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="add" href="#add">add</a>(`a`, `b`): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="add" href="#add">add</a>(`a`, `b`): `number`</code>
 
 </dt>
 
@@ -746,7 +746,7 @@ A simple function.
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn_x" href="#fn_x">fn_x</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn_x" href="#fn_x">fn_x</a>(): `number`</code>
 
 </dt>
 
@@ -760,7 +760,7 @@ A simple function.
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn1-1" href="#fn1-1">fn1</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn1-1" href="#fn1-1">fn1</a>(): `number`</code>
 
 </dt>
 
@@ -780,7 +780,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_1" href="#fn1_1">fn1_1</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn1_1" href="#fn1_1">fn1_1</a>(): `number`</code>
 
 </dt>
 
@@ -794,7 +794,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_1_1" href="#fn1_1_1">fn1_1_1</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn1_1_1" href="#fn1_1_1">fn1_1_1</a>(): `number`</code>
 
 </dt>
 
@@ -814,7 +814,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn1_2" href="#fn1_2">fn1_2</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn1_2" href="#fn1_2">fn1_2</a>(): `number`</code>
 
 </dt>
 
@@ -834,7 +834,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="fn2-1" href="#fn2-1">fn2</a>(): `number`</code>
+<code data-typedoc-code><i>function</i> <a id="fn2-1" href="#fn2-1">fn2</a>(): `number`</code>
 
 </dt>
 
@@ -848,7 +848,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="functionwithfunctionparameter" href="#functionwithfunctionparameter">functionWithFunctionParameter</a>(`fn`): (`num`) => `boolean`</code>
+<code data-typedoc-code><i>function</i> <a id="functionwithfunctionparameter" href="#functionwithfunctionparameter">functionWithFunctionParameter</a>(`fn`): (`num`) => `boolean`</code>
 
 </dt>
 
@@ -862,7 +862,7 @@ See also [Fn1](#fn1)
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <i></i> <a id="functionwithunionparameters" href="#functionwithunionparameters">functionWithUnionParameters</a>(`a`, `b`): `string`</code>
+<code data-typedoc-code><i>function</i> <a id="functionwithunionparameters" href="#functionwithunionparameters">functionWithUnionParameters</a>(`a`, `b`): `string`</code>
 
 </dt>
 
