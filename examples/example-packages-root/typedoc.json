@@ -2,8 +2,21 @@
   "entryPoints": ["../example-packages-pkg1", "../example-packages-pkg2"],
   "out": "./docs",
   "name": "Example Packages Root",
-  "plugin": ["typedoc-plugin-md"],
+  "plugin": ["typedoc-plugin-md", "typedoc-plugin-markdown"],
   "entryPointStrategy": "packages",
   "githubPages": false,
-  "markdownHeadingId": true
+  "theme": "md-theme",
+  "router": "module",
+  "readme": "none",
+  "mergeReadme": true,
+  "cleanOutputDir": true,
+
+  "hidePageHeader": true,
+  "hideBreadcrumbs": true,
+  "hidePageTitle": true,
+  "useCustomAnchors": true,
+  "useCodeBlocks": false,
+  "expandParameters": true,
+  "parametersFormat": "htmlTable",
+  "enumMembersFormat": "htmlTable",
 }

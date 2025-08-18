@@ -8,7 +8,7 @@
   "devDependencies": {
     "example-packages-pkg1": "workspace:*",
     "example-packages-pkg2": "workspace:*",
-    "typedoc": "^0.28.9",
+    "typedoc": "^0.28.10",
     "typedoc-plugin-md": "workspace:*"
   }
 }
