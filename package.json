@@ -17,13 +17,13 @@
     "ci:publish": "pnpm run build:package && pnpm publish --access public -r --no-git-checks --tag latest"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.6",
-    "@manypkg/cli": "^0.25.0",
-    "@ocavue/eslint-config": "^3.3.1",
-    "eslint": "^9.33.0",
-    "pkg-pr-new": "^0.0.55",
+    "@changesets/cli": "^2.29.7",
+    "@manypkg/cli": "^0.25.1",
+    "@ocavue/eslint-config": "^3.4.0",
+    "eslint": "^9.34.0",
+    "pkg-pr-new": "^0.0.60",
     "prettier": "^3.6.2",
-    "turbo": "^2.5.6",
-    "typescript": "^5.8.3"
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.2"
   }
 }

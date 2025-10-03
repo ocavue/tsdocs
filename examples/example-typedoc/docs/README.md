@@ -407,7 +407,7 @@ A protected method.
 
 ## Other
 
-### CancellablePromise\<T\> {#cancellablepromise}
+### CancellablePromise {#cancellablepromise}
 
 This example shows off how TypeDoc handles
 
@@ -3149,7 +3149,7 @@ A simple type alias defined using the `type` keyword.
 
 ***
 
-### ComplexGenericTypeAlias\<T\> {#complexgenerictypealias}
+### ComplexGenericTypeAlias {#complexgenerictypealias}
 
 <dl>
 
