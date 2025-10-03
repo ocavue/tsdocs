@@ -172,7 +172,7 @@ Reads a value from the reader.
 
 ***
 
-### SimpleWriter\<T\> {#simplewriter}
+### SimpleWriter {#simplewriter}
 
 A simple class with a type parameter.
 
@@ -592,7 +592,7 @@ A method with a type parameter.
 
 ***
 
-### Writer\<T\> {#writer}
+### Writer {#writer}
 
 An interface with a generic type parameter.
 
@@ -682,7 +682,7 @@ A simple type.
 
 <dd>
 
-#### Type declaration
+#### Type Declaration
 
 <dl>
 
