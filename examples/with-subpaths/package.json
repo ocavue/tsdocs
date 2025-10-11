@@ -6,7 +6,7 @@
     "docs": "typedoc --plugin typedoc-plugin-md --plugin typedoc-plugin-markdown --out ./docs ./src/index.ts ./src/subpath-a.ts ./src/subpath-b.ts ./src/deep/subpath-c.ts"
   },
   "devDependencies": {
-    "typedoc": "^0.28.13",
+    "typedoc": "^0.28.14",
     "typedoc-plugin-md": "workspace:*"
   }
 }

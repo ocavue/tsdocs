@@ -8,7 +8,7 @@
 
 <dt>
 
-<code data-typedoc-code><i>function</i> <a id="fnb" href="#fnb">fnB</a>(): `undefined` \| [`InterfaceC`](deep/subpath-c.md#interfacec)</code>
+<code data-typedoc-code><i>function</i> <a id="fnb" href="#fnb">fnB</a>(): [`InterfaceC`](deep/subpath-c.md#interfacec) \| `undefined`</code>
 
 </dt>
 
