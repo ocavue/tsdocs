@@ -1307,7 +1307,7 @@ A method that extends the functionality of a basic JavaScript array.
 
 <dt>
 
-<code data-typedoc-code><a id="find" href="#find">find</a>\<S\>(`predicate`, `thisArg?`): `undefined` \| `S`</code>
+<code data-typedoc-code><a id="find" href="#find">find</a>\<S\>(`predicate`, `thisArg?`): `S` \| `undefined`</code>
 
 </dt>
 
@@ -1326,7 +1326,7 @@ otherwise.
 
 <dt>
 
-<code data-typedoc-code><a id="find" href="#find">find</a>(`predicate`, `thisArg?`): `undefined` \| `string`</code>
+<code data-typedoc-code><a id="find" href="#find">find</a>(`predicate`, `thisArg?`): `string` \| `undefined`</code>
 
 </dt>
 
@@ -1589,7 +1589,7 @@ specified depth.
 
 <dt>
 
-<code data-typedoc-code><a id="at" href="#at">at</a>(`index`): `undefined` \| `string`</code>
+<code data-typedoc-code><a id="at" href="#at">at</a>(`index`): `string` \| `undefined`</code>
 
 </dt>
 
@@ -1607,7 +1607,7 @@ Returns the item located at the specified index.
 
 <dt>
 
-<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>\<S\>(`predicate`, `thisArg?`): `undefined` \| `S`</code>
+<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>\<S\>(`predicate`, `thisArg?`): `S` \| `undefined`</code>
 
 </dt>
 
@@ -1626,7 +1626,7 @@ otherwise.
 
 <dt>
 
-<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>(`predicate`, `thisArg?`): `undefined` \| `string`</code>
+<code data-typedoc-code><a id="findlast" href="#findlast">findLast</a>(`predicate`, `thisArg?`): `string` \| `undefined`</code>
 
 </dt>
 
@@ -1785,7 +1785,7 @@ Returns a string representation of an array. The elements are converted to strin
 
 <dt>
 
-<code data-typedoc-code><a id="pop" href="#pop">pop</a>(): `undefined` \| `string`</code>
+<code data-typedoc-code><a id="pop" href="#pop">pop</a>(): `string` \| `undefined`</code>
 
 </dt>
 
@@ -1889,7 +1889,7 @@ This method mutates the array and returns a reference to the same array.
 
 <dt>
 
-<code data-typedoc-code><a id="shift" href="#shift">shift</a>(): `undefined` \| `string`</code>
+<code data-typedoc-code><a id="shift" href="#shift">shift</a>(): `string` \| `undefined`</code>
 
 </dt>
 
@@ -3084,7 +3084,7 @@ rendered.
 
 <dt>
 
-<code data-typedoc-code><a id="onsubmit" href="#onsubmit">onSubmit</a>(`formData`): `Promise`\<`void`\> \| `Promise`\<`undefined` \| \{ `shouldClose?`: `boolean`; `responseData`: `unknown`; \}\></code>
+<code data-typedoc-code><a id="onsubmit" href="#onsubmit">onSubmit</a>(`formData`): `Promise`\<`void`\> \| `Promise`\<\{ `shouldClose?`: `boolean`; `responseData`: `unknown`; \} \| `undefined`\></code>
 
 </dt>
 
